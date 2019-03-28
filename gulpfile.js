@@ -79,7 +79,7 @@ const build = gulp.parallel(
    compilaSASS, 
    optimizeCSS, 
    optimizeJS, 
-   optimizeIMG, 
+   //optimizeIMG, 
    replaceHTML, 
    optimizeHTML, 
    watch);

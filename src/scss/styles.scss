@@ -13,5 +13,8 @@
 @import 'base/styles.scss'; 
 
 // importando pasta objects
+@import 'objects/wrap-header.scss';
+@import 'objects/brand-nav.scss';
 
 // importando pasta components
+@import 'components/main-navigation.scss';

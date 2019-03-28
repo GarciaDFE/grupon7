@@ -63,3 +63,37 @@ body {
   font-family: "Asap Condensed", "Arial", sans-serif;
   background-color: white;
   color: #050A26; }
+
+.wrap-header {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  height: 120px;
+  background-color: white; }
+
+.brand-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px; }
+  .brand-nav .imgLogo {
+    width: 120px;
+    margin-right: 19px; }
+  .brand-nav .textLogo {
+    font-size: 28px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 5px; }
+  .brand-nav .-destaque {
+    font-weight: bold;
+    color: #C9801D; }
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 10px;
+  background-color: aqua; }
