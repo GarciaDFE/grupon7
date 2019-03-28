@@ -87,6 +87,12 @@ body {
     font-weight: bold;
     color: #C9801D; }
 
+.wrap-carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 540px; }
+
 .main-navigation {
   display: flex;
   justify-content: space-between;
@@ -130,3 +136,45 @@ body {
     cursor: pointer; }
     .nav-bar > .cotacao:hover {
       background-color: #050A26; }
+
+.main-carousel {
+  max-width: 1200px;
+  height: 540px;
+  margin: 0 auto; }
+  .main-carousel .cards {
+    position: relative;
+    height: 100%; }
+    .main-carousel .cards .card {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 100%;
+      height: 540px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+      .main-carousel .cards .card .title {
+        font-size: 70px;
+        font-weight: bold;
+        color: #050A26;
+        margin: 0 0 20px 130px; }
+      .main-carousel .cards .card .text {
+        font-size: 30px;
+        width: 395px;
+        color: #050A26;
+        margin: 0 0 20px 130px;
+        line-height: 1.2; }
+      .main-carousel .cards .card .btn {
+        border: none;
+        width: 165px;
+        height: 57px;
+        font-family: inherit;
+        font-size: 22px;
+        font-weight: bold;
+        background-color: #C9801D;
+        color: white;
+        margin-left: 380px; }
+  .main-carousel #first {
+    background-image: url(../img/img1Carousel.jpg); }
