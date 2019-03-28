@@ -94,7 +94,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
-  padding: 10px 0; }
+  padding: 10px 0 10px 67px; }
 
 .nav-bar {
   display: flex;
@@ -107,7 +107,7 @@ body {
     line-height: 120px; }
     .nav-bar > .menu > .item {
       display: inline-block;
-      padding-right: 53px; }
+      padding-right: 50px; }
       .nav-bar > .menu > .item > .action {
         color: #050A26;
         list-style: none;
