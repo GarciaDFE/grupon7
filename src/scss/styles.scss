@@ -1,4 +1,7 @@
 // importando pasta settings
+@import 'settings/breaks';
+@import 'settings/colors';
+@import 'settings/fonts';
 
 // importando pasta tools
 
@@ -7,6 +10,7 @@
 @import 'generic/myreset.scss'; 
 
 // importando pasta base
+@import 'base/styles.scss'; 
 
 // importando pasta objects
 
