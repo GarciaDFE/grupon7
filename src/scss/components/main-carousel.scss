@@ -16,6 +16,10 @@
          background-size: cover;
          background-repeat: no-repeat;
          background-position: center;
+         .title,
+         .text {
+            max-width: 395px;
+         }
          .title {
             font-size: 70px;
             font-weight: bold;
@@ -24,7 +28,6 @@
          }
          .text {
             font-size: 30px;
-            width: 395px;
             color: $color-primary-dark;
             margin: 0 0 20px 130px;
             line-height: 1.2;
@@ -39,6 +42,36 @@
             background-color: $color-primary-medium;
             color: $color-secondary-light;
             margin-left: 380px;
+            cursor: pointer;
+            z-index: 5;
+            &:hover {
+               background-color: $color-primary-dark;
+            }
+         }
+      }
+      .bullets {
+         position: relative;
+         text-align: center;
+         top: 500px;
+         .bullet {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: $color-primary-medium;
+            opacity: 0.8;
+            border-radius: 50%;
+            text-indent: -9999px;
+            cursor: pointer;
+            transition: opacity 200ms linear;
+            &:not(:last-child) { 
+               margin-right: 10px;
+            }
+            &:hover {
+               opacity: 1;
+            }
+            &.-isActive {
+               background-color: $color-primary-dark;
+            }
          }
       }
    }

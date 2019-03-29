@@ -155,6 +155,9 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
+      .main-carousel .cards .card .title,
+      .main-carousel .cards .card .text {
+        max-width: 395px; }
       .main-carousel .cards .card .title {
         font-size: 70px;
         font-weight: bold;
@@ -162,7 +165,6 @@ body {
         margin: 0 0 20px 130px; }
       .main-carousel .cards .card .text {
         font-size: 30px;
-        width: 395px;
         color: #050A26;
         margin: 0 0 20px 130px;
         line-height: 1.2; }
@@ -175,6 +177,30 @@ body {
         font-weight: bold;
         background-color: #C9801D;
         color: white;
-        margin-left: 380px; }
+        margin-left: 380px;
+        cursor: pointer;
+        z-index: 5; }
+        .main-carousel .cards .card .btn:hover {
+          background-color: #050A26; }
+    .main-carousel .cards .bullets {
+      position: relative;
+      text-align: center;
+      top: 500px; }
+      .main-carousel .cards .bullets .bullet {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: #C9801D;
+        opacity: 0.8;
+        border-radius: 50%;
+        text-indent: -9999px;
+        cursor: pointer;
+        transition: opacity 200ms linear; }
+        .main-carousel .cards .bullets .bullet:not(:last-child) {
+          margin-right: 10px; }
+        .main-carousel .cards .bullets .bullet:hover {
+          opacity: 1; }
+        .main-carousel .cards .bullets .bullet.-isActive {
+          background-color: #050A26; }
   .main-carousel #first {
     background-image: url(../img/img1Carousel.jpg); }
