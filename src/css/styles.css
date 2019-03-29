@@ -96,7 +96,6 @@ body {
 .main-segments {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: yellow;
   padding: 30px 0; }
   .main-segments .title {
     font-size: 50px;
@@ -112,6 +111,27 @@ body {
   width: 100%; }
   .wrap-cards .service-card:last-child {
     margin-bottom: 110px; }
+
+.wrap-services {
+  width: 100%;
+  padding-top: 20px; }
+  .wrap-services .wrap-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    text-align: center; }
+    .wrap-services .wrap-title > .title {
+      font-size: 50px;
+      font-weight: bold;
+      margin-right: 20px;
+      color: #050A26; }
+    .wrap-services .wrap-title > .subtitle {
+      font-size: 24px;
+      margin-top: 10px;
+      color: #C9801D; }
+      .wrap-services .wrap-title > .subtitle .-destaque {
+        text-transform: uppercase; }
 
 .main-navigation {
   display: flex;
