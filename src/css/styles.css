@@ -93,6 +93,20 @@ body {
   margin: 0 auto;
   height: 540px; }
 
+.main-segments {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: yellow;
+  padding: 30px 0; }
+  .main-segments .title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; }
+    .main-segments .title .separator {
+      margin: 0 20px; }
+    .main-segments .title .-alternate {
+      color: #C9801D; }
+
 .main-navigation {
   display: flex;
   justify-content: space-between;
@@ -154,7 +168,12 @@ body {
       height: 540px;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center; }
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.5s linear; }
+      .main-carousel .cards .card.-isActive {
+        opacity: 1;
+        transition: opacity 0.5s linear; }
       .main-carousel .cards .card .title,
       .main-carousel .cards .card .text {
         max-width: 395px; }
@@ -177,7 +196,7 @@ body {
         font-weight: bold;
         background-color: #C9801D;
         color: white;
-        margin-left: 380px;
+        margin-left: 340px;
         cursor: pointer;
         z-index: 5; }
         .main-carousel .cards .card .btn:hover {
@@ -185,7 +204,7 @@ body {
     .main-carousel .cards .bullets {
       position: relative;
       text-align: center;
-      top: 500px; }
+      top: 505px; }
       .main-carousel .cards .bullets .bullet {
         display: inline-block;
         width: 16px;
@@ -204,3 +223,7 @@ body {
           background-color: #050A26; }
   .main-carousel #first {
     background-image: url(../img/img1Carousel.jpg); }
+  .main-carousel #second {
+    background-image: url(../img/img2Carousel.jpg); }
+  .main-carousel #third {
+    background-image: url(../img/img3Carousel.jpg); }

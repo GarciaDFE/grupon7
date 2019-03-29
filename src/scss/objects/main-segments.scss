@@ -1,0 +1,18 @@
+.main-segments {
+   max-width: $break-desktop;
+   margin: 0 auto;
+   background-color: yellow;
+   padding: 30px 0;
+   .title {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+      .separator {
+         margin: 0 20px;
+      }
+      .-alternate {
+         color: $color-primary-medium;
+      }
+
+   }
+}

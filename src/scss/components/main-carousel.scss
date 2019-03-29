@@ -16,6 +16,12 @@
          background-size: cover;
          background-repeat: no-repeat;
          background-position: center;
+         opacity: 0;
+         transition: opacity 0.5s linear;
+         &.-isActive{
+            opacity: 1;
+            transition: opacity 0.5s linear;
+         } 
          .title,
          .text {
             max-width: 395px;
@@ -41,7 +47,7 @@
             font-weight: bold;
             background-color: $color-primary-medium;
             color: $color-secondary-light;
-            margin-left: 380px;
+            margin-left: 340px;
             cursor: pointer;
             z-index: 5;
             &:hover {
@@ -52,7 +58,7 @@
       .bullets {
          position: relative;
          text-align: center;
-         top: 500px;
+         top: 505px;
          .bullet {
             display: inline-block;
             width: 16px;
@@ -75,9 +81,7 @@
          }
       }
    }
-
    #first { background-image: url(../img/img1Carousel.jpg); }
-   //#second { background-image: url(../img/img2Carousel.jpg); }
-   //#third { background-image: url(../img/img3Carousel.jpg); }
-
+   #second { background-image: url(../img/img2Carousel.jpg); }
+   #third { background-image: url(../img/img3Carousel.jpg); }  
 }
