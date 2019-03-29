@@ -107,6 +107,12 @@ body {
     .main-segments .title .-alternate {
       color: #C9801D; }
 
+.wrap-cards {
+  position: relative;
+  width: 100%; }
+  .wrap-cards .service-card:last-child {
+    margin-bottom: 110px; }
+
 .main-navigation {
   display: flex;
   justify-content: space-between;
@@ -231,35 +237,58 @@ body {
 .service-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   max-width: 1060px;
-  height: 240px;
-  margin: 0 auto;
-  background-color: aquamarine;
-  padding: 0; }
+  height: 260px;
+  margin: 0 auto 120px; }
   .service-card .image {
     width: 360px; }
   .service-card .content {
     display: flex;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: flex-end;
     flex-wrap: wrap;
     width: 680px;
-    height: 240px;
-    background-color: blanchedalmond; }
+    height: 260px; }
     .service-card .content .title {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
       font-size: 40px;
       font-weight: bold;
-      color: #050A26; }
+      color: #050A26;
+      margin-right: 20px; }
     .service-card .content .subtitle {
-      display: block;
+      margin-bottom: 10px;
       font-size: 28px;
       font-weight: normal;
       color: #C9801D; }
     .service-card .content .square {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       height: 200px;
       padding: 20px;
       color: #C9801D;
       border: 1px solid #C9801D; }
+      .service-card .content .square .description {
+        font-size: 18px;
+        line-height: 22px; }
+      .service-card .content .square .btn {
+        align-self: flex-end;
+        width: 135px;
+        height: 44px;
+        border: 1px solid #050A26;
+        color: #050A26;
+        font-family: inherit;
+        font-size: 22px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: center;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer; }
+        .service-card .content .square .btn:hover {
+          border: none;
+          color: white;
+          background-color: #050A26; }
