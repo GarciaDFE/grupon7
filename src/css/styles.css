@@ -142,7 +142,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     text-align: center; }
     .wrap-partners .wrap-title > .title {
       font-size: 50px;
@@ -351,3 +351,68 @@ body {
     justify-content: center;
     align-items: center;
     margin: 50px 0; }
+
+.main-footer {
+  max-width: 1200px;
+  background-color: #050A26;
+  margin: 0 auto;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 90px; }
+  .main-footer .logo {
+    width: 161px;
+    font-size: 30px;
+    color: #BA8800;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center; }
+    .main-footer .logo img {
+      margin-bottom: 5px; }
+    .main-footer .logo .-destaque {
+      font-weight: bold; }
+  .main-footer .local {
+    width: 425px;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 29px; }
+    .main-footer .local .icon {
+      display: inline-block;
+      margin: 30px 32px 0 0; }
+      .main-footer .local .icon .action {
+        opacity: 0.9; }
+        .main-footer .local .icon .action:hover {
+          opacity: 1; }
+  .main-footer .contacts {
+    width: 291px;
+    color: #C9801D;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px; }
+    .main-footer .contacts .contact {
+      margin-bottom: 18px; }
+      .main-footer .contacts .contact.-whatsapp::before {
+        content: '';
+        background: url(../img/icon-whatsapp.svg);
+        background-repeat: no-repeat;
+        padding: 0 20px; }
+      .main-footer .contacts .contact.-email {
+        margin-bottom: 33px; }
+      .main-footer .contacts .contact .-destaque {
+        font-size: 35px; }
+    .main-footer .contacts .btn {
+      display: block;
+      border: none;
+      width: 252px;
+      height: 70px;
+      font-family: inherit;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #C9801D;
+      color: white;
+      cursor: pointer; }
+      .main-footer .contacts .btn:hover {
+        background-color: white;
+        color: #C9801D; }
