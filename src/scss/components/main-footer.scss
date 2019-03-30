@@ -30,11 +30,10 @@
       .icon {
          display: inline-block;
          margin: 30px 32px 0 0;
-         .action {
-            opacity: 0.9;
-            &:hover {
-               opacity: 1;
-            }
+         transition: transform 0.2s linear;
+         &:hover {
+            transform: scale(1.1);
+            transition: transform 0.2s linear;
          }
       }
    }

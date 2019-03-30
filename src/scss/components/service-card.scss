@@ -28,6 +28,14 @@
          font-weight: normal;
          color: $color-primary-medium;
       }
+      &.-invert {
+         .title {
+            color: $color-primary-medium;
+         }
+         .subtitle {
+            color: $color-primary-dark;
+         }
+      }
       .square {
          display: flex;
          justify-content: flex-start;
