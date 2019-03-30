@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" viewBox="0 0 125 125">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-1,.cls-2,.cls-3{fill-rule:evenodd}.cls-2{fill:#558056}.cls-3{fill:#a0311b}
+        </style>
+    </defs>
+    <g id="HDI" transform="translate(-1072.774 -3145.671)">
+        <path id="Caminho_120" d="M1072.774 3145.671h125v125h-125v-125z" class="cls-1" data-name="Caminho 120"/>
+        <path id="Caminho_121" d="M1082.462 3227.445h12.738v-38.462h-12.736v38.462z" class="cls-2" data-name="Caminho 121"/>
+        <path id="Caminho_122" d="M1108.019 3227.36h12.821v-38.46h-12.821v38.462z" class="cls-2" data-name="Caminho 122"/>
+        <path id="Caminho_123" d="M1143.425 3227.275H1130.6V3188.9h16.047c32.01 1.613 24.2 40.075-3.226 38.377z" class="cls-2" data-name="Caminho 123"/>
+        <path id="Caminho_124" d="M1142.915 3217.681v-19.614c14.859-1.868 16.132 20.632 0 19.614z" class="cls-1" data-name="Caminho 124"/>
+        <path id="Caminho_125" d="M1175.265 3227.445h12.821v-38.377h-12.821v38.377z" class="cls-2" data-name="Caminho 125"/>
+        <path id="Caminho_126" d="M1095.2 3214.879h12.821v-12.821H1095.2v12.821z" class="cls-3" data-name="Caminho 126"/>
+    </g>
+</svg>
