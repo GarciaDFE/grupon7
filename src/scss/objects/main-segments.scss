@@ -6,6 +6,9 @@
       font-size: 50px;
       font-weight: bold;
       text-align: center;
+      @media all and (max-width: 899px) {
+         font-size: 30px;
+      }
       .separator {
          margin: 0 20px;
       }
