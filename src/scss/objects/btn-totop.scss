@@ -9,4 +9,7 @@
       opacity: 1;
       transition: opacity 0.2s linear;
    }
+   @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      margin: 40px 20px 40px auto;
+   }
 }

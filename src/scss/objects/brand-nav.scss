@@ -6,15 +6,24 @@
    .imgLogo {
       width: 120px;
       margin-right: 19px;
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+         width: 110px;
+      }
    }
    .textLogo {
       font-size: 28px;
       font-weight: normal;
       text-transform: uppercase;
       letter-spacing: 5px;
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+         font-size: 26px;
+      }
    }
    .-destaque {
       font-weight: bold;
       color: $color-primary-medium;
+  }
+  @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+     width: 250px;
   }
 }

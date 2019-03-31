@@ -10,6 +10,10 @@
       > .item {
          display: inline-block;
          padding-right: 50px;
+         @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+            padding-right: 30px;
+         }
+
          > .action {
             color: $color-primary-dark;
             list-style: none;
@@ -38,5 +42,12 @@
       &:hover {
          background-color: $color-primary-dark;
       }
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {                   width: 180px;
+         padding: 0 40px 0 10px;         
+      }
+
+   }
+   @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      font-size: 18px;
    }
 }

@@ -7,6 +7,9 @@
    justify-content: space-between;
    align-items: flex-start;
    padding: 90px;
+   @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      padding: 50px;
+   }
    .logo {
       width: 161px;
       font-size: 30px;
@@ -14,8 +17,14 @@
       text-transform: uppercase;
       letter-spacing: 6px;
       text-align: center;
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+         font-size: 28px;
+      }
       img {
          margin-bottom: 5px;
+         @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+            width: 140px;
+         }
       }
       .-destaque {
          font-weight: bold;
@@ -27,6 +36,11 @@
       font-size: 24px;
       font-weight: normal;
       line-height: 29px;
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+         width: 380px;
+         font-size: 20px;
+         margin-left: 20px;
+      }
       .icon {
          display: inline-block;
          margin: 30px 32px 0 0;
@@ -43,6 +57,12 @@
       font-size: 30px;
       font-weight: bold;
       line-height: 36px;
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+         width: 252px;
+         font-size: 26px;
+         line-height: 32px;
+      }
+
       .contact {
          margin-bottom: 18px;
          &.-whatsapp::before {
@@ -56,6 +76,9 @@
          }
          .-destaque {
             font-size: 35px;
+            @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+               font-size: 32px;
+            }
          }
       }
       .btn {
