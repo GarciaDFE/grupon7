@@ -78,23 +78,17 @@ body {
   .brand-nav .imgLogo {
     width: 120px;
     margin-right: 19px; }
-    @media all and (min-width: 900px) and (max-width: 1199px) {
-      .brand-nav .imgLogo {
-        width: 110px; } }
   .brand-nav .textLogo {
     font-size: 28px;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 5px; }
-    @media all and (min-width: 900px) and (max-width: 1199px) {
-      .brand-nav .textLogo {
-        font-size: 26px; } }
   .brand-nav .-destaque {
     font-weight: bold;
     color: #C9801D; }
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .brand-nav {
-      width: 250px; } }
+      width: 285px; } }
 
 .wrap-carousel {
   position: relative;
@@ -193,7 +187,13 @@ body {
   padding: 10px 0 10px 67px; }
   .main-navigation .main-btnMenu {
     visibility: hidden; }
-  @media all and (max-width: 900px) {
+  @media all and (min-width: 1101px) and (max-width: 1199px) {
+    .main-navigation {
+      padding: 10px 0 10px 47px; } }
+  @media all and (min-width: 900px) and (max-width: 1100px) {
+    .main-navigation {
+      padding: 10px 0 10px 25px; } }
+  @media all and (max-width: 899px) {
     .main-navigation .main-btnMenu {
       visibility: visible; } }
 
@@ -209,9 +209,17 @@ body {
     .nav-bar > .menu > .item {
       display: inline-block;
       padding-right: 50px; }
-      @media all and (min-width: 900px) and (max-width: 1199px) {
+      @media all and (min-width: 1101px) and (max-width: 1199px) {
         .nav-bar > .menu > .item {
-          padding-right: 30px; } }
+          padding-right: 45px; } }
+      @media all and (min-width: 1001px) and (max-width: 1100px) {
+        .nav-bar > .menu > .item {
+          padding-right: 35px;
+          font-size: 22px; } }
+      @media all and (min-width: 900px) and (max-width: 1000px) {
+        .nav-bar > .menu > .item {
+          padding-right: 27px;
+          font-size: 20px; } }
       .nav-bar > .menu > .item > .action {
         color: #050A26;
         list-style: none;
@@ -234,13 +242,14 @@ body {
     cursor: pointer; }
     .nav-bar > .cotacao:hover {
       background-color: #050A26; }
-    @media all and (min-width: 900px) and (max-width: 1199px) {
+    @media all and (min-width: 1101px) and (max-width: 1199px) {
+      .nav-bar > .cotacao {
+        width: 200px;
+        padding: 0 40px 0 10px; } }
+    @media all and (min-width: 900px) and (max-width: 1100px) {
       .nav-bar > .cotacao {
         width: 180px;
-        padding: 0 40px 0 10px; } }
-  @media all and (min-width: 900px) and (max-width: 1199px) {
-    .nav-bar {
-      font-size: 18px; } }
+        padding: 0 20px 0 10px; } }
 
 .main-btnMenu {
   position: relative;
