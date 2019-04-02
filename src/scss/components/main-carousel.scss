@@ -18,8 +18,9 @@
          background-position: center;
          opacity: 0;
          transition: opacity 0.5s linear;
-         @media all and (max-width: 899px) {
-            height: 340px;
+         @media all and  /* até 899px */
+            (max-width: $break-tablet - 1) {
+               height: 340px;
          }
 
          &.-isActive{
@@ -30,9 +31,10 @@
          .text {
             max-width: 395px;
             margin: 0 0 20px 130px;
-            @media all and (max-width: 899px) {
-               max-width: 300px;
-               margin-left: 100px;
+            @media all and /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  max-width: 300px;
+                  margin-left: 100px;
             }
 
          }
@@ -40,8 +42,9 @@
             font-size: 70px;
             font-weight: bold;
             color: $color-primary-dark;
-            @media all and (max-width: 899px) {
-               font-size: 40px;
+            @media all and /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  font-size: 40px;
             }
 
          }
@@ -49,8 +52,9 @@
             font-size: 30px;
             color: $color-primary-dark;
             line-height: 1.2;
-            @media all and (max-width: 899px) {
-               font-size: 20px;
+            @media all and /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  font-size: 20px;
             }
          }
          .btn {
@@ -65,10 +69,11 @@
             margin-left: 340px;
             cursor: pointer;
             z-index: 5;
-            @media all and (max-width: 899px) {
-               width: 150px;
-               height: 50px;
-               font-size: 20px;
+            @media all and /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  width: 150px;
+                  height: 50px;
+                  font-size: 20px;
             }
 
             &:hover {
@@ -80,8 +85,9 @@
          position: relative;
          text-align: center;
          top: 505px;
-         @media all and (max-width: 899px) {
-            top: 310px;
+         @media all and /* até 899px */
+            (max-width: $break-tablet - 1) {
+               top: 310px;
          }
 
          .bullet {

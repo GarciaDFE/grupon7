@@ -3,7 +3,8 @@
     width: 100%;
     margin: 0 auto;
     height: 540px;
-    @media all and (max-width: 899px) {
-        height: 340px;
+    @media all and /* até 899px */
+        (max-width: $break-tablet - 1) {
+            height: 340px;
     }
 }

@@ -6,13 +6,15 @@
    margin: 0 auto;
    height: 100%;
    padding: 10px 0 10px 67px;
-   @media all and (max-width: 899px) {
-      padding: 10px 40px;
+   @media all and /* até 899px */
+      (max-width: $break-tablet - 1) {
+         padding: 10px 40px;
    }
    .btn-menu {
       display: none;
-      @media all and (max-width: 899px) {
-         display: block;
+      @media all and /* até 899px */
+         (max-width: $break-tablet - 1) {
+            display: block;
       }
    }
 }

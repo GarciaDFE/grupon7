@@ -124,7 +124,7 @@ body {
     font-size: 50px;
     font-weight: bold;
     text-align: center; }
-    @media all and (max-width: 899px) {
+    @media all and (min-width: 600px) and (max-width: 899px) {
       .main-segments .title {
         font-size: 30px; } }
     .main-segments .title .separator {
@@ -152,10 +152,18 @@ body {
       font-weight: bold;
       margin-right: 20px;
       color: #050A26; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .wrap-services .wrap-title > .title {
+          font-size: 40px;
+          margin-right: 10px; } }
     .wrap-services .wrap-title > .subtitle {
       font-size: 24px;
       margin-top: 10px;
       color: #C9801D; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .wrap-services .wrap-title > .subtitle {
+          font-size: 20px;
+          margin-right: 5px; } }
       .wrap-services .wrap-title > .subtitle .-destaque {
         text-transform: uppercase; }
 
@@ -170,18 +178,30 @@ body {
     align-items: center;
     margin-bottom: 20px;
     text-align: center; }
+    @media all and (min-width: 800px) and (max-width: 899px) {
+      .wrap-partners .wrap-title {
+        margin: 0 50px 10px 50px; } }
+    @media all and (min-width: 600px) and (max-width: 799px) {
+      .wrap-partners .wrap-title {
+        margin: 0 20px 10px 20px; } }
     .wrap-partners .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
-      margin-right: 20px;
-      margin-left: 150px;
+      margin: 0 20px 0 150px;
       color: #050A26; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .wrap-partners .wrap-title > .title {
+          margin: 0 10px 0 0; } }
     .wrap-partners .wrap-title > .subtitle {
       font-size: 24px;
       line-height: 1.2;
       margin-top: 10px;
       color: #C9801D;
       text-align: left; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .wrap-partners .wrap-title > .subtitle {
+          font-size: 20px;
+          margin-top: 5px; } }
 
 .btn-totop {
   max-width: 1060px;
@@ -224,7 +244,7 @@ body {
       .nav-bar > .menu {
         position: absolute;
         display: block;
-        background-color: #C9801D;
+        background-color: #F9CE9B;
         width: 260px;
         height: 350px;
         top: 120px;
@@ -378,8 +398,16 @@ body {
   max-width: 1060px;
   height: 260px;
   margin: 0 auto 120px; }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .service-card {
+      justify-content: center;
+      align-items: flex-end;
+      margin: 0 20px 50px; } }
   .service-card .image {
     width: 360px; }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .service-card .image {
+        display: none; } }
   .service-card .content {
     display: flex;
     justify-content: flex-start;
@@ -442,12 +470,21 @@ body {
   max-width: 1060px;
   border: 3px solid #C9801D;
   padding: 20px; }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .main-partners {
+      margin: 0 10px; } }
   .main-partners .logo {
     width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 0; }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-partners .logo {
+        margin: 30px 0; } }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-partners .logo img {
+        width: 50%; } }
 
 .main-footer {
   max-width: 1200px;
@@ -458,6 +495,11 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 90px; }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .main-footer {
+      flex-wrap: wrap;
+      padding: 50px;
+      justify-content: space-around; } }
   .main-footer .logo {
     width: 161px;
     font-size: 30px;
@@ -466,6 +508,7 @@ body {
     letter-spacing: 6px;
     text-align: center; }
     .main-footer .logo img {
+      width: 100%;
       margin-bottom: 5px; }
     .main-footer .logo .-destaque {
       font-weight: bold; }
@@ -475,10 +518,19 @@ body {
     font-size: 24px;
     font-weight: normal;
     line-height: 29px; }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-footer .local {
+        order: 2;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center; } }
     .main-footer .local .icon {
       display: inline-block;
       margin: 30px 32px 0 0;
       transition: transform 0.2s linear; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-footer .local .icon {
+          margin: 15px 25px 0 0; } }
       .main-footer .local .icon:hover {
         transform: scale(1.1);
         transition: transform 0.2s linear; }
@@ -488,6 +540,9 @@ body {
     font-size: 30px;
     font-weight: bold;
     line-height: 36px; }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-footer .contacts {
+        line-height: 25px; } }
     .main-footer .contacts .contact {
       margin-bottom: 18px; }
       .main-footer .contacts .contact.-whatsapp::before {
@@ -510,6 +565,12 @@ body {
       background-color: #C9801D;
       color: white;
       cursor: pointer; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-footer .contacts .btn {
+          width: 230px;
+          height: 50px;
+          margin-bottom: 35px;
+          font-size: 20px; } }
       .main-footer .contacts .btn:hover {
         background-color: white;
         color: #C9801D; }
