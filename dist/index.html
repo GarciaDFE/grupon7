@@ -13,7 +13,7 @@
 </head>
 <body>
    <!-- HEADER/NAV -->
-   <header class="wrap-header">
+   <header id="header" class="wrap-header">
       <div class="main-navigation">
 
          <div class="brand-nav">
@@ -23,8 +23,8 @@
          
          <nav class="nav-bar">
             <ul id="menu" class="menu">
-                  <li class="item"><a class="action" href="#">Serviços</a></li><!--
-               --><li class="item"><a class="action" href="#">Parceiros</a></li><!--
+                  <li class="item"><a class="action" href="#servicos">Serviços</a></li><!--
+               --><li class="item"><a class="action" href="#parceiros">Parceiros</a></li><!--
                --><li class="item"><a class="action" href="#">Sobre nós</a></li><!--
                --><li class="item"><a class="action" href="#">Contato</a></li>
             </ul>
@@ -70,11 +70,11 @@
 
    <!-- PRINCIPAIS SEGMENTOS -->
    <section class="main-segments">
-      <h1 class="title"><span class="-alternate">Corretora de Seguros</span><span class="separator">||</span>Soluções Empresariais<h1>
+      <h1 class="title"><span class="-orange">Corretora de Seguros</span><span class="-blue">Soluções Empresariais</span><h1>
    </section>
 
    <!-- SERVIÇOS --> 
-   <section class="wrap-services">
+   <section id="servicos" class="wrap-services">
       <header class="wrap-title">
          <h1 class="title">Serviços</h1>
          <h2 class="subtitle">O <span class="-destaque">Grupo N7</span> tem soluções para você e sua empresa</h2>
@@ -92,9 +92,9 @@
             </div>
          </dl>
          <dl class="service-card">
-            <dd class="image"><img src="img/seguro_pessoa_fisica.jpg" alt="imagem de pessoa relaxando"></dd>
-            <div class="content">
-               <dt class="title">Seguros</dt>
+            <dd class="image"><img src="img/profissional-consorcios.jpg" alt="imagem de pessoa relaxando"></dd>
+            <div class="content -invert">
+               <dt class="title">Consórcios</dt>
                <dt class="subtitle">para pessoas físicas e empresas</dt>
                <div class="square">
                   <dd class="description">In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam id dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris dictum facilisis augue. Fusce tellus. </dd>
@@ -103,16 +103,47 @@
             </div>
          </dl>
       </div>
+         <dl class="service-card">
+            <dd class="image"><img src="img/equipe-beneficios.jpg" alt="imagem de pessoa relaxando"></dd>
+            <div class="content">
+               <dt class="title">Benefícios</dt>
+               <dt class="subtitle">benefícios e cartões para os colaboradores</dt>
+               <div class="square">
+                  <dd class="description">In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam id dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris dictum facilisis augue. Fusce tellus. </dd>
+                  <button class="btn">Saiba mais</button>
+               </div>
+            </div>
+         </dl>
+         <dl class="service-card">
+            <dd class="image"><img src="img/saude-odonto-medico.jpg" alt="imagem de pessoa relaxando"></dd>
+            <div class="content -invert">
+               <dt class="title">Saúde e Odonto</dt>
+               <dt class="subtitle">para pessoas físicas e empresas</dt>
+               <div class="square">
+                  <dd class="description">In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam id dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris dictum facilisis augue. Fusce tellus. </dd>
+                  <button class="btn">Saiba mais</button>
+               </div>
+            </div>
+         </dl>
+         <dl class="service-card">
+            <dd class="image"><img src="img/executivos-consultoria.jpg" alt="imagem de pessoa relaxando"></dd>
+            <div class="content">
+               <dt class="title">Consultoria</dt>
+               <dt class="subtitle">serviços especializados para empresas</dt>
+               <div class="square">
+                  <dd class="description">In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam id dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris dictum facilisis augue. Fusce tellus. </dd>
+                  <button class="btn">Saiba mais</button>
+               </div>
+            </div>
+         </dl>
    </section>
 
    <!-- BOTÃO PARA LEVAR AO TOPO -->
-   <button class="btn-totop">
-      BOTÃO -> TOPO
-   </button>
+   <a class="btn-totop -v1" href="#header"><img src="img/btn-totop.svg" alt=""></a>
 
    <!-- PARCEIROS -->
    <section class="wrap-partners">
-      <header class="wrap-title">
+      <header id="parceiros" class="wrap-title">
          <h1 class="title">Parceiros</h1>
          <h2 class="subtitle">Estamos conectados com parceiros sólidos e reconhecidos para oferecer o melhor produto em cada categoria. Veja alguns deles:</h2>
       </header>
@@ -136,9 +167,7 @@
    </section>
 
    <!-- BOTÃO PARA LEVAR AO TOPO -->
-   <button class="btn-totop">
-      BOTÃO -> TOPO
-   </button>
+   <a class="btn-totop -v2" href="#header"><img src="img/btn-totop.svg" alt=""></a>
 
    <!-- RODAPÉ -->
       <footer class="main-footer">
@@ -156,7 +185,7 @@
          </div>
          <div class="contacts">
             <p class="contact">27 <span class="-destaque">3013 7072</span></p>
-            <p class="contact -whatsapp">27 <span class="-destaque">9999 1234</span></p>  
+            <p class="contact -whatsapp">27 <span class="-destaque">99581 5264</span></p>  
             <p class="contact -email">contato@grupon7.com.br</p>
             <button class="btn">
                <p>Solicite uma</p>
