@@ -1,9 +1,7 @@
 .btn-totop {
    max-width: 1060px;
-   display: block;
    display: flex;
    justify-content: flex-end;
-   // margin: 18px auto 48px;
    opacity: 0.5;
    transition: opacity 0.2s linear;
    &:hover {

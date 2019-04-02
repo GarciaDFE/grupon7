@@ -100,18 +100,11 @@ body {
   .main-segments .title {
     font-size: 50px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .main-segments .title .-orange {
+    text-align: center; }
+    .main-segments .title .separator {
+      margin: 0 20px; }
+    .main-segments .title .-alternate {
       color: #C9801D; }
-      .main-segments .title .-orange:after {
-        content: "";
-        display: inline-block;
-        width: 5px;
-        height: 50px;
-        background: #C9801D;
-        margin-top: 20px; }
 
 .wrap-cards {
   position: relative;
@@ -164,7 +157,6 @@ body {
 
 .btn-totop {
   max-width: 1060px;
-  display: block;
   display: flex;
   justify-content: flex-end;
   opacity: 0.5;
