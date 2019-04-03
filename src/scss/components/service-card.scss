@@ -7,7 +7,23 @@
    margin: 0 auto 120px;
    .image {
       width: 360px;
+      position: relative;
+      &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 240px;
+      width: 100%;
+      background-color: $color-primary-medium;
+      opacity: 0;
+      transition: opacity 300ms linear;
+      }
+      &:hover:after {
+         background-color: $color-primary-medium;
+         opacity: 0.4;
+      }
    }
+   
    .content {
       display: flex;
       justify-content: flex-start;

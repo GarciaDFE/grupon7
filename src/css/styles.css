@@ -319,7 +319,20 @@ body {
   height: 260px;
   margin: 0 auto 120px; }
   .service-card .image {
-    width: 360px; }
+    width: 360px;
+    position: relative; }
+    .service-card .image:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 240px;
+      width: 100%;
+      background-color: #C9801D;
+      opacity: 0;
+      transition: opacity 300ms linear; }
+    .service-card .image:hover:after {
+      background-color: #C9801D;
+      opacity: 0.4; }
   .service-card .content {
     display: flex;
     justify-content: flex-start;
