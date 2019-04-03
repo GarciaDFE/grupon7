@@ -64,6 +64,7 @@
             background-color: $color-secondary-light;
             border-radius: 5px;
             cursor: pointer;
+            transition: all 500ms linear;
             &:hover {
                border: none;
                color: $color-secondary-light;
