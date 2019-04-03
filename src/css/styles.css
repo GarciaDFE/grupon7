@@ -198,9 +198,24 @@ body {
         color: #050A26;
         list-style: none;
         text-decoration: none;
-        cursor: pointer; }
-        .nav-bar > .menu > .item > .action.-isActive, .nav-bar > .menu > .item > .action:hover {
-          border-bottom: 2px solid #050A26; }
+        cursor: pointer;
+        position: relative; }
+        .nav-bar > .menu > .item > .action:hover {
+          color: #C9801D;
+          font-weight: 400; }
+        .nav-bar > .menu > .item > .action:after {
+          content: "";
+          height: 4px;
+          width: 100%;
+          background-color: #C9801D;
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          transform: scaleX(0);
+          transition: transform 200ms linear;
+          transform-origin: center; }
+        .nav-bar > .menu > .item > .action.-isActive, .nav-bar > .menu > .item > .action:hover:after {
+          transform: scale(1); }
   .nav-bar > .cotacao {
     display: inline-block;
     border: none;
