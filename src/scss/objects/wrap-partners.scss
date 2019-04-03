@@ -1,8 +1,12 @@
 .wrap-partners {
-   width: 100%;
-   padding-top: 20px;
-   max-width: 1060px;
-   margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+    max-width: 1060px;
+    margin: 0 auto;
+    @media all and /* 320px a 599px */
+        (min-width: $break-min) and (max-width: $break-phone - 1) {
+            display: none;
+    }
     .wrap-title {
         display: flex;
         justify-content: center;
