@@ -17,4 +17,8 @@
       font-weight: bold;
       color: $color-primary-medium;
   }
+   @media all and /* 900 a 1199 */
+      (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+         width: 285px;
+   }
 }

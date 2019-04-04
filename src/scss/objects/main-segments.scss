@@ -6,6 +6,8 @@
       font-size: 50px;
       font-weight: bold;
       text-align: center;
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {                   font-size: 45px;
+      }
       .separator {
          margin: 0 20px;
       }

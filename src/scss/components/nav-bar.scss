@@ -10,6 +10,21 @@
       > .item {
          display: inline-block;
          padding-right: 50px;
+         @media all and /* 1101 a 1199 */
+            (min-width: $break-desktop - 99) and (max-width: $break-desktop - 1) {
+               padding-right: 45px;
+         }
+         @media all and /* 1001 a 1100px */
+            (min-width: $break-desktop - 199) and (max-width: $break-desktop - 100) {
+               padding-right: 35px;
+               font-size: 22px;
+         }
+         @media all and /* 900 a 1000px */
+            (min-width: $break-tablet) and (max-width: $break-desktop - 200) {
+               padding-right: 27px;
+               font-size: 20px;
+         }
+
          > .action {
             color: $color-primary-dark;
             list-style: none;
@@ -37,6 +52,16 @@
       cursor: pointer;
       &:hover {
          background-color: $color-primary-dark;
+      }
+      @media all and /* 1101 a 1199 */
+         (min-width: $break-desktop - 99) and (max-width: $break-desktop - 1) {
+            width: 200px;
+            padding: 0 40px 0 10px;         
+      }
+      @media all and /* 900 a 1100px */
+         (min-width: $break-tablet) and (max-width: $break-desktop - 100) {
+            width: 180px;
+            padding: 0 20px 0 10px;         
       }
    }
 }
