@@ -345,14 +345,32 @@ body {
       @media all and (max-width: 899px) {
         .nav-bar > .menu > .item {
           width: 100%;
-          text-align: left;
+          text-align: left; } }
+      @media all and (max-width: 899px) {
+        .nav-bar > .menu > .item:not(:last-child) {
           border-bottom: 1px solid white; } }
       .nav-bar > .menu > .item > .action {
         color: #050A26;
         list-style: none;
         text-decoration: none; }
         .nav-bar > .menu > .item > .action.-isActive, .nav-bar > .menu > .item > .action:hover {
-          border-bottom: 2px solid #050A26; }
+          color: #C9801D; }
+      .nav-bar > .menu > .item .submenu {
+        width: 220px;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 40px;
+        text-decoration: none;
+        color: #050A26;
+        border-top: 1px solid white; }
+        .nav-bar > .menu > .item .submenu li {
+          padding-left: 10px; }
+          .nav-bar > .menu > .item .submenu li a {
+            text-decoration: none;
+            color: #050A26; }
+            .nav-bar > .menu > .item .submenu li a:hover {
+              text-decoration: none;
+              color: #C9801D; }
   .nav-bar > .cotacao {
     display: inline-block;
     border: none;

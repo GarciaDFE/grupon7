@@ -23,7 +23,7 @@
             padding: 10px 20px;
             transform: translateX(100%);
             transition: transform 300ms linear;
-         }
+      }
       @media all and  /* 320px a 599px */
          (min-width: $break-min) and (max-width: $break-phone - 1) {
             position: absolute;
@@ -40,13 +40,11 @@
             padding: 10px 20px;
             transform: translateX(100%);
             transition: transform 300ms linear;
-         }
-
+      }
       &.menu-open {
         transform: translateX(0);
         visibility: visible;
       }
-
       > .item {
          display: inline-block;
          padding-right: 50px;
@@ -54,7 +52,12 @@
             (max-width: $break-tablet - 1) {
                width: 100%;
                text-align: left;
-               border-bottom: 1px solid white;
+         }
+         &:not(:last-child) {
+            @media all and  /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  border-bottom: 1px solid white;
+            }
          }
          > .action {
             color: $color-primary-dark;
@@ -62,7 +65,27 @@
             text-decoration: none;
             &.-isActive,
             &:hover {
-               border-bottom: 2px solid $color-primary-dark;
+               color: $color-primary-medium;
+            }
+         }
+         .submenu {
+            width: 220px;
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 40px;
+            text-decoration: none;
+            color: $color-primary-dark;
+            border-top: 1px solid white;
+            li {
+               padding-left: 10px;
+               a {
+                  text-decoration: none;
+                  color: $color-primary-dark;
+                  &:hover{
+                     text-decoration: none;
+                     color: $color-primary-medium;
+                  }
+               }
             }
          }
       }
