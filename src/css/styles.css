@@ -587,7 +587,13 @@ body {
   @media all and (min-width: 600px) and (max-width: 899px) {
     .main-footer {
       flex-wrap: wrap;
-      padding: 50px;
+      padding: 30px;
+      justify-content: space-around; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .main-footer {
+      height: 350px;
+      flex-wrap: wrap;
+      padding: 20px;
       justify-content: space-around; } }
   .main-footer .logo {
     width: 161px;
@@ -596,6 +602,16 @@ body {
     text-transform: uppercase;
     letter-spacing: 6px;
     text-align: center; }
+    @media all and (min-width: 480px) and (max-width: 599px) {
+      .main-footer .logo {
+        width: 140px;
+        font-size: 24px;
+        letter-spacing: 5px; } }
+    @media all and (min-width: 320px) and (max-width: 479px) {
+      .main-footer .logo {
+        width: 80px;
+        font-size: 16px;
+        letter-spacing: 3px; } }
     .main-footer .logo img {
       width: 100%;
       margin-bottom: 5px; }
@@ -607,17 +623,23 @@ body {
     font-size: 24px;
     font-weight: normal;
     line-height: 29px; }
-    @media all and (min-width: 600px) and (max-width: 899px) {
+    @media all and (min-width: 460px) and (max-width: 899px) {
       .main-footer .local {
         order: 2;
         font-size: 22px;
-        line-height: 25px;
+        line-height: 30px;
+        text-align: center; } }
+    @media all and (min-width: 320px) and (max-width: 459px) {
+      .main-footer .local {
+        order: 2;
+        font-size: 18px;
+        line-height: 26px;
         text-align: center; } }
     .main-footer .local .icon {
       display: inline-block;
       margin: 30px 32px 0 0;
       transition: transform 0.2s linear; }
-      @media all and (min-width: 600px) and (max-width: 899px) {
+      @media all and (min-width: 320px) and (max-width: 899px) {
         .main-footer .local .icon {
           margin: 15px 25px 0 0; } }
       .main-footer .local .icon:hover {
@@ -629,9 +651,17 @@ body {
     font-size: 30px;
     font-weight: bold;
     line-height: 36px; }
-    @media all and (min-width: 600px) and (max-width: 899px) {
+    @media all and (min-width: 480px) and (max-width: 599px) {
       .main-footer .contacts {
-        line-height: 25px; } }
+        font-size: 25px;
+        line-height: 27px;
+        text-align: right; } }
+    @media all and (min-width: 320px) and (max-width: 479px) {
+      .main-footer .contacts {
+        width: 195px;
+        font-size: 19px;
+        line-height: 10px;
+        text-align: right; } }
     .main-footer .contacts .contact {
       margin-bottom: 18px; }
       .main-footer .contacts .contact.-whatsapp::before {
@@ -639,10 +669,22 @@ body {
         background: url(../img/icon-whatsapp.svg);
         background-repeat: no-repeat;
         padding: 0 20px; }
+        @media all and (min-width: 320px) and (max-width: 479px) {
+          .main-footer .contacts .contact.-whatsapp::before {
+            padding: 7px 20px; } }
       .main-footer .contacts .contact.-email {
         margin-bottom: 33px; }
+        @media all and (min-width: 320px) and (max-width: 599px) {
+          .main-footer .contacts .contact.-email {
+            margin-bottom: 0; } }
       .main-footer .contacts .contact .-destaque {
         font-size: 35px; }
+        @media all and (min-width: 480px) and (max-width: 599px) {
+          .main-footer .contacts .contact .-destaque {
+            font-size: 30px; } }
+        @media all and (min-width: 320px) and (max-width: 479px) {
+          .main-footer .contacts .contact .-destaque {
+            font-size: 25px; } }
     .main-footer .contacts .btn {
       display: block;
       border: none;
@@ -660,6 +702,9 @@ body {
           height: 50px;
           margin-bottom: 35px;
           font-size: 20px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-footer .contacts .btn {
+          display: none; } }
       .main-footer .contacts .btn:hover {
         background-color: white;
         color: #C9801D; }
