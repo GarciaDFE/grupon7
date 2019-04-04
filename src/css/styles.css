@@ -60,15 +60,23 @@ body {
   height: 100%; }
 
 body {
+  margin-top: 120px; }
+
+body {
   font-family: "Asap Condensed", "Arial", sans-serif;
   background-color: white;
   color: #050A26; }
 
 .wrap-header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
   width: 100%;
-  position: relative;
+  height: 120px;
   margin: 0 auto;
-  height: 120px; }
+  background-color: #fff;
+  opacity: .95; }
 
 .brand-nav {
   display: flex;
@@ -76,6 +84,7 @@ body {
   align-items: center;
   width: 300px; }
   .brand-nav .imgLogo {
+    top: 15px;
     width: 120px;
     margin-right: 19px; }
   .brand-nav .textLogo {
@@ -88,7 +97,6 @@ body {
     color: #C9801D; }
 
 .wrap-carousel {
-  position: relative;
   width: 100%;
   margin: 0 auto;
   height: 540px; }

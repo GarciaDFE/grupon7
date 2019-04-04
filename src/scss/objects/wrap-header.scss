@@ -1,6 +1,11 @@
 .wrap-header {
+    position: fixed;
+    z-index: 100;
+    top:0;
+    left: 0;
     width: 100%;
-    position: relative;
-    margin: 0 auto;
     height: 120px;
+    margin: 0 auto;
+    background-color: #fff;
+    opacity: .95;
 }

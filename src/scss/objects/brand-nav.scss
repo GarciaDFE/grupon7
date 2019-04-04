@@ -1,13 +1,18 @@
 .brand-nav {
    display: flex;
+   // position: relative;
    justify-content: flex-start;
    align-items: center;
    width: 300px;
    .imgLogo {
+      // position: absolute;
+      top: 15px;
       width: 120px;
       margin-right: 19px;
    }
    .textLogo {
+      // position: absolute;
+      // left: 120px;
       font-size: 28px;
       font-weight: normal;
       text-transform: uppercase;
