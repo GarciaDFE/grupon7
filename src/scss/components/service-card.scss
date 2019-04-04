@@ -8,14 +8,28 @@
    @media all and /* de 600px a 899px */
       (min-width: $break-phone) and (max-width: $break-tablet - 1) {
          justify-content: center;
-         align-items: flex-end;
          margin: 0 20px 50px;
+   }
+   @media all and /* de 320px a 599px */
+      (min-width: $break-min) and (max-width: $break-phone - 1) {
+         height: 550px;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         margin: 0 10px 50px;
    }
    .image {
       width: 360px;
       @media all and /* de 600px a 899px */
          (min-width: $break-phone) and (max-width: $break-tablet - 1) {
             display: none;
+      }
+      img {
+         @media all and /* de 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+               width: 100%;
+               text-align: center;
+         }
       }
    }
    .content {
@@ -25,18 +39,35 @@
       flex-wrap: wrap;
       width: 680px;
       height: 260px;
+      @media all and /* de 320px a 599px */
+         (min-width: $break-min) and (max-width: $break-phone - 1) {
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            width: 100%;
+      }
       .title {
          margin-bottom: 5px;
          font-size: 40px;
          font-weight: bold;
          color: $color-primary-dark;
          margin-right: 20px;
+         @media all and /* de 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+               margin-top: -280px;
+               font-size: 30px;
+               margin-right: 0;
+         }
       }
       .subtitle {
          margin-bottom: 10px;
          font-size: 28px;
          font-weight: normal;
          color: $color-primary-medium;
+         @media all and /* de 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+               font-size: 22px;
+         }
       }
       &.-invert {
          .title {
@@ -56,9 +87,22 @@
          padding: 20px;
          color: $color-primary-medium;
          border: 1px solid $color-primary-medium;
+         @media all and /* de 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+               padding: 10px;
+               height: auto;
+         }
+
          .description {
             font-size: 18px;
             line-height: 22px;
+            @media all and /* de 320px a 599px */
+               (min-width: $break-min) and (max-width: $break-phone - 1) {
+                  font-size: 16px;
+                  line-height: 20px;
+                  margin-bottom: 10px;
+            }
+
          }
          .btn {
             align-self: flex-end;
