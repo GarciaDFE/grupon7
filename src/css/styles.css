@@ -127,15 +127,12 @@ body {
     font-size: 50px;
     font-weight: bold;
     text-align: center; }
-<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-segments .title {
         font-size: 45px; } }
-=======
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-segments .title {
         font-size: 30px; } }
->>>>>>> break600-900
     .main-segments .title .separator {
       margin: 0 20px; }
     .main-segments .title .-alternate {
@@ -236,7 +233,6 @@ body {
   margin: 0 auto;
   height: 100%;
   padding: 10px 0 10px 67px; }
-<<<<<<< HEAD
   .main-navigation .main-btnMenu {
     visibility: hidden; }
   @media all and (min-width: 1101px) and (max-width: 1199px) {
@@ -248,16 +244,6 @@ body {
   @media all and (max-width: 899px) {
     .main-navigation .main-btnMenu {
       visibility: visible; } }
-=======
-  @media all and (max-width: 899px) {
-    .main-navigation {
-      padding: 10px 40px; } }
-  .main-navigation .btn-menu {
-    display: none; }
-    @media all and (max-width: 899px) {
-      .main-navigation .btn-menu {
-        display: block; } }
->>>>>>> break600-900
 
 .nav-bar {
   display: flex;
@@ -290,7 +276,6 @@ body {
     .nav-bar > .menu > .item {
       display: inline-block;
       padding-right: 50px; }
-<<<<<<< HEAD
       @media all and (min-width: 1101px) and (max-width: 1199px) {
         .nav-bar > .menu > .item {
           padding-right: 45px; } }
@@ -302,13 +287,11 @@ body {
         .nav-bar > .menu > .item {
           padding-right: 27px;
           font-size: 20px; } }
-=======
       @media all and (max-width: 899px) {
         .nav-bar > .menu > .item {
           width: 100%;
           text-align: left;
           border-bottom: 1px solid white; } }
->>>>>>> break600-900
       .nav-bar > .menu > .item > .action {
         color: #050A26;
         list-style: none;
@@ -470,10 +453,14 @@ body {
   max-width: 1060px;
   height: 260px;
   margin: 0 auto 120px; }
-<<<<<<< HEAD
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .service-card {
       margin: 0 20px 80px; } }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .service-card {
+      justify-content: center;
+      align-items: flex-end;
+      margin: 0 20px 50px; } }
   .service-card .image {
     width: 360px; }
     .service-card .image img {
@@ -482,18 +469,9 @@ body {
       .service-card .image {
         width: 35%;
         margin-right: 20px; } }
-=======
-  @media all and (min-width: 600px) and (max-width: 899px) {
-    .service-card {
-      justify-content: center;
-      align-items: flex-end;
-      margin: 0 20px 50px; } }
-  .service-card .image {
-    width: 360px; }
     @media all and (min-width: 600px) and (max-width: 899px) {
       .service-card .image {
         display: none; } }
->>>>>>> break600-900
   .service-card .content {
     display: flex;
     justify-content: flex-start;
@@ -595,17 +573,14 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 90px; }
-<<<<<<< HEAD
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .main-footer {
       padding: 50px; } }
-=======
   @media all and (min-width: 600px) and (max-width: 899px) {
     .main-footer {
       flex-wrap: wrap;
       padding: 50px;
       justify-content: space-around; } }
->>>>>>> break600-900
   .main-footer .logo {
     width: 161px;
     font-size: 30px;
@@ -630,20 +605,17 @@ body {
     font-size: 24px;
     font-weight: normal;
     line-height: 29px; }
-<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-footer .local {
         width: 380px;
         font-size: 20px;
         margin-left: 20px; } }
-=======
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-footer .local {
         order: 2;
         font-size: 22px;
         line-height: 25px;
         text-align: center; } }
->>>>>>> break600-900
     .main-footer .local .icon {
       display: inline-block;
       margin: 30px 32px 0 0;
@@ -660,17 +632,14 @@ body {
     font-size: 30px;
     font-weight: bold;
     line-height: 36px; }
-<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-footer .contacts {
         width: 252px;
         font-size: 26px;
         line-height: 32px; } }
-=======
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-footer .contacts {
         line-height: 25px; } }
->>>>>>> break600-900
     .main-footer .contacts .contact {
       margin-bottom: 18px; }
       .main-footer .contacts .contact.-whatsapp::before {
