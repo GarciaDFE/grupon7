@@ -5,9 +5,6 @@ const $wrapPartners = document.querySelector(".wrap-partners");
 const $btnV1 = document.querySelector(".-v1");
 const $btnV2 = document.querySelector(".-v2");
 
-console.log($wrapPartners);
-console.log($originPartners);
-
 $originServices.addEventListener("click", function() {
   smoothScroll($wrapServices, 1000);
 });

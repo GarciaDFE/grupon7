@@ -5,8 +5,8 @@
    max-width: 1060px;
    height: 260px;
    margin: 0 auto 120px;
-   .image {
-      width: 360px;
+
+   .image { 
       position: relative;
       &:after {
       content: "";
@@ -18,10 +18,16 @@
       opacity: 0;
       transition: opacity 300ms linear;
       }
-      &:hover:after {
+     
+      &:hover:after, &.hovereffect:after {
          background-color: $color-primary-medium;
          opacity: 0.4;
       }
+
+      // &.hovereffect:after {
+      //    opacity: 0.4;
+      // }
+
    }
    
    .content {
@@ -80,8 +86,8 @@
             background-color: $color-secondary-light;
             border-radius: 5px;
             cursor: pointer;
-            transition: all 500ms linear;
-            &:hover {
+            transition: all 1000ms linear;
+            &:hover, &.hovereffect {
                border: none;
                color: $color-secondary-light;
                background-color: $color-primary-dark;
@@ -93,3 +99,4 @@
 .service-card:last-child {
    margin-bottom: 0;
 }
+

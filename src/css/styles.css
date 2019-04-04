@@ -319,7 +319,6 @@ body {
   height: 260px;
   margin: 0 auto 120px; }
   .service-card .image {
-    width: 360px;
     position: relative; }
     .service-card .image:after {
       content: "";
@@ -330,7 +329,7 @@ body {
       background-color: #C9801D;
       opacity: 0;
       transition: opacity 300ms linear; }
-    .service-card .image:hover:after {
+    .service-card .image:hover:after, .service-card .image.hovereffect:after {
       background-color: #C9801D;
       opacity: 0.4; }
   .service-card .content {
@@ -382,8 +381,8 @@ body {
         background-color: white;
         border-radius: 5px;
         cursor: pointer;
-        transition: all 500ms linear; }
-        .service-card .content .square .btn:hover {
+        transition: all 1000ms linear; }
+        .service-card .content .square .btn:hover, .service-card .content .square .btn.hovereffect {
           border: none;
           color: white;
           background-color: #050A26; }
