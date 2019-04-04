@@ -1,6 +1,6 @@
 .main-carousel {
    max-width: $break-desktop;
-   height: 540px;
+   height: 100%;
    margin: 0 auto;
    .cards {
       position: relative;
@@ -18,6 +18,11 @@
          background-position: center;
          opacity: 0;
          transition: opacity 0.5s linear;
+         @media all and  /* até 899px */
+            (max-width: $break-tablet - 1) {
+               height: 340px;
+         }
+
          &.-isActive{
             opacity: 1;
             transition: opacity 0.5s linear;
@@ -25,18 +30,32 @@
          .title,
          .text {
             max-width: 395px;
+            margin: 0 0 20px 130px;
+            @media all and /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  max-width: 300px;
+                  margin-left: 100px;
+            }
+
          }
          .title {
             font-size: 70px;
             font-weight: bold;
             color: $color-primary-dark;
-            margin: 0 0 20px 130px;
+            @media all and /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  font-size: 40px;
+            }
+
          }
          .text {
             font-size: 30px;
             color: $color-primary-dark;
-            margin: 0 0 20px 130px;
             line-height: 1.2;
+            @media all and /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  font-size: 20px;
+            }
          }
          .btn {
             border: none;
@@ -50,6 +69,13 @@
             margin-left: 340px;
             cursor: pointer;
             z-index: 5;
+            @media all and /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  width: 150px;
+                  height: 50px;
+                  font-size: 20px;
+            }
+
             &:hover {
                background-color: $color-primary-dark;
             }
@@ -59,6 +85,11 @@
          position: relative;
          text-align: center;
          top: 505px;
+         @media all and /* até 899px */
+            (max-width: $break-tablet - 1) {
+               top: 310px;
+         }
+
          .bullet {
             display: inline-block;
             width: 16px;

@@ -90,11 +90,34 @@ body {
     .brand-nav {
       width: 285px; } }
 
+.btn-menu {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  right: 0; }
+  .btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #050A26;
+    margin: 6px 0;
+    transition: 500ms; }
+  .btn-menu.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px); }
+  .btn-menu.change .bar2 {
+    opacity: 0; }
+  .btn-menu.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -6px);
+    transform: rotate(45deg) translate(-8px, -6px); }
+
 .wrap-carousel {
   position: relative;
   width: 100%;
   margin: 0 auto;
   height: 540px; }
+  @media all and (max-width: 899px) {
+    .wrap-carousel {
+      height: 340px; } }
 
 .main-segments {
   max-width: 1200px;
@@ -104,9 +127,15 @@ body {
     font-size: 50px;
     font-weight: bold;
     text-align: center; }
+<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-segments .title {
         font-size: 45px; } }
+=======
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-segments .title {
+        font-size: 30px; } }
+>>>>>>> break600-900
     .main-segments .title .separator {
       margin: 0 20px; }
     .main-segments .title .-alternate {
@@ -132,10 +161,18 @@ body {
       font-weight: bold;
       margin-right: 20px;
       color: #050A26; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .wrap-services .wrap-title > .title {
+          font-size: 40px;
+          margin-right: 10px; } }
     .wrap-services .wrap-title > .subtitle {
       font-size: 24px;
       margin-top: 10px;
       color: #C9801D; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .wrap-services .wrap-title > .subtitle {
+          font-size: 20px;
+          margin-right: 5px; } }
       .wrap-services .wrap-title > .subtitle .-destaque {
         text-transform: uppercase; }
 
@@ -149,17 +186,29 @@ body {
     align-items: center;
     margin-bottom: 20px;
     text-align: center; }
+    @media all and (min-width: 800px) and (max-width: 899px) {
+      .wrap-partners .wrap-title {
+        margin: 0 50px 10px 50px; } }
+    @media all and (min-width: 600px) and (max-width: 799px) {
+      .wrap-partners .wrap-title {
+        margin: 0 20px 10px 20px; } }
     .wrap-partners .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
-      margin-right: 20px;
-      margin-left: 150px;
+      margin: 0 20px 0 150px;
       color: #050A26; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .wrap-partners .wrap-title > .title {
+          margin: 0 10px 0 0; } }
     .wrap-partners .wrap-title > .subtitle {
       font-size: 24px;
       line-height: 1.2;
       color: #C9801D;
       text-align: left; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .wrap-partners .wrap-title > .subtitle {
+          font-size: 20px;
+          margin-top: 5px; } }
 
 .btn-totop {
   max-width: 1060px;
@@ -187,6 +236,7 @@ body {
   margin: 0 auto;
   height: 100%;
   padding: 10px 0 10px 67px; }
+<<<<<<< HEAD
   .main-navigation .main-btnMenu {
     visibility: hidden; }
   @media all and (min-width: 1101px) and (max-width: 1199px) {
@@ -198,6 +248,16 @@ body {
   @media all and (max-width: 899px) {
     .main-navigation .main-btnMenu {
       visibility: visible; } }
+=======
+  @media all and (max-width: 899px) {
+    .main-navigation {
+      padding: 10px 40px; } }
+  .main-navigation .btn-menu {
+    display: none; }
+    @media all and (max-width: 899px) {
+      .main-navigation .btn-menu {
+        display: block; } }
+>>>>>>> break600-900
 
 .nav-bar {
   display: flex;
@@ -208,9 +268,29 @@ body {
     text-align: right;
     height: 120px;
     line-height: 120px; }
+    @media all and (max-width: 899px) {
+      .nav-bar > .menu {
+        position: absolute;
+        display: block;
+        background-color: #F9CE9B;
+        width: 260px;
+        height: 350px;
+        top: 120px;
+        right: 0;
+        opacity: 0.9;
+        z-index: 10;
+        font-weight: bold;
+        line-height: 50px;
+        padding: 10px 20px;
+        transform: translateX(100%);
+        transition: transform 300ms linear; } }
+    .nav-bar > .menu.menu-open {
+      transform: translateX(0);
+      visibility: visible; }
     .nav-bar > .menu > .item {
       display: inline-block;
       padding-right: 50px; }
+<<<<<<< HEAD
       @media all and (min-width: 1101px) and (max-width: 1199px) {
         .nav-bar > .menu > .item {
           padding-right: 45px; } }
@@ -222,6 +302,13 @@ body {
         .nav-bar > .menu > .item {
           padding-right: 27px;
           font-size: 20px; } }
+=======
+      @media all and (max-width: 899px) {
+        .nav-bar > .menu > .item {
+          width: 100%;
+          text-align: left;
+          border-bottom: 1px solid white; } }
+>>>>>>> break600-900
       .nav-bar > .menu > .item > .action {
         color: #050A26;
         list-style: none;
@@ -242,6 +329,9 @@ body {
     color: white;
     padding: 0 100px 0 28px;
     cursor: pointer; }
+    @media all and (max-width: 899px) {
+      .nav-bar > .cotacao {
+        display: none; } }
     .nav-bar > .cotacao:hover {
       background-color: #050A26; }
     @media all and (min-width: 1101px) and (max-width: 1199px) {
@@ -277,7 +367,7 @@ body {
 
 .main-carousel {
   max-width: 1200px;
-  height: 540px;
+  height: 100%;
   margin: 0 auto; }
   .main-carousel .cards {
     position: relative;
@@ -295,22 +385,35 @@ body {
       background-position: center;
       opacity: 0;
       transition: opacity 0.5s linear; }
+      @media all and (max-width: 899px) {
+        .main-carousel .cards .card {
+          height: 340px; } }
       .main-carousel .cards .card.-isActive {
         opacity: 1;
         transition: opacity 0.5s linear; }
       .main-carousel .cards .card .title,
       .main-carousel .cards .card .text {
-        max-width: 395px; }
+        max-width: 395px;
+        margin: 0 0 20px 130px; }
+        @media all and (max-width: 899px) {
+          .main-carousel .cards .card .title,
+          .main-carousel .cards .card .text {
+            max-width: 300px;
+            margin-left: 100px; } }
       .main-carousel .cards .card .title {
         font-size: 70px;
         font-weight: bold;
-        color: #050A26;
-        margin: 0 0 20px 130px; }
+        color: #050A26; }
+        @media all and (max-width: 899px) {
+          .main-carousel .cards .card .title {
+            font-size: 40px; } }
       .main-carousel .cards .card .text {
         font-size: 30px;
         color: #050A26;
-        margin: 0 0 20px 130px;
         line-height: 1.2; }
+        @media all and (max-width: 899px) {
+          .main-carousel .cards .card .text {
+            font-size: 20px; } }
       .main-carousel .cards .card .btn {
         border: none;
         width: 165px;
@@ -323,12 +426,20 @@ body {
         margin-left: 340px;
         cursor: pointer;
         z-index: 5; }
+        @media all and (max-width: 899px) {
+          .main-carousel .cards .card .btn {
+            width: 150px;
+            height: 50px;
+            font-size: 20px; } }
         .main-carousel .cards .card .btn:hover {
           background-color: #050A26; }
     .main-carousel .cards .bullets {
       position: relative;
       text-align: center;
       top: 505px; }
+      @media all and (max-width: 899px) {
+        .main-carousel .cards .bullets {
+          top: 310px; } }
       .main-carousel .cards .bullets .bullet {
         display: inline-block;
         width: 16px;
@@ -359,6 +470,7 @@ body {
   max-width: 1060px;
   height: 260px;
   margin: 0 auto 120px; }
+<<<<<<< HEAD
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .service-card {
       margin: 0 20px 80px; } }
@@ -370,6 +482,18 @@ body {
       .service-card .image {
         width: 35%;
         margin-right: 20px; } }
+=======
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .service-card {
+      justify-content: center;
+      align-items: flex-end;
+      margin: 0 20px 50px; } }
+  .service-card .image {
+    width: 360px; }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .service-card .image {
+        display: none; } }
+>>>>>>> break600-900
   .service-card .content {
     display: flex;
     justify-content: flex-start;
@@ -446,12 +570,21 @@ body {
   max-width: 1060px;
   border: 3px solid #C9801D;
   padding: 20px; }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .main-partners {
+      margin: 0 10px; } }
   .main-partners .logo {
     width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 0; }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-partners .logo {
+        margin: 30px 0; } }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-partners .logo img {
+        width: 50%; } }
 
 .main-footer {
   max-width: 1200px;
@@ -462,9 +595,17 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 90px; }
+<<<<<<< HEAD
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .main-footer {
       padding: 50px; } }
+=======
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .main-footer {
+      flex-wrap: wrap;
+      padding: 50px;
+      justify-content: space-around; } }
+>>>>>>> break600-900
   .main-footer .logo {
     width: 161px;
     font-size: 30px;
@@ -476,6 +617,7 @@ body {
       .main-footer .logo {
         font-size: 28px; } }
     .main-footer .logo img {
+      width: 100%;
       margin-bottom: 5px; }
       @media all and (min-width: 900px) and (max-width: 1199px) {
         .main-footer .logo img {
@@ -488,15 +630,27 @@ body {
     font-size: 24px;
     font-weight: normal;
     line-height: 29px; }
+<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-footer .local {
         width: 380px;
         font-size: 20px;
         margin-left: 20px; } }
+=======
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-footer .local {
+        order: 2;
+        font-size: 22px;
+        line-height: 25px;
+        text-align: center; } }
+>>>>>>> break600-900
     .main-footer .local .icon {
       display: inline-block;
       margin: 30px 32px 0 0;
       transition: transform 0.2s linear; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-footer .local .icon {
+          margin: 15px 25px 0 0; } }
       .main-footer .local .icon:hover {
         transform: scale(1.1);
         transition: transform 0.2s linear; }
@@ -506,11 +660,17 @@ body {
     font-size: 30px;
     font-weight: bold;
     line-height: 36px; }
+<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-footer .contacts {
         width: 252px;
         font-size: 26px;
         line-height: 32px; } }
+=======
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-footer .contacts {
+        line-height: 25px; } }
+>>>>>>> break600-900
     .main-footer .contacts .contact {
       margin-bottom: 18px; }
       .main-footer .contacts .contact.-whatsapp::before {
@@ -536,6 +696,12 @@ body {
       background-color: #C9801D;
       color: white;
       cursor: pointer; }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-footer .contacts .btn {
+          width: 230px;
+          height: 50px;
+          margin-bottom: 35px;
+          font-size: 20px; } }
       .main-footer .contacts .btn:hover {
         background-color: white;
         color: #C9801D; }

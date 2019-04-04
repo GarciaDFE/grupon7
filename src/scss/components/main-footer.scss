@@ -7,8 +7,15 @@
    justify-content: space-between;
    align-items: flex-start;
    padding: 90px;
-   @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-      padding: 50px;
+   @media all and /* de 900px a 1199px */
+      (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+         padding: 50px;
+   }
+   @media all and /* de 600px a 899px */
+      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+         flex-wrap: wrap;
+         padding: 50px;
+         justify-content: space-around;
    }
    .logo {
       width: 161px;
@@ -17,13 +24,16 @@
       text-transform: uppercase;
       letter-spacing: 6px;
       text-align: center;
-      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         font-size: 28px;
+      @media all and /* de 900px a 1199px */
+         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+            font-size: 28px;
       }
       img {
+         width: 100%;
          margin-bottom: 5px;
-         @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-            width: 140px;
+         @media all and  /* de 900px a 1199px */
+            (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+               width: 140px;
          }
       }
       .-destaque {
@@ -36,15 +46,27 @@
       font-size: 24px;
       font-weight: normal;
       line-height: 29px;
-      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         width: 380px;
-         font-size: 20px;
-         margin-left: 20px;
+      @media all and /* 900px a 1199px */
+         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+            width: 380px;
+            font-size: 20px;
+            margin-left: 20px;
+      }
+      @media all and /* 600px a 899px */
+         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            order: 2;
+            font-size: 22px;
+            line-height: 25px;
+            text-align: center;
       }
       .icon {
          display: inline-block;
          margin: 30px 32px 0 0;
          transition: transform 0.2s linear;
+         @media all and /* de 600px a 899px */
+            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+               margin: 15px 25px 0 0;
+         }
          &:hover {
             transform: scale(1.1);
             transition: transform 0.2s linear;
@@ -57,12 +79,16 @@
       font-size: 30px;
       font-weight: bold;
       line-height: 36px;
-      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         width: 252px;
-         font-size: 26px;
-         line-height: 32px;
+      @media all and /* 900px a 1199px */
+         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+            width: 252px;
+            font-size: 26px;
+            line-height: 32px;
       }
-
+      @media all and /* 600px a 899px */
+         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            line-height: 25px;
+      }
       .contact {
          margin-bottom: 18px;
          &.-whatsapp::before {
@@ -92,11 +118,17 @@
          background-color: $color-primary-medium;
          color: $color-secondary-light;
          cursor: pointer;
+         @media all and /* de 600px a 899px */
+            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+               width: 230px;
+               height: 50px;
+               margin-bottom: 35px;
+               font-size: 20px;
+         }
          &:hover {
             background-color: $color-secondary-light;
             color: $color-primary-medium;
          }
       }
-
    }
 }

@@ -6,11 +6,25 @@
    max-width: 1060px;
    border: 3px solid $color-primary-medium;
    padding: 20px;
+   @media all and /* de 600px a 899px */
+      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+         margin: 0 10px;
+   }
    .logo {
       width: 33%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 50px 0;
+      @media all and /* de 600px a 899px */
+         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            margin: 30px 0;
+      }
+      img {
+         @media all and /* de 600px a 899px */
+            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+               width: 50%;
+         }
+      }
    }
 }

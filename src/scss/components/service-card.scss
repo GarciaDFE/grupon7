@@ -5,17 +5,29 @@
    max-width: 1060px;
    height: 260px;
    margin: 0 auto 120px;
-   @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-      margin: 0 20px 80px;
+   @media all and /* 900px a 1199px */
+      (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+         margin: 0 20px 80px;
+   }
+   @media all and /* 600px a 899px */
+      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+         justify-content: center;
+         align-items: flex-end;
+         margin: 0 20px 50px;
    }
    .image {
       img {
          width: 100%;
       }
       width: 360px;
-      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         width: 35%;
-         margin-right: 20px;
+      @media all and /* 900px a 1199px */
+         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+            width: 35%;
+            margin-right: 20px;
+      }
+      @media all and /* 600px a 899px */
+         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            display: none;
       }
    }
    .content {
@@ -25,29 +37,30 @@
       flex-wrap: wrap;
       width: 680px;
       height: 260px;
-      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         width: 65%;
+      @media all and /* 900px a 1199px */
+         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+            width: 65%;
       }
-
       .title {
          margin-bottom: 5px;
          font-size: 40px;
          font-weight: bold;
          color: $color-primary-dark;
          margin-right: 20px;
-         @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-            font-size: 35px;
-            margin-right: 15px;
+         @media all and /* 900px a 1199px */
+            (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+               font-size: 35px;
+               margin-right: 15px;
          }
-
       }
       .subtitle {
          margin-bottom: 10px;
          font-size: 28px;
          font-weight: normal;
          color: $color-primary-medium;
-         @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-            font-size: 25px;
+         @media all and /* 900px a 1199px */
+            (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+               font-size: 25px;
          }
       }
       &.-invert {

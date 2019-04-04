@@ -2,19 +2,29 @@
    width: 100%;
    max-width: 1060px;
    margin: 0 auto;
-
     .wrap-title {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
         text-align: center;
+        @media all and /* de 800px a 899px */
+            (min-width: $break-tablet - 100) and (max-width: $break-tablet - 1) {
+                margin: 0 50px 10px 50px;
+        }
+        @media all and /* de 600px a 799px */
+            (min-width: $break-phone) and (max-width: $break-tablet - 101) {
+                margin: 0 20px 10px 20px;
+        }
         > .title {
             font-size: 50px;
             font-weight: bold;
-            margin-right: 20px;
-            margin-left: 150px;
+            margin: 0 20px 0 150px;
             color: $color-primary-dark;
+            @media all and /* de 600px a 899px */
+                (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+                    margin: 0 10px 0 0;
+            }
         }
         > .subtitle {
             font-size: 24px;
@@ -22,6 +32,11 @@
             //margin-top: 10px;
             color: $color-primary-medium;
             text-align: left;
+            @media all and /* de 600px a 899px */
+                (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+                    font-size: 20px;
+                    margin-top: 5px;
+            }
         }
     }
 }

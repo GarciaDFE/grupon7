@@ -1,4 +1,8 @@
 node_modules/
 .DS_Store
+<<<<<<< HEAD
 dist/
 package-lock.json
+=======
+dist/
+>>>>>>> break600-900
