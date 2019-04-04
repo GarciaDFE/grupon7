@@ -17,9 +17,6 @@
       (min-width: $break-tablet) and (max-width: $break-desktop - 100) {
          padding: 10px 0 10px 25px;
    }
-
-
-
    @media all and (max-width: $break-tablet - 1) {
       .main-btnMenu {
          visibility: visible;

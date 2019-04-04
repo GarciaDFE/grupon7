@@ -66,9 +66,9 @@ body {
 
 .wrap-header {
   width: 100%;
+  height: 120px;
   position: relative;
-  margin: 0 auto;
-  height: 120px; }
+  margin: 0 auto; }
 
 .brand-nav {
   display: flex;
@@ -170,7 +170,6 @@ body {
   .btn-totop:hover {
     opacity: 1;
     transition: opacity 0.2s linear; }
-<<<<<<< HEAD
   .btn-totop img {
     margin-right: 10px; }
 
@@ -179,11 +178,6 @@ body {
 
 .btn-totop.-v2 {
   margin: 135px auto 21px; }
-=======
-  @media all and (min-width: 900px) and (max-width: 1199px) {
-    .btn-totop {
-      margin: 40px 20px 40px auto; } }
->>>>>>> break900-1200
 
 .main-navigation {
   display: flex;
