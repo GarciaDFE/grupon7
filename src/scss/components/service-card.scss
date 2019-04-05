@@ -38,10 +38,22 @@
          align-items: center;
    }
    .image {
-      img {
-         width: 100%;
-      }
       width: 360px;
+      position: relative;
+      &:after {
+         content: "";
+         position: absolute;
+         left: 0;
+         height: 240px;
+         width: 100%;
+         background-color: $color-primary-medium;
+         opacity: 0;
+         transition: opacity 300ms linear;
+      }
+      &:hover:after {
+         background-color: $color-primary-medium;
+         opacity: 0.5;
+      }
       @media all and /* 900px a 1199px */
          (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
             width: 35%;
@@ -52,6 +64,7 @@
             display: none;
       }
       img {
+         width: 100%;
          @media all and /* 320px a 599px */
             (min-width: $break-min) and (max-width: $break-phone - 1) {
                width: 100%;
