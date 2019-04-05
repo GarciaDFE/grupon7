@@ -21,7 +21,7 @@
    .main-btnMenu {
       display: none;
       @media all and /* 340px a 899px */
-         (max-width: $break-tablet - 1) { 
+         (max-width: $break-phone - 1) { 
             display: block;
       }
    }

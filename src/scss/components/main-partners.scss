@@ -6,8 +6,8 @@
    max-width: 1060px;
    border: 3px solid $color-primary-medium;
    padding: 20px;
-   @media all and /* de 600px a 899px */
-      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+   @media all and /* de 600px a 1199px */
+      (min-width: $break-phone) and (max-width: $break-desktop - 1) {
          margin: 0 10px;
    }
    @media all and /* de 320px a 599px */
