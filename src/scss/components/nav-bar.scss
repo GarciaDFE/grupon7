@@ -5,8 +5,8 @@
    font-size: 24px;
    > .menu {
       text-align: right;
-      height: 120px;
-      line-height: 120px;
+      //height: 120px;
+      //line-height: 120px;
       @media all and  /* 600px a 899px */
          (min-width: $break-phone) and (max-width: $break-tablet - 1) {
             position: absolute;
@@ -74,18 +74,37 @@
             }
          }
          > .action {
+            position: relative;
             color: $color-primary-dark;
             list-style: none;
             text-decoration: none;
-            &.-isActive,
+            cursor: pointer;
+            &:after {
+               @media all and  /* a partir de  900px */
+                  (min-width: $break-tablet) {
+                     content: "";
+                     height: 4px;
+                     width: 100%;
+                     background-color: $color-primary-medium;
+                     position: absolute;
+                     bottom: -5px;
+                     left: 0;
+                     transform: scaleX(0);
+                     transition: transform 200ms linear;
+                     transform-origin: center;
+               }
+            }
             &:hover {
-               border-bottom: 2px solid $color-primary-medium;
                color: $color-primary-medium;
                @media all and  /* até 899px */
                   (max-width: $break-tablet - 1) {
                      border: none;
                      color: $color-primary-medium;
                }
+            }
+            &.-isActive,
+            &:hover:after {
+               transform: scale(1);
             }
          }
          .submenu {
