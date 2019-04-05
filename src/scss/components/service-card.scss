@@ -7,20 +7,23 @@
    margin: 0 auto 120px;
    @media all and /* 900px a 1199px */
       (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         margin: 0 20px 80px;
+         width: 95%;
+         margin: 0 auto 80px;
    }
    @media all and /* 600px a 899px */
       (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+         width: 95%;
          justify-content: center;
-         margin: 0 20px 50px;
+         margin: 0 auto 60px;
    }
    @media all and /* de 320px a 599px */
       (min-width: $break-min) and (max-width: $break-phone - 1) {
-         height: 550px;
+         width: 95%;
+         height: auto;
          justify-content: center;
          flex-direction: column;
          align-items: center;
-         margin: 0 10px 50px;
+         margin: 0 auto 80px;
    }
    .image {
       img {
@@ -53,27 +56,28 @@
       height: 260px;
       @media all and /* 320px a 599px */
          (min-width: $break-min) and (max-width: $break-phone - 1) {
-            justify-content: center;
-            align-items: flex-start;
-            flex-wrap: wrap;
+            position: relative;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
             width: 100%;
+            height: 100%;
       }
       .title {
-         margin-bottom: 5px;
          font-size: 40px;
          font-weight: bold;
          color: $color-primary-dark;
-         margin-right: 20px;
-         // @media all and /* 900px a 1199px */
-         //    (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         //       font-size: 35px;
-         //       margin-right: 15px;
-         // }
+         margin: 0 20px 5px 0;
+         @media all and /* 900px a 1199px */
+            (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+               font-size: 35px;
+               margin: 0 20px 0 0;
+         }
          @media all and /* de 320px a 599px */
             (min-width: $break-min) and (max-width: $break-phone - 1) {
-               margin-top: -280px;
+               position: absolute;
+               top: -280px;
                font-size: 30px;
-               margin-right: 0;
          }
       }
       .subtitle {
@@ -84,10 +88,12 @@
          @media all and /* 900px a 1199px */
             (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
                font-size: 25px;
+               margin-bottom: 3px;
          }
          @media all and /* de 320px a 599px */
             (min-width: $break-min) and (max-width: $break-phone - 1) {
                font-size: 22px;
+               margin-bottom: 20px;
          }
       }
       &.-invert {

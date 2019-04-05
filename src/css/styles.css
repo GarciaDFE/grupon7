@@ -142,7 +142,8 @@ body {
 
 .wrap-services {
   width: 100%;
-  padding-top: 20px; }
+  padding-top: 20px;
+  margin: 0 auto; }
   .wrap-services .wrap-title {
     display: flex;
     justify-content: center;
@@ -153,8 +154,7 @@ body {
       .wrap-services .wrap-title {
         justify-content: flex-start;
         flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 40px; } }
+        align-items: flex-start; } }
     .wrap-services .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
@@ -555,18 +555,21 @@ body {
   margin: 0 auto 120px; }
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .service-card {
-      margin: 0 20px 80px; } }
+      width: 95%;
+      margin: 0 auto 80px; } }
   @media all and (min-width: 600px) and (max-width: 899px) {
     .service-card {
+      width: 95%;
       justify-content: center;
-      margin: 0 20px 50px; } }
+      margin: 0 auto 60px; } }
   @media all and (min-width: 320px) and (max-width: 599px) {
     .service-card {
-      height: 550px;
+      width: 95%;
+      height: auto;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      margin: 0 10px 50px; } }
+      margin: 0 auto 80px; } }
   .service-card .image {
     width: 360px; }
     .service-card .image img {
@@ -591,21 +594,26 @@ body {
     height: 260px; }
     @media all and (min-width: 320px) and (max-width: 599px) {
       .service-card .content {
-        justify-content: center;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        width: 100%; } }
+        position: relative;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%; } }
     .service-card .content .title {
-      margin-bottom: 5px;
       font-size: 40px;
       font-weight: bold;
       color: #050A26;
-      margin-right: 20px; }
+      margin: 0 20px 5px 0; }
+      @media all and (min-width: 900px) and (max-width: 1199px) {
+        .service-card .content .title {
+          font-size: 35px;
+          margin: 0 20px 0 0; } }
       @media all and (min-width: 320px) and (max-width: 599px) {
         .service-card .content .title {
-          margin-top: -280px;
-          font-size: 30px;
-          margin-right: 0; } }
+          position: absolute;
+          top: -280px;
+          font-size: 30px; } }
     .service-card .content .subtitle {
       margin-bottom: 10px;
       font-size: 28px;
@@ -613,10 +621,12 @@ body {
       color: #C9801D; }
       @media all and (min-width: 900px) and (max-width: 1199px) {
         .service-card .content .subtitle {
-          font-size: 25px; } }
+          font-size: 25px;
+          margin-bottom: 3px; } }
       @media all and (min-width: 320px) and (max-width: 599px) {
         .service-card .content .subtitle {
-          font-size: 22px; } }
+          font-size: 22px;
+          margin-bottom: 20px; } }
     .service-card .content.-invert .title {
       color: #C9801D; }
     .service-card .content.-invert .subtitle {
