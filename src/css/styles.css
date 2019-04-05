@@ -68,7 +68,17 @@ body {
   width: 100%;
   height: 120px;
   position: relative;
+<<<<<<< HEAD
   margin: 0 auto; }
+=======
+  margin: 0 auto;
+  height: 120px;
+  transition: height 300ms linear; }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .wrap-header {
+      height: 75px;
+      transition: height 300ms linear; } }
+>>>>>>> break320-600
 
 .brand-nav {
   display: flex;
@@ -78,6 +88,9 @@ body {
   .brand-nav .imgLogo {
     width: 120px;
     margin-right: 19px; }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .brand-nav .imgLogo {
+        display: none; } }
   .brand-nav .textLogo {
     font-size: 28px;
     font-weight: normal;
@@ -95,9 +108,12 @@ body {
   width: 100%;
   margin: 0 auto;
   height: 540px; }
-  @media all and (max-width: 899px) {
+  @media all and (min-width: 600px) and (max-width: 899px) {
     .wrap-carousel {
       height: 340px; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .wrap-carousel {
+      height: 240px; } }
 
 .main-segments {
   max-width: 1200px;
@@ -112,11 +128,21 @@ body {
         font-size: 45px; } }
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-segments .title {
-        font-size: 30px; } }
+        font-size: 32px; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-segments .title {
+        font-size: 32px; } }
     .main-segments .title .separator {
       margin: 0 20px; }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-segments .title .separator {
+          display: none; } }
     .main-segments .title .-alternate {
       color: #C9801D; }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-segments .title .-alternate {
+          display: block;
+          margin-bottom: 5px; } }
 
 .wrap-cards {
   position: relative;
@@ -133,6 +159,12 @@ body {
     align-items: center;
     margin-bottom: 70px;
     text-align: center; }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-services .wrap-title {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px; } }
     .wrap-services .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
@@ -142,6 +174,10 @@ body {
         .wrap-services .wrap-title > .title {
           font-size: 40px;
           margin-right: 10px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .wrap-services .wrap-title > .title {
+          font-size: 30px;
+          margin: 5px 20px; } }
     .wrap-services .wrap-title > .subtitle {
       font-size: 24px;
       margin-top: 10px;
@@ -150,6 +186,11 @@ body {
         .wrap-services .wrap-title > .subtitle {
           font-size: 20px;
           margin-right: 5px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .wrap-services .wrap-title > .subtitle {
+          font-size: 18px;
+          margin: 0 20px;
+          text-align: left; } }
       .wrap-services .wrap-title > .subtitle .-destaque {
         text-transform: uppercase; }
 
@@ -163,12 +204,12 @@ body {
     align-items: center;
     margin-bottom: 20px;
     text-align: center; }
-    @media all and (min-width: 800px) and (max-width: 899px) {
+    @media all and (min-width: 320px) and (max-width: 599px) {
       .wrap-partners .wrap-title {
-        margin: 0 50px 10px 50px; } }
-    @media all and (min-width: 600px) and (max-width: 799px) {
-      .wrap-partners .wrap-title {
-        margin: 0 20px 10px 20px; } }
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 10px 10px; } }
     .wrap-partners .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
@@ -176,6 +217,12 @@ body {
       color: #050A26; }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .wrap-partners .wrap-title > .title {
+          font-size: 40px;
+          margin: 0 10px 0 10px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .wrap-partners .wrap-title > .title {
+          display: block;
+          font-size: 30px;
           margin: 0 10px 0 0; } }
     .wrap-partners .wrap-title > .subtitle {
       font-size: 24px;
@@ -185,6 +232,10 @@ body {
       @media all and (min-width: 600px) and (max-width: 899px) {
         .wrap-partners .wrap-title > .subtitle {
           font-size: 20px;
+          margin-top: 5px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .wrap-partners .wrap-title > .subtitle {
+          font-size: 18px;
           margin-top: 5px; } }
 
 .btn-totop {
@@ -204,6 +255,24 @@ body {
 
 .btn-totop.-v2 {
   margin: 135px auto 21px; }
+
+.btn-cotacao {
+  display: none; }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .btn-cotacao {
+      display: block;
+      border: none;
+      width: 252px;
+      height: 78px;
+      margin: 0 auto;
+      font-family: inherit;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #C9801D;
+      color: white;
+      cursor: pointer; }
+      .btn-cotacao:hover {
+        background-color: #050A26; } }
 
 .main-navigation {
   display: flex;
@@ -237,7 +306,7 @@ body {
     text-align: right;
     height: 120px;
     line-height: 120px; }
-    @media all and (max-width: 899px) {
+    @media all and (min-width: 600px) and (max-width: 899px) {
       .nav-bar > .menu {
         position: absolute;
         display: block;
@@ -245,6 +314,22 @@ body {
         width: 260px;
         height: 350px;
         top: 120px;
+        right: 0;
+        opacity: 0.9;
+        z-index: 10;
+        font-weight: bold;
+        line-height: 50px;
+        padding: 10px 20px;
+        transform: translateX(100%);
+        transition: transform 300ms linear; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .nav-bar > .menu {
+        position: absolute;
+        display: block;
+        background-color: #F9CE9B;
+        width: 260px;
+        height: 350px;
+        top: 75px;
         right: 0;
         opacity: 0.9;
         z-index: 10;
@@ -273,14 +358,32 @@ body {
       @media all and (max-width: 899px) {
         .nav-bar > .menu > .item {
           width: 100%;
-          text-align: left;
+          text-align: left; } }
+      @media all and (max-width: 899px) {
+        .nav-bar > .menu > .item:not(:last-child) {
           border-bottom: 1px solid white; } }
       .nav-bar > .menu > .item > .action {
         color: #050A26;
         list-style: none;
         text-decoration: none; }
         .nav-bar > .menu > .item > .action.-isActive, .nav-bar > .menu > .item > .action:hover {
-          border-bottom: 2px solid #050A26; }
+          color: #C9801D; }
+      .nav-bar > .menu > .item .submenu {
+        width: 220px;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 40px;
+        text-decoration: none;
+        color: #050A26;
+        border-top: 1px solid white; }
+        .nav-bar > .menu > .item .submenu li {
+          padding-left: 10px; }
+          .nav-bar > .menu > .item .submenu li a {
+            text-decoration: none;
+            color: #050A26; }
+            .nav-bar > .menu > .item .submenu li a:hover {
+              text-decoration: none;
+              color: #C9801D; }
   .nav-bar > .cotacao {
     display: inline-block;
     border: none;
@@ -349,9 +452,13 @@ body {
       background-position: center;
       opacity: 0;
       transition: opacity 0.5s linear; }
-      @media all and (max-width: 899px) {
+      @media all and (min-width: 600px) and (max-width: 899px) {
         .main-carousel .cards .card {
           height: 340px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-carousel .cards .card {
+          height: 240px;
+          justify-content: space-between; } }
       .main-carousel .cards .card.-isActive {
         opacity: 1;
         transition: opacity 0.5s linear; }
@@ -359,25 +466,27 @@ body {
       .main-carousel .cards .card .text {
         max-width: 395px;
         margin: 0 0 20px 130px; }
-        @media all and (max-width: 899px) {
-          .main-carousel .cards .card .title,
-          .main-carousel .cards .card .text {
-            max-width: 300px;
-            margin-left: 100px; } }
       .main-carousel .cards .card .title {
         font-size: 70px;
         font-weight: bold;
         color: #050A26; }
-        @media all and (max-width: 899px) {
+        @media all and (min-width: 600px) and (max-width: 899px) {
           .main-carousel .cards .card .title {
             font-size: 40px; } }
+        @media all and (min-width: 320px) and (max-width: 599px) {
+          .main-carousel .cards .card .title {
+            font-size: 30px;
+            margin: 20px; } }
       .main-carousel .cards .card .text {
         font-size: 30px;
         color: #050A26;
         line-height: 1.2; }
-        @media all and (max-width: 899px) {
+        @media all and (min-width: 600px) and (max-width: 899px) {
           .main-carousel .cards .card .text {
             font-size: 20px; } }
+        @media all and (min-width: 320px) and (max-width: 599px) {
+          .main-carousel .cards .card .text {
+            display: none; } }
       .main-carousel .cards .card .btn {
         border: none;
         width: 165px;
@@ -390,20 +499,29 @@ body {
         margin-left: 340px;
         cursor: pointer;
         z-index: 5; }
-        @media all and (max-width: 899px) {
+        @media all and (min-width: 600px) and (max-width: 899px) {
           .main-carousel .cards .card .btn {
             width: 150px;
             height: 50px;
             font-size: 20px; } }
+        @media all and (min-width: 320px) and (max-width: 599px) {
+          .main-carousel .cards .card .btn {
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            margin: 0 auto 50px; } }
         .main-carousel .cards .card .btn:hover {
           background-color: #050A26; }
     .main-carousel .cards .bullets {
       position: relative;
       text-align: center;
       top: 505px; }
-      @media all and (max-width: 899px) {
+      @media all and (min-width: 600px) and (max-width: 899px) {
         .main-carousel .cards .bullets {
           top: 310px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-carousel .cards .bullets {
+          top: 210px; } }
       .main-carousel .cards .bullets .bullet {
         display: inline-block;
         width: 16px;
@@ -440,8 +558,14 @@ body {
   @media all and (min-width: 600px) and (max-width: 899px) {
     .service-card {
       justify-content: center;
-      align-items: flex-end;
       margin: 0 20px 50px; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .service-card {
+      height: 550px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 10px 50px; } }
   .service-card .image {
     width: 360px; }
     .service-card .image img {
@@ -453,6 +577,10 @@ body {
     @media all and (min-width: 600px) and (max-width: 899px) {
       .service-card .image {
         display: none; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .service-card .image img {
+        width: 100%;
+        text-align: center; } }
   .service-card .content {
     display: flex;
     justify-content: flex-start;
@@ -460,27 +588,50 @@ body {
     flex-wrap: wrap;
     width: 680px;
     height: 260px; }
+<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .service-card .content {
         width: 65%; } }
+=======
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .service-card .content {
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%; } }
+>>>>>>> break320-600
     .service-card .content .title {
       margin-bottom: 5px;
       font-size: 40px;
       font-weight: bold;
       color: #050A26;
       margin-right: 20px; }
+<<<<<<< HEAD
       @media all and (min-width: 900px) and (max-width: 1199px) {
         .service-card .content .title {
           font-size: 35px;
           margin-right: 15px; } }
+=======
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .service-card .content .title {
+          margin-top: -280px;
+          font-size: 30px;
+          margin-right: 0; } }
+>>>>>>> break320-600
     .service-card .content .subtitle {
       margin-bottom: 10px;
       font-size: 28px;
       font-weight: normal;
       color: #C9801D; }
+<<<<<<< HEAD
       @media all and (min-width: 900px) and (max-width: 1199px) {
         .service-card .content .subtitle {
           font-size: 25px; } }
+=======
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .service-card .content .subtitle {
+          font-size: 22px; } }
+>>>>>>> break320-600
     .service-card .content.-invert .title {
       color: #C9801D; }
     .service-card .content.-invert .subtitle {
@@ -495,10 +646,23 @@ body {
       padding: 20px;
       color: #C9801D;
       border: 1px solid #C9801D; }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .service-card .content .square {
+          padding: 10px;
+          height: auto; } }
       .service-card .content .square .description {
         font-size: 18px;
+<<<<<<< HEAD
         line-height: 22px;
         margin-bottom: 10px; }
+=======
+        line-height: 22px; }
+        @media all and (min-width: 320px) and (max-width: 599px) {
+          .service-card .content .square .description {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 10px; } }
+>>>>>>> break320-600
       .service-card .content .square .btn {
         align-self: flex-end;
         width: 135px;
@@ -532,6 +696,10 @@ body {
   @media all and (min-width: 600px) and (max-width: 899px) {
     .main-partners {
       margin: 0 10px; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .main-partners {
+      justify-content: center;
+      margin: 0 10px; } }
   .main-partners .logo {
     width: 33%;
     display: flex;
@@ -541,9 +709,16 @@ body {
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-partners .logo {
         margin: 30px 0; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-partners .logo {
+        width: 50%;
+        margin: 30px 0; } }
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-partners .logo img {
         width: 50%; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-partners .logo img {
+        width: 70%; } }
 
 .main-footer {
   max-width: 1200px;
@@ -560,7 +735,13 @@ body {
   @media all and (min-width: 600px) and (max-width: 899px) {
     .main-footer {
       flex-wrap: wrap;
-      padding: 50px;
+      padding: 30px;
+      justify-content: space-around; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .main-footer {
+      height: 350px;
+      flex-wrap: wrap;
+      padding: 20px;
       justify-content: space-around; } }
   .main-footer .logo {
     width: 161px;
@@ -569,9 +750,22 @@ body {
     text-transform: uppercase;
     letter-spacing: 6px;
     text-align: center; }
+<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-footer .logo {
         font-size: 28px; } }
+=======
+    @media all and (min-width: 480px) and (max-width: 599px) {
+      .main-footer .logo {
+        width: 140px;
+        font-size: 24px;
+        letter-spacing: 5px; } }
+    @media all and (min-width: 320px) and (max-width: 479px) {
+      .main-footer .logo {
+        width: 80px;
+        font-size: 16px;
+        letter-spacing: 3px; } }
+>>>>>>> break320-600
     .main-footer .logo img {
       width: 100%;
       margin-bottom: 5px; }
@@ -586,22 +780,32 @@ body {
     font-size: 24px;
     font-weight: normal;
     line-height: 29px; }
+<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-footer .local {
         width: 380px;
         font-size: 20px;
         margin-left: 20px; } }
     @media all and (min-width: 600px) and (max-width: 899px) {
+=======
+    @media all and (min-width: 460px) and (max-width: 899px) {
+>>>>>>> break320-600
       .main-footer .local {
         order: 2;
         font-size: 22px;
-        line-height: 25px;
+        line-height: 30px;
+        text-align: center; } }
+    @media all and (min-width: 320px) and (max-width: 459px) {
+      .main-footer .local {
+        order: 2;
+        font-size: 18px;
+        line-height: 26px;
         text-align: center; } }
     .main-footer .local .icon {
       display: inline-block;
       margin: 30px 32px 0 0;
       transition: transform 0.2s linear; }
-      @media all and (min-width: 600px) and (max-width: 899px) {
+      @media all and (min-width: 320px) and (max-width: 899px) {
         .main-footer .local .icon {
           margin: 15px 25px 0 0; } }
       .main-footer .local .icon:hover {
@@ -613,14 +817,26 @@ body {
     font-size: 30px;
     font-weight: bold;
     line-height: 36px; }
+<<<<<<< HEAD
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-footer .contacts {
         width: 252px;
         font-size: 26px;
         line-height: 32px; } }
     @media all and (min-width: 600px) and (max-width: 899px) {
+=======
+    @media all and (min-width: 480px) and (max-width: 599px) {
+>>>>>>> break320-600
       .main-footer .contacts {
-        line-height: 25px; } }
+        font-size: 25px;
+        line-height: 27px;
+        text-align: right; } }
+    @media all and (min-width: 320px) and (max-width: 479px) {
+      .main-footer .contacts {
+        width: 195px;
+        font-size: 19px;
+        line-height: 10px;
+        text-align: right; } }
     .main-footer .contacts .contact {
       margin-bottom: 18px; }
       .main-footer .contacts .contact.-whatsapp::before {
@@ -628,13 +844,28 @@ body {
         background: url(../img/icon-whatsapp.svg);
         background-repeat: no-repeat;
         padding: 0 20px; }
+        @media all and (min-width: 320px) and (max-width: 479px) {
+          .main-footer .contacts .contact.-whatsapp::before {
+            padding: 7px 20px; } }
       .main-footer .contacts .contact.-email {
         margin-bottom: 33px; }
+        @media all and (min-width: 320px) and (max-width: 599px) {
+          .main-footer .contacts .contact.-email {
+            margin-bottom: 0; } }
       .main-footer .contacts .contact .-destaque {
         font-size: 35px; }
+<<<<<<< HEAD
         @media all and (min-width: 900px) and (max-width: 1199px) {
           .main-footer .contacts .contact .-destaque {
             font-size: 32px; } }
+=======
+        @media all and (min-width: 480px) and (max-width: 599px) {
+          .main-footer .contacts .contact .-destaque {
+            font-size: 30px; } }
+        @media all and (min-width: 320px) and (max-width: 479px) {
+          .main-footer .contacts .contact .-destaque {
+            font-size: 25px; } }
+>>>>>>> break320-600
     .main-footer .contacts .btn {
       display: block;
       border: none;
@@ -652,6 +883,9 @@ body {
           height: 50px;
           margin-bottom: 35px;
           font-size: 20px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-footer .contacts .btn {
+          display: none; } }
       .main-footer .contacts .btn:hover {
         background-color: white;
         color: #C9801D; }

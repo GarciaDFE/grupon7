@@ -25,7 +25,14 @@
 
          <nav class="nav-bar">
             <ul id="menu" class="menu">
-                  <li class="item"><a class="action" href="#servicos">Serviços</a></li><!--
+               <li class="item"><a class="action" href="#servicos">Serviços</a></li><!--
+               --><li class="item"><a class="action comSubmenu" href="#servicos">Serviços</a>
+                     <ul id="submenu" class="submenu">
+                        <li><a href="">Seguros</a></li>
+                        <li><a href="">Consórcios</a></li>
+                        <li><a href="">Saúde e Odonto</a></li>
+                     </ul>
+                  </li><!--
                --><li class="item"><a class="action" href="#parceiros">Parceiros</a></li><!--
                --><li class="item"><a class="action" href="#">Sobre nós</a></li><!--
                --><li class="item"><a class="action" href="#">Contato</a></li>
@@ -82,6 +89,12 @@
          class="separator"><span class="-alternate">|</span>|</span>
          </span>Soluções Empresariais</h1>
    </section>
+
+   <!-- BOTÃO DE COTAÇÃO PARA MOBILE EXTRAIDO DO NAV -->
+   <button class="btn-cotacao">
+      <p>Solicite uma</p>
+      <p>cotação</p>
+   </button>
 
    <!-- SERVIÇOS --> 
    <section id="servicos" class="wrap-services">
@@ -145,6 +158,7 @@
                </div>
             </div>
          </dl>
+      </div>
    </section>
 
    <!-- BOTÃO PARA LEVAR AO TOPO -->

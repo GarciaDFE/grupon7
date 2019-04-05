@@ -6,18 +6,28 @@
       font-size: 50px;
       font-weight: bold;
       text-align: center;
-      @media all and /* 900px a 1199px */
-         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {                          font-size: 45px;
-      }
-      @media all and /* de 600px a 899px */
+      @media all and /* 600px a 899px */
          (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-            font-size: 30px;
+            font-size: 32px;
+      }
+      @media all and /* 320px a 599px */
+         (min-width: $break-min) and (max-width: $break-phone - 1) {
+            font-size: 32px;
       }
       .separator {
          margin: 0 20px;
+         @media all and /* 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+               display: none;
+         }
       }
       .-alternate {
          color: $color-primary-medium;
+         @media all and /* 320px a 599px */
+         (min-width: $break-min) and (max-width: $break-phone - 1) {
+            display: block;
+            margin-bottom: 5px;
+         }
       }
    }
 }

@@ -7,14 +7,21 @@
    justify-content: space-between;
    align-items: flex-start;
    padding: 90px;
-   @media all and /* de 900px a 1199px */
+   @media all and /* 900px a 1199px */
       (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
          padding: 50px;
    }
-   @media all and /* de 600px a 899px */
+   @media all and /* 600px a 899px */
       (min-width: $break-phone) and (max-width: $break-tablet - 1) {
          flex-wrap: wrap;
-         padding: 50px;
+         padding: 30px;
+         justify-content: space-around;
+   }
+   @media all and /* 320px a 599px */
+      (min-width: $break-min) and (max-width: $break-phone - 1) {
+         height: 350px;
+         flex-wrap: wrap;
+         padding: 20px;
          justify-content: space-around;
    }
    .logo {
@@ -27,6 +34,18 @@
       @media all and /* de 900px a 1199px */
          (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
             font-size: 28px;
+      }
+      @media all and /* de 480px a 599px */
+         (min-width: $break-phone - 120) and (max-width: $break-phone - 1) {
+            width: 140px;
+            font-size: 24px;
+            letter-spacing: 5px;
+      }
+      @media all and /* de 320px a 479px */
+         (min-width: $break-min) and (max-width: $break-phone - 121) {
+            width: 80px;
+            font-size: 16px;
+            letter-spacing: 3px;
       }
       img {
          width: 100%;
@@ -52,19 +71,26 @@
             font-size: 20px;
             margin-left: 20px;
       }
-      @media all and /* 600px a 899px */
-         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      @media all and /* de 460px a 899px */
+         (min-width: $break-phone - 140) and (max-width: $break-tablet - 1) {
             order: 2;
             font-size: 22px;
-            line-height: 25px;
+            line-height: 30px;
+            text-align: center;
+      }
+      @media all and /* de 320px a 459px */
+         (min-width: $break-min) and (max-width: $break-phone - 141) {
+            order: 2;
+            font-size: 18px;
+            line-height: 26px;
             text-align: center;
       }
       .icon {
          display: inline-block;
          margin: 30px 32px 0 0;
          transition: transform 0.2s linear;
-         @media all and /* de 600px a 899px */
-            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+         @media all and /* 320px a 899px */
+            (min-width: $break-min) and (max-width: $break-tablet - 1) {
                margin: 15px 25px 0 0;
          }
          &:hover {
@@ -89,6 +115,19 @@
          (min-width: $break-phone) and (max-width: $break-tablet - 1) {
             line-height: 25px;
       }
+      @media all and /* de 480px a 599px */
+         (min-width: $break-phone - 120) and (max-width: $break-phone - 1) {
+            font-size: 25px;
+            line-height: 27px;
+            text-align: right;
+      }
+      @media all and /* de 320px a 479px */
+         (min-width: $break-min) and (max-width: $break-phone - 121) {
+            width: 195px;
+            font-size: 19px;
+            line-height: 10px;
+            text-align: right;
+      }
       .contact {
          margin-bottom: 18px;
          &.-whatsapp::before {
@@ -96,14 +135,28 @@
             background: url(../img/icon-whatsapp.svg);
             background-repeat: no-repeat;
             padding: 0 20px;
+            @media all and /* de 320px a 479px */
+               (min-width: $break-min) and (max-width: $break-phone - 121) {
+                  padding: 7px 20px;
+            }
          }
          &.-email {
             margin-bottom: 33px;
+            @media all and /* 320px a 599px */
+               (min-width: $break-min) and (max-width: $break-phone - 1) {
+                  margin-bottom: 0;
+            }
+
          }
          .-destaque {
             font-size: 35px;
-            @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-               font-size: 32px;
+            @media all and /* 480px a 599px */
+               (min-width: $break-phone - 120) and (max-width: $break-phone - 1) {
+                  font-size: 30px;
+            }
+            @media all and /* 320px a 479px */
+               (min-width: $break-min) and (max-width: $break-phone - 121) {
+                  font-size: 25px;
             }
          }
       }
@@ -124,6 +177,10 @@
                height: 50px;
                margin-bottom: 35px;
                font-size: 20px;
+         }
+         @media all and /* de 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+               display: none;
          }
          &:hover {
             background-color: $color-secondary-light;

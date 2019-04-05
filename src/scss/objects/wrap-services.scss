@@ -7,6 +7,13 @@
         align-items: center;
         margin-bottom: 70px;
         text-align: center;
+        @media all and /* 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 40px;
+        }
         > .title {
             font-size: 50px;
             font-weight: bold;
@@ -17,6 +24,11 @@
                     font-size: 40px;
                     margin-right: 10px;
             }
+            @media all and /* 320px a 599px */
+                (min-width: $break-min) and (max-width: $break-phone - 1) {
+                    font-size: 30px;
+                    margin: 5px 20px;
+            }
         }
         > .subtitle {
             font-size: 24px;
@@ -26,6 +38,12 @@
                 (min-width: $break-phone) and (max-width: $break-tablet - 1) {
                     font-size: 20px;
                     margin-right: 5px;
+            }
+            @media all and /* 320px a 599px */
+                (min-width: $break-min) and (max-width: $break-phone - 1) {
+                    font-size: 18px;
+                    margin: 0 20px;
+                    text-align: left;
             }
             .-destaque {
                 text-transform: uppercase;

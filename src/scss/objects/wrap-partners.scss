@@ -1,20 +1,21 @@
 .wrap-partners {
-   width: 100%;
-   max-width: 1060px;
-   margin: 0 auto;
+    width: 100%;
+    max-width: 1060px;
+    padding-top: 20px;
+    max-width: 1060px;
+    margin: 0 auto;
     .wrap-title {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
         text-align: center;
-        @media all and /* de 800px a 899px */
-            (min-width: $break-tablet - 100) and (max-width: $break-tablet - 1) {
-                margin: 0 50px 10px 50px;
-        }
-        @media all and /* de 600px a 799px */
-            (min-width: $break-phone) and (max-width: $break-tablet - 101) {
-                margin: 0 20px 10px 20px;
+        @media all and /* 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 0 10px 10px;
         }
         > .title {
             font-size: 50px;
@@ -23,18 +24,29 @@
             color: $color-primary-dark;
             @media all and /* de 600px a 899px */
                 (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+                    font-size: 40px;
+                    margin: 0 10px 0 10px;
+            }
+            @media all and /* de 320px a 599px */
+                (min-width: $break-min) and (max-width: $break-phone - 1) {
+                    display: block;
+                    font-size: 30px;
                     margin: 0 10px 0 0;
             }
         }
         > .subtitle {
             font-size: 24px;
             line-height: 1.2;
-            //margin-top: 10px;
             color: $color-primary-medium;
             text-align: left;
-            @media all and /* de 600px a 899px */
+            @media all and /* 600px a 899px */
                 (min-width: $break-phone) and (max-width: $break-tablet - 1) {
                     font-size: 20px;
+                    margin-top: 5px;
+            }
+            @media all and /* 320px a 599px */
+                (min-width: $break-min) and (max-width: $break-phone - 1) {
+                    font-size: 18px;
                     margin-top: 5px;
             }
         }

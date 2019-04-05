@@ -10,6 +10,11 @@
       (min-width: $break-phone) and (max-width: $break-tablet - 1) {
          margin: 0 10px;
    }
+   @media all and /* de 320px a 599px */
+      (min-width: $break-min) and (max-width: $break-phone - 1) {
+         justify-content: center;
+         margin: 0 10px;
+   }
    .logo {
       width: 33%;
       display: flex;
@@ -20,10 +25,19 @@
          (min-width: $break-phone) and (max-width: $break-tablet - 1) {
             margin: 30px 0;
       }
+      @media all and /* de 320px a 599px */
+         (min-width: $break-min) and (max-width: $break-phone - 1) {
+            width: 50%;
+            margin: 30px 0;
+      }
       img {
          @media all and /* de 600px a 899px */
             (min-width: $break-phone) and (max-width: $break-tablet - 1) {
                width: 50%;
+         }
+         @media all and /* de 320px a 599px */
+            (min-width: $break-min) and (max-width: $break-phone - 1) {
+               width: 70%;
          }
       }
    }
