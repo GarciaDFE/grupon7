@@ -4,6 +4,12 @@
    justify-content: flex-end;
    opacity: 0.5;
    transition: opacity 0.2s linear;
+   &.-v1 {
+      margin: 18px auto 48px;
+   }
+   &.-v2 {
+      margin: 135px auto 21px;
+   }
    &:hover {
       opacity: 1;
       transition: opacity 0.2s linear;
@@ -11,10 +17,4 @@
    img {
       margin-right: 10px;
    }
-}
-.btn-totop.-v1 {
-   margin: 18px auto 48px;
-}
-.btn-totop.-v2 {
-   margin: 135px auto 21px;
 }

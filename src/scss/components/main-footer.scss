@@ -135,6 +135,10 @@
             background: url(../img/icon-whatsapp.svg);
             background-repeat: no-repeat;
             padding: 0 20px;
+            @media all and /* de 480px a 599px */
+               (min-width: $break-phone - 120) and (max-width: $break-phone - 1) {
+                  padding: 8px 20px;
+            }
             @media all and /* de 320px a 479px */
                (min-width: $break-min) and (max-width: $break-phone - 121) {
                   padding: 7px 20px;
