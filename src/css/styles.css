@@ -255,7 +255,8 @@ body {
       font-weight: bold;
       background-color: #C9801D;
       color: white;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 300ms linear; }
       .btn-cotacao:hover {
         background-color: #050A26; } }
 
@@ -411,7 +412,8 @@ body {
     letter-spacing: 0.5px;
     color: white;
     padding: 0 100px 0 28px;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 300ms linear; }
     .nav-bar > .cotacao:hover {
       background-color: #050A26; }
     @media all and (min-width: 1101px) and (max-width: 1199px) {
@@ -492,6 +494,7 @@ body {
         color: white;
         margin-left: 340px;
         cursor: pointer;
+        transition: all 300ms linear;
         z-index: 5; }
         @media all and (min-width: 600px) and (max-width: 899px) {
           .main-carousel .cards .card .btn {
@@ -667,7 +670,8 @@ body {
         vertical-align: center;
         background-color: white;
         border-radius: 5px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all 300ms linear; }
         .service-card .content .square .btn:hover {
           border: none;
           color: white;
@@ -853,7 +857,8 @@ body {
       font-weight: bold;
       background-color: #C9801D;
       color: white;
-      cursor: pointer; }
+      cursor: pointer;
+      transition: all 300ms linear; }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .main-footer .contacts .btn {
           width: 230px;

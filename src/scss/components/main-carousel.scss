@@ -74,6 +74,7 @@
             color: $color-secondary-light;
             margin-left: 340px;
             cursor: pointer;
+            transition: all 300ms linear;
             z-index: 5;
             @media all and /* 600px a 899px */
                (min-width: $break-phone) and (max-width: $break-tablet - 1) {
