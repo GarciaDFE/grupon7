@@ -38,7 +38,7 @@
          align-items: center;
    }
    .image {
-      width: 360px;
+      //width: 360px;
       position: relative;
       &:after {
          content: "";
@@ -50,7 +50,8 @@
          opacity: 0;
          transition: opacity 300ms linear;
       }
-      &:hover:after {
+      &:hover:after,
+      &.hovereffects:after {
          background-color: $color-primary-medium;
          opacity: 0.5;
       }
@@ -169,8 +170,9 @@
             background-color: $color-secondary-light;
             border-radius: 5px;
             cursor: pointer;
-            transition: all 300ms linear;
-            &:hover {
+            transition: all 1s linear;
+            &:hover,
+            &.hovereffect {
                border: none;
                color: $color-secondary-light;
                background-color: $color-primary-dark;
