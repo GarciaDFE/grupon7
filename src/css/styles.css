@@ -95,9 +95,6 @@ body {
   .brand-nav .-destaque {
     font-weight: bold;
     color: #C9801D; }
-  @media all and (min-width: 900px) and (max-width: 1199px) {
-    .brand-nav {
-      width: 285px; } }
 
 .wrap-carousel {
   position: relative;
@@ -269,6 +266,26 @@ body {
       .btn-cotacao:hover {
         background-color: #050A26; } }
 
+.main-btnMenu {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  float: right; }
+  .main-btnMenu .bar1, .main-btnMenu .bar2, .main-btnMenu .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #050A26;
+    margin: 6px 0;
+    transition: 500ms; }
+  .main-btnMenu.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px); }
+  .main-btnMenu.change .bar2 {
+    opacity: 0; }
+  .main-btnMenu.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -6px);
+    transform: rotate(45deg) translate(-8px, -6px); }
+
 .main-navigation {
   display: flex;
   justify-content: space-between;
@@ -283,12 +300,12 @@ body {
   @media all and (min-width: 900px) and (max-width: 1100px) {
     .main-navigation {
       padding: 10px 0 10px 25px; } }
-  @media all and (min-width: 600px) and (max-width: 899px) {
+  @media all and (max-width: 899px) {
     .main-navigation {
-      padding: 10px 25px; } }
+      padding: 10px 30px; } }
   .main-navigation .main-btnMenu {
     display: none; }
-    @media all and (max-width: 599px) {
+    @media all and (max-width: 899px) {
       .main-navigation .main-btnMenu {
         display: block; } }
 
@@ -362,8 +379,14 @@ body {
         list-style: none;
         text-decoration: none; }
         .nav-bar > .menu > .item > .action.-isActive, .nav-bar > .menu > .item > .action:hover {
+          border-bottom: 2px solid #C9801D;
           color: #C9801D; }
+          @media all and (max-width: 899px) {
+            .nav-bar > .menu > .item > .action.-isActive, .nav-bar > .menu > .item > .action:hover {
+              border: none;
+              color: #C9801D; } }
       .nav-bar > .menu > .item .submenu {
+        display: none;
         width: 220px;
         font-size: 22px;
         font-weight: normal;
@@ -371,6 +394,9 @@ body {
         text-decoration: none;
         color: #050A26;
         border-top: 1px solid white; }
+        @media all and (max-width: 899px) {
+          .nav-bar > .menu > .item .submenu {
+            display: block; } }
         .nav-bar > .menu > .item .submenu li {
           padding-left: 10px; }
           .nav-bar > .menu > .item .submenu li a {
@@ -406,26 +432,6 @@ body {
     @media all and (max-width: 899px) {
       .nav-bar > .cotacao {
         display: none; } }
-
-.main-btnMenu {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  float: right; }
-  .main-btnMenu .bar1, .main-btnMenu .bar2, .main-btnMenu .bar3 {
-    width: 30px;
-    height: 4px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 1s; }
-  .main-btnMenu.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
-    transform: rotate(-45deg) translate(-8px, 6px); }
-  .main-btnMenu.change .bar2 {
-    opacity: 0; }
-  .main-btnMenu.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -6px);
-    transform: rotate(45deg) translate(-8px, -6px); }
 
 .main-carousel {
   max-width: 1200px;

@@ -48,16 +48,16 @@
       > .item {
          display: inline-block;
          padding-right: 50px;
-         @media all and /* 1101 a 1199 */
+         @media all and /* 1101px a 1199px */
             (min-width: $break-desktop - 99) and (max-width: $break-desktop - 1) {
                padding-right: 45px;
          }
-         @media all and /* 1001 a 1100px */
+         @media all and /* 1001px a 1100px */
             (min-width: $break-desktop - 199) and (max-width: $break-desktop - 100) {
                padding-right: 35px;
                font-size: 22px;
          }
-         @media all and /* 900 a 1000px */
+         @media all and /* 900px a 1000px */
             (min-width: $break-tablet) and (max-width: $break-desktop - 200) {
                padding-right: 27px;
                font-size: 20px;
@@ -79,10 +79,17 @@
             text-decoration: none;
             &.-isActive,
             &:hover {
+               border-bottom: 2px solid $color-primary-medium;
                color: $color-primary-medium;
+               @media all and  /* até 899px */
+                  (max-width: $break-tablet - 1) {
+                     border: none;
+                     color: $color-primary-medium;
+               }
             }
          }
          .submenu {
+            display: none;
             width: 220px;
             font-size: 22px;
             font-weight: normal;
@@ -90,6 +97,10 @@
             text-decoration: none;
             color: $color-primary-dark;
             border-top: 1px solid white;
+            @media all and  /* até 899px */
+               (max-width: $break-tablet - 1) {
+                  display: block;
+            }
             li {
                padding-left: 10px;
                a {

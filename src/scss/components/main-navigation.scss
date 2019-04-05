@@ -14,14 +14,14 @@
       (min-width: $break-tablet) and (max-width: $break-desktop - 100) {
          padding: 10px 0 10px 25px;
    }
-   @media all and /* 600px a 899px */
-      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-         padding: 10px 25px;
+   @media all and /* 320px a 899px */
+      (max-width: $break-tablet - 1) {
+         padding: 10px 30px;
    }
    .main-btnMenu {
       display: none;
-      @media all and /* 340px a 899px */
-         (max-width: $break-phone - 1) { 
+      @media all and /* 320px a 899px */
+         (max-width: $break-tablet - 1) { 
             display: block;
       }
    }
