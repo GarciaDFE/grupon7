@@ -60,6 +60,9 @@ body {
   height: 100%; }
 
 body {
+  overflow-X: hidden; }
+
+body {
   font-family: "Asap Condensed", "Arial", sans-serif;
   background-color: white;
   color: #050A26; }
