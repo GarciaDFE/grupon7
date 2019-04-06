@@ -606,17 +606,13 @@ body {
       opacity: 0.5; }
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .service-card .image {
-        width: 35%;
         margin-right: 20px; } }
     @media all and (min-width: 600px) and (max-width: 899px) {
       .service-card .image {
         display: none; } }
-    .service-card .image img {
-      width: 100%; }
-      @media all and (min-width: 320px) and (max-width: 599px) {
-        .service-card .image img {
-          width: 100%;
-          text-align: center; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .service-card .image img {
+        text-align: center; } }
   .service-card .content {
     display: flex;
     justify-content: flex-start;
