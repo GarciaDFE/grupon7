@@ -16,5 +16,5 @@ function clickInBullet() {
    var idCard = $bulletClicked.querySelector("a").getAttribute("href"); /* guarda na variável o atributo "href" associado ao card que ficará ativo de acordo com o novo bullet ativado com o último click */
    var $targetCard = document.querySelector(idCard); /* Seleciona qual o card que ficará ativo de acordo com a variável "idCard" */
    $targetCard.classList.add("-isActive"); /* ativa o card do bullet clicado relacionado */
-   $cardIsActive = $targetCard; /* seta o novo card ativo */
+   $cardIsActive = $targetCard; /* seta o novo card ativo */     
 }

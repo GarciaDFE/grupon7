@@ -60,7 +60,11 @@ body {
   height: 100%; }
 
 body {
-  overflow-X: hidden; }
+  overflow-X: hidden;
+  margin-top: 120px; }
+  @media all and (max-width: 900px) {
+    body {
+      margin-top: 0; } }
 
 body {
   font-family: "Asap Condensed", "Arial", sans-serif;
@@ -70,12 +74,20 @@ body {
 .wrap-header {
   width: 100%;
   height: 120px;
-  position: relative;
+  position: fixed;
   margin: 0 auto;
-  height: 120px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
+  opacity: .95;
   transition: height 300ms linear; }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .wrap-header {
+      position: relative; } }
   @media all and (min-width: 320px) and (max-width: 599px) {
     .wrap-header {
+      position: relative;
       height: 75px;
       transition: height 300ms linear; } }
 
