@@ -9,8 +9,13 @@
     z-index: 100;
     opacity: .95;
     transition: height 300ms linear;
+    @media all and /* 600px a 899px */
+        (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            position: relative;
+    }
     @media all and /* 320px a 599px */
         (min-width: $break-min) and (max-width: $break-phone - 1) {
+            position: relative;
             height: 75px;
             transition: height 300ms linear;
     }
