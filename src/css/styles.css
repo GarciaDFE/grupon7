@@ -754,10 +754,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 90px; }
+  padding: 110px 90px 80px; }
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .main-footer {
-      padding: 50px; } }
+      padding: 90px 50px; } }
   @media all and (min-width: 600px) and (max-width: 899px) {
     .main-footer {
       flex-wrap: wrap;
