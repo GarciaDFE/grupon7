@@ -4,7 +4,7 @@
    align-items: center;
    flex-wrap: wrap;
    max-width: 1060px;
-   border: 3px solid $color-primary-medium;
+   border: 1px solid $color-primary-medium;
    padding: 20px;
    @media all and /* de 600px a 1199px */
       (min-width: $break-phone) and (max-width: $break-desktop - 1) {
@@ -15,29 +15,31 @@
          justify-content: center;
          margin: 0 10px;
    }
-   .logo {
-      width: 33%;
+   .arealogo {
+      width: 25%;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 50px 0;
       @media all and /* de 600px a 899px */
          (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            width: 33%;
             margin: 30px 0;
       }
       @media all and /* de 320px a 599px */
          (min-width: $break-min) and (max-width: $break-phone - 1) {
             width: 50%;
-            margin: 30px 0;
+            margin: 25px 0;
       }
-      img {
+      .logo {
+         width: 40%;
          @media all and /* de 600px a 899px */
             (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-               width: 50%;
+               width: 45%;
          }
          @media all and /* de 320px a 599px */
             (min-width: $break-min) and (max-width: $break-phone - 1) {
-               width: 70%;
+               width: 45%;
          }
       }
    }
