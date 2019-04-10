@@ -6,7 +6,6 @@
       position: relative;
       height: 100%;
       .card {
-         position: absolute;
          display: flex;
          justify-content: center;
          flex-direction: column;
@@ -16,8 +15,17 @@
          background-size: cover;
          background-repeat: no-repeat;
          background-position: center;
-         opacity: 0;
-         transition: opacity 0.5s linear;
+         &.-img1 {
+            background-image: url(../img/img1Carousel.jpg);
+         }
+         &.-img2 {
+            background-image: url(../img/img2Carousel.jpg);
+         }
+         &.-img3 {
+            background-image: url(../img/img3Carousel.jpg);
+         }
+
+
          @media all and /* 600px a 899px */
             (min-width: $break-phone) and (max-width: $break-tablet - 1) {
                height: 340px;
@@ -27,10 +35,7 @@
                height: 240px;
                justify-content: space-between;
          }
-         &.-isActive{
-            opacity: 1;
-            transition: opacity 0.5s linear;
-         } 
+         
          .title,
          .text {
             max-width: 395px;
@@ -94,42 +99,5 @@
             }
          }
       }
-      .bullets {
-         position: relative;
-         text-align: center;
-         top: 505px;
-         @media all and /* 600px a 899px */
-            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-               top: 310px;
-         }
-         @media all and /* 320px a 599px */
-            (min-width: $break-min) and (max-width: $break-phone - 1) {
-               top: 210px;
-         }
-
-         .bullet {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            background-color: $color-primary-medium;
-            opacity: 0.8;
-            border-radius: 50%;
-            text-indent: -9999px;
-            cursor: pointer;
-            transition: opacity 200ms linear;
-            &:not(:last-child) { 
-               margin-right: 10px;
-            }
-            &:hover {
-               opacity: 1;
-            }
-            &.-isActive {
-               background-color: $color-primary-dark;
-            }
-         }
-      }
-   }
-   #first { background-image: url(../img/img1Carousel.jpg); }
-   #second { background-image: url(../img/img2Carousel.jpg); }
-   #third { background-image: url(../img/img3Carousel.jpg); }  
+   }   
 }

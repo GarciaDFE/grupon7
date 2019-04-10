@@ -4,6 +4,8 @@
 @import 'settings/fonts';
 
 // importando pasta tools
+@import 'tools/glide.core.min.scss';
+@import 'tools/glide.theme.min.scss';
 
 // importando pasta generic
 @import 'generic/reset.scss'; 
@@ -15,6 +17,7 @@
 // importando pasta objects
 @import 'objects/wrap-header.scss';
 @import 'objects/brand-nav.scss';
+@import 'objects/wrap-glide.scss';
 @import 'objects/wrap-carousel.scss';
 @import 'objects/main-segments.scss';
 @import 'objects/wrap-cards.scss';
