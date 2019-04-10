@@ -3,9 +3,20 @@
    justify-content: flex-start;
    align-items: center;
    width: 300px;
+   @media all and /* 600px a 899px */
+      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+         justify-content: center;
+         flex-direction: column;
+         width: 60px;
+   }
    .imgLogo {
       width: 120px;
       margin-right: 19px;
+      @media all and /* 600px a 899px */
+         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            width: 70px;
+            margin: 0 0 3px 0;
+      }
       @media all and /* 320px a 599px */
          (min-width: $break-min) and (max-width: $break-phone - 1) {
             display: none;
@@ -16,6 +27,12 @@
       font-weight: normal;
       text-transform: uppercase;
       letter-spacing: 5px;
+      @media all and /* 600px a 899px */
+         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+      }
       @media all and /* 320px a 599px */
          (min-width: $break-min) and (max-width: $break-phone - 1) {
             font-weight: bold;

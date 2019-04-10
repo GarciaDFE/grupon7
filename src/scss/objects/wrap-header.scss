@@ -5,18 +5,18 @@
     margin: 0 auto;
     top: 0;
     left: 0;
-    background-color: #fff;
     z-index: 100;
     opacity: .95;
     transition: height 300ms linear;
-    @media all and /* 600px a 899px */
-        (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-            position: relative;
+    @media all and /* 900px a 999px */
+        (min-width: $break-tablet) and (max-width: $break-desktop - 201) {
+            height: 100px;
+            transition: height 300ms linear;
     }
-    @media all and /* 320px a 599px */
-        (min-width: $break-min) and (max-width: $break-phone - 1) {
+    @media all and /* 320px a 899px */
+        (min-width: $break-min) and (max-width: $break-tablet - 1) {
             position: relative;
-            height: 75px;
+            height: 80px;
             transition: height 300ms linear;
     }
 }

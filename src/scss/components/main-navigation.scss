@@ -1,27 +1,25 @@
 .main-navigation {
+   position: relative;
    display: flex;
    justify-content: space-between;
    align-items: center;
    max-width: $break-desktop;
    margin: 0 auto;
    height: 100%;
-   padding: 10px 0 10px 67px;
-   @media all and /* 1101px a 1199px */
-      (min-width: $break-desktop - 99) and (max-width: $break-desktop - 1) {
-         padding: 10px 0 10px 47px;
+   background-color: $color-secondary-light;
+   padding-left: 40px;
+   @media all and /* 600px a 999px */
+      (min-width: $break-phone) and (max-width: $break-desktop - 201) {
+         padding-left: 30px;
    }
-   @media all and /* 900px a 1100px */
-      (min-width: $break-tablet) and (max-width: $break-desktop - 100) {
-         padding: 10px 0 10px 25px;
-   }
-   @media all and /* 320px a 899px */
-      (max-width: $break-tablet - 1) {
-         padding: 10px 30px;
+   @media all and /* 320px a 599px */
+      (max-width: $break-phone - 1) {
+         padding: 0 40px;
    }
    .main-btnMenu {
       display: none;
-      @media all and /* 320px a 899px */
-         (max-width: $break-tablet - 1) { 
+      @media all and /* 320px a 599px */
+         (max-width: $break-phone - 1) { 
             display: block;
       }
    }
