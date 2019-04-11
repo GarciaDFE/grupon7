@@ -31,6 +31,7 @@
                height: 240px;
                justify-content: space-between;
          }
+         
          .title,
          .text {
             max-width: 395px;
@@ -98,9 +99,20 @@
 }
 
 // SETTINGS ELEMENTS GLIDE (CAROUSEL)
+.glide {
+   @media all and /* 320px a 599px */
+      (max-width: $break-desktop) {
+         position: static;
+   }
+}
+
 .glide__slides {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+.glide__bullets {
+   bottom: 1em;
 }
 
 .glide__bullet {
