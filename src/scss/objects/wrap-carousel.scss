@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
-    height: 540px;
     @media all and /* 600px a 899px */
         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
             height: 340px;
