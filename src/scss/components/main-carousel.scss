@@ -100,7 +100,7 @@
 
 // SETTINGS ELEMENTS GLIDE (CAROUSEL)
 .glide {
-   @media all and /* 320px a 599px */
+   @media all and /* até 1200px */
       (max-width: $break-desktop) {
          position: static;
    }
