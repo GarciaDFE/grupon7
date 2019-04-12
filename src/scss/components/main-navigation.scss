@@ -8,6 +8,11 @@
    height: 100%;
    background-color: $color-secondary-light;
    padding-left: 40px;
+
+   &.scrolleffect {
+      background-color: red;
+   }
+   
    @media all and /* 600px a 999px */
       (min-width: $break-phone) and (max-width: $break-desktop - 201) {
          padding-left: 30px;
