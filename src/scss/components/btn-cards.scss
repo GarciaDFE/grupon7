@@ -1,0 +1,46 @@
+.btn-cards {
+   align-self: flex-end;
+   font-family: inherit;
+   font-size: 22px;
+   cursor: pointer;
+   transition: all 300ms linear;
+   &.saibamais {
+      width: 135px;
+      height: 44px;
+      border: 1px solid $color-primary-dark;
+      color: $color-primary-dark;
+      background-color: $color-secondary-light;
+      border-radius: 5px;
+      text-decoration: none;
+      &:hover,
+      &.hovereffect {
+         border: none;
+         color: $color-secondary-light;
+         background-color: $color-primary-dark;
+      }
+   }
+   &.contrateagora {
+      width: 350px;
+      height: 44px;
+      color: $color-secondary-light;
+      background-color: $color-primary-dark;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: left;
+      &:before {
+         content:'';
+         background-image: url(../img/seta-btn.svg);
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         padding: 5px;
+         margin: 0 10px;
+      }
+      &:hover,
+      &.hovereffect {
+         border: 1px solid $color-primary-dark;
+         color: $color-primary-dark;
+         background-color: $color-secondary-light;
+      }
+   }
+}

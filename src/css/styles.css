@@ -586,6 +586,45 @@ body {
   .main-carousel #third {
     background-image: url(../img/img3Carousel.jpg); }
 
+.btn-cards {
+  align-self: flex-end;
+  font-family: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 300ms linear; }
+  .btn-cards.saibamais {
+    width: 135px;
+    height: 44px;
+    border: 1px solid #050A26;
+    color: #050A26;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none; }
+    .btn-cards.saibamais:hover, .btn-cards.saibamais.hovereffect {
+      border: none;
+      color: white;
+      background-color: #050A26; }
+  .btn-cards.contrateagora {
+    width: 350px;
+    height: 44px;
+    color: white;
+    background-color: #050A26;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: left; }
+    .btn-cards.contrateagora:before {
+      content: '';
+      background-image: url(../img/seta-btn.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 5px;
+      margin: 0 10px; }
+    .btn-cards.contrateagora:hover, .btn-cards.contrateagora.hovereffect {
+      border: 1px solid #050A26;
+      color: #050A26;
+      background-color: white; }
+
 .service-card {
   display: flex;
   justify-content: space-between;
@@ -718,24 +757,6 @@ body {
             font-size: 16px;
             line-height: 20px;
             margin-bottom: 10px; } }
-      .service-card .content .square .btn {
-        align-self: flex-end;
-        font-family: inherit;
-        font-size: 22px;
-        cursor: pointer;
-        transition: all 1s linear; }
-        .service-card .content .square .btn.service {
-          width: 135px;
-          height: 44px;
-          border: 1px solid #050A26;
-          color: #050A26;
-          background-color: white;
-          border-radius: 5px;
-          text-decoration: none; }
-          .service-card .content .square .btn.service:hover, .service-card .content .square .btn.service.hovereffect {
-            border: none;
-            color: white;
-            background-color: #050A26; }
 
 .main-partners {
   display: flex;
