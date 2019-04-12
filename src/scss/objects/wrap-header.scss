@@ -7,13 +7,25 @@
     left: 0;
     z-index: 100;
     transition: height 300ms linear;
+    &.scrolleffect {
+        @media all and /* acima de 1000px */
+            (min-width: $break-desktop - 200) {
+                height: 100px;
+                transition: height 300ms linear;
+        }
+    }
     @media all and /* 900px a 999px */
         (min-width: $break-tablet) and (max-width: $break-desktop - 201) {
             height: 100px;
             transition: height 300ms linear;
     }
-    @media all and /* 320px a 899px */
-        (min-width: $break-min) and (max-width: $break-tablet - 1) {
+    @media all and /* 600px a 899px */
+        (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+            height: 80px;
+            transition: height 300ms linear;
+    }
+    @media all and /* 320px a 599px */
+        (min-width: $break-min) and (max-width: $break-phone - 1) {
             position: relative;
             height: 80px;
             transition: height 300ms linear;
