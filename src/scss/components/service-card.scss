@@ -50,7 +50,7 @@
          transition: opacity 300ms linear;
       }
       &:hover:after,
-      &.hovereffects:after {
+      &.hovereffect:after {
          background-color: $color-primary-medium;
          opacity: 0.5;
       }

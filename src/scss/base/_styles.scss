@@ -3,3 +3,8 @@ body {
     background-color: $color-secondary-light;
     color: $color-primary-dark;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+} 

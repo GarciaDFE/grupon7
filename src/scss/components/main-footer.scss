@@ -6,10 +6,10 @@
    display: flex;
    justify-content: space-between;
    align-items: flex-start;
-   padding: 90px;
+   padding: 110px 90px 80px;
    @media all and /* 900px a 1199px */
       (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         padding: 50px;
+         padding: 90px 50px;
    }
    @media all and /* 600px a 899px */
       (min-width: $break-phone) and (max-width: $break-tablet - 1) {

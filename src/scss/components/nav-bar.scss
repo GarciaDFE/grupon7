@@ -3,42 +3,24 @@
    justify-content: flex-end;
    align-items: center;
    font-size: 24px;
+   height: 100%;
    > .menu {
       text-align: right;
-      //height: 120px;
-      //line-height: 120px;
-      @media all and  /* 600px a 899px */
-         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-            position: absolute;
-            display: block;
-            background-color: #F9CE9B;
-            width: 260px;
-            height: 350px;
-            top: 120px;
-            right: 0;
-            opacity: 0.9;
-            z-index: 10;
-            font-weight: bold;
-            line-height: 50px;
-            padding: 10px 20px;
-            transform: translateX(100%);
-            transition: transform 300ms linear;
-      }
       @media all and  /* 320px a 599px */
          (min-width: $break-min) and (max-width: $break-phone - 1) {
             position: absolute;
             display: block;
-            background-color: #F9CE9B;
+            background-color: $color-primary-dark;
             width: 260px;
             height: 350px;
-            top: 75px;
+            top: 80px;
             right: 0;
-            opacity: 0.9;
+            opacity: 0.85;
             z-index: 10;
             font-weight: bold;
             line-height: 50px;
             padding: 10px 20px;
-            transform: translateX(100%);
+            transform: translateX(200%);
             transition: transform 300ms linear;
       }
       &.menu-open {
@@ -52,24 +34,29 @@
             (min-width: $break-desktop - 99) and (max-width: $break-desktop - 1) {
                padding-right: 45px;
          }
-         @media all and /* 1001px a 1100px */
-            (min-width: $break-desktop - 199) and (max-width: $break-desktop - 100) {
-               padding-right: 35px;
+         @media all and /* 1000px a 1100px */
+            (min-width: $break-desktop - 200) and (max-width: $break-desktop - 100) {
+               padding-right: 40px;
                font-size: 22px;
          }
-         @media all and /* 900px a 1000px */
-            (min-width: $break-tablet) and (max-width: $break-desktop - 200) {
-               padding-right: 27px;
-               font-size: 20px;
+         @media all and /* 900px a 999px */
+            (min-width: $break-tablet) and (max-width: $break-desktop - 201) {
+               padding-right: 40px;
+               font-size: 17px;
          }
-         @media all and  /* até 899px */
-            (max-width: $break-tablet - 1) {
+         @media all and /* 600px a 899px */
+            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+               padding-right: 40px;
+               font-size: 15px;
+         }
+         @media all and  /* até 599px */
+            (max-width: $break-phone - 1) {
                width: 100%;
                text-align: left;
          }
          &:not(:last-child) {
-            @media all and  /* até 899px */
-               (max-width: $break-tablet - 1) {
+            @media all and  /* até 599px */
+               (max-width: $break-phone - 1) {
                   border-bottom: 1px solid white;
             }
          }
@@ -79,9 +66,13 @@
             list-style: none;
             text-decoration: none;
             cursor: pointer;
+            @media all and  /* até 599px */
+               (max-width: $break-phone - 1) {
+                  color: $color-secondary-light;
+            }
             &:after {
-               @media all and  /* a partir de  900px */
-                  (min-width: $break-tablet) {
+               @media all and  /* a partir de  600px */
+                  (min-width: $break-phone) {
                      content: "";
                      height: 4px;
                      width: 100%;
@@ -96,8 +87,8 @@
             }
             &:hover {
                color: $color-primary-medium;
-               @media all and  /* até 899px */
-                  (max-width: $break-tablet - 1) {
+               @media all and  /* até 599px */
+                  (max-width: $break-phone - 1) {
                      border: none;
                      color: $color-primary-medium;
                }
@@ -114,17 +105,17 @@
             font-weight: normal;
             line-height: 40px;
             text-decoration: none;
-            color: $color-primary-dark;
+            color: $color-secondary-light;
             border-top: 1px solid white;
-            @media all and  /* até 899px */
-               (max-width: $break-tablet - 1) {
+            @media all and  /* até 599px */
+               (max-width: $break-phone - 1) {
                   display: block;
             }
             li {
                padding-left: 10px;
                a {
                   text-decoration: none;
-                  color: $color-primary-dark;
+                  color: $color-secondary-light;
                   &:hover{
                      text-decoration: none;
                      color: $color-primary-medium;
@@ -139,31 +130,43 @@
       border: none;
       background-color: $color-primary-medium;
       width: 252px;
-      height: 120px;
+      height: 100%;
       font-family: inherit;
       font-size: inherit;
       font-weight: bold;
       text-align: center;
       letter-spacing: 0.5px;
       color: $color-secondary-light;
-      padding: 0 100px 0 28px;
+      padding: 0 50px;
       cursor: pointer;
       transition: all 300ms linear;
       &:hover {
          background-color: $color-primary-dark;
       }
-      @media all and /* 1101 a 1199 */
-         (min-width: $break-desktop - 99) and (max-width: $break-desktop - 1) {
+      @media all and /* 1100 a 1199 */
+         (min-width: $break-desktop - 100) and (max-width: $break-desktop - 1) {
+            width: 220px;
+            padding: 0 20px;
+      }
+      @media all and /* 1000 a 1099px */
+         (min-width: $break-desktop - 200) and (max-width: $break-desktop - 101) {
             width: 200px;
-            padding: 0 40px 0 10px;         
+            padding: 0 15px;
       }
-      @media all and /* 900 a 1100px */
-         (min-width: $break-tablet) and (max-width: $break-desktop - 100) {
-            width: 180px;
-            padding: 0 20px 0 10px;         
+      @media all and /* 700 a 999px */
+         (min-width: $break-tablet - 200) and (max-width: $break-desktop - 201) {
+            width: 160px;
+            padding: 0 12px;         
+            font-size: 20px;
       }
-      @media all and  /* até 899px */
-         (max-width: $break-tablet - 1) {
+      @media all and /* 600 a 699px */
+         (min-width: $break-phone) and (max-width: $break-tablet - 201) {
+            width: 120px;
+            padding: 0 10px;         
+            font-size: 17px;
+      }
+      @media all and  /* até 599px */
+         (max-width: $break-phone - 1) {
             display: none;
       }
    }

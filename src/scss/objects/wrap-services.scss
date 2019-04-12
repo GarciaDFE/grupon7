@@ -10,9 +10,7 @@
         text-align: center;
         @media all and /* 320px a 599px */
             (min-width: $break-min) and (max-width: $break-phone - 1) {
-                justify-content: flex-start;
                 flex-direction: column;
-                align-items: flex-start;
         }
         > .title {
             font-size: 50px;
@@ -26,7 +24,7 @@
             }
             @media all and /* 320px a 599px */
                 (min-width: $break-min) and (max-width: $break-phone - 1) {
-                    font-size: 30px;
+                    font-size: 35px;
                     margin: 5px 20px;
             }
         }
