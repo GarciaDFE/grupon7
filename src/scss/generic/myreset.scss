@@ -3,17 +3,17 @@
 //
 body {
    overflow-X: hidden;
-   margin-top: 120px;
-   @media all and /* 900px a 999px */
-      (min-width: $break-tablet) and (max-width: $break-desktop - 201) {
-         margin-top: 100px;
-   }
-   @media all and /* 600px a 999px */
-      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-         margin-top: 80px;
-   }
-   @media all and /* até 599px */
-      (min-width: $break-min) and (max-width: $break-phone - 1) {
-         margin-top: 0;
-   }
+   margin-top: 80px;
+   // @media all and /* 900px a 999px */
+   //    (min-width: $break-tablet) and (max-width: $break-desktop - 201) {
+   //       margin-top: 100px;
+   // }
+   // @media all and /* 600px a 999px */
+   //    (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+   //       margin-top: 80px;
+   // }
+   // @media all and /* até 599px */
+   //    (min-width: $break-min) and (max-width: $break-phone - 1) {
+   //       margin-top: 0;
+   // }
 }

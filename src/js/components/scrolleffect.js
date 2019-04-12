@@ -4,7 +4,7 @@ let backToTop = 0;
 
 window.addEventListener('scroll', () => {
    const $scrolled = window.scrollY;
-   const landmark = 600;
+   const landmark = 200;
    if (($scrolled >= landmark) && !backToTop) {
       $wrapHeader.classList.add('scrolleffect');
       backToTop = !backToTop;
