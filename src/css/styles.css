@@ -614,7 +614,15 @@ body {
     text-align: left; }
     .btn-cards.contrateagora:before {
       content: '';
-      background-image: url(../img/seta-btn.svg);
+      background-image: url(../img/icon-seta-right-light.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 5px;
+      margin: 0 10px; }
+    .btn-cards.contrateagora:hover:before {
+      content: '';
+      background-image: url(../img/icon-seta-right-dark.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -624,6 +632,29 @@ body {
       border: 1px solid #050A26;
       color: #050A26;
       background-color: white; }
+  .btn-cards.vejamais {
+    width: 135px;
+    height: 44px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    color: white;
+    background-color: #C9801D;
+    border-radius: 5px;
+    text-decoration: none; }
+    .btn-cards.vejamais:after {
+      content: '';
+      background-image: url(../img/icon-seta-buttom-light.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 10px;
+      margin: 0 10px; }
+    .btn-cards.vejamais:hover, .btn-cards.vejamais.hovereffect {
+      border: none;
+      color: white;
+      background-color: #C9801D; }
 
 .service-card {
   display: flex;
@@ -736,6 +767,7 @@ body {
     .service-card .content.-invert .subtitle {
       color: #050A26; }
     .service-card .content .square {
+      position: relative;
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
@@ -744,11 +776,18 @@ body {
       height: 200px;
       padding: 20px;
       color: #C9801D;
-      border: 1px solid #C9801D; }
+      border: 1px solid #C9801D;
+      background-color: white;
+      cursor: pointer;
+      overflow: hidden; }
       @media all and (min-width: 320px) and (max-width: 599px) {
         .service-card .content .square {
           padding: 10px;
           height: auto; } }
+      .service-card .content .square:hover {
+        overflow: auto; }
+        .service-card .content .square:hover .vejamais {
+          opacity: 0; }
       .service-card .content .square .description {
         font-size: 18px;
         line-height: 22px; }

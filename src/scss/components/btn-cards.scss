@@ -29,7 +29,16 @@
       text-align: left;
       &:before {
          content:'';
-         background-image: url(../img/seta-btn.svg);
+         background-image: url(../img/icon-seta-right-light.svg);
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         padding: 5px;
+         margin: 0 10px;
+      }
+      &:hover:before {
+         content:'';
+         background-image: url(../img/icon-seta-right-dark.svg);
          background-repeat: no-repeat;
          background-size: contain;
          background-position: center;
@@ -41,6 +50,33 @@
          border: 1px solid $color-primary-dark;
          color: $color-primary-dark;
          background-color: $color-secondary-light;
+      }
+   }
+   &.vejamais {
+      width: 135px;
+      height: 44px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      border: none;
+      color: $color-secondary-light;
+      background-color: $color-primary-medium;
+      border-radius: 5px;
+      text-decoration: none;
+      &:after {
+         content:'';
+         background-image: url(../img/icon-seta-buttom-light.svg);
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         padding: 10px;
+         margin: 0 10px;
+      }
+      &:hover,
+      &.hovereffect {
+         border: none;
+         color: $color-secondary-light;
+         background-color: $color-primary-medium;
       }
    }
 }
