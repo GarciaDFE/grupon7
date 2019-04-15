@@ -271,6 +271,30 @@ body {
   .btn-totop img {
     margin-right: 10px; }
 
+.wrap-team {
+  width: 100%;
+  padding-top: 20px;
+  max-width: 1060px;
+  margin: 0 auto; }
+  .wrap-team .wrap-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    text-align: center; }
+    .wrap-team .wrap-title > .title {
+      font-size: 50px;
+      font-weight: bold;
+      margin-right: 20px;
+      color: #050A26; }
+  .wrap-team .row-card {
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    width: 100%;
+    max-width: 1060px;
+    margin: 50px 0; }
+
 .btn-cotacao {
   display: none; }
   @media all and (min-width: 320px) and (max-width: 599px) {
@@ -994,3 +1018,63 @@ body {
       .main-footer .contacts .btn:hover {
         background-color: white;
         color: #C9801D; }
+
+.team-card {
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 350px;
+  height: 700px; }
+  .team-card .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid rgba(201, 128, 29, 0.3);
+    border-radius: 50%; }
+    .team-card .avatar .picture {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 5px solid rgba(201, 128, 29, 0.8);
+      float: left; }
+  .team-card .name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #050A26;
+    background-image: url(../img/icon-linkedin-dark.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 40px;
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: transform 300ms linear; }
+    .team-card .name:hover {
+      transform: scale(1.1);
+      transition: transform 300ms linear; }
+    .team-card .name .link {
+      color: inherit;
+      text-decoration: inherit; }
+  .team-card .square {
+    box-sizing: border-box;
+    padding: 20px 40px;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 25px;
+    text-align: center;
+    color: #C9801D;
+    border: 1px solid #C9801D; }
+    .team-card .square .subtitle {
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 10px; }
+    .team-card .square .profile {
+      color: #050A26;
+      margin-bottom: 25px; }
+    .team-card .square .skill {
+      text-transform: uppercase;
+      line-height: 26px; }
