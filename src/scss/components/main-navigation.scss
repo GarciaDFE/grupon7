@@ -1,26 +1,26 @@
 .main-navigation {
-   position: relative;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   max-width: $break-desktop;
-   margin: 0 auto;
-   height: 100%;
-   background-color: rgba(255,255,255,0.95);
-   padding-left: 40px;
-   @media all and /* 600px a 999px */
-      (min-width: $break-phone) and (max-width: $break-desktop - 201) {
-         padding-left: 30px;
-   }
-   @media all and /* 320px a 599px */
-      (max-width: $break-phone - 1) {
-         padding: 0 40px;
-   }
-   .main-btnMenu {
-      display: none;
-      @media all and /* 320px a 599px */
-         (max-width: $break-phone - 1) { 
-            display: block;
-      }
-   }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $break-desktop;
+  margin: 0 auto;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding-left: 40px;
+  /* 600px a 999px */
+  @media all and (min-width: $break-phone) and (max-width: $break-desktop - 201) {
+    padding-left: 30px;
+  }
+  /* 320px a 599px */
+  @media all and (max-width: $break-phone - 1) {
+    padding: 0 20px;
+  }
+  .main-btnMenu {
+    display: none;
+    /* 320px a 599px */
+    @media all and (max-width: $break-phone - 1) {
+      display: block;
+    }
+  }
 }
