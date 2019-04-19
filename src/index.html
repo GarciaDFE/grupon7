@@ -32,13 +32,15 @@
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a class="action -originservices comSubmenu" href="#">Serviços</a>
-              <ul id="submenu" class="submenu">
-                <li><a href="">Seguros</a></li>
-                <li><a href="">Consórcios</a></li>
-                <li><a href="">Benefícios</a></li>
-                <li><a href="">Saúde e Odonto</a></li>
-                <li><a href="">Consultoria</a></li>
+              <a class="action -isActive -originservices comSubmenu" href="#"
+                >Serviços</a
+              >
+              <ul id="submenu" class="submenu active">
+                <li><a href="#seguros">Seguros</a></li>
+                <li><a href="#consorcios">Consórcios</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#saudeodonto">Saúde e Odonto</a></li>
+                <li><a href="#consultoria">Consultoria</a></li>
               </ul>
             </li>
             <!--
@@ -162,7 +164,7 @@
               alt="imagem de pessoa relaxando"
           /></a>
           <div class="content">
-            <dt class="title">Seguros</dt>
+            <dt id="seguros" class="title">Seguros</dt>
             <dt class="subtitle">para pessoas físicas e empresas</dt>
             <div class="square">
               <dd class="description">
@@ -179,13 +181,13 @@
           </div>
         </dl>
         <dl class="service-card">
-          <a class="image" href="#"
+          <a class="image" href=""
             ><img
               src="img/profissional-consorcios.jpg"
               alt="imagem de pessoa relaxando"
           /></a>
           <div class="content -invert">
-            <dt class="title">Consórcios</dt>
+            <dt id="consorcios" class="title">Consórcios</dt>
             <dt class="subtitle">para pessoas físicas e empresas</dt>
             <div class="square">
               <dd class="description">
@@ -208,7 +210,7 @@
               alt="imagem de pessoa relaxando"
           /></a>
           <div class="content">
-            <dt class="title">Benefícios</dt>
+            <dt id="beneficios" class="title">Benefícios</dt>
             <dt class="subtitle">benefícios e cartões para os colaboradores</dt>
             <div class="square">
               <dd class="description">
@@ -231,7 +233,7 @@
               alt="imagem de pessoa relaxando"
           /></a>
           <div class="content -invert">
-            <dt class="title">Saúde e Odonto</dt>
+            <dt id="saudeodonto" class="title">Saúde e Odonto</dt>
             <dt class="subtitle">para pessoas físicas e empresas</dt>
             <div class="square">
               <dd class="description">
@@ -254,7 +256,7 @@
               alt="imagem de pessoa relaxando"
           /></a>
           <div class="content">
-            <dt class="title">Consultoria</dt>
+            <dt id="consultoria" class="title">Consultoria</dt>
             <dt class="subtitle">serviços especializados para empresas</dt>
             <div class="square">
               <dd class="description">
@@ -379,6 +381,7 @@
 
     <!-- build:alljs -->
     <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
+    <script type="text/javascript" src="js/components/nav-bar.js"></script>
     <script type="text/javascript" src="js/components/scrolleffect.js"></script>
     <script
       type="text/javascript"

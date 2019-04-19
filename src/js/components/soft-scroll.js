@@ -4,20 +4,25 @@ const $wrapServices = document.querySelector(".wrap-services");
 const $wrapPartners = document.querySelector(".wrap-partners");
 const $btnV1 = document.querySelector(".-v1");
 const $btnV2 = document.querySelector(".-v2");
+let $view = 0;
+let breakPhone = 599;
 
-$originServices.addEventListener("click", function () {
-  smoothScroll($wrapServices, 1000);
+$originServices.addEventListener("click", function() {
+  $view = window.innerWidth;
+  if ($view > breakPhone) {
+    smoothScroll($wrapServices, 1000);
+  }
 });
 
-$btnV1.addEventListener("click", function () {
-  smoothScroll($originServices, 5000);
-});
-
-$originPartners.addEventListener("click", function () {
+$originPartners.addEventListener("click", function() {
   smoothScroll($wrapPartners, 2000);
 });
 
-$btnV2.addEventListener("click", function () {
+$btnV1.addEventListener("click", function() {
+  smoothScroll($originServices, 5000);
+});
+
+$btnV2.addEventListener("click", function() {
   smoothScroll($originServices, 6000);
 });
 

@@ -85,6 +85,7 @@
             transform-origin: center;
           }
         }
+        &.-isActive,
         &:hover {
           color: $color-primary-medium;
           /* até 599px */
@@ -93,7 +94,7 @@
             color: $color-primary-medium;
           }
         }
-        &.-isActive,
+        &.-isActive:after,
         &:hover:after {
           transform: scale(1);
         }
@@ -107,18 +108,16 @@
         color: $color-primary-medium;
         border-top: 1px solid white;
         /* até 599px */
-        @media all and (max-width: $break-phone - 1) {
-          display: block;
+        &.active {
+          @media all and (max-width: $break-phone - 1) {
+            display: block;
+          }
         }
         li {
           padding-left: 10px;
           a {
             text-decoration: none;
-            color: $color-secondary-light;
-            &:hover {
-              text-decoration: none;
-              color: $color-primary-medium;
-            }
+            color: inherit;
           }
         }
       }
