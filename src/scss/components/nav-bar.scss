@@ -85,7 +85,6 @@
             transform-origin: center;
           }
         }
-        &.-isActive,
         &:hover {
           color: $color-primary-medium;
           /* até 599px */
@@ -94,7 +93,6 @@
             color: $color-primary-medium;
           }
         }
-        &.-isActive:after,
         &:hover:after {
           transform: scale(1);
         }
