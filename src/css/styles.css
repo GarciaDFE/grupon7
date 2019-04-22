@@ -897,12 +897,14 @@ img {
 
 .main-partners {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1060px;
   border: 1px solid #C9801D;
-  padding: 20px; }
+  padding: 20px;
+  /* de 600px a 1199px */
+  /* de 320px a 599px */ }
   @media all and (min-width: 600px) and (max-width: 1199px) {
     .main-partners {
       margin: 0 10px; } }
@@ -915,7 +917,9 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0; }
+    margin: 50px 0;
+    /* de 600px a 899px */
+    /* de 320px a 599px */ }
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-partners .arealogo {
         width: 33%;
@@ -925,7 +929,9 @@ img {
         width: 50%;
         margin: 25px 0; } }
     .main-partners .arealogo .logo {
-      width: 40%; }
+      width: 40%;
+      /* de 600px a 899px */
+      /* de 320px a 599px */ }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .main-partners .arealogo .logo {
           width: 45%; } }
