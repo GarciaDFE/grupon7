@@ -1,109 +1,136 @@
 .main-carousel {
-   max-width: $break-desktop;
-   margin: 0 auto;
-   .cards {
-      position: relative;
-      height: 540px;
-      .card {
-         display: flex;
-         justify-content: center;
-         flex-direction: column;
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: center;
-
-         &.-img1 {
-            background-image: url(../img/img1Carousel.jpg);
-         }
-         &.-img2 {
-            background-image: url(../img/img2Carousel.jpg);
-         }
-         &.-img3 {
-            background-image: url(../img/img3Carousel.jpg);
-         }
-
-         @media all and /* 600px a 899px */
-            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-               height: 340px;
-         }
-         @media all and /* 320px a 599px */
-            (min-width: $break-min) and (max-width: $break-phone - 1) {
-               height: 240px;
-               justify-content: space-between;
-         }
-         
-         .title,
-         .text {
-            max-width: 395px;
-            margin: 0 0 20px 130px;
-         }
-         .title {
-            font-size: 70px;
-            font-weight: bold;
-            color: $color-primary-dark;
-            @media all and /* 600px a 899px */
-               (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-                  font-size: 40px;
-            }
-            @media all and /* 320px a 599px */
-               (min-width: $break-min) and (max-width: $break-phone - 1) {
-                  font-size: 30px;
-                  margin: 20px;
-            }
-         }
-         .text {
-            font-size: 30px;
-            color: $color-primary-dark;
-            line-height: 1.2;
-            @media all and /* 600px a 899px */
-               (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-                  font-size: 20px;
-            }
-            @media all and /* 320px a 599px */
-               (min-width: $break-min) and (max-width: $break-phone - 1) {
-                  display: none;
-            }
-         }
-         .btn {
-            border: none;
-            width: 165px;
-            height: 57px;
-            font-family: inherit;
-            font-size: 22px;
-            font-weight: bold;
-            background-color: $color-primary-medium;
-            color: $color-secondary-light;
-            margin-left: 340px;
-            cursor: pointer;
-            transition: all 300ms linear;
-            z-index: 5;
-            @media all and /* 600px a 899px */
-               (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-                  width: 150px;
-                  height: 50px;
-                  font-size: 20px;
-            }
-            @media all and /* 320px a 599px */
-               (min-width: $break-min) and (max-width: $break-phone - 1) {
-                  width: 150px;
-                  height: 50px;
-                  font-size: 20px;
-                  margin: 0 auto 50px;
-            }
-            &:hover {
-               background-color: $color-primary-dark;
-            }
-         }
+  max-width: $break-desktop;
+  margin: 0 auto;
+  width: 100%;
+  .cards {
+    height: calc(100vw * 0.45);
+    max-height: 540px;
+    /* 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      height: 240px;
+    }
+    .card {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      &.-img1 {
+        background-image: url(../img/img1Carousel.jpg);
       }
-   }
+      &.-img2 {
+        background-image: url(../img/img2Carousel.jpg);
+      }
+      &.-img3 {
+        background-image: url(../img/img3Carousel.jpg);
+      }
+      /* 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        background-position: center right;
+      }
+      .title,
+      .text,
+      .btn {
+        max-width: 395px;
+        margin: 0 0 20px 130px;
+        /* 600px a 899px */
+        @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+          max-width: 250px;
+          margin: 0 0 10px 90px;
+        }
+        /* 320px a 599px */
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+          width: 100%;
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+      .title {
+        font-size: 70px;
+        font-weight: bold;
+        color: $color-primary-dark;
+        /* 600px a 899px */
+        @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+          font-size: 35px;
+        }
+        /* 320px a 599px */
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+          font-size: 30px;
+        }
+      }
+      .text {
+        font-size: 30px;
+        color: $color-primary-dark;
+        line-height: 1.2;
+        /* 600px a 899px */
+        @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+          font-size: 15px;
+        }
+        /* 320px a 599px */
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+          display: none;
+        }
+      }
+      .btn {
+        border: none;
+        width: 165px;
+        height: 57px;
+        font-family: inherit;
+        font-size: 22px;
+        font-weight: bold;
+        background-color: $color-primary-medium;
+        color: $color-secondary-light;
+        cursor: pointer;
+        transition: all 300ms linear;
+        z-index: 5;
+        &:hover {
+          background-color: $color-primary-dark;
+        }
+        /* 600px a 899px */
+        @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+          width: 125px;
+          height: 44px;
+          font-size: 17px;
+        }
+        /* 320px a 599px */
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+          width: 110px;
+          height: 44px;
+          font-size: 20px;
+          background-color: transparent;
+          color: $color-primary-medium;
+          align-self: flex-end;
+          .-variant {
+            /* 320px a 599px */
+            @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+              display: none;
+            }
+          }
+          &::after {
+            content: "";
+            background-image: url(../img/btn-saibamais.jpg);
+            padding: 10px 22px;
+            margin-left: 10px;
+          }
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
 }
 
 // SETTINGS ELEMENTS GLIDE (CAROUSEL)
 .glide {
-   @media all and /* até 1200px */
-      (max-width: $break-desktop) {
-         position: static;
-   }
+  /* até 1200px */
+  @media all and (max-width: $break-desktop) {
+    position: static;
+  }
 }
 
 .glide__slides {
@@ -112,9 +139,8 @@
 }
 
 .glide__bullets {
-   bottom: 1em;
+  bottom: 1em;
 }
-
 .glide__bullet {
   height: 20px;
   width: 20px;
@@ -122,15 +148,20 @@
   background-color: $color-primary-medium;
   opacity: 0.5;
   cursor: pointer;
-  @media all and /* 320px a 599px */
-    (min-width: $break-min) and (max-width: $break-phone - 1) {
-        display: none;
+  /* 600px a 899px */
+  @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+    height: 15px;
+    width: 15px;
+  }
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    display: none;
   }
   &:hover,
   &--active {
-     background-color: $color-primary-medium;
-     border: none;
-     opacity: 1;
+    background-color: $color-primary-medium;
+    border: none;
+    opacity: 1;
   }
 }
 
@@ -140,11 +171,10 @@
   color: transparent;
   padding: 0;
   box-shadow: none;
-  width: 50px;
-  height: 50px;
+  width: 20px;
   opacity: 0.4;
-  @media all and /* 320px a 599px */
-  (min-width: $break-min) and (max-width: $break-phone - 1) {
-      display: none;
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    display: none;
   }
 }
