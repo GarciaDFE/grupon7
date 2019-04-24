@@ -25,6 +25,9 @@
       &.-img3 {
         background-image: url(../img/img3Carousel.jpg);
       }
+      &.-img4 {
+        background-image: url(../img/img4Carousel.jpg);
+      }
       /* 320px a 599px */
       @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
         justify-content: space-between;

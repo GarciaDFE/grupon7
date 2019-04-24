@@ -155,18 +155,25 @@ img {
   .main-segments .title {
     font-size: 50px;
     font-weight: bold;
-    text-align: center; }
-    @media all and (min-width: 320px) and (max-width: 899px) {
+    text-align: center;
+    /* 600px a 899px */
+    /* 320px a 599px */ }
+    @media all and (min-width: 600px) and (max-width: 899px) {
       .main-segments .title {
         font-size: 32px; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-segments .title {
+        font-size: 25px; } }
     .main-segments .title .separator {
-      margin: 0 20px; }
-      @media all and (min-width: 320px) and (max-width: 599px) {
+      margin: 0 15px;
+      /* 320px a 499px */ }
+      @media all and (min-width: 320px) and (max-width: 499px) {
         .main-segments .title .separator {
           display: none; } }
     .main-segments .title .-alternate {
-      color: #C9801D; }
-      @media all and (min-width: 320px) and (max-width: 599px) {
+      color: #C9801D;
+      /* 320px a 499px */ }
+      @media all and (min-width: 320px) and (max-width: 499px) {
         .main-segments .title .-alternate {
           display: block;
           margin-bottom: 5px; } }
@@ -653,6 +660,8 @@ img {
         background-image: url(../img/img2Carousel.jpg); }
       .main-carousel .cards .card.-img3 {
         background-image: url(../img/img3Carousel.jpg); }
+      .main-carousel .cards .card.-img4 {
+        background-image: url(../img/img4Carousel.jpg); }
       @media all and (min-width: 320px) and (max-width: 599px) {
         .main-carousel .cards .card {
           justify-content: space-between;
@@ -911,6 +920,9 @@ img {
       .service-card .content .square .description {
         font-size: 18px;
         line-height: 22px; }
+        .service-card .content .square .description .-destaque {
+          font-weight: bold;
+          text-transform: uppercase; }
         @media all and (min-width: 320px) and (max-width: 599px) {
           .service-card .content .square .description {
             font-size: 16px;
