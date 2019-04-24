@@ -1,5 +1,6 @@
 const $image = document.querySelectorAll(".image");
-const $btn = document.querySelectorAll(".btn.service");
+const $btn = document.querySelectorAll(".btn-cards");
+console.log($btn)
 
 $image.forEach((image, index) => {
    image.addEventListener("mouseover", () => {

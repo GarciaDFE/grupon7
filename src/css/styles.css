@@ -191,15 +191,19 @@ img {
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
-    text-align: center; }
+    text-align: center;
+    /* 320px a 599px */ }
     @media all and (min-width: 320px) and (max-width: 599px) {
       .wrap-services .wrap-title {
-        flex-direction: column; } }
+        flex-direction: column;
+        margin-bottom: 30px; } }
     .wrap-services .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
       margin-right: 20px;
-      color: #050A26; }
+      color: #050A26;
+      /* 600px a 899px */
+      /* 320px a 599px */ }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .wrap-services .wrap-title > .title {
           font-size: 40px;
@@ -211,7 +215,8 @@ img {
     .wrap-services .wrap-title > .subtitle {
       font-size: 24px;
       margin-top: 10px;
-      color: #C9801D; }
+      color: #C9801D;
+      /* 600px a 899px */ }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .wrap-services .wrap-title > .subtitle {
           font-size: 20px;
@@ -220,7 +225,7 @@ img {
         .wrap-services .wrap-title > .subtitle {
           font-size: 18px;
           margin: 0 20px;
-          text-align: left; } }
+          text-align: center; } }
       .wrap-services .wrap-title > .subtitle .-destaque {
         text-transform: uppercase; }
 
@@ -235,18 +240,21 @@ img {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    text-align: center; }
+    text-align: center;
+    /* 320px a 599px */ }
     @media all and (min-width: 320px) and (max-width: 599px) {
       .wrap-partners .wrap-title {
         justify-content: flex-start;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin: 0 10px 10px; } }
     .wrap-partners .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
       margin: 0 20px 0 150px;
-      color: #050A26; }
+      color: #050A26;
+      /* de 600px a 899px */
+      /* de 320px a 599px */ }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .wrap-partners .wrap-title > .title {
           font-size: 40px;
@@ -260,7 +268,9 @@ img {
       font-size: 24px;
       line-height: 1.2;
       color: #C9801D;
-      text-align: left; }
+      text-align: left;
+      /* 600px a 899px */
+      /* 320px a 599px */ }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .wrap-partners .wrap-title > .subtitle {
           font-size: 20px;
@@ -268,7 +278,8 @@ img {
       @media all and (min-width: 320px) and (max-width: 599px) {
         .wrap-partners .wrap-title > .subtitle {
           font-size: 18px;
-          margin-top: 5px; } }
+          margin-top: 5px;
+          text-align: center; } }
 
 .btn-totop {
   max-width: 1060px;
@@ -749,7 +760,7 @@ img {
         @media all and (min-width: 320px) and (max-width: 599px) {
             .main-carousel .cards .card .btn::after {
               content: "";
-              background-image: url(../img/btn-saibamais.jpg);
+              background-image: url(../img/btn-saibamais-medium.jpg);
               padding: 10px 22px;
               margin-left: 10px; }
             .main-carousel .cards .card .btn:hover {
@@ -802,151 +813,326 @@ img {
     .glide__arrow {
       display: none; } }
 
-.service-card {
+.btn-cards {
+  align-self: flex-end;
+  font-family: inherit;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 300ms linear; }
+  .btn-cards.saibamais {
+    width: 135px;
+    height: 44px;
+    border: 1px solid #050A26;
+    color: #050A26;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    /* acima de 600px */
+    /* 320px a 599px */ }
+    @media all and (min-width: 600px) {
+      .btn-cards.saibamais:hover, .btn-cards.saibamais.hovereffect {
+        border: none;
+        color: white;
+        background-color: #050A26; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .btn-cards.saibamais {
+        width: 105px;
+        height: 44px;
+        background-color: transparent;
+        color: #050A26;
+        align-self: flex-end;
+        border: none; }
+        .btn-cards.saibamais .-variant {
+          /* 320px a 599px */ } }
+    @media all and (min-width: 320px) and (max-width: 599px) and (min-width: 320px) and (max-width: 599px) {
+      .btn-cards.saibamais .-variant {
+        display: none; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+        .btn-cards.saibamais::after {
+          content: "";
+          background-image: url(../img/btn-saibamais-light.svg);
+          background-repeat: no-repeat;
+          padding: 10px 25px;
+          margin-left: 10px; } }
+  .btn-cards.contrateagora {
+    width: 350px;
+    height: 44px;
+    color: white;
+    background-color: #050A26;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    text-align: left; }
+    .btn-cards.contrateagora:before {
+      content: "";
+      background-image: url(../img/icon-seta-right-light.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 5px;
+      margin: 0 10px; }
+    .btn-cards.contrateagora:hover:before {
+      content: "";
+      background-image: url(../img/icon-seta-right-dark.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 5px;
+      margin: 0 10px; }
+    .btn-cards.contrateagora:hover, .btn-cards.contrateagora.hovereffect {
+      border: 1px solid #050A26;
+      color: #050A26;
+      background-color: white; }
+  .btn-cards.vejamais {
+    width: 135px;
+    height: 44px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    color: white;
+    background-color: #C9801D;
+    border-radius: 5px;
+    text-decoration: none; }
+    .btn-cards.vejamais:after {
+      content: "";
+      background-image: url(../img/icon-seta-buttom-light.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 10px;
+      margin: 0 10px; }
+    .btn-cards.vejamais:hover, .btn-cards.vejamais.hovereffect {
+      border: none;
+      color: white;
+      background-color: #C9801D; }
+
+.main-card {
+  position: relative;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
   max-width: 1060px;
-  height: 260px;
-  margin: 0 auto; }
-  .service-card:not(:last-child) {
-    margin-bottom: 120px; }
-    @media all and (min-width: 900px) and (max-width: 1199px) {
-      .service-card:not(:last-child) {
-        margin-bottom: 120px; } }
+  width: 100%;
+  height: 240px;
+  margin: 0 auto;
+  /* 900px a 1199px */
+  /* 600px a 899px */
+  /* 320px a 599px */ }
+  .main-card:not(:last-child) {
+    margin-bottom: 120px;
+    /* 600px a 899px */
+    /* 320px a 599px */ }
     @media all and (min-width: 600px) and (max-width: 899px) {
-      .service-card:not(:last-child) {
+      .main-card:not(:last-child) {
         margin-bottom: 60px; } }
     @media all and (min-width: 320px) and (max-width: 599px) {
-      .service-card:not(:last-child) {
-        margin-bottom: 80px; } }
+      .main-card:not(:last-child) {
+        margin-bottom: 40px; } }
   @media all and (min-width: 900px) and (max-width: 1199px) {
-    .service-card {
-      width: 95%; } }
+    .main-card {
+      max-width: 860px;
+      height: 194px; } }
   @media all and (min-width: 600px) and (max-width: 899px) {
-    .service-card {
-      width: 95%;
-      justify-content: center; } }
+    .main-card {
+      max-width: 570px;
+      height: 175px;
+      justify-content: flex-start; } }
   @media all and (min-width: 320px) and (max-width: 599px) {
-    .service-card {
-      width: 95%;
+    .main-card {
+      width: 100%;
       height: auto;
-      justify-content: center;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center; } }
-  .service-card .image {
-    position: relative; }
-    .service-card .image:after {
+  .main-card .image {
+    position: relative;
+    flex-wrap: wrap;
+    width: 360px;
+    overflow: hidden;
+    /* 900px a 1199px */
+    /* 600px a 899px */
+    /* 320px a 599px */ }
+    @media all and (min-width: 900px) and (max-width: 1199px) {
+      .main-card .image {
+        width: 290px;
+        height: 193.3px; } }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-card .image {
+        width: 217.5px;
+        height: 145px; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-card .image {
+        order: 1;
+        width: 320px;
+        margin-bottom: 20px; } }
+    .main-card .image:after {
       content: "";
       position: absolute;
       left: 0;
-      height: 240px;
       width: 100%;
+      height: 100%;
       background-color: #C9801D;
       opacity: 0;
       transition: opacity 300ms linear; }
-    .service-card .image:hover:after, .service-card .image.hovereffect:after {
+    .main-card .image:hover:after, .main-card .image.hovereffect:after {
       background-color: #C9801D;
       opacity: 0.5; }
-    @media all and (min-width: 900px) and (max-width: 1199px) {
-      .service-card .image {
-        margin-right: 20px; } }
-    @media all and (min-width: 600px) and (max-width: 899px) {
-      .service-card .image {
-        display: none; } }
-    @media all and (min-width: 320px) and (max-width: 599px) {
-      .service-card .image img {
-        text-align: center; } }
-  .service-card .content {
+  .main-card .header {
+    align-self: flex-end;
+    order: 2;
+    width: 680px;
+    height: 50px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    width: 680px;
-    height: 260px; }
+    align-items: center;
+    /* 900px a 1199px */
+    /* 600px a 899px */
+    /* 320px a 599px */ }
+    @media all and (min-width: 900px) and (max-width: 1199px) {
+      .main-card .header {
+        width: 550px;
+        height: 35px;
+        align-items: baseline; } }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-card .header {
+        width: 340px;
+        height: 30px;
+        align-items: baseline;
+        padding-bottom: 5px; } }
     @media all and (min-width: 320px) and (max-width: 599px) {
-      .service-card .content {
-        position: relative;
-        justify-content: flex-end;
-        flex-direction: column;
-        align-items: center;
+      .main-card .header {
+        justify-content: center;
+        order: 0;
         width: 100%;
-        height: 100%; } }
-    .service-card .content .title {
+        height: auto;
+        margin-bottom: 10px; } }
+    .main-card .header .title {
       font-size: 40px;
       font-weight: bold;
       color: #050A26;
-      margin: 0 20px 5px 0; }
+      margin-right: 20px;
+      /* 900px a 1199px */
+      /* 600px a 899px */
+      /* 320px a 599px */ }
       @media all and (min-width: 900px) and (max-width: 1199px) {
-        .service-card .content .title {
-          font-size: 35px;
-          margin: 0 20px 0 0; } }
-      @media all and (min-width: 320px) and (max-width: 599px) {
-        .service-card .content .title {
-          position: absolute;
-          top: -280px;
+        .main-card .header .title {
           font-size: 30px; } }
-    .service-card .content .subtitle {
-      margin-bottom: 10px;
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-card .header .title {
+          font-size: 20px;
+          margin-right: 10px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-card .header .title {
+          font-size: 30px;
+          margin: 0; } }
+    .main-card .header .subtitle {
       font-size: 28px;
       font-weight: normal;
-      color: #C9801D; }
-      @media all and (min-width: 900px) and (max-width: 1199px) {
-        .service-card .content .subtitle {
-          font-size: 25px;
-          margin-bottom: 3px; } }
-      @media all and (min-width: 320px) and (max-width: 599px) {
-        .service-card .content .subtitle {
-          font-size: 22px;
-          margin-bottom: 20px; } }
-    .service-card .content.-invert .title {
-      color: #C9801D; }
-    .service-card .content.-invert .subtitle {
-      color: #050A26; }
-    .service-card .content .square {
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: 200px;
-      padding: 20px;
       color: #C9801D;
-      border: 1px solid #C9801D; }
+      /* 900px a 1199px */
+      /* 600px a 899px */
+      /* 320px a 599px */ }
+      @media all and (min-width: 900px) and (max-width: 1199px) {
+        .main-card .header .subtitle {
+          font-size: 20px; } }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-card .header .subtitle {
+          font-size: 14px; } }
       @media all and (min-width: 320px) and (max-width: 599px) {
-        .service-card .content .square {
-          padding: 10px;
-          height: auto; } }
-      .service-card .content .square .description {
-        font-size: 18px;
-        line-height: 22px; }
-        .service-card .content .square .description .-destaque {
-          font-weight: bold;
-          text-transform: uppercase; }
-        @media all and (min-width: 320px) and (max-width: 599px) {
-          .service-card .content .square .description {
+        .main-card .header .subtitle {
+          display: none; } }
+    .main-card .header .icone {
+      padding-left: 60px;
+      background-repeat: no-repeat;
+      background-size: contain; }
+      .main-card .header .icone#one {
+        background-image: url(../img/icon-seguro-auto.svg); }
+      .main-card .header .icone#seguros {
+        background-image: url(../img/icon-seguro-vida.svg); }
+    .main-card .header.-invert .title {
+      color: #C9801D; }
+    .main-card .header.-invert .subtitle {
+      color: #050A26; }
+  .main-card .square {
+    position: relative;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    width: 680px;
+    height: 190px;
+    padding: 20px;
+    color: #C9801D;
+    border: 1px solid #C9801D;
+    /* 900px a 1199px */
+    /* 600px a 899px */
+    /* 320px a 599px */ }
+    @media all and (min-width: 900px) and (max-width: 1199px) {
+      .main-card .square {
+        width: 550px;
+        height: 159px;
+        padding: 15px; } }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-card .square {
+        width: 340px;
+        height: 145px;
+        padding: 10px; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-card .square {
+        order: 2;
+        width: 95%;
+        height: 220px;
+        margin: 0 auto;
+        padding: 10px; } }
+    .main-card .square .description {
+      font-size: 18px;
+      line-height: 22px;
+      /* 900px a 1199px */
+      /* 600px a 899px */
+      /* 320px a 599px */ }
+      .main-card .square .description .-destaque {
+        font-weight: bold;
+        text-transform: uppercase; }
+      @media all and (min-width: 900px) and (max-width: 1199px) {
+        .main-card .square .description {
+          font-size: 15px;
+          line-height: 20px; } }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-card .square .description {
+          font-size: 12px;
+          line-height: 16px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-card .square .description {
+          font-size: 16px;
+          line-height: 20px; } }
+    .main-card .square .btn-cards {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      /* 900px a 1199px */
+      /* 600px a 899px */
+      /* 320px a 599px */ }
+      @media all and (min-width: 900px) and (max-width: 1199px) {
+        .main-card .square .btn-cards {
+          bottom: 15px;
+          right: 15px; } }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-card .square .btn-cards {
+          bottom: 10px;
+          right: 10px; }
+          .main-card .square .btn-cards.contrateagora {
             font-size: 16px;
-            line-height: 20px;
-            margin-bottom: 10px; } }
-      .service-card .content .square .btn {
-        align-self: flex-end;
-        width: 135px;
-        height: 44px;
-        border: 1px solid #050A26;
-        color: #050A26;
-        font-family: inherit;
-        font-size: 22px;
-        text-align: center;
-        text-decoration: none;
-        vertical-align: center;
-        background-color: white;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: all 1s linear; }
-        .service-card .content .square .btn:hover, .service-card .content .square .btn.hovereffect {
-          border: none;
-          color: white;
-          background-color: #050A26; }
+            width: 255px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-card .square .btn-cards {
+          bottom: 10px;
+          right: 10px; }
+          .main-card .square .btn-cards.contrateagora {
+            font-size: 16px;
+            width: 255px; } }
 
 .main-partners {
   display: flex;
