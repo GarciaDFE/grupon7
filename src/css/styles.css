@@ -845,11 +845,11 @@ img {
         background-color: #050A26; } }
     @media all and (min-width: 320px) and (max-width: 599px) {
       .btn-cards.saibamais {
-        width: 105px;
+        width: 110px;
         height: 44px;
         background-color: transparent;
+        text-align: right;
         color: #050A26;
-        align-self: flex-end;
         border: none; }
         .btn-cards.saibamais .-variant {
           /* 320px a 599px */ } }
