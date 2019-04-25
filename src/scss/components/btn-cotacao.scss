@@ -1,21 +1,21 @@
 .btn-cotacao {
-   display: none;
-   @media all and /* 320px a 599px */
-      (min-width: $break-min) and (max-width: $break-phone - 1) {
-         display: block;      
-         border: none;
-         width: 252px;
-         height: 78px;
-         margin: 0 auto;
-         font-family: inherit;
-         font-size: 24px;
-         font-weight: bold;
-         background-color: $color-primary-medium;
-         color: $color-secondary-light;
-         cursor: pointer;
-         transition: all 300ms linear;
-         &:hover {
-            background-color: $color-primary-dark;
-         }
-      }
+  display: none;
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    display: block;
+    border: none;
+    width: 252px;
+    height: 78px;
+    margin: 0 auto;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: $color-primary-medium;
+    color: $color-secondary-light;
+    cursor: pointer;
+    transition: all 300ms linear;
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
 }

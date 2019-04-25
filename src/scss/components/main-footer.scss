@@ -1,196 +1,195 @@
 .main-footer {
-   max-width: $break-desktop;
-   background-color: $color-primary-dark;
-   margin: 0 auto;
-   height: 450px;
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   padding: 110px 90px 80px;
-   @media all and /* 900px a 1199px */
-      (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-         padding: 90px 50px;
-   }
-   @media all and /* 600px a 899px */
-      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-         flex-wrap: wrap;
-         padding: 30px;
-         justify-content: space-around;
-   }
-   @media all and /* 320px a 599px */
-      (min-width: $break-min) and (max-width: $break-phone - 1) {
-         height: 350px;
-         flex-wrap: wrap;
-         padding: 20px;
-         justify-content: space-around;
-   }
-   .logo {
-      width: 161px;
-      font-size: 30px;
-      color: $color-secondary-medium;
-      text-transform: uppercase;
-      letter-spacing: 6px;
+  max-width: $break-desktop;
+  background-color: $color-primary-dark;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 110px 90px 80px;
+  /* 900px a 1199px */
+  @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+    justify-content: center;
+    padding: 50px;
+  }
+  /* 600px a 899px */
+  @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+    justify-content: center;
+    padding: 30px 15px;
+  }
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+  .logo {
+    width: 161px;
+    font-size: 30px;
+    color: $color-secondary-medium;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-align: center;
+    /* de 900px a 1199px */
+    @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      width: 140px;
+      font-size: 26px;
+    }
+    /* de 600px a 899px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      width: 80px;
+      font-size: 15px;
+      letter-spacing: 4px;
+    }
+    /* de 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      width: 80px;
+      font-size: 15px;
+      letter-spacing: 4px;
+      margin-right: 40px;
+    }
+    .-destaque {
+      font-weight: bold;
+    }
+  }
+  .local {
+    width: 425px;
+    color: $color-secondary-light;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 35px;
+
+    /* 900px a 1199px */
+    @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      width: 350px;
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0 30px;
+    }
+    /* de 600px a 899px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      width: 310px;
+      font-size: 15px;
+      line-height: 20px;
+      margin: 0 15px;
+    }
+    /* de 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      order: 2;
+      font-size: 15px;
+      line-height: 20px;
       text-align: center;
-      @media all and /* de 900px a 1199px */
-         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-            font-size: 28px;
-      }
-      @media all and /* de 480px a 599px */
-         (min-width: $break-phone - 120) and (max-width: $break-phone - 1) {
-            width: 140px;
-            font-size: 24px;
-            letter-spacing: 5px;
-      }
-      @media all and /* de 320px a 479px */
-         (min-width: $break-min) and (max-width: $break-phone - 121) {
-            width: 80px;
-            font-size: 16px;
-            letter-spacing: 3px;
-      }
-      img {
-         width: 100%;
-         margin-bottom: 5px;
-         @media all and  /* de 900px a 1199px */
-            (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-               width: 140px;
-         }
-      }
-      .-destaque {
-         font-weight: bold;
-      }
-   }
-   .local {
-      width: 425px;
-      color: $color-secondary-light;      
-      font-size: 24px;
-      font-weight: normal;
-      line-height: 29px;
-      @media all and /* 900px a 1199px */
-         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-            width: 380px;
-            font-size: 20px;
-            margin-left: 20px;
-      }
-      @media all and /* de 460px a 899px */
-         (min-width: $break-phone - 140) and (max-width: $break-tablet - 1) {
-            order: 2;
-            font-size: 22px;
-            line-height: 30px;
-            text-align: center;
-      }
-      @media all and /* de 320px a 459px */
-         (min-width: $break-min) and (max-width: $break-phone - 141) {
-            order: 2;
-            font-size: 18px;
-            line-height: 26px;
-            text-align: center;
+    }
+    .icons {
+      display: flex;
+      width: 100%;
+      height: 44px;
+      margin-top: 30px;
+      /* de 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        justify-content: center;
       }
       .icon {
-         display: inline-block;
-         margin: 30px 32px 0 0;
-         transition: transform 0.2s linear;
-         @media all and /* 320px a 899px */
-            (min-width: $break-min) and (max-width: $break-tablet - 1) {
-               margin: 15px 25px 0 0;
-         }
-         &:hover {
-            transform: scale(1.1);
-            transition: transform 0.2s linear;
-         }
+        height: 100%;
+        transition: transform 0.2s linear;
+        &:not(:last-child) {
+          margin-right: 44px;
+        }
+        &:first-child {
+          margin-right: 24px;
+        }
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 0.2s linear;
+        }
       }
-   }
-   .contacts {
-      width: 291px;
-      color: $color-primary-medium;
-      font-size: 30px;
+    }
+  }
+  .contacts {
+    width: 291px;
+    color: $color-primary-medium;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    /* 900px a 1199px */
+    @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      width: 252px;
+      font-size: 25px;
+      line-height: 15px;
+    }
+    /* 600px a 899px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      width: 150px;
+      font-size: 15px;
+      line-height: 12px;
+    }
+    /* de 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      width: 150px;
+      font-size: 15px;
+      line-height: 12px;
+      margin-bottom: 30px;
+    }
+    .contact {
+      margin-bottom: 18px;
+      &.-email {
+        margin-bottom: 33px;
+        /* 600px a 899px */
+        @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+          margin-bottom: 20px;
+        }
+        /* 320px a 599px */
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+          margin-bottom: 0;
+        }
+      }
+      .-destaque {
+        font-size: 35px;
+        /* 900px a 1199px */
+        @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+          font-size: 30px;
+        }
+        /* 600px a 899px */
+        @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+          font-size: 25px;
+        }
+        /* 320px a 599px */
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+          font-size: 25px;
+        }
+      }
+    }
+    .btn {
+      display: block;
+      border: none;
+      width: 252px;
+      height: 70px;
+      font-family: inherit;
+      font-size: 24px;
       font-weight: bold;
-      line-height: 36px;
-      @media all and /* 900px a 1199px */
-         (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-            width: 252px;
-            font-size: 26px;
-            line-height: 32px;
+      background-color: $color-primary-medium;
+      color: $color-secondary-light;
+      cursor: pointer;
+      transition: all 300ms linear;
+      /* de 600px a 899px */
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+        width: 240px;
+        height: 60px;
+        font-size: 20px;
       }
-      @media all and /* 600px a 899px */
-         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-            line-height: 25px;
+      /* de 600px a 899px */
+      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
       }
-      @media all and /* de 480px a 599px */
-         (min-width: $break-phone - 120) and (max-width: $break-phone - 1) {
-            font-size: 25px;
-            line-height: 27px;
-            text-align: right;
+      /* de 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        display: none;
       }
-      @media all and /* de 320px a 479px */
-         (min-width: $break-min) and (max-width: $break-phone - 121) {
-            width: 195px;
-            font-size: 19px;
-            line-height: 10px;
-            text-align: right;
+      &:hover {
+        background-color: $color-secondary-light;
+        color: $color-primary-medium;
       }
-      .contact {
-         margin-bottom: 18px;
-         &.-whatsapp::before {
-            content: '';
-            background: url(../img/icon-whatsapp.svg);
-            background-repeat: no-repeat;
-            padding: 0 20px;
-            @media all and /* de 480px a 599px */
-               (min-width: $break-phone - 120) and (max-width: $break-phone - 1) {
-                  padding: 8px 20px;
-            }
-            @media all and /* de 320px a 479px */
-               (min-width: $break-min) and (max-width: $break-phone - 121) {
-                  padding: 7px 20px;
-            }
-         }
-         &.-email {
-            margin-bottom: 33px;
-            @media all and /* 320px a 599px */
-               (min-width: $break-min) and (max-width: $break-phone - 1) {
-                  margin-bottom: 0;
-            }
-
-         }
-         .-destaque {
-            font-size: 35px;
-            @media all and /* 480px a 599px */
-               (min-width: $break-phone - 120) and (max-width: $break-phone - 1) {
-                  font-size: 30px;
-            }
-            @media all and /* 320px a 479px */
-               (min-width: $break-min) and (max-width: $break-phone - 121) {
-                  font-size: 25px;
-            }
-         }
-      }
-      .btn {
-         display: block;      
-         border: none;
-         width: 252px;
-         height: 70px;
-         font-family: inherit;
-         font-size: 24px;
-         font-weight: bold;
-         background-color: $color-primary-medium;
-         color: $color-secondary-light;
-         cursor: pointer;
-         transition: all 300ms linear;
-         @media all and /* de 600px a 899px */
-            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-               width: 230px;
-               height: 50px;
-               margin-bottom: 35px;
-               font-size: 20px;
-         }
-         @media all and /* de 320px a 599px */
-            (min-width: $break-min) and (max-width: $break-phone - 1) {
-               display: none;
-         }
-         &:hover {
-            background-color: $color-secondary-light;
-            color: $color-primary-medium;
-         }
-      }
-   }
+    }
+  }
 }

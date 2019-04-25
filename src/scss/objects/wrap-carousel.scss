@@ -1,14 +1,5 @@
 .wrap-carousel {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    @media all and /* 600px a 899px */
-        (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-            height: 340px;
-    }
-    @media all and /* 320px a 599px */
-        (min-width: $break-min) and (max-width: $break-phone - 1) {
-            height: 240px;
-            justify-content: space-between;
-    }
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }

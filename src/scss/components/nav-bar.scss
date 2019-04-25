@@ -1,173 +1,169 @@
 .nav-bar {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   font-size: 24px;
-   height: 100%;
-   > .menu {
-      text-align: right;
-      @media all and  /* 320px a 599px */
-         (min-width: $break-min) and (max-width: $break-phone - 1) {
-            position: absolute;
-            display: block;
-            background-color: $color-primary-dark;
-            width: 260px;
-            height: 350px;
-            top: 80px;
-            right: 0;
-            opacity: 0.85;
-            z-index: 10;
-            font-weight: bold;
-            line-height: 50px;
-            padding: 10px 20px;
-            transform: translateX(200%);
-            transition: transform 300ms linear;
-      }
-      &.menu-open {
-        transform: translateX(0);
-        visibility: visible;
-      }
-      > .item {
-         display: inline-block;
-         padding-right: 50px;
-         @media all and /* 1101px a 1199px */
-            (min-width: $break-desktop - 99) and (max-width: $break-desktop - 1) {
-               padding-right: 45px;
-         }
-         @media all and /* 1000px a 1100px */
-            (min-width: $break-desktop - 200) and (max-width: $break-desktop - 100) {
-               padding-right: 40px;
-               font-size: 22px;
-         }
-         @media all and /* 900px a 999px */
-            (min-width: $break-tablet) and (max-width: $break-desktop - 201) {
-               padding-right: 40px;
-               font-size: 17px;
-         }
-         @media all and /* 600px a 899px */
-            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-               padding-right: 40px;
-               font-size: 15px;
-         }
-         @media all and  /* até 599px */
-            (max-width: $break-phone - 1) {
-               width: 100%;
-               text-align: left;
-         }
-         &:not(:last-child) {
-            @media all and  /* até 599px */
-               (max-width: $break-phone - 1) {
-                  border-bottom: 1px solid white;
-            }
-         }
-         > .action {
-            position: relative;
-            color: $color-primary-dark;
-            list-style: none;
-            text-decoration: none;
-            cursor: pointer;
-            @media all and  /* até 599px */
-               (max-width: $break-phone - 1) {
-                  color: $color-secondary-light;
-            }
-            &:after {
-               @media all and  /* a partir de  600px */
-                  (min-width: $break-phone) {
-                     content: "";
-                     height: 4px;
-                     width: 100%;
-                     background-color: $color-primary-medium;
-                     position: absolute;
-                     bottom: -5px;
-                     left: 0;
-                     transform: scaleX(0);
-                     transition: transform 200ms linear;
-                     transform-origin: center;
-               }
-            }
-            &:hover {
-               color: $color-primary-medium;
-               @media all and  /* até 599px */
-                  (max-width: $break-phone - 1) {
-                     border: none;
-                     color: $color-primary-medium;
-               }
-            }
-            &.-isActive,
-            &:hover:after {
-               transform: scale(1);
-            }
-         }
-         .submenu {
-            display: none;
-            width: 220px;
-            font-size: 22px;
-            font-weight: normal;
-            line-height: 40px;
-            text-decoration: none;
-            color: $color-secondary-light;
-            border-top: 1px solid white;
-            @media all and  /* até 599px */
-               (max-width: $break-phone - 1) {
-                  display: block;
-            }
-            li {
-               padding-left: 10px;
-               a {
-                  text-decoration: none;
-                  color: $color-secondary-light;
-                  &:hover{
-                     text-decoration: none;
-                     color: $color-primary-medium;
-                  }
-               }
-            }
-         }
-      }
-   }
-   > .cotacao {
-      display: inline-block;
-      border: none;
-      background-color: $color-primary-medium;
-      width: 252px;
-      height: 100%;
-      font-family: inherit;
-      font-size: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 24px;
+  height: 100%;
+  > .menu {
+    text-align: right;
+    /* 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      position: absolute;
+      display: block;
+      background-color: $color-primary-dark;
+      width: 260px;
+      height: 500px;
+      top: 60px;
+      right: 0;
+      opacity: 0.85;
+      z-index: 10;
       font-weight: bold;
-      text-align: center;
-      letter-spacing: 0.5px;
-      color: $color-secondary-light;
-      padding: 0 50px;
-      cursor: pointer;
-      transition: all 300ms linear;
-      &:hover {
-         background-color: $color-primary-dark;
+      line-height: 50px;
+      padding: 10px 20px;
+      transform: translateX(200%);
+      transition: transform 300ms linear;
+    }
+    &.menu-open {
+      transform: translateX(0);
+      visibility: visible;
+    }
+    > .item {
+      display: inline-block;
+      padding-right: 50px;
+      /* 1101px a 1199px */
+      @media all and (min-width: $break-desktop - 99) and (max-width: $break-desktop - 1) {
+        padding-right: 45px;
       }
-      @media all and /* 1100 a 1199 */
-         (min-width: $break-desktop - 100) and (max-width: $break-desktop - 1) {
-            width: 220px;
-            padding: 0 20px;
+      /* 1000px a 1100px */
+      @media all and (min-width: $break-desktop - 200) and (max-width: $break-desktop - 100) {
+        padding-right: 40px;
+        font-size: 22px;
       }
-      @media all and /* 1000 a 1099px */
-         (min-width: $break-desktop - 200) and (max-width: $break-desktop - 101) {
-            width: 200px;
-            padding: 0 15px;
+      /* 900px a 999px */
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 201) {
+        padding-right: 40px;
+        font-size: 17px;
       }
-      @media all and /* 700 a 999px */
-         (min-width: $break-tablet - 200) and (max-width: $break-desktop - 201) {
-            width: 160px;
-            padding: 0 12px;         
-            font-size: 20px;
+      /* 600px a 899px */
+      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+        padding-right: 40px;
+        font-size: 15px;
       }
-      @media all and /* 600 a 699px */
-         (min-width: $break-phone) and (max-width: $break-tablet - 201) {
-            width: 120px;
-            padding: 0 10px;         
-            font-size: 17px;
+      /* até 599px */
+      @media all and (max-width: $break-phone - 1) {
+        width: 100%;
+        text-align: left;
       }
-      @media all and  /* até 599px */
-         (max-width: $break-phone - 1) {
-            display: none;
+      &:not(:last-child) {
+        /* até 599px */
+        @media all and (max-width: $break-phone - 1) {
+          border-bottom: 1px solid white;
+        }
       }
-   }
+      > .action {
+        position: relative;
+        color: $color-primary-dark;
+        list-style: none;
+        text-decoration: none;
+        cursor: pointer;
+        /* até 599px */
+        @media all and (max-width: $break-phone - 1) {
+          color: $color-secondary-light;
+        }
+        &:after {
+          /* a partir de 600px */
+          @media all and (min-width: $break-phone) {
+            content: "";
+            height: 4px;
+            width: 100%;
+            background-color: $color-primary-medium;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 200ms linear;
+            transform-origin: center;
+          }
+        }
+        &:hover {
+          color: $color-primary-medium;
+          /* até 599px */
+          @media all and (max-width: $break-phone - 1) {
+            border: none;
+            color: $color-primary-medium;
+          }
+        }
+        &:hover:after {
+          transform: scale(1);
+        }
+      }
+      .submenu {
+        display: none;
+        width: 220px;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+        color: $color-primary-medium;
+        border-top: 1px solid white;
+        /* até 599px */
+        &.active {
+          @media all and (max-width: $break-phone - 1) {
+            display: block;
+          }
+        }
+        li {
+          padding-left: 10px;
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+  > .cotacao {
+    display: inline-block;
+    border: none;
+    background-color: $color-primary-medium;
+    width: 252px;
+    height: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: $color-secondary-light;
+    padding: 0 50px;
+    cursor: pointer;
+    transition: all 300ms linear;
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+    /* 1100 a 1199 */
+    @media all and (min-width: $break-desktop - 100) and (max-width: $break-desktop - 1) {
+      width: 220px;
+      padding: 0 20px;
+    }
+    /* 1000 a 1099px */
+    @media all and (min-width: $break-desktop - 200) and (max-width: $break-desktop - 101) {
+      width: 200px;
+      padding: 0 15px;
+    }
+    /* 700 a 999px */
+    @media all and (min-width: $break-tablet - 200) and (max-width: $break-desktop - 201) {
+      width: 160px;
+      padding: 0 12px;
+      font-size: 20px;
+    }
+    /* 600 a 699px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 201) {
+      width: 120px;
+      padding: 0 10px;
+      font-size: 17px;
+    }
+    /* até 599px */
+    @media all and (max-width: $break-phone - 1) {
+      display: none;
+    }
+  }
 }

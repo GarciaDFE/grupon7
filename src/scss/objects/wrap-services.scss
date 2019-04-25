@@ -1,51 +1,51 @@
 .wrap-services {
-    width: 100%;
-    padding-top: 20px;
-    margin: 0 auto;
-    .wrap-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 70px;
-        text-align: center;
-        @media all and /* 320px a 599px */
-            (min-width: $break-min) and (max-width: $break-phone - 1) {
-                flex-direction: column;
-        }
-        > .title {
-            font-size: 50px;
-            font-weight: bold;
-            margin-right: 20px;
-            color: $color-primary-dark;
-            @media all and /* 600px a 899px */
-                (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-                    font-size: 40px;
-                    margin-right: 10px;
-            }
-            @media all and /* 320px a 599px */
-                (min-width: $break-min) and (max-width: $break-phone - 1) {
-                    font-size: 35px;
-                    margin: 5px 20px;
-            }
-        }
-        > .subtitle {
-            font-size: 24px;
-            margin-top: 10px;
-            color: $color-primary-medium;
-            @media all and /* 600px a 899px */
-                (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-                    font-size: 20px;
-                    margin-right: 5px;
-            }
-            @media all and /* 320px a 599px */
-                (min-width: $break-min) and (max-width: $break-phone - 1) {
-                    font-size: 18px;
-                    margin: 0 20px;
-                    text-align: left;
-            }
-            .-destaque {
-                text-transform: uppercase;
-            }
-        }
+  width: 100%;
+  padding-top: 20px;
+  margin: 0 auto;
+  .wrap-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    text-align: center;
+    /* 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      flex-direction: column;
+      margin-bottom: 30px;
     }
+    > .title {
+      font-size: 50px;
+      font-weight: bold;
+      margin-right: 20px;
+      color: $color-primary-dark;
+      /* 600px a 899px */
+      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+        font-size: 40px;
+        margin-right: 10px;
+      }
+      /* 320px a 599px */
+      @media all and(min-width: $break-min) and (max-width: $break-phone - 1) {
+        font-size: 35px;
+        margin: 5px 20px;
+      }
+    }
+    > .subtitle {
+      font-size: 24px;
+      margin-top: 10px;
+      color: $color-primary-medium;
+      /* 600px a 899px */
+      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+        font-size: 20px;
+        margin-right: 5px;
+      }
+      @media all and /* 320px a 599px */ (min-width: $break-min) and (max-width: $break-phone - 1) {
+        font-size: 18px;
+        margin: 0 20px;
+        text-align: center;
+      }
+      .-destaque {
+        text-transform: uppercase;
+      }
+    }
+  }
 }

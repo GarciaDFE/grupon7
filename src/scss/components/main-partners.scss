@@ -1,46 +1,46 @@
 .main-partners {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-   max-width: 1060px;
-   border: 1px solid $color-primary-medium;
-   padding: 20px;
-   @media all and /* de 600px a 1199px */
-      (min-width: $break-phone) and (max-width: $break-desktop - 1) {
-         margin: 0 10px;
-   }
-   @media all and /* de 320px a 599px */
-      (min-width: $break-min) and (max-width: $break-phone - 1) {
-         justify-content: center;
-         margin: 0 10px;
-   }
-   .arealogo {
-      width: 25%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 50px 0;
-      @media all and /* de 600px a 899px */
-         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-            width: 33%;
-            margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1060px;
+  border: 1px solid $color-primary-medium;
+  padding: 20px;
+  /* de 600px a 1199px */
+  @media all and (min-width: $break-phone) and (max-width: $break-desktop - 1) {
+    margin: 0 10px;
+  }
+  /* de 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .arealogo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    /* de 600px a 899px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      width: 33%;
+      margin: 30px 0;
+    }
+    /* de 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      width: 50%;
+      margin: 25px 0;
+    }
+    .logo {
+      width: 40%;
+      /* de 600px a 899px */
+      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+        width: 45%;
       }
-      @media all and /* de 320px a 599px */
-         (min-width: $break-min) and (max-width: $break-phone - 1) {
-            width: 50%;
-            margin: 25px 0;
+      /* de 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        width: 45%;
       }
-      .logo {
-         width: 40%;
-         @media all and /* de 600px a 899px */
-            (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-               width: 45%;
-         }
-         @media all and /* de 320px a 599px */
-            (min-width: $break-min) and (max-width: $break-phone - 1) {
-               width: 45%;
-         }
-      }
-   }
+    }
+  }
 }
