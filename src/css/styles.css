@@ -664,21 +664,30 @@ img {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      /* 320px a 599px */ }
-      .main-carousel .cards .card.-img1 {
-        background-image: url(../img/img1Carousel.jpg); }
-      .main-carousel .cards .card.-img2 {
-        background-image: url(../img/img2Carousel.jpg); }
-      .main-carousel .cards .card.-img3 {
-        background-image: url(../img/img3Carousel.jpg); }
-      .main-carousel .cards .card.-img4 {
-        background-image: url(../img/img4Carousel.jpg); }
-      @media all and (min-width: 320px) and (max-width: 599px) {
+      /* até 599px */
+      /* a partir de 600px */ }
+      @media all and (max-width: 599px) {
         .main-carousel .cards .card {
           justify-content: space-between;
           align-items: center;
-          padding: 10px 5px;
-          background-position: center right; } }
+          padding: 10px 5px; }
+          .main-carousel .cards .card.-img1 {
+            background-image: url(../img/imgSlider-seguros-sm.jpg); }
+          .main-carousel .cards .card.-img2 {
+            background-image: url(../img/imgSlider-consorcios-sm.jpg); }
+          .main-carousel .cards .card.-img3 {
+            background-image: url(../img/imgSlider-beneficios-sm.jpg); }
+          .main-carousel .cards .card.-img4 {
+            background-image: url(../img/imgSlider-consultoria-sm.jpg); } }
+      @media all and (min-width: 600px) {
+        .main-carousel .cards .card.-img1 {
+          background-image: url(../img/imgSlider-seguros-lg.jpg); }
+        .main-carousel .cards .card.-img2 {
+          background-image: url(../img/imgSlider-consorcios-lg.jpg); }
+        .main-carousel .cards .card.-img3 {
+          background-image: url(../img/imgSlider-beneficios-lg.jpg); }
+        .main-carousel .cards .card.-img4 {
+          background-image: url(../img/imgSlider-consultoria-lg.jpg); } }
       .main-carousel .cards .card .title,
       .main-carousel .cards .card .text,
       .main-carousel .cards .card .btn {

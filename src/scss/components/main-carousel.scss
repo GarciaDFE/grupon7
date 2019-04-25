@@ -16,24 +16,39 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      &.-img1 {
-        background-image: url(../img/img1Carousel.jpg);
-      }
-      &.-img2 {
-        background-image: url(../img/img2Carousel.jpg);
-      }
-      &.-img3 {
-        background-image: url(../img/img3Carousel.jpg);
-      }
-      &.-img4 {
-        background-image: url(../img/img4Carousel.jpg);
-      }
-      /* 320px a 599px */
-      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      /* até 599px */
+      @media all and (max-width: $break-phone - 1) {
         justify-content: space-between;
         align-items: center;
         padding: 10px 5px;
-        background-position: center right;
+        // background-position: center right;
+        &.-img1 {
+          background-image: url(../img/imgSlider-seguros-sm.jpg);
+        }
+        &.-img2 {
+          background-image: url(../img/imgSlider-consorcios-sm.jpg);
+        }
+        &.-img3 {
+          background-image: url(../img/imgSlider-beneficios-sm.jpg);
+        }
+        &.-img4 {
+          background-image: url(../img/imgSlider-consultoria-sm.jpg);
+        }
+      }
+      /* a partir de 600px */
+      @media all and (min-width: $break-phone) {
+        &.-img1 {
+          background-image: url(../img/imgSlider-seguros-lg.jpg);
+        }
+        &.-img2 {
+          background-image: url(../img/imgSlider-consorcios-lg.jpg);
+        }
+        &.-img3 {
+          background-image: url(../img/imgSlider-beneficios-lg.jpg);
+        }
+        &.-img4 {
+          background-image: url(../img/imgSlider-consultoria-lg.jpg);
+        }
       }
       .title,
       .text,
