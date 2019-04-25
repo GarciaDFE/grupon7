@@ -1,7 +1,9 @@
 const $originServices = document.querySelector(".-originservices");
 const $originPartners = document.querySelector(".-originpartners");
-const $wrapServices = document.querySelector(".wrap-services");
-const $wrapPartners = document.querySelector(".wrap-partners");
+const $originFooter = document.querySelector(".-originfooter");
+const $Services = document.querySelector(".wrap-services");
+const $Partners = document.querySelector(".wrap-partners");
+const $Contacts = document.querySelector(".main-footer");
 const $btnV1 = document.querySelector(".-v1");
 const $btnV2 = document.querySelector(".-v2");
 let $view = 0;
@@ -10,27 +12,33 @@ let breakPhone = 599;
 $originServices.addEventListener("click", function() {
   $view = window.innerWidth;
   if ($view > breakPhone) {
-    smoothScroll($wrapServices, 1000);
+    smoothScroll($Services, 1000);
   }
 });
 
 $originPartners.addEventListener("click", function() {
-  smoothScroll($wrapPartners, 2000);
+  smoothScroll($Partners, 2000);
+});
+
+$originFooter.addEventListener("click", function() {
+  smoothScroll($Contacts, 2000);
 });
 
 $btnV1.addEventListener("click", function() {
-  smoothScroll($originServices, 5000);
+  smoothScroll($originServices, 2000);
 });
 
 $btnV2.addEventListener("click", function() {
-  smoothScroll($originServices, 6000);
+  smoothScroll($originServices, 2000);
 });
+
+let navbarFixHeight = 100; //para abaixar do topo em casos de header fixo
 
 const smoothScroll = (target, duration) => {
   const $target = target;
   const $targetPosition = $target.getBoundingClientRect().top;
   const $startPosition = window.pageYOffset;
-  const distance = $targetPosition - $startPosition;
+  const distance = $targetPosition - ($startPosition + navbarFixHeight);
   let startTime = null;
 
   const animation = currentTime => {
