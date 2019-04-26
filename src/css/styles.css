@@ -278,7 +278,8 @@ body {
   width: 100%;
   max-width: 1200px;
   height: 540px;
-  background-color: #ecce35; }
+  background-color: #ecce28;
+  margin: 0 auto; }
 
 .wrap-team {
   width: 100%;
