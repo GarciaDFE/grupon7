@@ -11,7 +11,7 @@
     margin: 0 auto;
     width: 250px;
     height: 500px;
-    margin-bottom: 35px;
+    margin: 15px;
   }
   .avatar {
     width: 250px;
@@ -81,21 +81,21 @@
       text-indent: -9999px;
       background-position: bottom right;
       &.-anbima20 {
-        background-image: url(../img/imgCredential-anbima-cpa20.png);
+        background-image: url(../img/imgSelo-anbima-cpa20.png);
         background-repeat: no-repeat;
         background-size: contain;
         bottom: 65px;
         right: 15px;
       }
       &.-anbima10 {
-        background-image: url(../img/imgCredential-anbima-cpa10.png);
+        background-image: url(../img/imgSelo-anbima-cpa10.png);
         background-repeat: no-repeat;
         background-size: contain;
         bottom: 15px;
         right: 15px;
       }
       &.-susep {
-        background-image: url(../img/imgCredential-susep.png);
+        background-image: url(../img/imgSelo-susep.png);
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;

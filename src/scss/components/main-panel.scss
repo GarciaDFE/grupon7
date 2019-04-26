@@ -1,0 +1,15 @@
+.main-panel {
+  width: 80%;
+  height: 80%;
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .description {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}

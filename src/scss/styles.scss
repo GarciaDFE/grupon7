@@ -1,36 +1,38 @@
 // importando pasta settings
-@import 'settings/breaks';
-@import 'settings/colors';
-@import 'settings/fonts';
+@import "settings/breaks";
+@import "settings/colors";
+@import "settings/fonts";
 
 // importando pasta tools
 
 // importando pasta generic
-@import 'generic/reset.scss'; 
-@import 'generic/myreset.scss'; 
+@import "generic/reset.scss";
+@import "generic/myreset.scss";
 
 // importando pasta base
-@import 'base/styles.scss'; 
+@import "base/styles.scss";
 
 // importando pasta objects
-@import 'objects/wrap-header.scss';
-@import 'objects/brand-nav.scss';
-@import 'objects/wrap-carousel.scss';
-@import 'objects/main-segments.scss';
-@import 'objects/wrap-cards.scss';
-@import 'objects/wrap-services.scss';
-@import 'objects/wrap-partners.scss';
-@import 'objects/btn-totop.scss';
-@import 'objects/wrap-team.scss';
+@import "objects/wrap-header.scss";
+@import "objects/brand-nav.scss";
+@import "objects/wrap-carousel.scss";
+@import "objects/main-segments.scss";
+@import "objects/wrap-cards.scss";
+@import "objects/wrap-services.scss";
+@import "objects/wrap-partners.scss";
+@import "objects/btn-totop.scss";
+@import "objects/wrap-panel.scss";
+@import "objects/wrap-team.scss";
 
 // importando pasta components
-@import 'components/btn-cotacao.scss';
-@import 'components/main-btnMenu.scss';
-@import 'components/main-navigation.scss';
-@import 'components/nav-bar.scss';
-@import 'components/main-carousel.scss';
-@import 'components/btn-cards.scss';
-@import 'components/service-card.scss';
-@import 'components/main-partners.scss';
-@import 'components/main-footer.scss';
-@import 'components/team-card.scss';
+@import "components/btn-cotacao.scss";
+@import "components/main-btnMenu.scss";
+@import "components/main-navigation.scss";
+@import "components/nav-bar.scss";
+@import "components/main-carousel.scss";
+@import "components/btn-cards.scss";
+@import "components/service-card.scss";
+@import "components/main-partners.scss";
+@import "components/main-footer.scss";
+@import "components/main-panel.scss";
+@import "components/team-card.scss";

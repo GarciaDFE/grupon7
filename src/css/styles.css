@@ -271,23 +271,39 @@ body {
   .btn-totop img {
     margin-right: 10px; }
 
+.wrap-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 540px;
+  background-color: #ecce35; }
+
 .wrap-team {
   width: 100%;
   max-width: 1060px;
-  margin: 0 auto;
-  background-color: yellow; }
+  margin: 0 auto; }
   .wrap-team > .title {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     color: #050A26;
-    margin: 35px 0; }
+    margin: 35px 0;
+    /* 320px a 899px */ }
+    @media all and (min-width: 320px) and (max-width: 899px) {
+      .wrap-team > .title {
+        font-size: 35px; } }
   .wrap-team .wrap-team-cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
-    background-color: black; }
+    margin-bottom: 20px;
+    /* 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-team .wrap-team-cards {
+        justify-content: space-around; } }
 
 .btn-cotacao {
   display: none; }
@@ -1013,6 +1029,19 @@ body {
         background-color: white;
         color: #C9801D; }
 
+.main-panel {
+  width: 80%;
+  height: 80%; }
+  .main-panel .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .main-panel .description {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 30px;
+    margin-bottom: 10px; }
+
 .team-card {
   display: flex;
   margin: 0 auto;
@@ -1027,7 +1056,7 @@ body {
       margin: 0 auto;
       width: 250px;
       height: 500px;
-      margin-bottom: 35px; } }
+      margin: 15px; } }
   .team-card .avatar {
     width: 250px;
     height: 250px; }
@@ -1087,19 +1116,19 @@ body {
       text-indent: -9999px;
       background-position: bottom right; }
       .team-card .resume .credential.-anbima20 {
-        background-image: url(../img/imgCredential-anbima-cpa20.png);
+        background-image: url(../img/imgSelo-anbima-cpa20.png);
         background-repeat: no-repeat;
         background-size: contain;
         bottom: 65px;
         right: 15px; }
       .team-card .resume .credential.-anbima10 {
-        background-image: url(../img/imgCredential-anbima-cpa10.png);
+        background-image: url(../img/imgSelo-anbima-cpa10.png);
         background-repeat: no-repeat;
         background-size: contain;
         bottom: 15px;
         right: 15px; }
       .team-card .resume .credential.-susep {
-        background-image: url(../img/imgCredential-susep.png);
+        background-image: url(../img/imgSelo-susep.png);
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;
