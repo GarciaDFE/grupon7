@@ -1,0 +1,17 @@
+.wrap-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vw * 0.45);
+  max-height: 540px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: rgb(236, 206, 200);
+  /* de 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    height: auto;
+    background-color: transparent;
+  }
+}
