@@ -1,69 +1,107 @@
 .team-card {
-   overflow: hidden;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   flex-direction: column;
-   margin: 0 auto;
-   width: 350px;
-   height: 700px;
-   .avatar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 8px solid rgba(201, 128, 29, 0.3);
-      border-radius: 50%;
-      .picture {
-         width: 240px;
-         height: 240px;
-         border-radius: 50%;
-         border: 5px solid rgba(201, 128, 29, 0.8);
-         float: left;
-      }
-   }
-   .name {
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 500px;
+    margin-bottom: 35px;
+  }
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+  .resume {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    background-image: linear-gradient(to top, #efefef 60%, #c8c9cb);
+
+    .name {
       font-size: 30px;
       font-weight: bold;
-      margin-bottom: 15px;
-      text-decoration: none;
+      margin-bottom: 5px;
       color: $color-primary-dark;
+      /* 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        font-size: 25px;
+      }
+    }
+    .subtitle {
+      //font-weight: 600; PODEMOS RETIRAR DO CARREGAMENTO DE FONTES
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $color-primary-dark;
+      padding-bottom: 10px;
+      color: $color-primary-medium;
+      /* 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        font-size: 20px;
+      }
+    }
+    .skill {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 24px;
+      color: $color-primary-medium;
+    }
+    .social {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      text-indent: -9999px;
+      background-color: yellow;
+      //CONFIGURAR CORRETAMENTE O ÍCONE E SEU TAMANHO MÍNIMO
+      width: 44px;
       background-image: url(../img/icon-linkedin-dark.svg);
       background-repeat: no-repeat;
-      background-position: center right;
-      background-size: 40px;
-      padding: 15px 50px;
+      background-position: center;
+      background-size: 44px;
+      padding: 20px;
       cursor: pointer;
       transition: transform 300ms linear;
       &:hover {
-         transform: scale(1.1);
-         transition: transform 300ms linear;
+        transform: scale(1.1);
+        transition: transform 300ms linear;
       }
-      .link {
-         color: inherit;
-         text-decoration: inherit;
+    }
+    .credential {
+      position: absolute;
+      width: 130px;
+      height: 57px;
+      text-indent: -9999px;
+      background-position: bottom right;
+      &.-anbima20 {
+        background-image: url(../img/imgCredential-anbima-cpa20.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 65px;
+        right: 15px;
       }
-   }
-   .square {
-      box-sizing: border-box;
-      padding: 20px 40px;
-      font-size: 22px;
-      font-weight: normal;
-      line-height: 25px;
-      text-align: center;
-      color: $color-primary-medium;
-      border: 1px solid $color-primary-medium;
-      .subtitle {
-         font-weight: 600;
-         text-transform: uppercase;
-         margin-bottom: 10px;
+      &.-anbima10 {
+        background-image: url(../img/imgCredential-anbima-cpa10.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 15px;
+        right: 15px;
       }
-      .profile {
-         color: $color-primary-dark;
-         margin-bottom: 25px;
+      &.-susep {
+        background-image: url(../img/imgCredential-susep.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        bottom: 15px;
+        right: 5px;
       }
-      .skill {
-         text-transform: uppercase;
-         line-height: 26px;
-      }
-   }
+    }
+  }
 }

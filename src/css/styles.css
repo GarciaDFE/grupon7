@@ -273,27 +273,21 @@ body {
 
 .wrap-team {
   width: 100%;
-  padding-top: 20px;
   max-width: 1060px;
-  margin: 0 auto; }
-  .wrap-team .wrap-title {
+  margin: 0 auto;
+  background-color: yellow; }
+  .wrap-team > .title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #050A26;
+    margin: 35px 0; }
+  .wrap-team .wrap-team-cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
-    text-align: center; }
-    .wrap-team .wrap-title > .title {
-      font-size: 50px;
-      font-weight: bold;
-      margin-right: 20px;
-      color: #050A26; }
-  .wrap-team .row-card {
-    display: flex;
-    justify-content: center;
-    align-items: space-around;
-    width: 100%;
-    max-width: 1060px;
-    margin: 50px 0; }
+    flex-wrap: wrap;
+    background-color: black; }
 
 .btn-cotacao {
   display: none; }
@@ -1020,61 +1014,94 @@ body {
         color: #C9801D; }
 
 .team-card {
-  overflow: hidden;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
   margin: 0 auto;
-  width: 350px;
-  height: 700px; }
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  /* 320px a 599px */ }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .team-card {
+      display: block;
+      margin: 0 auto;
+      width: 250px;
+      height: 500px;
+      margin-bottom: 35px; } }
   .team-card .avatar {
+    width: 250px;
+    height: 250px; }
+  .team-card .resume {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 8px solid rgba(201, 128, 29, 0.3);
-    border-radius: 50%; }
-    .team-card .avatar .picture {
-      width: 240px;
-      height: 240px;
-      border-radius: 50%;
-      border: 5px solid rgba(201, 128, 29, 0.8);
-      float: left; }
-  .team-card .name {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-decoration: none;
-    color: #050A26;
-    background-image: url(../img/icon-linkedin-dark.svg);
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 40px;
-    padding: 15px 50px;
-    cursor: pointer;
-    transition: transform 300ms linear; }
-    .team-card .name:hover {
-      transform: scale(1.1);
-      transition: transform 300ms linear; }
-    .team-card .name .link {
-      color: inherit;
-      text-decoration: inherit; }
-  .team-card .square {
-    box-sizing: border-box;
-    padding: 20px 40px;
-    font-size: 22px;
-    font-weight: normal;
-    line-height: 25px;
-    text-align: center;
-    color: #C9801D;
-    border: 1px solid #C9801D; }
-    .team-card .square .subtitle {
-      font-weight: 600;
-      text-transform: uppercase;
-      margin-bottom: 10px; }
-    .team-card .square .profile {
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    background-image: linear-gradient(to top, #efefef 60%, #c8c9cb); }
+    .team-card .resume .name {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 5px;
       color: #050A26;
-      margin-bottom: 25px; }
-    .team-card .square .skill {
-      text-transform: uppercase;
-      line-height: 26px; }
+      /* 320px a 599px */ }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .team-card .resume .name {
+          font-size: 25px; } }
+    .team-card .resume .subtitle {
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #050A26;
+      padding-bottom: 10px;
+      color: #C9801D;
+      /* 320px a 599px */ }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .team-card .resume .subtitle {
+          font-size: 20px; } }
+    .team-card .resume .skill {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 24px;
+      color: #C9801D; }
+    .team-card .resume .social {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      text-indent: -9999px;
+      background-color: yellow;
+      width: 44px;
+      background-image: url(../img/icon-linkedin-dark.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 44px;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 300ms linear; }
+      .team-card .resume .social:hover {
+        transform: scale(1.1);
+        transition: transform 300ms linear; }
+    .team-card .resume .credential {
+      position: absolute;
+      width: 130px;
+      height: 57px;
+      text-indent: -9999px;
+      background-position: bottom right; }
+      .team-card .resume .credential.-anbima20 {
+        background-image: url(../img/imgCredential-anbima-cpa20.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 65px;
+        right: 15px; }
+      .team-card .resume .credential.-anbima10 {
+        background-image: url(../img/imgCredential-anbima-cpa10.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 15px;
+        right: 15px; }
+      .team-card .resume .credential.-susep {
+        background-image: url(../img/imgCredential-susep.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        bottom: 15px;
+        right: 5px; }
