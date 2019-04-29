@@ -44,8 +44,16 @@
       padding: 20px;
       background-color: $color-primary-medium;
     }
+    &.-variation {
+      color: $color-primary-medium;
+    }
     .paragraph {
       margin-bottom: 10px;
+      /* de 600px a 899px */
+      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+        margin-bottom: 0;
+      }
+
       .-destaque {
         font-weight: bold;
       }

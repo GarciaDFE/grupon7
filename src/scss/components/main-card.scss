@@ -21,6 +21,9 @@
       margin-bottom: 40px;
     }
   }
+  &.-sembtntotop {
+    margin-bottom: 120px;
+  }
   /* 900px a 1199px */
   @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
     max-width: 860px;
@@ -156,7 +159,7 @@
       @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
         padding-left: 40px;
       }
-
+      // ICONES DE SEGUROS
       &#seguro-vida {
         background-image: url(../img/iconCard-seguro-vida.svg);
       }
@@ -190,8 +193,19 @@
       &#seguro-vida-coletiva {
         background-image: url(../img/iconCard-seguro-vida-coletiva.svg);
       }
-      &#seguro-saude-odonto {
-        background-image: url(../img/iconCard-seguro-saude-odonto.svg);
+      // &#seguro-saude-odonto {
+      //   background-image: url(../img/iconCard-seguro-saude-odonto.svg);
+      // }
+
+      // ICONES DE CONSÓRCIOS
+      &#consorcio-auto {
+        background-image: url(../img/iconCard-consorcio-auto.svg);
+      }
+      &#consorcio-imovel {
+        background-image: url(../img/iconCard-consorcio-imovel.svg);
+      }
+      &#consorcio-servicos {
+        background-image: url(../img/iconCard-consorcio-servicos.svg);
       }
     }
     &.-invert {

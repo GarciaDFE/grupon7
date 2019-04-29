@@ -333,6 +333,22 @@ img {
         background-size: cover; }
         .wrap-panel.-seguros .description {
           display: none; } }
+  .wrap-panel.-consorcios {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-consorcios-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-consorcios {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-consorcios-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-consorcios .description {
+          display: none; } }
 
 .wrap-team {
   width: 100%;
@@ -1049,6 +1065,8 @@ img {
     @media all and (min-width: 320px) and (max-width: 599px) {
       .main-card:not(:last-child) {
         margin-bottom: 40px; } }
+  .main-card.-sembtntotop {
+    margin-bottom: 120px; }
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .main-card {
       max-width: 860px;
@@ -1193,8 +1211,12 @@ img {
         background-image: url(../img/iconCard-seguro-patrimonial.svg); }
       .main-card .header .icone#seguro-vida-coletiva {
         background-image: url(../img/iconCard-seguro-vida-coletiva.svg); }
-      .main-card .header .icone#seguro-saude-odonto {
-        background-image: url(../img/iconCard-seguro-saude-odonto.svg); }
+      .main-card .header .icone#consorcio-auto {
+        background-image: url(../img/iconCard-consorcio-auto.svg); }
+      .main-card .header .icone#consorcio-imovel {
+        background-image: url(../img/iconCard-consorcio-imovel.svg); }
+      .main-card .header .icone#consorcio-servicos {
+        background-image: url(../img/iconCard-consorcio-servicos.svg); }
     .main-card .header.-invert .title {
       color: #C9801D; }
     .main-card .header.-invert .subtitle {
@@ -1546,8 +1568,14 @@ img {
         line-height: 25px;
         padding: 20px;
         background-color: #C9801D; } }
+    .main-panel .description.-variation {
+      color: #C9801D; }
     .main-panel .description .paragraph {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      /* de 600px a 899px */ }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-panel .description .paragraph {
+          margin-bottom: 0; } }
       .main-panel .description .paragraph .-destaque {
         font-weight: bold; }
 
