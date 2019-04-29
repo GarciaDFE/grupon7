@@ -368,6 +368,22 @@ img {
         background-size: cover; }
         .wrap-panel.-beneficios .description {
           display: none; } }
+  .wrap-panel.-saudeodonto {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-saudeodonto-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-saudeodonto {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-saudeodonto-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-saudeodonto .description {
+          display: none; } }
   .wrap-panel.-consultoria {
     justify-content: flex-start;
     background-color: transparent;
