@@ -197,6 +197,9 @@ img {
       .wrap-services .wrap-title {
         flex-direction: column;
         margin-bottom: 30px; } }
+    .wrap-services .wrap-title.-variation {
+      flex-direction: column;
+      margin: 20px 0 50px; }
     .wrap-services .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
@@ -348,6 +351,22 @@ img {
         background-image: url(../img/imgPanel-consorcios-sm.jpg);
         background-size: cover; }
         .wrap-panel.-consorcios .description {
+          display: none; } }
+  .wrap-panel.-beneficios {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-beneficios-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-beneficios {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-beneficios-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-beneficios .description {
           display: none; } }
 
 .wrap-team {
@@ -1217,6 +1236,8 @@ img {
         background-image: url(../img/iconCard-consorcio-imovel.svg); }
       .main-card .header .icone#consorcio-servicos {
         background-image: url(../img/iconCard-consorcio-servicos.svg); }
+      .main-card .header .icone#beneficios {
+        background-image: url(../img/iconCard-beneficios.svg); }
     .main-card .header.-invert .title {
       color: #C9801D; }
     .main-card .header.-invert .subtitle {
@@ -1577,6 +1598,7 @@ img {
         .main-panel .description .paragraph {
           margin-bottom: 0; } }
       .main-panel .description .paragraph .-destaque {
+        text-transform: uppercase;
         font-weight: bold; }
 
 .team-card {

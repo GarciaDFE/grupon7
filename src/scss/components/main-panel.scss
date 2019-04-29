@@ -53,8 +53,8 @@
       @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
         margin-bottom: 0;
       }
-
       .-destaque {
+        text-transform: uppercase;
         font-weight: bold;
       }
     }
