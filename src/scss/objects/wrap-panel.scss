@@ -68,4 +68,22 @@
       }
     }
   }
+  &.-consultoria {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-consultoria-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      height: calc(100vw * 0.45);
+      justify-content: center;
+      align-items: flex-start;
+      background-color: transparent;
+      background-image: url(../img/imgPanel-consultoria-sm.jpg);
+      background-size: cover;
+      .description {
+        display: none;
+      }
+    }
+  }
 }
