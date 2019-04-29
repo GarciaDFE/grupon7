@@ -1,0 +1,33 @@
+.public-type {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    width: 320px;
+    height: 57px;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    color: $color-secondary-light;
+    background-color: $color-primary-medium;
+    /* 320px a 899px */
+    @media all and (min-width: $break-min) and (max-width: $break-tablet - 1) {
+      width: 220px;
+      height: 45px;
+      font-size: 20px;
+      margin: 10px;
+    }
+    &.-dark {
+      background-color: $color-primary-dark;
+    }
+  }
+}
