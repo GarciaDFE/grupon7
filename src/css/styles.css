@@ -913,11 +913,14 @@ img {
         border: none;
         width: 165px;
         height: 57px;
+        line-height: 57px;
         font-family: inherit;
         font-size: 22px;
         font-weight: bold;
+        text-align: center;
         background-color: #C9801D;
         color: white;
+        text-decoration: none;
         cursor: pointer;
         transition: all 300ms linear;
         z-index: 5;
@@ -1016,6 +1019,9 @@ img {
     text-align: center;
     /* acima de 600px */
     /* 320px a 599px */ }
+    .btn-cards.saibamais:link, .btn-cards.saibamais:visited, .btn-cards.saibamais:hover, .btn-cards.saibamais:active, .btn-cards.saibamais:focus {
+      color: #050A26;
+      text-decoration: none; }
     @media all and (min-width: 600px) {
       .btn-cards.saibamais:hover, .btn-cards.saibamais.hovereffect {
         border: none;
@@ -1721,13 +1727,7 @@ img {
       position: absolute;
       bottom: 15px;
       left: 15px;
-      text-indent: -9999px;
       width: 44px;
-      background-image: url(../img/icon-linkedin-dark.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 44px;
-      padding: 20px;
       cursor: pointer;
       transition: transform 300ms linear; }
       .team-card .resume .social:hover {
