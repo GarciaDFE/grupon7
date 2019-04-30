@@ -1120,19 +1120,18 @@ img {
   width: 100%;
   height: 240px;
   margin: 0 auto;
+  margin-bottom: 120px;
+  /* 600px a 899px */
+  /* 320px a 599px */
   /* 900px a 1199px */
   /* 600px a 899px */
   /* 320px a 599px */ }
-  .main-card:not(:last-child) {
-    margin-bottom: 120px;
-    /* 600px a 899px */
-    /* 320px a 599px */ }
-    @media all and (min-width: 600px) and (max-width: 899px) {
-      .main-card:not(:last-child) {
-        margin-bottom: 60px; } }
-    @media all and (min-width: 320px) and (max-width: 599px) {
-      .main-card:not(:last-child) {
-        margin-bottom: 40px; } }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .main-card {
+      margin-bottom: 60px; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .main-card {
+      margin-bottom: 40px; } }
   .main-card.-sembtntotop {
     margin-bottom: 120px; }
   @media all and (min-width: 900px) and (max-width: 1199px) {
@@ -1270,9 +1269,9 @@ img {
       .main-card .header .icone#seguro-viagem {
         background-image: url(../img/iconCard-seguro-viagem.svg); }
       .main-card .header .icone#seguro-saude {
-        background-image: url(../img/iconCard-seguro-saude.svg); }
+        background-image: url(../img/iconCard-seguro-saude-pf.svg); }
       .main-card .header .icone#seguro-odonto {
-        background-image: url(../img/iconCard-seguro-odonto.svg); }
+        background-image: url(../img/iconCard-seguro-odonto-pf.svg); }
       .main-card .header .icone#seguro-garantia {
         background-image: url(../img/iconCard-seguro-garantia.svg); }
       .main-card .header .icone#seguro-frota {
@@ -1293,6 +1292,10 @@ img {
         background-image: url(../img/iconCard-consorcio-servicos.svg); }
       .main-card .header .icone#beneficios {
         background-image: url(../img/iconCard-beneficios.svg); }
+      .main-card .header .icone#saude {
+        background-image: url(../img/iconCard-saudeodonto-saude.svg); }
+      .main-card .header .icone#odonto {
+        background-image: url(../img/iconCard-saudeodonto-odonto.svg); }
       .main-card .header .icone#consultoria-diagnostico {
         background-image: url(../img/iconCard-consultoria-diagnostico.svg); }
       .main-card .header .icone#consultoria-planejamento {

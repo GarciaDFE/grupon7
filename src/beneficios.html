@@ -32,26 +32,19 @@
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a class="action -originservices" href="index.html">Serviços</a>
-              <ul id="submenu" class="submenu">
-                <li><a href="#seguros">Seguros</a></li>
-                <li><a href="#consorcios">Consórcios</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#saudeodonto">Saúde e Odonto</a></li>
-                <li><a href="#consultoria">Consultoria</a></li>
-              </ul>
+              <a id="itemServicos" class="action" href="index.html">Serviços</a>
             </li>
             <!--
             -->
             <li class="item">
-              <a class="action -originpartners" href="#">Parceiros</a>
+              <a id="itemParceiros" class="action" href="index.html#parceiros">Parceiros</a>
             </li>
             <!--
             -->
             <li class="item"><a class="action" href="sobrenos.html">Sobre nós</a></li>
             <!--
             -->
-            <li class="item"><a class="action -originfooter" href="#">Contato</a></li>
+            <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
           </ul>
           <button class="cotacao">
             <a class="action">Solicite uma cotação</a>
@@ -172,10 +165,8 @@
       </div>
     </section>
 
-    <!-- BOTÃO PARA LEVAR AO TOPO -->
-    <a class="btn-totop -v1" href="#">
-      <img src="img/btn-totop.svg" alt=""/>
-    </a>
+    <!-- BOTÃO FLUTUTANTE PARA LEVAR AO TOPO -->
+    <a class="btn-totop" href="#"><img src="img/btn-totop.svg" /></a>
 
     <!-- RODAPÉ -->
     <footer class="main-footer">
@@ -184,35 +175,27 @@
         <h1>Grupo<strong class="-destaque">N7</strong></h1>
       </div>
       <div class="local">
-        <p>
-          Av. Dr. Olivio Lira, 353, Shopping Praia da Costa - Torre Leste, sala
-          204
-        </p>
+        <p>Av. Dr. Olivio Lira, 353, Shopping Praia da Costa - Torre Leste, sala
+          204</p>
         <p>Praia da Costa, Vila Velha-ES - CEP 29101-350</p>
         <ul class="icons">
-          <li class="icon">
-            <a class="action" href="#"><img src="img/icon-mapa.svg" alt=""/></a>
+          <li class="icon"><a class="action" href="#">
+            <img src="img/icon-mapa.svg" alt=""/></a>
           </li>
           <!--
           -->
-          <li class="icon">
-            <a class="action" href="#"
-              ><img class="image" src="img/icon-linkedin-light.svg" alt=""
-            /></a>
+          <li class="icon"><a class="action" href="#">
+            <img class="image" src="img/icon-linkedin-light.svg" alt=""/></a>
+          </li>
+          <!--    
+          -->
+          <li class="icon"><a class="action" href="#">
+            <img src="img/icon-whatsapp.svg" alt="" /></a>
           </li>
           <!--
           -->
-          <li class="icon">
-            <a class="action" href="#">
-              <img src="img/icon-whatsapp.svg" alt="" />
-            </a>
-          </li>
-          <!--
-          -->
-          <li class="icon">
-            <a class="action" href="#">
-              <img src="img/icon-email.svg" alt="" />
-            </a>
+          <li class="icon"><a class="action" href="#">
+            <img src="img/icon-email.svg" alt="" /></a>
           </li>
         </ul>
       </div>
@@ -229,9 +212,6 @@
 
     <!-- build:alljs -->
     <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
-    <script type="text/javascript" src="js/components/nav-bar.js"></script>
-    <script type="text/javascript" src="js/components/glide/glide.min.js"></script>
-    <script type="text/javascript" src="js/components/main-carousel.js"></script>
     <script type="text/javascript" src="js/components/soft-scroll.js"></script>
     <script type="text/javascript" src="js/components/hovereffect.js"></script>
     <!-- endbuild -->

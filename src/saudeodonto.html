@@ -32,26 +32,19 @@
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a class="action -originservices" href="index.html">Serviços</a>
-              <ul id="submenu" class="submenu">
-                <li><a href="#seguros">Seguros</a></li>
-                <li><a href="#consorcios">Consórcios</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#saudeodonto">Saúde e Odonto</a></li>
-                <li><a href="#consultoria">Consultoria</a></li>
-              </ul>
+              <a id="itemServicos" class="action" href="index.html">Serviços</a>
             </li>
             <!--
             -->
             <li class="item">
-              <a class="action -originpartners" href="#">Parceiros</a>
+              <a id="itemParceiros" class="action" href="index.html#parceiros">Parceiros</a>
             </li>
             <!--
             -->
             <li class="item"><a class="action" href="sobrenos.html">Sobre nós</a></li>
             <!--
             -->
-            <li class="item"><a class="action -originfooter" href="#">Contato</a></li>
+            <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
           </ul>
           <button class="cotacao">
             <a class="action">Solicite uma cotação</a>
@@ -91,7 +84,7 @@
             <img src="img/imgCard-saude.jpg" alt="imagem de médicos em pé analisando chapa de raio x" />
           </a>
           <div class="header">
-            <dt id="saude" class="title">Saúde</dt>
+            <dt id="saude" class="title icone">Saúde</dt>
           </div>
           <div class="square">
             <dd class="description">Faça um plano de saúde que se adeque ao seu perfil ou para os colaboradores da sua empresa. Escolha cobertura, rede de atendimento e modalidade de pagamento e garanta acesso a serviços médicos.</dd>
@@ -103,15 +96,18 @@
             <img src="img/imgCard-odonto.jpg" alt="imagem de mulher sentada recebendo tratamento dentário" />
           </a>
           <div class="header">
-            <dt id="odonto" class="title">Odonto</dt>
+            <dt id="odonto" class="title icone">Odonto</dt>
           </div>
-          <div class="square">
+          <div class="square -dark">
             <dd class="description">Os planos odontológicos oferecem acesso a serviços odontológicos em uma ampla rede de dentistas credenciados, permitindo o investimento na saúde bucal.</dd>
             <a class="btn-cards cotacao">Solicite uma cotação</a>
           </div>
         </dl>
       </div>
     </section>
+
+    <!-- BOTÃO FLUTUTANTE PARA LEVAR AO TOPO -->
+    <a class="btn-totop" href="#"><img src="img/btn-totop.svg" /></a>
 
     <!-- RODAPÉ -->
     <footer class="main-footer">
@@ -165,9 +161,6 @@
 
     <!-- build:alljs -->
     <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
-    <script type="text/javascript" src="js/components/nav-bar.js"></script>
-    <script type="text/javascript" src="js/components/glide/glide.min.js"></script>
-    <script type="text/javascript" src="js/components/main-carousel.js"></script>
     <script type="text/javascript" src="js/components/soft-scroll.js"></script>
     <script type="text/javascript" src="js/components/hovereffect.js"></script>
     <!-- endbuild -->
