@@ -32,7 +32,7 @@
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a class="action -originservices comSubmenu" href="index.html">Serviços</a>
+              <a id="itemServicos" class="action comSubmenu" href="#">Serviços</a>
               <ul id="submenu" class="submenu">
                 <li><a href="#seguros">Seguros</a></li>
                 <li><a href="#consorcios">Consórcios</a></li>
@@ -44,14 +44,14 @@
             <!--
             -->
             <li class="item">
-              <a class="action -originpartners" href="#">Parceiros</a>
+              <a id="itemParceiros" class="action" href="#">Parceiros</a>
             </li>
             <!--
             -->
             <li class="item"><a class="action" href="sobrenos.html">Sobre nós</a></li>
             <!--
             -->
-            <li class="item"><a class="action -originfooter" href="#">Contato</a></li>
+            <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
           </ul>
           <button class="cotacao">
             <a class="action">Solicite uma cotação</a>
@@ -153,7 +153,7 @@
     </button>
 
     <!-- SERVIÇOS -->
-    <section class="wrap-services">
+    <section id="servicos" class="wrap-services">
       <header class="wrap-title">
         <h1 class="title">Serviços</h1>
         <h2 class="subtitle">
@@ -249,10 +249,6 @@
       </div>
     </section>
 
-    <!-- BOTÃO PARA LEVAR AO TOPO -->
-    <!--
-    <a class="btn-totop -v1" href="#"><img src="img/btn-totop.svg" alt=""/></a>-->
-
     <!-- PARCEIROS -->
     <section class="wrap-partners">
       <header id="parceiros" class="wrap-title">
@@ -302,14 +298,8 @@
       </div>
     </section>
 
-    <!-- BOTÃO PARA LEVAR AO TOPO -->
-    <!--
-    <a class="btn-totop -v2" href="#header"
-      ><img src="img/btn-totop.svg" alt=""
-    /></a>-->
-
-    <a class="btn-toup" href="#"><img src="img/btn-totop.svg" /></a>
-
+    <!-- BOTÃO FLUTUTANTE PARA LEVAR AO TOPO -->
+    <a class="btn-totop" href="#"><img src="img/btn-totop.svg" /></a>
 
     <!-- RODAPÉ -->
     <footer class="main-footer">
@@ -364,18 +354,10 @@
     <!-- build:alljs -->
     <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
     <script type="text/javascript" src="js/components/nav-bar.js"></script>
-    <script type="text/javascript" src="js/components/scrolleffect.js"></script>
-    <script
-      type="text/javascript"
-      src="js/components/glide/glide.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="js/components/main-carousel.js"
-    ></script>
+    <script type="text/javascript" src="js/components/glide/glide.min.js"></script>
+    <script type="text/javascript" src="js/components/main-carousel.js"></script>
     <script type="text/javascript" src="js/components/soft-scroll.js"></script>
     <script type="text/javascript" src="js/components/hovereffect.js"></script>
-    <script type="text/javascript" src="js/components/btn-toup.js"></script>
     <!-- endbuild -->
   </body>
 </html>

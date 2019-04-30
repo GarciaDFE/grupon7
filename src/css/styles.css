@@ -239,7 +239,7 @@ img {
 .wrap-partners {
   width: 100%;
   max-width: 1060px;
-  margin: 0 auto; }
+  margin: 120px auto 60px; }
   .wrap-partners .wrap-title {
     display: flex;
     justify-content: center;
@@ -287,6 +287,23 @@ img {
         .wrap-partners .wrap-title > .subtitle {
           font-size: 18px;
           text-align: center; } }
+
+.btn-totop {
+  display: none;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.5;
+  transition: opacity 0.2s linear;
+  z-index: 20; }
+  .btn-totop:hover {
+    opacity: 1;
+    transition: opacity 0.2s linear; }
+  .btn-totop.-visible {
+    display: block; }
 
 .wrap-panel {
   display: flex;
@@ -384,6 +401,22 @@ img {
         background-size: cover; }
         .wrap-panel.-consultoria .description {
           display: none; } }
+  .wrap-panel.-sobrenos {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-sobrenos-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-sobrenos {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-sobrenos-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-sobrenos .description {
+          display: none; } }
 
 .wrap-team {
   width: 100%;
@@ -440,23 +473,6 @@ img {
         margin: 10px; } }
     .public-type .title.-dark {
       background-color: #050A26; }
-
-.btn-toup {
-  display: none;
-  position: fixed;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  bottom: 20px;
-  right: 20px;
-  opacity: 0.5;
-  transition: opacity 0.2s linear;
-  z-index: 20; }
-  .btn-toup:hover {
-    opacity: 1;
-    transition: opacity 0.2s linear; }
-  .btn-toup.-visible {
-    display: block; }
 
 .btn-cotacao {
   display: none;
@@ -1253,6 +1269,10 @@ img {
         background-image: url(../img/iconCard-seguro-residencial.svg); }
       .main-card .header .icone#seguro-viagem {
         background-image: url(../img/iconCard-seguro-viagem.svg); }
+      .main-card .header .icone#seguro-saude {
+        background-image: url(../img/iconCard-seguro-saude.svg); }
+      .main-card .header .icone#seguro-odonto {
+        background-image: url(../img/iconCard-seguro-odonto.svg); }
       .main-card .header .icone#seguro-garantia {
         background-image: url(../img/iconCard-seguro-garantia.svg); }
       .main-card .header .icone#seguro-frota {
@@ -1263,6 +1283,8 @@ img {
         background-image: url(../img/iconCard-seguro-patrimonial.svg); }
       .main-card .header .icone#seguro-vida-coletiva {
         background-image: url(../img/iconCard-seguro-vida-coletiva.svg); }
+      .main-card .header .icone#seguro-saude-odonto {
+        background-image: url(../img/iconCard-seguro-saude-odonto.svg); }
       .main-card .header .icone#consorcio-auto {
         background-image: url(../img/iconCard-consorcio-auto.svg); }
       .main-card .header .icone#consorcio-imovel {
