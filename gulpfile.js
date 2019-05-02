@@ -31,11 +31,21 @@ function optimizeCSS() {
 }
 
 // Minificar/concatenar/renomear arquivos JS Dev
-function optimizeJS() {
+function optimizeJSGeneral() {
   return gulp
-    .src(["src/js/**/*.js"])
+    .src(["src/js/components/**/*.js"])
     .pipe(uglify())
     .pipe(concat("scripts.js"))
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(gulp.dest("dist/js"));
+}
+
+// Minificar/concatenar/renomear arquivos JS Dev
+function optimizeJSCarousel() {
+  return gulp
+    .src(["src/js/carousel/**/*.js"])
+    .pipe(uglify())
+    .pipe(concat("carousel.js"))
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest("dist/js"));
 }
@@ -55,7 +65,8 @@ function replaceHTML() {
     .pipe(
       htmlreplace({
         allcss: "css/styles.min.css",
-        alljs: "js/scripts.min.js"
+        alljs: "js/scripts.min.js",
+        carousel: "js/carousel.min.js"
       })
     )
     .pipe(gulp.dest("dist/"));
@@ -79,11 +90,12 @@ function watch() {
 const build = gulp.parallel(
   compilaSASS,
   optimizeCSS,
-  optimizeJS,
-  //optimizeIMG,
+  optimizeJSGeneral,
+  optimizeJSCarousel,
+  optimizeIMG,
   replaceHTML,
-  optimizeHTML,
-  watch
+  optimizeHTML
+  //watch
 );
 gulp.task(build);
 gulp.task("default", build);
