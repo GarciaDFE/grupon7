@@ -4,11 +4,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>GRUPO N7 || 25-04</title>
+   <title>GRUPO N7 || 02-05</title>
 
     <!--<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>-->
     <link
-      href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,600,700"
+      href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,700"
       rel="stylesheet"
     />
 
@@ -32,7 +32,7 @@
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a class="action -originservices comSubmenu" href="#">Serviços</a>
+              <a id="itemServicos" class="action comSubmenu" href="#">Serviços</a>
               <ul id="submenu" class="submenu">
                 <li><a href="#seguros">Seguros</a></li>
                 <li><a href="#consorcios">Consórcios</a></li>
@@ -44,14 +44,14 @@
             <!--
             -->
             <li class="item">
-              <a class="action -originpartners" href="#">Parceiros</a>
+              <a id="itemParceiros" class="action" href="#">Parceiros</a>
             </li>
             <!--
             -->
-            <li class="item"><a class="action" href="#">Sobre nós</a></li>
+            <li class="item"><a class="action" href="sobrenos.html">Sobre nós</a></li>
             <!--
             -->
-            <li class="item"><a class="action -originfooter" href="#">Contato</a></li>
+            <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
           </ul>
           <button class="cotacao">
             <a class="action">Solicite uma cotação</a>
@@ -78,7 +78,7 @@
               <p class="text">
                 Encontre todos os seguros que você precisa e que melhor se encaixam no seu perfil ou da sua empresa.
               </p>
-              <button class="btn">Saiba <span class="-variant">mais</span></button>
+              <a href="seguros.html" class="btn">Saiba <span class="-variant">mais</span></a>
             </div>
             <div class="glide__slide card -img2">
               <figure>
@@ -87,7 +87,7 @@
               <p class="text">
                 Você pode fazer um Consórcio para adquirir um bem ou investir no seu negócio, com prestações que cabem no seu bolso.
               </p>
-              <button class="btn">Saiba <span class="-variant">mais</span></button>
+              <a href="consorcios.html" class="btn">Saiba <span class="-variant">mais</span></a>
             </div>
             <div class="glide__slide card -img3">
               <figure>
@@ -96,7 +96,7 @@
               <p class="text">
                 Todos os benefícios através de cartões para os colaboradores da sua empresa.
               </p>
-              <button class="btn">Saiba <span class="-variant">mais</span></button>
+              <a href="beneficios.html" class="btn">Saiba <span class="-variant">mais</span></a>
             </div>
             <div class="glide__slide card -img4">
               <figure>
@@ -105,7 +105,7 @@
               <p class="text">
                 Serviços especializados para a sua empresa se reorganizar e crescer.
               </p>
-              <button class="btn">Saiba <span class="-variant">mais</span></button>
+              <a href="consultoria.html" class="btn">Saiba <span class="-variant">mais</span></a>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
     </button>
 
     <!-- SERVIÇOS -->
-    <section class="wrap-services">
+    <section id="servicos" class="wrap-services">
       <header class="wrap-title">
         <h1 class="title">Serviços</h1>
         <h2 class="subtitle">
@@ -175,7 +175,7 @@
           <div class="square">
             <dd class="description">
               No <strong class="-destaque">Grupo N7</strong> você encontra o seguro que necessita. Oferecemos um portfólio completo, através das principais seguradoras do país. Temos uma solução personalizada para você e para empresas de todos os portes.
-            <button class="btn-cards saibamais">Saiba <span class="-variant">mais</span></button>
+            <a href="seguros.html" class="btn-cards saibamais">Saiba<span class="-variant"> mais</span></a>
           </div>
         </dl>
         <dl class="main-card">
@@ -192,7 +192,7 @@
             <dd class="description">
               Se você deseja realizar seus sonhos pessoais ou investir em seu negócio, faça um consórcio. Você descobrirá que temos o plano que mais irá encaixar com o seu projeto. O Sistema Brasileiro de Consórcio é regido pelas normas do Banco Central do Brasil.
             </dd>
-            <button class="btn-cards saibamais">Saiba <span class="-variant">mais</span></button>
+            <a href="consorcios.html" class="btn-cards saibamais">Saiba<span class="-variant"> mais</span></a>
           </div>
         </dl>
         <dl class="main-card">
@@ -209,7 +209,7 @@
             <dd class="description">
               Todos os benefícios através de cartões para os colaboradores da sua empresa. O <strong class="-destaque">Grupo N7</strong> é parceiro <strong class="-destaque">Alelo</strong>, líder no mercado de benefícios, com a solidez dos sócios Banco do Brasil e Bradesco e há mais de 12 anos mantendo uma relação de confiança com seus clientes.
             </dd>
-            <button class="btn-cards saibamais">Saiba <span class="-variant">mais</span></button>
+            <a href="beneficios.html" class="btn-cards saibamais">Saiba<span class="-variant"> mais</span></a>
           </div>
         </dl>
         <dl class="main-card">
@@ -226,7 +226,7 @@
             <dd class="description">
               Garanta o acesso a serviços médicos e odontológicos da forma que melhor se encaixa no seu perfil. Planos específicos para você e para todos os colaboradores da sua empresa.
             </dd>
-            <button class="btn-cards saibamais">Saiba <span class="-variant">mais</span></button>
+            <a href="saudeodonto.html" class="btn-cards saibamais">Saiba<span class="-variant"> mais</span></a>
           </div>
         </dl>
         <dl class="main-card">
@@ -243,14 +243,11 @@
             <dd class="description">
               A sua empresa precisa estar bem posicionada no cenário atual. A equipe de profissionais experientes do <strong class="-destaque">Grupo N7</strong>, junto com você, reavalia as condições atuais e constrói um plano de ação para ajustar e atingir as metas de crescimento.
             </dd>
-            <button class="btn-cards saibamais">Saiba <span class="-variant">mais</span></button>
+            <a href="consultoria.html" class="btn-cards saibamais">Saiba<span class="-variant"> mais</span></a>
           </div>
         </dl>
       </div>
     </section>
-
-    <!-- BOTÃO PARA LEVAR AO TOPO -->
-    <a class="btn-totop -v1" href="#"><img src="img/btn-totop.svg" alt=""/></a>
 
     <!-- PARCEIROS -->
     <section class="wrap-partners">
@@ -263,48 +260,46 @@
       </header>
       <div class="main-partners">
         <div class="arealogo">
-          <img class="logo" src="img/embracon-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-embracon.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/canopus-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-canopus.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/porto-seguro-consorcios-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-porto-seguro-consorcios.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/sul-america-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-sul-america.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/hdi-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-hdi.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/tokio-marine-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-tokio-marine.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/porto-seguro-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-porto-seguro.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/chubb-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-chubb.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/metlife-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-metlife.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/alelo-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-alelo.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/itau-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-itau.png" alt="" />
         </div>
         <div class="arealogo">
-          <img class="logo" src="img/bradesco-06.png" alt="" />
+          <img class="logo" src="img/imgLogo-bradesco.png" alt="" />
         </div>
       </div>
     </section>
 
-    <!-- BOTÃO PARA LEVAR AO TOPO -->
-    <a class="btn-totop -v2" href="#header"
-      ><img src="img/btn-totop.svg" alt=""
-    /></a>
+    <!-- BOTÃO FLUTUTANTE PARA LEVAR AO TOPO -->
+    <a class="btn-totop" href="#"><img src="img/btn-totop.svg" /></a>
 
     <!-- RODAPÉ -->
     <footer class="main-footer">
@@ -326,7 +321,7 @@
           -->
           <li class="icon">
             <a class="action" href="#"
-              ><img class="image" src="img/icon-linkedin.svg" alt=""
+              ><img class="image" src="img/icon-linkedin-light.svg" alt=""
             /></a>
           </li>
           <!--
@@ -359,17 +354,10 @@
     <!-- build:alljs -->
     <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
     <script type="text/javascript" src="js/components/nav-bar.js"></script>
-    <script type="text/javascript" src="js/components/scrolleffect.js"></script>
-    <script
-      type="text/javascript"
-      src="js/components/glide/glide.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="js/components/main-carousel.js"
-    ></script>
+    <script type="text/javascript" src="js/components/main-carousel.js"></script>
     <script type="text/javascript" src="js/components/soft-scroll.js"></script>
     <script type="text/javascript" src="js/components/hovereffect.js"></script>
+    <script type="text/javascript" src="js/components/glide.min.js"></script>
     <!-- endbuild -->
   </body>
 </html>

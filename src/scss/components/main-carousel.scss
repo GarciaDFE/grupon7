@@ -96,11 +96,14 @@
         border: none;
         width: 165px;
         height: 57px;
+        line-height: 57px;
         font-family: inherit;
         font-size: 22px;
         font-weight: bold;
+        text-align: center;
         background-color: $color-primary-medium;
         color: $color-secondary-light;
+        text-decoration: none;
         cursor: pointer;
         transition: all 300ms linear;
         z-index: 5;

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>:: GN7 | Saúde/Odonto ::</title>
+
+    <!--<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,700"
+      rel="stylesheet"
+    />
+
+    <!-- build:allcss -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!-- HEADER/NAV -->
+    <header id="header" class="wrap-header">
+      <div class="main-navigation">
+        <div class="brand-nav">
+          <img
+            class="imgLogo"
+            src="img/logo-nav.svg"
+            alt="Imagem do logo do Grupo N7"
+          />
+          <h1 class="textLogo">Grupo<strong class="-destaque">N7</strong></h1>
+        </div>
+
+        <nav class="nav-bar">
+          <ul id="menu" class="menu">
+            <li class="item">
+              <a id="itemServicos" class="action" href="index.html">Serviços</a>
+            </li>
+            <!--
+            -->
+            <li class="item">
+              <a id="itemParceiros" class="action" href="index.html#parceiros">Parceiros</a>
+            </li>
+            <!--
+            -->
+            <li class="item"><a class="action" href="sobrenos.html">Sobre nós</a></li>
+            <!--
+            -->
+            <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
+          </ul>
+          <button class="cotacao">
+            <a class="action">Solicite uma cotação</a>
+          </button>
+        </nav>
+
+        <div class="main-btnMenu imgBtnOpen">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+    </header>
+
+   <!-- PAINEL -->
+   <section class="wrap-panel -saudeodonto">
+      <div class="main-panel">
+         <h1 class="title">Saúde e Odonto</h1>
+         <div class="description -variation">
+            <p class="paragraph">Planos de saúde sob medida para </p>
+            <p class="paragraph">sua família e para sua empresa.</p>
+         </div>
+      </div>
+   </section>
+
+    <!-- TIPOS DE PÚBLICO -->
+    <section class="public-type">
+      <button class="title">Para você</button>
+      <button class="title -dark">Para empresas</button>
+    </section>
+
+    <!-- SÁUDE E ODONTOLOGIA PARA PESSOA FÍSICA E JURÍDICA -->
+    <section class="wrap-services">
+      <div class="wrap-cards">
+        <dl class="main-card">
+          <a class="image" href="#">
+            <img src="img/imgCard-saude.jpg" alt="imagem de médicos em pé analisando chapa de raio x" />
+          </a>
+          <div class="header">
+            <dt id="saude" class="title icone">Saúde</dt>
+          </div>
+          <div class="square">
+            <dd class="description">Faça um plano de saúde que se adeque ao seu perfil ou para os colaboradores da sua empresa. Escolha cobertura, rede de atendimento e modalidade de pagamento e garanta acesso a serviços médicos.</dd>
+            <a class="btn-cards cotacao">Solicite uma cotação</a>
+          </div>
+        </dl>
+        <dl class="main-card -sembtntotop">
+          <a class="image" href="#">
+            <img src="img/imgCard-odonto.jpg" alt="imagem de mulher sentada recebendo tratamento dentário" />
+          </a>
+          <div class="header">
+            <dt id="odonto" class="title icone">Odonto</dt>
+          </div>
+          <div class="square -dark">
+            <dd class="description">Os planos odontológicos oferecem acesso a serviços odontológicos em uma ampla rede de dentistas credenciados, permitindo o investimento na saúde bucal.</dd>
+            <a class="btn-cards cotacao">Solicite uma cotação</a>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- BOTÃO FLUTUTANTE PARA LEVAR AO TOPO -->
+    <a class="btn-totop" href="#"><img src="img/btn-totop.svg" /></a>
+
+    <!-- RODAPÉ -->
+    <footer class="main-footer">
+      <div class="logo">
+        <img src="img/logo-footer.svg" alt="" />
+        <h1>Grupo<strong class="-destaque">N7</strong></h1>
+      </div>
+      <div class="local">
+        <p>
+          Av. Dr. Olivio Lira, 353, Shopping Praia da Costa - Torre Leste, sala
+          204
+        </p>
+        <p>Praia da Costa, Vila Velha-ES - CEP 29101-350</p>
+        <ul class="icons">
+          <li class="icon">
+            <a class="action" href="#"><img src="img/icon-mapa.svg" alt=""/></a>
+          </li>
+          <!--
+          -->
+          <li class="icon">
+            <a class="action" href="#"
+              ><img class="image" src="img/icon-linkedin-light.svg" alt=""
+            /></a>
+          </li>
+          <!--
+          -->
+          <li class="icon">
+            <a class="action" href="#">
+              <img src="img/icon-whatsapp.svg" alt="" />
+            </a>
+          </li>
+          <!--
+          -->
+          <li class="icon">
+            <a class="action" href="#">
+              <img src="img/icon-email.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts">
+        <p class="contact">27 <span class="-destaque">3013 7072</span></p>
+        <p class="contact">27 <span class="-destaque">99581 5264</span></p>
+        <p class="contact -email">contato@grupon7.com.br</p>
+        <button class="btn">
+          <p>Solicite uma</p>
+          <p>cotação</p>
+        </button>
+      </div>
+    </footer>
+
+    <!-- build:alljs -->
+    <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
+    <script type="text/javascript" src="js/components/nav-bar.js"></script>
+    <script type="text/javascript" src="js/components/glide.min.js"></script>
+    <script type="text/javascript" src="js/components/main-carousel.js"></script>
+    <script type="text/javascript" src="js/components/soft-scroll.js"></script>
+    <script type="text/javascript" src="js/components/hovereffect.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

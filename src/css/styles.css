@@ -185,7 +185,7 @@ img {
 .wrap-services {
   width: 100%;
   padding-top: 20px;
-  margin: 0 auto; }
+  margin: 10px auto; }
   .wrap-services .wrap-title {
     display: flex;
     justify-content: center;
@@ -197,6 +197,9 @@ img {
       .wrap-services .wrap-title {
         flex-direction: column;
         margin-bottom: 30px; } }
+    .wrap-services .wrap-title.-variation {
+      flex-direction: column;
+      margin: 20px 0 50px; }
     .wrap-services .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
@@ -204,6 +207,8 @@ img {
       color: #050A26;
       /* 600px a 899px */
       /* 320px a 599px */ }
+      .wrap-services .wrap-title > .title.-invert {
+        color: #C9801D; }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .wrap-services .wrap-title > .title {
           font-size: 40px;
@@ -217,6 +222,8 @@ img {
       margin-top: 10px;
       color: #C9801D;
       /* 600px a 899px */ }
+      .wrap-services .wrap-title > .subtitle.-invert {
+        color: #050A26; }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .wrap-services .wrap-title > .subtitle {
           font-size: 20px;
@@ -232,7 +239,7 @@ img {
 .wrap-partners {
   width: 100%;
   max-width: 1060px;
-  margin: 0 auto; }
+  margin: 120px auto 60px; }
   .wrap-partners .wrap-title {
     display: flex;
     justify-content: center;
@@ -282,20 +289,190 @@ img {
           text-align: center; } }
 
 .btn-totop {
-  max-width: 1060px;
-  display: flex;
-  justify-content: flex-end;
+  display: none;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
   opacity: 0.5;
-  transition: opacity 0.2s linear; }
-  .btn-totop.-v1 {
-    margin: 18px auto 48px; }
-  .btn-totop.-v2 {
-    margin: 135px auto 21px; }
+  transition: opacity 0.2s linear;
+  z-index: 20; }
   .btn-totop:hover {
     opacity: 1;
     transition: opacity 0.2s linear; }
-  .btn-totop img {
-    margin-right: 10px; }
+  .btn-totop.-visible {
+    display: block; }
+
+.wrap-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vw * 0.45);
+  max-height: 540px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #efc0c0;
+  /* de 320px a 599px */ }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .wrap-panel {
+      height: auto;
+      background-color: transparent; } }
+  .wrap-panel.-seguros {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-seguros-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-seguros {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-seguros-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-seguros .description {
+          display: none; } }
+  .wrap-panel.-consorcios {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-consorcios-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-consorcios {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-consorcios-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-consorcios .description {
+          display: none; } }
+  .wrap-panel.-beneficios {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-beneficios-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-beneficios {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-beneficios-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-beneficios .description {
+          display: none; } }
+  .wrap-panel.-saudeodonto {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-saudeodonto-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-saudeodonto {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-saudeodonto-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-saudeodonto .description {
+          display: none; } }
+  .wrap-panel.-consultoria {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-consultoria-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-consultoria {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-consultoria-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-consultoria .description {
+          display: none; } }
+  .wrap-panel.-sobrenos {
+    justify-content: flex-start;
+    background-color: transparent;
+    background-image: url(../img/imgPanel-sobrenos-lg.jpg);
+    background-size: cover;
+    /* de 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-panel.-sobrenos {
+        height: calc(100vw * 0.45);
+        justify-content: center;
+        align-items: flex-start;
+        background-color: transparent;
+        background-image: url(../img/imgPanel-sobrenos-sm.jpg);
+        background-size: cover; }
+        .wrap-panel.-sobrenos .description {
+          display: none; } }
+
+.wrap-team {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto; }
+  .wrap-team > .title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #050A26;
+    margin: 35px 0;
+    /* 320px a 899px */ }
+    @media all and (min-width: 320px) and (max-width: 899px) {
+      .wrap-team > .title {
+        font-size: 35px; } }
+  .wrap-team .wrap-team-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    /* 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .wrap-team .wrap-team-cards {
+        justify-content: space-around; } }
+
+.public-type {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+  /* 320px a 599px */ }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .public-type {
+      flex-direction: column;
+      align-items: center; } }
+  .public-type .title {
+    width: 320px;
+    height: 57px;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    color: white;
+    background-color: #C9801D;
+    /* 320px a 899px */ }
+    @media all and (min-width: 320px) and (max-width: 899px) {
+      .public-type .title {
+        width: 220px;
+        height: 45px;
+        font-size: 20px;
+        margin: 10px; } }
+    .public-type .title.-dark {
+      background-color: #050A26; }
 
 .btn-cotacao {
   display: none;
@@ -736,11 +913,14 @@ img {
         border: none;
         width: 165px;
         height: 57px;
+        line-height: 57px;
         font-family: inherit;
         font-size: 22px;
         font-weight: bold;
+        text-align: center;
         background-color: #C9801D;
         color: white;
+        text-decoration: none;
         cursor: pointer;
         transition: all 300ms linear;
         z-index: 5;
@@ -823,21 +1003,25 @@ img {
       display: none; } }
 
 .btn-cards {
-  align-self: flex-end;
   font-family: inherit;
   font-size: 22px;
   cursor: pointer;
-  transition: all 300ms linear; }
+  transition: all 300ms linear;
+  text-decoration: none; }
   .btn-cards.saibamais {
     width: 135px;
     height: 44px;
+    line-height: 44px;
     border: 1px solid #050A26;
-    color: #050A26;
     background-color: white;
     border-radius: 5px;
     text-decoration: none;
+    text-align: center;
     /* acima de 600px */
     /* 320px a 599px */ }
+    .btn-cards.saibamais:link, .btn-cards.saibamais:visited, .btn-cards.saibamais:hover, .btn-cards.saibamais:active, .btn-cards.saibamais:focus {
+      color: #050A26;
+      text-decoration: none; }
     @media all and (min-width: 600px) {
       .btn-cards.saibamais:hover, .btn-cards.saibamais.hovereffect {
         border: none;
@@ -915,6 +1099,20 @@ img {
       border: none;
       color: white;
       background-color: #C9801D; }
+  .btn-cards.cotacao {
+    width: 200px;
+    height: 44px;
+    line-height: 44px;
+    color: #050A26;
+    border: 1px solid #050A26;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center; }
+    .btn-cards.cotacao:hover, .btn-cards.cotacao.hovereffect {
+      border: none;
+      color: white;
+      background-color: #050A26; }
 
 .main-card {
   position: relative;
@@ -928,19 +1126,18 @@ img {
   width: 100%;
   height: 240px;
   margin: 0 auto;
+  margin-bottom: 120px;
+  /* 600px a 899px */
+  /* 320px a 599px */
   /* 900px a 1199px */
   /* 600px a 899px */
   /* 320px a 599px */ }
-  .main-card:not(:last-child) {
-    margin-bottom: 120px;
-    /* 600px a 899px */
-    /* 320px a 599px */ }
-    @media all and (min-width: 600px) and (max-width: 899px) {
-      .main-card:not(:last-child) {
-        margin-bottom: 60px; } }
-    @media all and (min-width: 320px) and (max-width: 599px) {
-      .main-card:not(:last-child) {
-        margin-bottom: 40px; } }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .main-card {
+      margin-bottom: 60px; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .main-card {
+      margin-bottom: 40px; } }
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .main-card {
       max-width: 860px;
@@ -1058,11 +1255,59 @@ img {
     .main-card .header .icone {
       padding-left: 60px;
       background-repeat: no-repeat;
-      background-size: contain; }
-      .main-card .header .icone#one {
-        background-image: url(../img/icon-seguro-auto.svg); }
-      .main-card .header .icone#seguros {
-        background-image: url(../img/icon-seguro-vida.svg); }
+      background-size: contain;
+      /* 600px a 899px */
+      /* 320px a 599px */ }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-card .header .icone {
+          padding-left: 30px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-card .header .icone {
+          padding-left: 40px; } }
+      .main-card .header .icone#seguro-vida {
+        background-image: url(../img/iconCard-seguro-vida.svg); }
+      .main-card .header .icone#seguro-auto {
+        background-image: url(../img/iconCard-seguro-auto.svg); }
+      .main-card .header .icone#seguro-residencial {
+        background-image: url(../img/iconCard-seguro-residencial.svg); }
+      .main-card .header .icone#seguro-viagem {
+        background-image: url(../img/iconCard-seguro-viagem.svg); }
+      .main-card .header .icone#seguro-saude {
+        background-image: url(../img/iconCard-seguro-saude-pf.svg); }
+      .main-card .header .icone#seguro-odonto {
+        background-image: url(../img/iconCard-seguro-odonto-pf.svg); }
+      .main-card .header .icone#seguro-garantia {
+        background-image: url(../img/iconCard-seguro-garantia.svg); }
+      .main-card .header .icone#seguro-frota {
+        background-image: url(../img/iconCard-seguro-frota.svg); }
+      .main-card .header .icone#seguro-transporte-carga {
+        background-image: url(../img/iconCard-seguro-transporte-carga.svg); }
+      .main-card .header .icone#seguro-patrimonial {
+        background-image: url(../img/iconCard-seguro-patrimonial.svg); }
+      .main-card .header .icone#seguro-vida-coletiva {
+        background-image: url(../img/iconCard-seguro-vida-coletiva.svg); }
+      .main-card .header .icone#seguro-saude-odonto {
+        background-image: url(../img/iconCard-seguro-saude-odonto.svg); }
+      .main-card .header .icone#consorcio-auto {
+        background-image: url(../img/iconCard-consorcio-auto.svg); }
+      .main-card .header .icone#consorcio-imovel {
+        background-image: url(../img/iconCard-consorcio-imovel.svg); }
+      .main-card .header .icone#consorcio-servicos {
+        background-image: url(../img/iconCard-consorcio-servicos.svg); }
+      .main-card .header .icone#beneficios {
+        background-image: url(../img/iconCard-beneficios.svg); }
+      .main-card .header .icone#saude {
+        background-image: url(../img/iconCard-saudeodonto-saude.svg); }
+      .main-card .header .icone#odonto {
+        background-image: url(../img/iconCard-saudeodonto-odonto.svg); }
+      .main-card .header .icone#consultoria-diagnostico {
+        background-image: url(../img/iconCard-consultoria-diagnostico.svg); }
+      .main-card .header .icone#consultoria-planejamento {
+        background-image: url(../img/iconCard-consultoria-planejamento.svg); }
+      .main-card .header .icone#consultoria-renegociacao {
+        background-image: url(../img/iconCard-consultoria-renegociacao.svg); }
+      .main-card .header .icone#consultoria-gestao {
+        background-image: url(../img/iconCard-consultoria-gestao.svg); }
     .main-card .header.-invert .title {
       color: #C9801D; }
     .main-card .header.-invert .subtitle {
@@ -1096,6 +1341,8 @@ img {
         height: 220px;
         margin: 0 auto;
         padding: 10px; } }
+    .main-card .square.-dark {
+      border: 1px solid #050A26; }
     .main-card .square .description {
       font-size: 18px;
       line-height: 22px;
@@ -1366,3 +1613,146 @@ img {
       .main-footer .contacts .btn:hover {
         background-color: white;
         color: #C9801D; }
+
+.main-panel {
+  margin: 0 120px;
+  /* de 700px a 799px */
+  /* de 600px a 699px */
+  /* de 320px a 599px */ }
+  @media all and (min-width: 700px) and (max-width: 699px) {
+    .main-panel {
+      margin: 0 50px; } }
+  @media all and (min-width: 600px) and (max-width: 699px) {
+    .main-panel {
+      margin: 0 40px; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .main-panel {
+      margin: 20px 0; } }
+  .main-panel .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* de 600px a 899px */
+    /* de 320px a 599px */ }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-panel .title {
+        font-size: 35px;
+        margin-bottom: 10px; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-panel .title {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 10px; } }
+  .main-panel .description {
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 30px;
+    /* de 600px a 899px */
+    /* de 320px a 599px */ }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-panel .description {
+        font-size: 18px;
+        line-height: 25px; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-panel .description {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 20px;
+        background-color: #C9801D; } }
+    .main-panel .description.-variation {
+      color: #C9801D; }
+    .main-panel .description .paragraph {
+      margin-bottom: 10px;
+      /* de 600px a 899px */ }
+      @media all and (min-width: 600px) and (max-width: 899px) {
+        .main-panel .description .paragraph {
+          margin-bottom: 0; } }
+      .main-panel .description .paragraph .-destaque {
+        text-transform: uppercase;
+        font-weight: bold; }
+
+.team-card {
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  /* 320px a 599px */ }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .team-card {
+      display: block;
+      margin: 0 auto;
+      width: 250px;
+      height: 500px;
+      margin: 15px; } }
+  .team-card .avatar {
+    width: 250px;
+    height: 250px; }
+  .team-card .resume {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    background-image: linear-gradient(to top, #efefef 60%, #c8c9cb); }
+    .team-card .resume .name {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #050A26;
+      /* 320px a 599px */ }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .team-card .resume .name {
+          font-size: 25px; } }
+    .team-card .resume .subtitle {
+      font-size: 22px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #050A26;
+      padding-bottom: 10px;
+      color: #C9801D;
+      /* 320px a 599px */ }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .team-card .resume .subtitle {
+          font-size: 20px; } }
+    .team-card .resume .skill {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 24px;
+      color: #C9801D; }
+    .team-card .resume .social {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      width: 44px;
+      cursor: pointer;
+      transition: transform 300ms linear; }
+      .team-card .resume .social:hover {
+        transform: scale(1.1);
+        transition: transform 300ms linear; }
+    .team-card .resume .credential {
+      position: absolute;
+      width: 130px;
+      height: 57px;
+      text-indent: -9999px;
+      background-position: bottom right; }
+      .team-card .resume .credential.-anbima20 {
+        background-image: url(../img/imgSelo-anbima-cpa20.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 65px;
+        right: 15px; }
+      .team-card .resume .credential.-anbima10 {
+        background-image: url(../img/imgSelo-anbima-cpa10.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 15px;
+        right: 15px; }
+      .team-card .resume .credential.-susep {
+        background-image: url(../img/imgSelo-susep.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        bottom: 15px;
+        right: 5px; }

@@ -10,16 +10,14 @@
   width: 100%;
   height: 240px;
   margin: 0 auto;
-  &:not(:last-child) {
-    margin-bottom: 120px;
-    /* 600px a 899px */
-    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-      margin-bottom: 60px;
-    }
-    /* 320px a 599px */
-    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
-      margin-bottom: 40px;
-    }
+  margin-bottom: 120px;
+  /* 600px a 899px */
+  @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+    margin-bottom: 60px;
+  }
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    margin-bottom: 40px;
   }
   /* 900px a 1199px */
   @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
@@ -148,11 +146,88 @@
       padding-left: 60px;
       background-repeat: no-repeat;
       background-size: contain;
-      &#one {
-        background-image: url(../img/icon-seguro-auto.svg);
+      /* 600px a 899px */
+      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+        padding-left: 30px;
       }
-      &#seguros {
-        background-image: url(../img/icon-seguro-vida.svg);
+      /* 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        padding-left: 40px;
+      }
+      // ICONES DE SEGUROS
+      &#seguro-vida {
+        background-image: url(../img/iconCard-seguro-vida.svg);
+      }
+      &#seguro-auto {
+        background-image: url(../img/iconCard-seguro-auto.svg);
+      }
+      &#seguro-residencial {
+        background-image: url(../img/iconCard-seguro-residencial.svg);
+      }
+      &#seguro-viagem {
+        background-image: url(../img/iconCard-seguro-viagem.svg);
+      }
+      &#seguro-saude {
+        background-image: url(../img/iconCard-seguro-saude-pf.svg);
+      }
+      &#seguro-odonto {
+        background-image: url(../img/iconCard-seguro-odonto-pf.svg);
+      }
+      &#seguro-garantia {
+        background-image: url(../img/iconCard-seguro-garantia.svg);
+      }
+      &#seguro-frota {
+        background-image: url(../img/iconCard-seguro-frota.svg);
+      }
+      &#seguro-transporte-carga {
+        background-image: url(../img/iconCard-seguro-transporte-carga.svg);
+      }
+      &#seguro-patrimonial {
+        background-image: url(../img/iconCard-seguro-patrimonial.svg);
+      }
+      &#seguro-vida-coletiva {
+        background-image: url(../img/iconCard-seguro-vida-coletiva.svg);
+      }
+      &#seguro-saude-odonto {
+        background-image: url(../img/iconCard-seguro-saude-odonto.svg);
+      }
+
+      // ICONES DE CONSÓRCIOS
+      &#consorcio-auto {
+        background-image: url(../img/iconCard-consorcio-auto.svg);
+      }
+      &#consorcio-imovel {
+        background-image: url(../img/iconCard-consorcio-imovel.svg);
+      }
+      &#consorcio-servicos {
+        background-image: url(../img/iconCard-consorcio-servicos.svg);
+      }
+
+      // ICONE DE BENEFÍCIOS
+      &#beneficios {
+        background-image: url(../img/iconCard-beneficios.svg);
+      }
+
+      // ICONES DE SAÚDE E ODONTO
+      &#saude {
+        background-image: url(../img/iconCard-saudeodonto-saude.svg);
+      }
+      &#odonto {
+        background-image: url(../img/iconCard-saudeodonto-odonto.svg);
+      }
+
+      // ICONES DE CONSULTORIA
+      &#consultoria-diagnostico {
+        background-image: url(../img/iconCard-consultoria-diagnostico.svg);
+      }
+      &#consultoria-planejamento {
+        background-image: url(../img/iconCard-consultoria-planejamento.svg);
+      }
+      &#consultoria-renegociacao {
+        background-image: url(../img/iconCard-consultoria-renegociacao.svg);
+      }
+      &#consultoria-gestao {
+        background-image: url(../img/iconCard-consultoria-gestao.svg);
       }
     }
     &.-invert {
@@ -192,6 +267,9 @@
       height: 220px;
       margin: 0 auto;
       padding: 10px;
+    }
+    &.-dark {
+      border: 1px solid $color-primary-dark;
     }
     .description {
       font-size: 18px;

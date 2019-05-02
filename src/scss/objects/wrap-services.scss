@@ -1,7 +1,7 @@
 .wrap-services {
   width: 100%;
   padding-top: 20px;
-  margin: 0 auto;
+  margin: 10px auto;
   .wrap-title {
     display: flex;
     justify-content: center;
@@ -13,11 +13,18 @@
       flex-direction: column;
       margin-bottom: 30px;
     }
+    &.-variation {
+      flex-direction: column;
+      margin: 20px 0 50px;
+    }
     > .title {
       font-size: 50px;
       font-weight: bold;
       margin-right: 20px;
       color: $color-primary-dark;
+      &.-invert {
+        color: $color-primary-medium;
+      }
       /* 600px a 899px */
       @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
         font-size: 40px;
@@ -33,6 +40,9 @@
       font-size: 24px;
       margin-top: 10px;
       color: $color-primary-medium;
+      &.-invert {
+        color: $color-primary-dark;
+      }
       /* 600px a 899px */
       @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
         font-size: 20px;
