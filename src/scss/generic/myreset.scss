@@ -1,8 +1,11 @@
 //
 // Configurações específicas de RESET deste projeto
 //
+html,
 body {
   overflow-x: hidden;
+}
+body {
   margin-top: 80px;
   @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
     margin-top: 0;
