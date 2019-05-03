@@ -326,7 +326,6 @@ img {
   max-height: 540px;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #efc0c0;
   /* de 320px a 599px */ }
   @media all and (min-width: 320px) and (max-width: 599px) {
     .wrap-panel {
@@ -420,14 +419,13 @@ img {
     /* de 320px a 599px */ }
     @media all and (min-width: 320px) and (max-width: 599px) {
       .wrap-panel.-sobrenos {
-        height: calc(100vw * 0.45);
+        height: auto;
         justify-content: center;
         align-items: flex-start;
-        background-color: transparent;
+        background-color: yellow;
         background-image: url(../img/imgPanel-sobrenos-sm.jpg);
-        background-size: cover; }
-        .wrap-panel.-sobrenos .description {
-          display: none; } }
+        background-size: auto;
+        background-repeat: no-repeat; } }
 
 .wrap-team {
   width: 100%;
@@ -1639,6 +1637,22 @@ img {
   @media all and (min-width: 320px) and (max-width: 599px) {
     .main-panel {
       margin: 20px 0; } }
+  .main-panel.-sobrenos {
+    width: 60%;
+    /* de 900px a 1199px */
+    /* de 600px a 899px */
+    /* de 320px a 599px */ }
+    @media all and (min-width: 900px) and (max-width: 1199px) {
+      .main-panel.-sobrenos {
+        width: 70%; } }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-panel.-sobrenos {
+        margin: 0 40px;
+        width: 70%; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-panel.-sobrenos {
+        width: 100%;
+        margin: 20px; } }
   .main-panel .title {
     font-size: 50px;
     font-weight: bold;
@@ -1663,13 +1677,12 @@ img {
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-panel .description {
         font-size: 18px;
-        line-height: 25px; } }
+        line-height: 22px; } }
     @media all and (min-width: 320px) and (max-width: 599px) {
       .main-panel .description {
         font-size: 18px;
         line-height: 25px;
-        padding: 20px;
-        background-color: #C9801D; } }
+        padding: 15px; } }
     .main-panel .description.-variation {
       color: #C9801D; }
     .main-panel .description .paragraph {
@@ -1677,7 +1690,7 @@ img {
       /* de 600px a 899px */ }
       @media all and (min-width: 600px) and (max-width: 899px) {
         .main-panel .description .paragraph {
-          margin-bottom: 0; } }
+          margin-bottom: 5px; } }
       .main-panel .description .paragraph .-destaque {
         text-transform: uppercase;
         font-weight: bold; }
