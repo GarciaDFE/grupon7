@@ -1,48 +1,58 @@
 .brand-nav {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   width: 300px;
-   @media all and /* 600px a 899px */
-      (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-         justify-content: center;
-         flex-direction: column;
-         width: 60px;
-   }
-   .imgLogo {
-      width: 120px;
-      margin-right: 15px;
-      transition: all 300ms linear;
-      transform: translateY(35%);
-      @media all and /* 600px a 899px */
-         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-            transform: translateY(0);
-            width: 80px;
-            margin: 0 0 3px 0;
-      }
-      @media all and /* 320px a 599px */
-         (min-width: $break-min) and (max-width: $break-phone - 1) {
-            display: none;
-      }
-   }
-   .textLogo {
-      font-size: 28px;
-      font-weight: normal;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      @media all and /* 600px a 899px */
-         (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-            font-size: 13px;
-            font-weight: bold;
-            letter-spacing: 3px;
-      }
-      @media all and /* 320px a 599px */
-         (min-width: $break-min) and (max-width: $break-phone - 1) {
-            font-weight: bold;
-      }
-   }
-   .-destaque {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+
+  /* 600px a 899px */
+  @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+    justify-content: center;
+    flex-direction: column;
+    width: 60px;
+  }
+  a,
+  a:active,
+  a:link,
+  a:hover {
+    color: $color-primary-dark;
+    text-decoration: none;
+  }
+  .imgLogo {
+    width: 120px;
+    margin-right: 15px;
+    transition: all 300ms linear;
+    transform: translateY(35%);
+    /* 600px a 899px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      transform: translateY(0);
+      width: 80px;
+      margin: 0 0 3px 0;
+    }
+    /* 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      display: none;
+    }
+  }
+  .textLogo {
+    font-size: 28px;
+    font-weight: normal;
+    color: $color-primary-dark;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+    /* 600px a 899px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      font-size: 13px;
       font-weight: bold;
-      color: $color-primary-medium;
+      letter-spacing: 3px;
+    }
+    /* 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      font-weight: bold;
+    }
+  }
+  .-destaque {
+    font-weight: bold;
+    color: $color-primary-medium;
   }
 }

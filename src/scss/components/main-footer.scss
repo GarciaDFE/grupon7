@@ -118,15 +118,15 @@
     }
     /* 600px a 899px */
     @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-      width: 150px;
-      font-size: 15px;
-      line-height: 12px;
+      width: 200px;
+      font-size: 18px;
+      line-height: 15px;
     }
     /* de 320px a 599px */
     @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
-      width: 150px;
-      font-size: 15px;
-      line-height: 12px;
+      width: 170px;
+      font-size: 18px;
+      line-height: 13px;
       margin-bottom: 30px;
     }
     .contact {
