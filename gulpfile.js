@@ -94,8 +94,8 @@ const build = gulp.parallel(
   optimizeJSCarousel,
   optimizeIMG,
   replaceHTML,
-  optimizeHTML
-  //watch
+  optimizeHTML,
+  watch
 );
 gulp.task(build);
 gulp.task("default", build);
