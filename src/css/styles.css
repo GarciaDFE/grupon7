@@ -570,22 +570,44 @@ img {
       .nav-bar > .menu {
         position: absolute;
         display: block;
-        background-color: #050A26;
+        background-color: rgba(5, 10, 38, 0.85);
         width: 260px;
-        height: 500px;
+        height: auto;
         top: 60px;
         right: 0;
-        opacity: 0.85;
         z-index: 10;
         font-weight: bold;
         line-height: 50px;
         padding: 10px 20px;
         transform: translateX(200%);
         transition: transform 300ms linear; } }
+    .nav-bar > .menu > .item.cotacao-mobile {
+      display: none; }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .nav-bar > .menu > .item.cotacao-mobile {
+          display: inline-block;
+          border: none;
+          background-color: #C9801D;
+          margin: 20px 0 10px;
+          padding: 10px;
+          width: 100%;
+          height: auto;
+          font-family: inherit;
+          font-size: 20px;
+          line-height: 25px;
+          font-weight: bold;
+          text-align: center;
+          letter-spacing: 0.5px;
+          color: white;
+          cursor: pointer;
+          transition: all 300ms linear; }
+          .nav-bar > .menu > .item.cotacao-mobile:hover {
+            background-color: #050A26; } }
     .nav-bar > .menu.menu-open {
       transform: translateX(0);
       visibility: visible; }
     .nav-bar > .menu > .item {
+      position: relative;
       display: inline-block;
       padding-right: 50px;
       /* 1101px a 1199px */
@@ -652,21 +674,52 @@ img {
           transform: scale(1); }
       .nav-bar > .menu > .item .submenu {
         display: none;
-        width: 220px;
-        font-size: 20px;
-        line-height: 40px;
-        text-decoration: none;
-        color: #C9801D;
-        border-top: 1px solid white;
-        /* até 599px */ }
+        text-align: left;
+        /* até 599px */
+        /* a partir de 600px */ }
         @media all and (max-width: 599px) {
-          .nav-bar > .menu > .item .submenu.active {
-            display: block; } }
-        .nav-bar > .menu > .item .submenu li {
-          padding-left: 10px; }
-          .nav-bar > .menu > .item .submenu li a {
+          .nav-bar > .menu > .item .submenu {
+            width: 220px;
+            border-top: 1px solid white;
+            margin-bottom: 10px; } }
+        @media all and (min-width: 600px) {
+          .nav-bar > .menu > .item .submenu {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 180px;
+            background-color: rgba(5, 10, 38, 0.85); } }
+        .nav-bar > .menu > .item .submenu.active {
+          display: block; }
+        .nav-bar > .menu > .item .submenu > .item {
+          margin: 0 10px; }
+          .nav-bar > .menu > .item .submenu > .item:not(:last-child) {
+            /* a partir de 600px */ }
+            @media all and (min-width: 600px) {
+              .nav-bar > .menu > .item .submenu > .item:not(:last-child) {
+                border-bottom: 1px solid white; } }
+          .nav-bar > .menu > .item .submenu > .item .action {
+            font-size: 20px;
+            line-height: 60px;
             text-decoration: none;
-            color: inherit; }
+            text-align: left;
+            list-style: none;
+            text-decoration: none;
+            cursor: pointer;
+            padding-left: 10px;
+            /* até 599px */
+            /* a partir de 600px */ }
+            @media all and (max-width: 599px) {
+              .nav-bar > .menu > .item .submenu > .item .action {
+                color: #C9801D; } }
+            @media all and (min-width: 600px) {
+              .nav-bar > .menu > .item .submenu > .item .action {
+                color: white; } }
+            .nav-bar > .menu > .item .submenu > .item .action:hover {
+              /* a partir de 600px */ }
+              @media all and (min-width: 600px) {
+                .nav-bar > .menu > .item .submenu > .item .action:hover {
+                  color: #C9801D; } }
   .nav-bar > .cotacao {
     display: inline-block;
     border: none;

@@ -1,4 +1,4 @@
-const $comSubmenu = document.querySelector("#itemServicos");
+const $comSubmenu = document.querySelector(".comSubmenu");
 const $subMenu = document.querySelector(".item .submenu");
 
 function clickComSubmenu() {
