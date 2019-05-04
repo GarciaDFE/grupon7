@@ -27,7 +27,9 @@
     /* de 320px a 599px */
     @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
       width: 100%;
-      margin: 20px;
+      height: auto;
+      margin: 10px 0;
+      overflow: visible;
     }
   }
   .title {
@@ -44,6 +46,9 @@
       font-size: 35px;
       text-align: center;
       margin-bottom: 10px;
+      &.-sobrenome {
+        margin-bottom: 200px;
+      }
     }
   }
   .description {
@@ -65,10 +70,12 @@
       color: $color-primary-medium;
     }
     .paragraph {
-      margin-bottom: 10px;
-      /* de 600px a 899px */
-      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-        margin-bottom: 5px;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+        /* de 600px a 899px */
+        @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+          margin-bottom: 5px;
+        }
       }
       .-destaque {
         text-transform: uppercase;
