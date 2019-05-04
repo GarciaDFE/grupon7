@@ -16,19 +16,19 @@
     margin: 0 10px;
   }
   .arealogo {
-    width: 25%;
+    width: 33.33%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
     /* de 600px a 899px */
     @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-      width: 33%;
+      width: 50%;
       margin: 30px 0;
     }
     /* de 320px a 599px */
     @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
-      width: 50%;
+      width: 100%;
       margin: 25px 0;
     }
     .logo {
@@ -39,7 +39,7 @@
       }
       /* de 320px a 599px */
       @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
-        width: 45%;
+        width: 50%;
       }
     }
   }
