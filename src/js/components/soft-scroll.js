@@ -2,7 +2,7 @@
 const $wrapHeader = document.querySelector(".wrap-header");
 const $btnToTop = document.querySelector(".btn-totop");
 const landmark = 300;
-// NEVEGAÇÃO NA PÁGINA COM EFEITO DE SCROLL SUAVE
+// NEVEGAÇÃO NA DENTRO DA HOMEPAGE COM EFEITO DE SCROLL SUAVE
 const $itemServicos = document.querySelector("#itemServicos");
 const $itemParceiros = document.querySelector("#itemParceiros");
 const $itemContato = document.querySelector("#itemContato");
@@ -12,7 +12,12 @@ const $Contacts = document.querySelector(".main-footer");
 let $positionServices = 0;
 let $positionPartners = 0;
 let $positionContacts = 0;
-
+// NEVEGAÇÃO NA DENTRO DA PÁGINA SEGUROS COM EFEITO DE SCROLL SUAVE
+const $btnPF = document.querySelector("#btnPF");
+const $btnPJ = document.querySelector("#btnPJ");
+const $seguroPF = document.querySelector("#seguroPF");
+const $seguroPJ = document.querySelector("#seguroPJ");
+// VARIÁVEIS
 const breakPhone = 599;
 const descontoAlturaHeader = 80;
 
@@ -32,7 +37,7 @@ $btnToTop.addEventListener("click", function() {
   smoothScroll($wrapHeader, 2000, 0);
 });
 
-//NEVEGAÇÃO NA PÁGINA COM EFEITO DE SCROLL SUAVE
+// NEVEGAÇÃO DENTRO DA HOMEPAGE COM EFEITO DE SCROLL SUAVE
 if ($Services != null) {
   $positionServices = $Services.getBoundingClientRect().top;
 }
@@ -59,6 +64,33 @@ $itemParceiros.addEventListener("click", function() {
 $itemContato.addEventListener("click", function() {
   smoothScroll($Contacts, 2000, $positionContacts - descontoAlturaHeader);
 });
+
+//NEVEGAÇÃO DENTRO DA PÁGINA SEGUROS COM EFEITO DE SCROLL SUAVE
+if ($seguroPF != null) {
+  $positionSeguroPF = $seguroPF.getBoundingClientRect().top;
+}
+
+if ($seguroPJ != null) {
+  $positionSeguroPJ = $seguroPJ.getBoundingClientRect().top;
+}
+
+if ($btnPF != null && $btnPJ != null) {
+  $view = window.innerWidth;
+  $btnPF.addEventListener("click", function() {
+    if ($view > breakPhone) {
+      smoothScroll($seguroPF, 2000, $positionSeguroPF - descontoAlturaHeader);
+    } else {
+      smoothScroll($seguroPF, 2000, $positionSeguroPF);
+    }
+  });
+  $btnPJ.addEventListener("click", function() {
+    if ($view > breakPhone) {
+      smoothScroll($seguroPJ, 2000, $positionSeguroPJ - descontoAlturaHeader);
+    } else {
+      smoothScroll($seguroPJ, 2000, $positionSeguroPJ);
+    }
+  });
+}
 
 // CONTROLA O EFEITO DE SCROLL SUAVE
 const smoothScroll = (target, duration, position) => {

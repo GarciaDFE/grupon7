@@ -211,6 +211,8 @@ img {
     .wrap-services .wrap-title.-variation {
       flex-direction: column;
       margin: 20px 0 50px; }
+    .wrap-services .wrap-title.-duotitle {
+      justify-content: space-evenly; }
     .wrap-services .wrap-title > .title {
       font-size: 50px;
       font-weight: bold;
@@ -453,7 +455,7 @@ img {
       .wrap-team .wrap-team-cards {
         justify-content: space-around; } }
 
-.public-type {
+.btn-publictype {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -461,27 +463,33 @@ img {
   margin: 30px auto;
   /* 320px a 599px */ }
   @media all and (min-width: 320px) and (max-width: 599px) {
-    .public-type {
+    .btn-publictype {
       flex-direction: column;
       align-items: center; } }
-  .public-type .title {
+  .btn-publictype .title {
     width: 320px;
     height: 57px;
+    line-height: 57px;
     font-family: inherit;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
     border: none;
     color: white;
     background-color: #C9801D;
     /* 320px a 899px */ }
+    .btn-publictype .title:hover {
+      opacity: 0.8; }
     @media all and (min-width: 320px) and (max-width: 899px) {
-      .public-type .title {
+      .btn-publictype .title {
         width: 220px;
         height: 45px;
+        line-height: 45px;
         font-size: 20px;
         margin: 10px; } }
-    .public-type .title.-dark {
+    .btn-publictype .title.-dark {
       background-color: #050A26; }
 
 .btn-cotacao {
