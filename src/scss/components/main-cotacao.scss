@@ -2,26 +2,43 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: space-between;
+  box-sizing: border-box;
+  align-content: flex-start;
   width: 940px;
   height: calc(100vw * 0.55);
   max-height: 517px;
-
+  z-index: 5;
   .wrap-header {
     position: relative;
+    box-sizing: border-box;
     display: block;
     text-align: left;
-    padding: 25px 25px 0;
+    padding: 25px 25px 10px;
     height: auto;
     background-color: rgba($color-primary-medium, 0.5);
+    /* 900px a 1199px */
+    @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      //@at-roottext-align: center;
+      padding: 35px 100px 0;
+    }
+
     .title {
       font-family: inherit;
       font-size: 50px;
       font-weight: bold;
       color: $color-primary-dark;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      /* 900px a 1199px */
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+        font-size: 35px;
+      }
+
       .-invert {
         color: $color-secondary-light;
+        /* 900px a 1199px */
+        @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+          font-size: 35px;
+        }
       }
     }
     .subtitle {
@@ -30,6 +47,11 @@
       line-height: 26px;
       font-weight: normal;
       color: $color-primary-dark;
+      /* 900px a 1199px */
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+        font-size: 20px;
+        line-height: 24px;
+      }
     }
   }
 
@@ -39,7 +61,7 @@
     align-items: center;
     flex-flow: row wrap;
     height: auto;
-    padding-bottom: 25px;
+    padding: 0 0 20px;
     background-color: rgba($color-primary-medium, 0.5);
     > .field {
       display: flex;
@@ -47,7 +69,12 @@
       align-items: center;
       width: 360px;
       height: 44px;
-      margin: 20px;
+      margin: 15px;
+      /* 900px a 1199px */
+      @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+        margin: 10px 15px 15px;
+      }
+
       > .label {
         width: 110px;
         max-height: 50px;
@@ -166,7 +193,7 @@
       font-family: inherit;
       font-size: 16px;
       font-weight: normal;
-      margin-top: 40px;
+      margin-top: 30px;
     }
   }
 }

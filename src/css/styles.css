@@ -1864,38 +1864,58 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: space-between;
+  box-sizing: border-box;
+  align-content: flex-start;
   width: 940px;
   height: calc(100vw * 0.55);
-  max-height: 517px; }
+  max-height: 517px;
+  z-index: 5; }
   .main-cotacao .wrap-header {
     position: relative;
+    box-sizing: border-box;
     display: block;
     text-align: left;
-    padding: 25px 25px 0;
+    padding: 25px 25px 10px;
     height: auto;
-    background-color: rgba(201, 128, 29, 0.5); }
+    background-color: rgba(201, 128, 29, 0.5);
+    /* 900px a 1199px */ }
+    @media all and (min-width: 900px) and (max-width: 1199px) {
+      .main-cotacao .wrap-header {
+        padding: 35px 100px 0; } }
     .main-cotacao .wrap-header .title {
       font-family: inherit;
       font-size: 50px;
       font-weight: bold;
       color: #050A26;
-      margin-bottom: 20px; }
+      margin-bottom: 10px;
+      /* 900px a 1199px */ }
+      @media all and (min-width: 900px) and (max-width: 1199px) {
+        .main-cotacao .wrap-header .title {
+          font-size: 35px; } }
       .main-cotacao .wrap-header .title .-invert {
-        color: white; }
+        color: white;
+        /* 900px a 1199px */ }
+        @media all and (min-width: 900px) and (max-width: 1199px) {
+          .main-cotacao .wrap-header .title .-invert {
+            font-size: 35px; } }
     .main-cotacao .wrap-header .subtitle {
       font-family: inherit;
       font-size: 22px;
       line-height: 26px;
       font-weight: normal;
-      color: #050A26; }
+      color: #050A26;
+      /* 900px a 1199px */ }
+      @media all and (min-width: 900px) and (max-width: 1199px) {
+        .main-cotacao .wrap-header .subtitle {
+          font-size: 20px;
+          line-height: 24px; } }
   .main-cotacao .wrap-form {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     height: auto;
-    padding-bottom: 25px;
+    padding: 0 0 20px;
     background-color: rgba(201, 128, 29, 0.5); }
     .main-cotacao .wrap-form > .field {
       display: flex;
@@ -1903,7 +1923,11 @@ img {
       align-items: center;
       width: 360px;
       height: 44px;
-      margin: 20px; }
+      margin: 15px;
+      /* 900px a 1199px */ }
+      @media all and (min-width: 900px) and (max-width: 1199px) {
+        .main-cotacao .wrap-form > .field {
+          margin: 10px 15px 15px; } }
       .main-cotacao .wrap-form > .field > .label {
         width: 110px;
         max-height: 50px;
@@ -2011,4 +2035,4 @@ img {
       font-family: inherit;
       font-size: 16px;
       font-weight: normal;
-      margin-top: 40px; }
+      margin-top: 30px; }
