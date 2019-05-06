@@ -1,0 +1,170 @@
+.main-cotacao {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 940px;
+  height: calc(100vw * 0.55);
+  max-height: 517px;
+
+  .wrap-header {
+    position: relative;
+    display: block;
+    text-align: left;
+    padding: 25px 25px 0;
+    height: auto;
+    background-color: rgba($color-primary-medium, 0.5);
+    .title {
+      font-family: inherit;
+      font-size: 50px;
+      font-weight: bold;
+      color: $color-primary-dark;
+      margin-bottom: 20px;
+      .-invert {
+        color: $color-secondary-light;
+      }
+    }
+    .subtitle {
+      font-family: inherit;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: normal;
+      color: $color-primary-dark;
+    }
+  }
+
+  .wrap-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    height: auto;
+    padding-bottom: 25px;
+    background-color: rgba($color-primary-medium, 0.5);
+    > .field {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 360px;
+      height: 44px;
+      margin: 20px;
+      > .label {
+        width: 110px;
+        max-height: 50px;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        margin-right: 10px;
+        text-align: right;
+      }
+      > .input {
+        width: 250px;
+        height: 44px;
+        border: 1px solid $color-primary-dark;
+        background-color: $color-secondary-light;
+        font-family: inherit;
+        font-size: 18px;
+        padding: 0 10px;
+        color: rgba($color-primary-dark, 0.5);
+        &.-listselect {
+          padding-left: 40px;
+          -webkit-appearance: none; /* Remove estilo padrão do Chrome */
+          -moz-appearance: none; /* Remove estilo padrão do FireFox */
+          appearance: none; /* Remove estilo padrão do FireFox*/
+          &::before {
+            content: "";
+            background: url(../img/icon-caret-down-dark.svg);
+            background-color: violet; //$color-secondary-light;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            background-size: contain;
+            background-size: contain;
+            background-position: center;
+            padding: 20px;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+    > .btn-submit {
+      width: 250px;
+      height: 44px;
+      color: $color-secondary-light;
+      background-color: $color-primary-dark;
+      border-radius: 5px;
+      border: none;
+      font-family: inherit;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid $color-secondary-light;
+        color: $color-primary-dark;
+        background-color: $color-secondary-light;
+      }
+    }
+  }
+
+  .wrap-footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-height: 157px;
+    padding: 15px;
+    color: $color-secondary-light;
+    background-color: rgba($color-primary-dark, 0.5);
+    > .title {
+      font-family: inherit;
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+    > .btn-cadastro {
+      width: 250px;
+      height: 44px;
+      color: $color-primary-dark;
+      background-color: $color-secondary-light;
+      border-radius: 5px;
+      border: none;
+      font-family: inherit;
+      font-size: 22px;
+      font-weight: normal;
+      text-decoration: none;
+      text-align: left;
+      padding: 10px;
+      &:before {
+        content: "";
+        background-image: url(../img/icon-seta-right-dark.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding: 20px;
+        margin: 0 10px;
+      }
+      &:hover:before {
+        content: "";
+        background-image: url(../img/icon-seta-right-light.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding: 20px;
+        margin: 0 10px;
+      }
+      &:hover {
+        border: 1px solid $color-secondary-light;
+        color: $color-secondary-light;
+        background-color: $color-primary-dark;
+      }
+    }
+    > .obs {
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: normal;
+      margin-top: 40px;
+    }
+  }
+}

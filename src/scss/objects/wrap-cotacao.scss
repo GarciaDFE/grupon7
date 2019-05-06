@@ -1,0 +1,13 @@
+.wrap-cotacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vw * 0.54);
+  max-height: 648px;
+  margin: 0 auto;
+  background-image: url(../img/imgPanel-cotacao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

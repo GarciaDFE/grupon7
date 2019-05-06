@@ -492,6 +492,19 @@ img {
     .btn-publictype .title.-dark {
       background-color: #050A26; }
 
+.wrap-cotacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vw * 0.54);
+  max-height: 648px;
+  margin: 0 auto;
+  background-image: url(../img/imgPanel-cotacao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .btn-cotacao {
   display: none;
   /* 320px a 599px */ }
@@ -1846,3 +1859,154 @@ img {
         background-size: contain;
         bottom: 15px;
         right: 5px; }
+
+.main-cotacao {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 940px;
+  height: calc(100vw * 0.55);
+  max-height: 517px; }
+  .main-cotacao .wrap-header {
+    position: relative;
+    display: block;
+    text-align: left;
+    padding: 25px 25px 0;
+    height: auto;
+    background-color: rgba(201, 128, 29, 0.5); }
+    .main-cotacao .wrap-header .title {
+      font-family: inherit;
+      font-size: 50px;
+      font-weight: bold;
+      color: #050A26;
+      margin-bottom: 20px; }
+      .main-cotacao .wrap-header .title .-invert {
+        color: white; }
+    .main-cotacao .wrap-header .subtitle {
+      font-family: inherit;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: normal;
+      color: #050A26; }
+  .main-cotacao .wrap-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    height: auto;
+    padding-bottom: 25px;
+    background-color: rgba(201, 128, 29, 0.5); }
+    .main-cotacao .wrap-form > .field {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 360px;
+      height: 44px;
+      margin: 20px; }
+      .main-cotacao .wrap-form > .field > .label {
+        width: 110px;
+        max-height: 50px;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        margin-right: 10px;
+        text-align: right; }
+      .main-cotacao .wrap-form > .field > .input {
+        width: 250px;
+        height: 44px;
+        border: 1px solid #050A26;
+        background-color: white;
+        font-family: inherit;
+        font-size: 18px;
+        padding: 0 10px;
+        color: rgba(5, 10, 38, 0.5); }
+        .main-cotacao .wrap-form > .field > .input.-listselect {
+          padding-left: 40px;
+          -webkit-appearance: none;
+          /* Remove estilo padrão do Chrome */
+          -moz-appearance: none;
+          /* Remove estilo padrão do FireFox */
+          appearance: none;
+          /* Remove estilo padrão do FireFox*/ }
+          .main-cotacao .wrap-form > .field > .input.-listselect::before {
+            content: "";
+            background: url(../img/icon-caret-down-dark.svg);
+            background-color: violet;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            background-size: contain;
+            background-size: contain;
+            background-position: center;
+            padding: 20px;
+            margin: 0 10px; }
+    .main-cotacao .wrap-form > .btn-submit {
+      width: 250px;
+      height: 44px;
+      color: white;
+      background-color: #050A26;
+      border-radius: 5px;
+      border: none;
+      font-family: inherit;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px;
+      cursor: pointer; }
+      .main-cotacao .wrap-form > .btn-submit:hover {
+        border: 1px solid white;
+        color: #050A26;
+        background-color: white; }
+  .main-cotacao .wrap-footer {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-height: 157px;
+    padding: 15px;
+    color: white;
+    background-color: rgba(5, 10, 38, 0.5); }
+    .main-cotacao .wrap-footer > .title {
+      font-family: inherit;
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 30px; }
+    .main-cotacao .wrap-footer > .btn-cadastro {
+      width: 250px;
+      height: 44px;
+      color: #050A26;
+      background-color: white;
+      border-radius: 5px;
+      border: none;
+      font-family: inherit;
+      font-size: 22px;
+      font-weight: normal;
+      text-decoration: none;
+      text-align: left;
+      padding: 10px; }
+      .main-cotacao .wrap-footer > .btn-cadastro:before {
+        content: "";
+        background-image: url(../img/icon-seta-right-dark.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding: 20px;
+        margin: 0 10px; }
+      .main-cotacao .wrap-footer > .btn-cadastro:hover:before {
+        content: "";
+        background-image: url(../img/icon-seta-right-light.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding: 20px;
+        margin: 0 10px; }
+      .main-cotacao .wrap-footer > .btn-cadastro:hover {
+        border: 1px solid white;
+        color: white;
+        background-color: #050A26; }
+    .main-cotacao .wrap-footer > .obs {
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: normal;
+      margin-top: 40px; }
