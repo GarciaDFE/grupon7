@@ -500,6 +500,7 @@ img {
   max-width: 1200px;
   height: calc(100vw * 0.54);
   max-height: 648px;
+  min-height: 495px;
   margin: 0 auto;
   background-image: url(../img/imgPanel-cotacao.jpg);
   background-repeat: no-repeat;
@@ -1865,7 +1866,7 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  align-content: flex-start;
+  align-content: center;
   width: 940px;
   height: calc(100vw * 0.55);
   max-height: 517px;
@@ -1878,24 +1879,28 @@ img {
     padding: 25px 25px 10px;
     height: auto;
     background-color: rgba(201, 128, 29, 0.5);
-    /* 900px a 1199px */ }
+    /* 900px a 1199px */
+    /* 600px a 899px */ }
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-cotacao .wrap-header {
-        padding: 35px 100px 0; } }
+        padding: 40px 100px 0; } }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .main-cotacao .wrap-header {
+        padding: 40px 50px 0; } }
     .main-cotacao .wrap-header .title {
       font-family: inherit;
       font-size: 50px;
       font-weight: bold;
       color: #050A26;
       margin-bottom: 10px;
-      /* 900px a 1199px */ }
-      @media all and (min-width: 900px) and (max-width: 1199px) {
+      /* 600px a 1199px */ }
+      @media all and (min-width: 600px) and (max-width: 1199px) {
         .main-cotacao .wrap-header .title {
           font-size: 35px; } }
       .main-cotacao .wrap-header .title .-invert {
         color: white;
-        /* 900px a 1199px */ }
-        @media all and (min-width: 900px) and (max-width: 1199px) {
+        /* 600px a 1199px */ }
+        @media all and (min-width: 600px) and (max-width: 1199px) {
           .main-cotacao .wrap-header .title .-invert {
             font-size: 35px; } }
     .main-cotacao .wrap-header .subtitle {
@@ -1904,8 +1909,8 @@ img {
       line-height: 26px;
       font-weight: normal;
       color: #050A26;
-      /* 900px a 1199px */ }
-      @media all and (min-width: 900px) and (max-width: 1199px) {
+      /* 600px a 1199px */ }
+      @media all and (min-width: 600px) and (max-width: 1199px) {
         .main-cotacao .wrap-header .subtitle {
           font-size: 20px;
           line-height: 24px; } }
@@ -1916,7 +1921,15 @@ img {
     flex-flow: row wrap;
     height: auto;
     padding: 0 0 20px;
-    background-color: rgba(201, 128, 29, 0.5); }
+    background-color: rgba(201, 128, 29, 0.5);
+    /* 700px a 899px */
+    /* 600px a 699px */ }
+    @media all and (min-width: 700px) and (max-width: 899px) {
+      .main-cotacao .wrap-form {
+        justify-content: center; } }
+    @media all and (min-width: 600px) and (max-width: 699px) {
+      .main-cotacao .wrap-form {
+        justify-content: flex-start; } }
     .main-cotacao .wrap-form > .field {
       display: flex;
       justify-content: flex-end;
@@ -1924,19 +1937,35 @@ img {
       width: 360px;
       height: 44px;
       margin: 15px;
-      /* 900px a 1199px */ }
+      /* 900px a 1199px */
+      /* 700px a 899px */
+      /* 600px a 699px */ }
       @media all and (min-width: 900px) and (max-width: 1199px) {
         .main-cotacao .wrap-form > .field {
-          margin: 10px 15px 15px; } }
+          margin: 12px 15px 15px; } }
+      @media all and (min-width: 700px) and (max-width: 899px) {
+        .main-cotacao .wrap-form > .field {
+          width: 330px;
+          margin: 15px 0; } }
+      @media all and (min-width: 600px) and (max-width: 699px) {
+        .main-cotacao .wrap-form > .field {
+          width: 290px;
+          margin: 15px 0; } }
       .main-cotacao .wrap-form > .field > .label {
         width: 110px;
         max-height: 50px;
         font-family: inherit;
         font-weight: bold;
         font-size: 22px;
-        line-height: 26px;
+        line-height: 22px;
         margin-right: 10px;
-        text-align: right; }
+        text-align: right;
+        /* 600px a 699px */ }
+        @media all and (min-width: 600px) and (max-width: 699px) {
+          .main-cotacao .wrap-form > .field > .label {
+            width: 100px;
+            font-size: 18px;
+            line-height: 20px; } }
       .main-cotacao .wrap-form > .field > .input {
         width: 250px;
         height: 44px;
@@ -1946,7 +1975,11 @@ img {
         font-size: 18px;
         padding: 0 10px;
         color: #050A26;
-        overflow: hidden; }
+        overflow: hidden;
+        /* 600px a 899px */ }
+        @media all and (min-width: 600px) and (max-width: 899px) {
+          .main-cotacao .wrap-form > .field > .input {
+            width: 190px; } }
         .main-cotacao .wrap-form > .field > .input[type="select"] {
           font-size: 22px;
           font-weight: bold;
@@ -1984,7 +2017,11 @@ img {
       padding: 10px;
       margin-top: 10px;
       cursor: pointer;
-      transition: all 300ms linear; }
+      transition: all 300ms linear;
+      /* 600px a 699px */ }
+      @media all and (min-width: 600px) and (max-width: 699px) {
+        .main-cotacao .wrap-form > .btn-submit {
+          margin: 10px auto; } }
       .main-cotacao .wrap-form > .btn-submit:hover {
         color: #050A26;
         background-color: white;
@@ -2001,7 +2038,12 @@ img {
       font-family: inherit;
       font-size: 22px;
       font-weight: normal;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      /* 600px a 799px */ }
+      @media all and (min-width: 600px) and (max-width: 799px) {
+        .main-cotacao .wrap-footer > .title {
+          font-size: 20px;
+          margin-bottom: 25px; } }
     .main-cotacao .wrap-footer > .btn-cadastro {
       width: 250px;
       height: 44px;
@@ -2014,7 +2056,7 @@ img {
       font-weight: normal;
       text-decoration: none;
       text-align: left;
-      padding: 10px 20px;
+      padding: 9px 20px;
       transition: all 300ms linear; }
       .main-cotacao .wrap-footer > .btn-cadastro:hover {
         color: white;
@@ -2035,4 +2077,9 @@ img {
       font-family: inherit;
       font-size: 16px;
       font-weight: normal;
-      margin-top: 30px; }
+      margin-top: 30px;
+      /* 600px a 699px */ }
+      @media all and (min-width: 600px) and (max-width: 699px) {
+        .main-cotacao .wrap-footer > .obs {
+          font-size: 13px;
+          margin-top: 20px; } }
