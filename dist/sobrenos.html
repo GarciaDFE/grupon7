@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>:: GN7 | Sobre Nós ::</title>
-
-    <!--<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
     <link
       href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,700"
       rel="stylesheet"
@@ -19,18 +18,26 @@
     <header id="header" class="wrap-header">
       <div class="main-navigation">
         <div class="brand-nav">
-          <img
-            class="imgLogo"
-            src="img/logo-nav.svg"
-            alt="Imagem do logo do Grupo N7"
+          <a href="index.html">
+            <img class="imgLogo" src="img/logo-nav.svg" alt="Imagem do logo do Grupo N7"
           />
+          </a>
+          <a href="index.html">
           <h1 class="textLogo">Grupo<strong class="-destaque">N7</strong></h1>
+          </a>
         </div>
 
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a id="itemServicos" class="action" href="index.html">Serviços</a>
+              <a id="itemServicos" class="action comSubmenu" href="#">Serviços</a>
+              <ul id="submenu" class="submenu">
+                <li class="item"><a class="action" href="seguros.html">Seguros</a></li>
+                <li class="item"><a class="action" href="consorcios.html">Consórcios</a></li>
+                <li class="item"><a class="action" href="beneficios.html">Benefícios</a></li>
+                <li class="item"><a class="action" href="saudeodonto.html">Saúde e Odonto</a></li>
+                <li class="item"><a class="action" href="consultoria.html">Consultoria</a></li>
+              </ul>
             </li>
             <!--
             -->
@@ -43,9 +50,12 @@
             <!--
             -->
             <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
+            <li class="item cotacao-mobile">
+              <a class="action" href="cotacao.html">Solicite uma cotação</a>
+            </li>
           </ul>
           <button class="cotacao">
-            <a class="action">Solicite uma cotação</a>
+            <a class="action" href="cotacao.html">Solicite uma cotação</a>
           </button>
         </nav>
 
@@ -59,8 +69,8 @@
 
    <!-- PAINEL -->
    <section class="wrap-panel -sobrenos">
-      <div class="main-panel">
-         <h1 class="title">O Grupo N7</h1>
+      <div class="main-panel -sobrenos">
+         <h1 class="title -sobrenome">O Grupo N7</h1>
          <div class="description">
             <p class="paragraph">Desde 2013 um grupo de profissionais com reconhecimento no mercado financeiro se reuniu para oferecer soluções que auxiliam as empresas a alcançar os seus objetivos.</p>
             <p class="paragraph">Logo em seguida os serviços foram expandidos para a área de Seguros, Saúde, Benefícios, Consórcios e Consultoria empresarial.</p>
@@ -149,7 +159,7 @@
           <!--
           -->
           <li class="icon">
-            <a class="action" href="#"
+            <a class="action" target="_blank" href="https://www.linkedin.com/company/15215383"
               ><img class="image" src="img/icon-linkedin-light.svg" alt=""
             /></a>
           </li>
@@ -174,8 +184,7 @@
         <p class="contact">27 <span class="-destaque">99581 5264</span></p>
         <p class="contact -email">contato@grupon7.com.br</p>
         <button class="btn">
-          <p>Solicite uma</p>
-          <p>cotação</p>
+         <a class="action" href="cotacao.html">Solicite uma cotação</a>
         </button>
       </div>
     </footer>

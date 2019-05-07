@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>:: GN7 | Seguros ::</title>
-
-    <!--<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
     <link
       href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,700"
       rel="stylesheet"
@@ -20,18 +19,26 @@
     <header id="header" class="wrap-header">
       <div class="main-navigation">
         <div class="brand-nav">
-          <img
-            class="imgLogo"
-            src="img/logo-nav.svg"
-            alt="Imagem do logo do Grupo N7"
+          <a href="index.html">
+            <img class="imgLogo" src="img/logo-nav.svg" alt="Imagem do logo do Grupo N7"
           />
+          </a>
+          <a href="index.html">
           <h1 class="textLogo">Grupo<strong class="-destaque">N7</strong></h1>
+          </a>
         </div>
-
+        
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a id="itemServicos" class="action" href="index.html">Serviços</a>
+              <a id="itemServicos" class="action comSubmenu" href="#">Serviços</a>
+              <ul id="submenu" class="submenu">
+                <li class="item"><a class="action" href="seguros.html">Seguros</a></li>
+                <li class="item"><a class="action" href="consorcios.html">Consórcios</a></li>
+                <li class="item"><a class="action" href="beneficios.html">Benefícios</a></li>
+                <li class="item"><a class="action" href="saudeodonto.html">Saúde e Odonto</a></li>
+                <li class="item"><a class="action" href="consultoria.html">Consultoria</a></li>
+              </ul>
             </li>
             <!--
             -->
@@ -44,9 +51,12 @@
             <!--
             -->
             <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
+            <li class="item cotacao-mobile">
+              <a class="action" href="cotacao.html">Solicite uma cotação</a>
+            </li>
           </ul>
           <button class="cotacao">
-            <a class="action">Solicite uma cotação</a>
+            <a class="action" href="cotacao.html">Solicite uma cotação</a>
           </button>
         </nav>
 
@@ -70,36 +80,39 @@
    </section>
 
     <!-- TIPOS DE PÚBLICO -->
-    <section class="public-type">
-      <button class="title">Para você</button>
-      <button class="title -dark">Para empresas</button>
+    <section class="btn-publictype">
+      <a id="btnPF" href="#seguroPF" class="title">Para você</a>
+      <a id="btnPJ" href="#seguroPJ" class="title -dark">Para empresas</a>
     </section>
 
     <!-- SEGUROS PARA PESSOA FÍSICA -->
-    <section class="wrap-services">
+    <section id="seguroPF" class="wrap-services">
       <header class="wrap-title">
         <h1 class="title -invert">Para você</h1>
         <h2 class="subtitle -invert">Seguros para Pessoa Física</h2>
       </header>
       <div class="wrap-cards">
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-seguro-vida.jpg" alt="imagem de casal com bebê no colo" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-seguro-vida.jpg" 
+              alt="imagem de casal com bebê no colo" 
+            /></a>
           <div class="header">
             <dt id="seguro-vida" class="title icone">Seguro de Vida</dt>
           </div>
           <div class="square">
             <dd class="description">
               O seguro de Vida garante proteção financeira, em caso de morte do segurado, para seus familiares e pessoas que dependem de você, através do pagamento de indenização. Também pode beneficiá-lo diretamente no caso de invalidez permanente ou de uma doença grave.
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-seguro-auto.jpg"
-              alt="imagem de casal no carro" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-seguro-auto.jpg"
+              alt="imagem de casal no carro" 
+            /></a>
           <div class="header">
             <dt id="seguro-auto" class="title icone">Seguro Auto</dt>
           </div>
@@ -107,14 +120,15 @@
             <dd class="description">
               O Seguro Auto ampara o segurado e seu veículo de imprevistos como acidentes e roubo (de acordo com o perfil do contratante). Também garante que seu patrimônio não corra riscos devido aos danos materiais, corporais e morais que possam originar de um acidente.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-              <img src="img/imgCard-seguro-residencial.jpg"
-              alt="imagem de família unida no tapete da sala" />
-              </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-seguro-residencial.jpg"
+              alt="imagem de família unida no tapete da sala" 
+            /></a>
           <div class="header">
             <dt id="seguro-residencial" class="title icone">Seguro Residencial</dt>
           </div>
@@ -122,14 +136,15 @@
             <dd class="description">
               É destinado a residências individuais, como casas e apartamentos, utilizados como moradia habitual ou de veraneio. Possui uma garantia básica que cobre os prejuízos provocados por incêndio, queda de raio e explosão, além de outras coberturas adicionais.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-seguro-viagem.jpg"
-              alt="imagem de casal com mochilas de viagem" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-seguro-viagem.jpg"
+              alt="imagem de casal com mochilas de viagem" 
+            /></a>
           <div class="header">
             <dt id="seguro-viagem" class="title icone">Seguro Viagem</dt>
           </div>
@@ -137,7 +152,7 @@
             <dd class="description">
               Cobre despesas médicas e hospitalares, cancelamento de viagem, bagagem perdida, acidente de voo e outras perdas ocorridas durante viagens internacionais ou nacionais. É contratado para uma ou mais viagens dentro de um período determinado.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" target="_blank" href="https://portal.sulamericaseguros.com.br/seguroviagem.htm?ref=eyJkYWRvc1Byb2R1Y2FvIjp7IkFBIjoiMTkwOSIsIkFWIjoiMCIsIkVBIjoiMzY4NDAiLCJFViI6IjI4NDM4MDMiLCJ1b3BFbWlzc2FvIjoiMTMyIiwidW9wTmVnb2NpbyI6IjE2MzkifSwiY29ycmV0b3JOb21lIjoiTjcgQ09OU1VMVCBFTVBSIEUgQ09SUiBERSBTRUdTIExUREEgTUUiLCJpZENvcnJldG9yIjoiMTEyMDg5IiwicGVyY2VudHVhbENvcnJldGFnZW0iOlt7InBlcmNlbnR1YWxDb3JyZXRhZ2VtIjoiNDAuMDAifSx7InBlcmNlbnR1YWxBZ2VuY2lhbWVudG8iOiIwLjAwIn0seyJwZXJjZW50dWFsUHJlc3RhY2FvU2VydmljbyI6IjAuMDAifSx7ImluZGV4T3BjYW8iOiI3In1dLCJub21lUHJvbW90b3IiOiIifQ==)">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
@@ -153,7 +168,7 @@
             <dd class="description">
               É o Seguro de proteção das pessoas contra o risco de terem que vir a incorrer em despesas médicas. Ele garante acesso a serviços médicos como consultas, exames, internações e intervenções cirúrgicas. O seguro varia de acordo com o perfil de quem contrata.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
@@ -169,23 +184,25 @@
             <dd class="description">
               O seguro odonto oferece acesso a serviços odontológicos em uma ampla rede de dentistas credenciados, permitindo o investimento na saúde bucal. Os planos são diversificados com coberturas variadas (consultas, prevenção, restaurações, endodontia, cirurgias, correções por aparelho, próteses, dentre outras).
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
       </div>
     </section>
 
     <!-- SEGUROS PARA EMPRESAS -->
-    <section class="wrap-services">
+    <section id="seguroPJ" class="wrap-services">
       <header class="wrap-title">
-        <h1 class="title -invert">Para empresas</h1>
-        <h2 class="subtitle -invert">Seguros para Pessoa Jurídica</h2>
+        <h1 class="title">Para empresas</h1>
+        <h2 class="subtitle">Seguros para Pessoa Jurídica</h2>
       </header>
       <div class="wrap-cards">
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-seguro-garantia.jpg" alt="imagem de casal assinando papel na mesa" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-seguro-garantia.jpg" 
+              alt="imagem de casal assinando papel na mesa" 
+            /></a>
           <div class="header">
             <dt id="seguro-garantia" class="title icone">Seguro Garantia</dt>
           </div>
@@ -193,14 +210,15 @@
             <dd class="description">
               Garante ao segurado o cumprimento das obrigações contratuais assumidas com terceiros. Com a cobertura desse seguro são menores as exigências na concessão de financiamento para execução de obras, fabricação de bens e prestação de serviços.</dd>
               <dd class="description"><span class="-destaque">Obrigatório em Licitações.</span></dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-seguro-frota.jpg"
-              alt="imagem de caminhões estacionados perfilados" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-seguro-frota.jpg"
+              alt="imagem de caminhões estacionados perfilados" 
+            /></a>
           <div class="header">
             <dt id="seguro-frota" class="title icone">Seguro Frota</dt>
           </div>
@@ -208,14 +226,15 @@
             <dd class="description">É o seguro unificado para a frota de veículos e caminhões da empresa.</dd>
             <dd class="description">Cobre prejuízos aos veículos (colisão, incêndio e roubo) e a terceiros, em caso de responsabilidade do segurado.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-              <img src="img/imgCard-seguro-transporte-carga.jpg"
-              alt="imagem de caminhão na rodovia" />
-              </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-seguro-transporte-carga.jpg"
+              alt="imagem de caminhão na rodovia" 
+            /></a>
           <div class="header">
             <dt id="seguro-transporte-carga" class="title icone">Seguro Transporte de Carga</dt>
           </div>
@@ -223,14 +242,15 @@
             <dd class="description">
               O seguro de transporte de carga garante uma indenização pelos prejuízos causados aos bens segurados durante o seu transporte em viagens aquaviárias, terrestres e aéreas; em percursos nacionais e internacionais. Pode ser estendido durante a permanência das mercadorias em armazéns.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-seguro-patrimonial.jpg"
-              alt="imagem de prédio comercial" />
-          </a>
+          <a class="image" href="#"
+            ><img
+              src="img/imgCard-seguro-patrimonial.jpg"
+              alt="imagem de prédio comercial"
+          /></a>
           <div class="header">
             <dt id="seguro-patrimonial" class="title icone">Seguro Patrimonial</dt>
           </div>
@@ -238,7 +258,7 @@
             <dd class="description">É o seguro que cobre a proteção do patrimônio da empresa.</dd>
             <dd class="description">Ele protege o prédio (estrutura e anexos) e o seu conteúdo (móveis, equipamentos e utensílios), com coberturas que variam de acordo com a necessidade.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
@@ -254,7 +274,7 @@
             <dd class="description">
               Garante o pagamento de indenização aos beneficiários do segurado no caso de ocorrência de morte, ou a ele próprio em outras condições (invalidez e outras). É exigido por convenções coletivas de trabalho e as organizações são responsáveis pelo amparo aos seus Colaboradores.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
@@ -270,7 +290,7 @@
             <dd class="description">
               Os Seguros de Saúde e Odontológicos permitem que a empresa ofereça o melhor para a saúde física e bucal dos colaboradores seus familiares. Existem variações para a abrangência da cobertura e atendimentos específicos.
             </dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
       </div>
@@ -298,7 +318,7 @@
           <!--
           -->
           <li class="icon">
-            <a class="action" href="#"
+            <a class="action" target="_blank" href="https://www.linkedin.com/company/15215383"
               ><img class="image" src="img/icon-linkedin-light.svg" alt=""
             /></a>
           </li>
@@ -323,8 +343,7 @@
         <p class="contact">27 <span class="-destaque">99581 5264</span></p>
         <p class="contact -email">contato@grupon7.com.br</p>
         <button class="btn">
-          <p>Solicite uma</p>
-          <p>cotação</p>
+         <a class="action" href="cotacao.html">Solicite uma cotação</a>
         </button>
       </div>
     </footer>

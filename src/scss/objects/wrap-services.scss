@@ -17,6 +17,9 @@
       flex-direction: column;
       margin: 20px 0 50px;
     }
+    &.-duotitle {
+      justify-content: space-evenly;
+    }
     > .title {
       font-size: 50px;
       font-weight: bold;

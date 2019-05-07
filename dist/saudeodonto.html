@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>:: GN7 | Saúde/Odonto ::</title>
-
-    <!--<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
     <link
       href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,700"
       rel="stylesheet"
@@ -19,18 +18,26 @@
     <header id="header" class="wrap-header">
       <div class="main-navigation">
         <div class="brand-nav">
-          <img
-            class="imgLogo"
-            src="img/logo-nav.svg"
-            alt="Imagem do logo do Grupo N7"
+          <a href="index.html">
+            <img class="imgLogo" src="img/logo-nav.svg" alt="Imagem do logo do Grupo N7"
           />
+          </a>
+          <a href="index.html">
           <h1 class="textLogo">Grupo<strong class="-destaque">N7</strong></h1>
+          </a>
         </div>
 
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a id="itemServicos" class="action" href="index.html">Serviços</a>
+              <a id="itemServicos" class="action comSubmenu" href="#">Serviços</a>
+              <ul id="submenu" class="submenu">
+                <li class="item"><a class="action" href="seguros.html">Seguros</a></li>
+                <li class="item"><a class="action" href="consorcios.html">Consórcios</a></li>
+                <li class="item"><a class="action" href="beneficios.html">Benefícios</a></li>
+                <li class="item"><a class="action" href="saudeodonto.html">Saúde e Odonto</a></li>
+                <li class="item"><a class="action" href="consultoria.html">Consultoria</a></li>
+              </ul>
             </li>
             <!--
             -->
@@ -43,9 +50,12 @@
             <!--
             -->
             <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
+            <li class="item cotacao-mobile">
+              <a class="action" href="cotacao.html">Solicite uma cotação</a>
+            </li>
           </ul>
           <button class="cotacao">
-            <a class="action">Solicite uma cotação</a>
+            <a class="action" href="cotacao.html">Solicite uma cotação</a>
           </button>
         </nav>
 
@@ -68,37 +78,40 @@
       </div>
    </section>
 
-    <!-- TIPOS DE PÚBLICO -->
-    <section class="public-type">
-      <button class="title">Para você</button>
-      <button class="title -dark">Para empresas</button>
-    </section>
-
     <!-- SÁUDE E ODONTOLOGIA PARA PESSOA FÍSICA E JURÍDICA -->
     <section class="wrap-services">
+      <header class="wrap-title -duotitle">
+        <h1 class="title -invert">Para você</h1>
+        <h2 class="title">Para empresa</h2>
+      </header>
+
       <div class="wrap-cards">
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-saude.jpg" alt="imagem de médicos em pé analisando chapa de raio x" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-saude.jpg" 
+              alt="imagem de médicos em pé analisando chapa de raio x" 
+            /></a>
           <div class="header">
             <dt id="saude" class="title icone">Saúde</dt>
           </div>
           <div class="square">
             <dd class="description">Faça um plano de saúde que se adeque ao seu perfil ou para os colaboradores da sua empresa. Escolha cobertura, rede de atendimento e modalidade de pagamento e garanta acesso a serviços médicos.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card -sembtntotop">
-          <a class="image" href="#">
-            <img src="img/imgCard-odonto.jpg" alt="imagem de mulher sentada recebendo tratamento dentário" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-odonto.jpg" 
+              alt="imagem de mulher sentada recebendo tratamento dentário" 
+            /></a>
           <div class="header">
             <dt id="odonto" class="title icone">Odonto</dt>
           </div>
           <div class="square -dark">
             <dd class="description">Os planos odontológicos oferecem acesso a serviços odontológicos em uma ampla rede de dentistas credenciados, permitindo o investimento na saúde bucal.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
       </div>
@@ -126,7 +139,7 @@
           <!--
           -->
           <li class="icon">
-            <a class="action" href="#"
+            <a class="action" target="_blank" href="https://www.linkedin.com/company/15215383"
               ><img class="image" src="img/icon-linkedin-light.svg" alt=""
             /></a>
           </li>
@@ -151,8 +164,7 @@
         <p class="contact">27 <span class="-destaque">99581 5264</span></p>
         <p class="contact -email">contato@grupon7.com.br</p>
         <button class="btn">
-          <p>Solicite uma</p>
-          <p>cotação</p>
+         <a class="action" href="cotacao.html">Solicite uma cotação</a>
         </button>
       </div>
     </footer>

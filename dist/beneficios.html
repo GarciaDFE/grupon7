@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>:: GN7 | Benefícios ::</title>
-
-    <!--<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
     <link
       href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,700"
       rel="stylesheet"
@@ -19,18 +18,26 @@
     <header id="header" class="wrap-header">
       <div class="main-navigation">
         <div class="brand-nav">
-          <img
-            class="imgLogo"
-            src="img/logo-nav.svg"
-            alt="Imagem do logo do Grupo N7"
+          <a href="index.html">
+            <img class="imgLogo" src="img/logo-nav.svg" alt="Imagem do logo do Grupo N7"
           />
+          </a>
+          <a href="index.html">
           <h1 class="textLogo">Grupo<strong class="-destaque">N7</strong></h1>
+          </a>
         </div>
 
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a id="itemServicos" class="action" href="index.html">Serviços</a>
+              <a id="itemServicos" class="action comSubmenu" href="#">Serviços</a>
+              <ul id="submenu" class="submenu">
+                <li class="item"><a class="action" href="seguros.html">Seguros</a></li>
+                <li class="item"><a class="action" href="consorcios.html">Consórcios</a></li>
+                <li class="item"><a class="action" href="beneficios.html">Benefícios</a></li>
+                <li class="item"><a class="action" href="saudeodonto.html">Saúde e Odonto</a></li>
+                <li class="item"><a class="action" href="consultoria.html">Consultoria</a></li>
+              </ul>
             </li>
             <!--
             -->
@@ -43,9 +50,12 @@
             <!--
             -->
             <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
+            <li class="item cotacao-mobile">
+              <a class="action" href="cotacao.html">Solicite uma cotação</a>
+            </li>
           </ul>
           <button class="cotacao">
-            <a class="action">Solicite uma cotação</a>
+            <a class="action" href="cotacao.html">Solicite uma cotação</a>
           </button>
         </nav>
 
@@ -77,9 +87,11 @@
 
       <div class="wrap-cards">
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-beneficio-refeicao.jpg" alt="imagem de pessoas fazendo refeição juntos em uma lanchonete" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-beneficio-refeicao.jpg" 
+              alt="imagem de pessoas fazendo refeição juntos em uma lanchonete"
+            /></a>
           <div class="header">
             <dt id="beneficios" class="title icone">Refeição</dt>
           </div>
@@ -87,77 +99,82 @@
             <dd class="description">
              Troque o refeitório na empresa pelo cartão. Ofereça para os seus colaboradores a melhor escolha para almoçar em restaurantes, lanchonetes e similares em todo território nacional.</dd>
               <dd class="description">Deixe de se preocupar com armazenagem e validade dos alimentos e outras burocracias.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-beneficio-alimentacao.jpg"
-              alt="imagem de casal fazendo compras em supermercado" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-beneficio-alimentacao.jpg"
+              alt="imagem de casal fazendo compras em supermercado" 
+            /></a>
           <div class="header">
             <dt id="beneficios" class="title icone">Alimentação</dt>
           </div>
           <div class="square">
             <dd class="description">
               Com este cartão-benefício seus colaboradores realizam compras em supermercados, açougues, mercearias e similares de todo o Brasil. E ainda compõem o cardápio de sua preferência, com alimentos frescos como carnes, legumes, verduras e frutas, para toda sua família.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-              <img src="img/imgCard-beneficio-transporte.jpg"
-              alt="imagem de mulher sentada em transporte público" />
-              </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-beneficio-transporte.jpg"
+              alt="imagem de mulher sentada em transporte público" 
+            /></a>
           <div class="header">
             <dt id="beneficios" class="title icone">Mobilidade</dt>
           </div>
           <div class="square">
             <dd class="description">
               Você centraliza o pagamento de reembolso em um único processo e seus colaboradores escolhem a melhor opção para se deslocar pela cidade. Aceito em apps de táxi e transporte individual, carro compartilhado, locação de bike compartilhada, transporte público e muito mais.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-              <img src="img/imgCard-beneficio-multibeneficios.jpg"
-              alt="imagem de atendentimento em balcão de comércio" />
-              </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-beneficio-multibeneficios.jpg"
+              alt="imagem de atendentimento em balcão de comércio" 
+            /></a>
           <div class="header">
             <dt id="beneficios" class="title icone">Multibenefícios</dt>
           </div>
           <div class="square">
             <dd class="description">
               Sua equipe conta com cartão com limite adicional para usar na multirede Alelo e o desconto é feito diretamente na folha de pagamento. Oferece desconto na compra de medicamentos em milhares de farmácias do Brasil. Faça gestão de subsídios adequada a nova Reforma Trabalhista.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-              <img src="img/imgCard-beneficio-premiacao.jpg"
-              alt="imagem de equipe de funcionários em suas mesas comemorando" />
-              </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-beneficio-premiacao.jpg"
+              alt="imagem de equipe de funcionários em suas mesas comemorando" 
+            /></a>
           <div class="header">
             <dt id="beneficios" class="title icone">Premiação</dt>
           </div>
           <div class="square">
             <dd class="description">
               Um jeito diferente de presentear, premiar e reconhecer seus colaboradores. Escolha o melhor formato: recarregável, carga única ou para uso restrito em locais de lazer e entretenimento. Reduza custos operacionais e logísticos dos prêmios e tenha mais controle na sua gestão.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-              <img src="img/imgCard-beneficio-despesas.jpg"
-              alt="imagem de clientes efetuando pagamento na máquina de cartões e atendente aguardando" />
-              </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-beneficio-despesas.jpg"
+              alt="imagem de clientes efetuando pagamento na máquina de cartões e atendente aguardando" 
+            /></a>
           <div class="header">
             <dt id="beneficios" class="title icone">Despesas</dt>
           </div>
           <div class="square">
             <dd class="description">
               O cartão pré-pago recarregável que chegou para mudar a forma de fazer pagamentos.  Ideal para pagamentos de fornecedores, colaboradores, terceiros e despesas gerais da sua empresa. Aceito em milhões de estabelecimentos credenciados a bandeira Elo e saques no Banco 24 horas.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>      
       </div>
@@ -182,7 +199,7 @@
           </li>
           <!--
           -->
-          <li class="icon"><a class="action" href="#">
+          <li class="icon"><a class="action" href="https://www.linkedin.com/company/15215383">
             <img class="image" src="img/icon-linkedin-light.svg" alt=""/></a>
           </li>
           <!--    
@@ -202,8 +219,7 @@
         <p class="contact">27 <span class="-destaque">99581 5264</span></p>
         <p class="contact -email">contato@grupon7.com.br</p>
         <button class="btn">
-          <p>Solicite uma</p>
-          <p>cotação</p>
+         <a class="action" href="cotacao.html">Solicite uma cotação</a>
         </button>
       </div>
     </footer>

@@ -1,5 +1,13 @@
 .btn-cotacao {
   display: none;
+  &:link,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
   /* 320px a 599px */
   @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
     display: block;

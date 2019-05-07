@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>:: GN7 | Consultoria ::</title>
-
-    <!--<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
     <link
       href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,700"
       rel="stylesheet"
@@ -19,18 +18,26 @@
     <header id="header" class="wrap-header">
       <div class="main-navigation">
         <div class="brand-nav">
-          <img
-            class="imgLogo"
-            src="img/logo-nav.svg"
-            alt="Imagem do logo do Grupo N7"
+          <a href="index.html">
+            <img class="imgLogo" src="img/logo-nav.svg" alt="Imagem do logo do Grupo N7"
           />
+          </a>
+          <a href="index.html">
           <h1 class="textLogo">Grupo<strong class="-destaque">N7</strong></h1>
+          </a>
         </div>
-
+        
         <nav class="nav-bar">
           <ul id="menu" class="menu">
             <li class="item">
-              <a id="itemServicos" class="action" href="index.html">Serviços</a>
+              <a id="itemServicos" class="action comSubmenu" href="#">Serviços</a>
+              <ul id="submenu" class="submenu">
+                <li class="item"><a class="action" href="seguros.html">Seguros</a></li>
+                <li class="item"><a class="action" href="consorcios.html">Consórcios</a></li>
+                <li class="item"><a class="action" href="beneficios.html">Benefícios</a></li>
+                <li class="item"><a class="action" href="saudeodonto.html">Saúde e Odonto</a></li>
+                <li class="item"><a class="action" href="consultoria.html">Consultoria</a></li>
+              </ul>
             </li>
             <!--
             -->
@@ -43,9 +50,12 @@
             <!--
             -->
             <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
+            <li class="item cotacao-mobile">
+              <a class="action" href="cotacao.html">Solicite uma cotação</a>
+            </li>
           </ul>
           <button class="cotacao">
-            <a class="action">Solicite uma cotação</a>
+            <a class="action" href="cotacao.html">Solicite uma cotação</a>
           </button>
         </nav>
 
@@ -76,58 +86,63 @@
 
       <div class="wrap-cards">
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-consultoria-diagnostico.jpg" alt="imagem de ambiente de atendimento ao cliente" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-consultoria-diagnostico.jpg" 
+              alt="imagem de ambiente de atendimento ao cliente" 
+            /></a>
           <div class="header">
             <dt id="consultoria-diagnostico" class="title icone">Diagnóstico Empresarial</dt>
           </div>
           <div class="square -dark">
             <dd class="description">
              O Diagnóstico Empresarial é uma ferramenta que possibilita a tomada de decisão mais precisa pelos gestores, implementando as correções com mais rapidez. O diagnóstico faz uma análise imparcial da empresa, obtendo informações detalhadas sobre sua gestão e impactos nos negócios.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-            <img src="img/imgCard-consultoria-planejamento.jpg"
-              alt="imagem de dois homens de pé em frente a um computador" />
-          </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-consultoria-planejamento.jpg"
+              alt="imagem de dois homens de pé em frente a um computador" 
+            /></a>
           <div class="header">
             <dt id="consultoria-planejamento" class="title icone">Planejamento Estratégico</dt>
           </div>
           <div class="square -dark">
             <dd class="description">
               O Planejamento Estratégico é elaborado através da coleta de informações da empresa identificando seus pontos fortes e fracos, processos e procedimentos, números financeiros e resultados. A partir daí são definidas metas e adequações necessárias para rentabilizar a operação.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-              <img src="img/imgCard-consultoria-renegociacao.jpg"
-              alt="imagem de dois homens conversando próximos à janela" />
-              </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-consultoria-renegociacao.jpg"
+              alt="imagem de dois homens conversando próximos à janela" 
+            /></a>
           <div class="header">
             <dt id="consultoria-renegociacao" class="title icone">Renegociação</dt>
           </div>
           <div class="square -dark">
             <dd class="description">
               Quando a empresa possui passivos que estejam fora da realidade do fluxo financeiro o Grupo N7 oferece soluções de renegociação. Nossa equipe com sólida experiência de mercado preza pela continuidade e cumprimento dos pagamentos, ajustadas às condições atuais do negócio.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
         <dl class="main-card">
-          <a class="image" href="#">
-              <img src="img/imgCard-consultoria-gestao.jpg"
-              alt="imagem de pessoas trabalhando caixas para estoque de produtos" />
-              </a>
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-consultoria-gestao.jpg"
+              alt="imagem de pessoas trabalhando caixas para estoque de produtos" 
+           /></a>
           <div class="header">
             <dt id="consultoria-gestao" class="title icone">Gestão de Custos e Riscos</dt>
           </div>
           <div class="square -dark">
             <dd class="description">
               Para a retomada do crescimento o Grupo N7 possui um serviço mais aprofundado: A Gestão de Custos e Riscos. Estabelecemos uma gestão compartilhada na empresa onde nossos especialistas atuam para seguir o planejamento estratégico e atingir as metas estabelecidas.</dd>
-            <a class="btn-cards cotacao">Solicite uma cotação</a>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
           </div>
         </dl>
       </div>
@@ -155,7 +170,7 @@
           <!--
           -->
           <li class="icon">
-            <a class="action" href="#"
+            <a class="action" target="_blank" href="https://www.linkedin.com/company/15215383"
               ><img class="image" src="img/icon-linkedin-light.svg" alt=""
             /></a>
           </li>
@@ -180,8 +195,7 @@
         <p class="contact">27 <span class="-destaque">99581 5264</span></p>
         <p class="contact -email">contato@grupon7.com.br</p>
         <button class="btn">
-          <p>Solicite uma</p>
-          <p>cotação</p>
+         <a class="action" href="cotacao.html">Solicite uma cotação</a>
         </button>
       </div>
     </footer>

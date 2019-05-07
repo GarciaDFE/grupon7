@@ -12,6 +12,26 @@
   @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
     margin: 20px 0;
   }
+  &.-sobrenos {
+    width: 60%;
+    //margin: 0 500px 0 120px;
+    /* de 900px a 1199px */
+    @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      width: 70%;
+    }
+    /* de 600px a 899px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      margin: 0 40px;
+      width: 70%;
+    }
+    /* de 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+      overflow: visible;
+    }
+  }
   .title {
     font-size: 50px;
     font-weight: bold;
@@ -26,6 +46,9 @@
       font-size: 35px;
       text-align: center;
       margin-bottom: 10px;
+      &.-sobrenome {
+        margin-bottom: 200px;
+      }
     }
   }
   .description {
@@ -35,23 +58,24 @@
     /* de 600px a 899px */
     @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
       font-size: 18px;
-      line-height: 25px;
+      line-height: 22px;
     }
     /* de 320px a 599px */
     @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
       font-size: 18px;
       line-height: 25px;
-      padding: 20px;
-      background-color: $color-primary-medium;
+      padding: 15px;
     }
     &.-variation {
       color: $color-primary-medium;
     }
     .paragraph {
-      margin-bottom: 10px;
-      /* de 600px a 899px */
-      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-        margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+        /* de 600px a 899px */
+        @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+          margin-bottom: 5px;
+        }
       }
       .-destaque {
         text-transform: uppercase;

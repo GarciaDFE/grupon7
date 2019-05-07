@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>GRUPO N7 || v02MAI</title>
-
-    <!--<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>:: GRUPO N7 ::</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
     <link
       href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,700"
       rel="stylesheet"
@@ -19,12 +18,13 @@
     <header id="header" class="wrap-header">
       <div class="main-navigation">
         <div class="brand-nav">
-          <img
-            class="imgLogo"
-            src="img/logo-nav.svg"
-            alt="Imagem do logo do Grupo N7"
+          <a href="index.html">
+            <img class="imgLogo" src="img/logo-nav.svg" alt="Imagem do logo do Grupo N7"
           />
+          </a>
+          <a href="index.html">
           <h1 class="textLogo">Grupo<strong class="-destaque">N7</strong></h1>
+          </a>
         </div>
 
         <nav class="nav-bar">
@@ -32,11 +32,11 @@
             <li class="item">
               <a id="itemServicos" class="action comSubmenu" href="#">Serviços</a>
               <ul id="submenu" class="submenu">
-                <li><a href="#seguros">Seguros</a></li>
-                <li><a href="#consorcios">Consórcios</a></li>
-                <li><a href="#beneficios">Benefícios</a></li>
-                <li><a href="#saudeodonto">Saúde e Odonto</a></li>
-                <li><a href="#consultoria">Consultoria</a></li>
+                <li class="item"><a class="action" href="seguros.html">Seguros</a></li>
+                <li class="item"><a class="action" href="consorcios.html">Consórcios</a></li>
+                <li class="item"><a class="action" href="beneficios.html">Benefícios</a></li>
+                <li class="item"><a class="action" href="saudeodonto.html">Saúde e Odonto</a></li>
+                <li class="item"><a class="action" href="consultoria.html">Consultoria</a></li>
               </ul>
             </li>
             <!--
@@ -50,9 +50,12 @@
             <!--
             -->
             <li class="item"><a id="itemContato" class="action" href="#">Contato</a></li>
+            <li class="item cotacao-mobile">
+              <a class="action" href="cotacao.html">Solicite uma cotação</a>
+            </li>
           </ul>
           <button class="cotacao">
-            <a class="action">Solicite uma cotação</a>
+            <a class="action" href="cotacao.html">Solicite uma cotação</a>
           </button>
         </nav>
 
@@ -144,11 +147,11 @@
       </h1>
     </section>
 
-    <!-- BOTÃO DE COTAÇÃO PARA MOBILE EXTRAIDO DO NAV -->
+    <!-- BOTÃO DE COTAÇÃO PARA MOBILE EXTRAIDO DO NAV
     <button class="btn-cotacao">
       <p>Solicite uma</p>
       <p>cotação</p>
-    </button>
+    </button> -->
 
     <!-- SERVIÇOS -->
     <section id="servicos" class="wrap-services">
@@ -318,7 +321,7 @@
           <!--
           -->
           <li class="icon">
-            <a class="action" href="#"
+            <a class="action" target="_blank" href="https://www.linkedin.com/company/15215383"
               ><img class="image" src="img/icon-linkedin-light.svg" alt=""
             /></a>
           </li>
@@ -343,8 +346,7 @@
         <p class="contact">27 <span class="-destaque">99581 5264</span></p>
         <p class="contact -email">contato@grupon7.com.br</p>
         <button class="btn">
-          <p>Solicite uma</p>
-          <p>cotação</p>
+         <a class="action" href="cotacao.html">Solicite uma cotação</a>
         </button>
       </div>
     </footer>
