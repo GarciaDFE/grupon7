@@ -500,11 +500,21 @@ img {
   max-width: 1200px;
   height: calc(100vw * 0.54);
   max-height: 648px;
-  min-height: 495px;
   margin: 0 auto;
   background-image: url(../img/imgPanel-cotacao.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  /* 600px a 899px */
+  /* 320px a 599px */ }
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .wrap-cotacao {
+      min-height: 495px;
+      background-position: center; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .wrap-cotacao {
+      height: 100%;
+      max-height: 1000px;
+      background-image: none; } }
 
 .btn-cotacao {
   display: none;
@@ -589,7 +599,6 @@ img {
         height: auto;
         top: 60px;
         right: 0;
-        z-index: 10;
         font-weight: bold;
         line-height: 50px;
         padding: 10px 20px;
@@ -1862,6 +1871,7 @@ img {
         right: 5px; }
 
 .main-cotacao {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1870,7 +1880,13 @@ img {
   width: 940px;
   height: calc(100vw * 0.55);
   max-height: 517px;
-  z-index: 5; }
+  /* 320px a 599px */ }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .main-cotacao {
+      width: 100%;
+      height: 100%;
+      max-height: 1000px;
+      align-content: flex-start; } }
   .main-cotacao .wrap-header {
     position: relative;
     box-sizing: border-box;
@@ -1880,40 +1896,55 @@ img {
     height: auto;
     background-color: rgba(201, 128, 29, 0.5);
     /* 900px a 1199px */
-    /* 600px a 899px */ }
+    /* 600px a 899px */
+    /* 320px a 599px */ }
     @media all and (min-width: 900px) and (max-width: 1199px) {
       .main-cotacao .wrap-header {
         padding: 40px 100px 0; } }
     @media all and (min-width: 600px) and (max-width: 899px) {
       .main-cotacao .wrap-header {
         padding: 40px 50px 0; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-cotacao .wrap-header {
+        padding: 0;
+        background-color: transparent; } }
     .main-cotacao .wrap-header .title {
       font-family: inherit;
       font-size: 50px;
       font-weight: bold;
       color: #050A26;
       margin-bottom: 10px;
-      /* 600px a 1199px */ }
+      /* 600px a 1199px */
+      /* 320px a 599px */ }
       @media all and (min-width: 600px) and (max-width: 1199px) {
         .main-cotacao .wrap-header .title {
           font-size: 35px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-cotacao .wrap-header .title {
+          font-size: 35px;
+          padding: 15px;
+          text-align: center;
+          background-color: #C9801D; } }
       .main-cotacao .wrap-header .title .-invert {
-        color: white;
-        /* 600px a 1199px */ }
-        @media all and (min-width: 600px) and (max-width: 1199px) {
-          .main-cotacao .wrap-header .title .-invert {
-            font-size: 35px; } }
+        color: white; }
     .main-cotacao .wrap-header .subtitle {
       font-family: inherit;
       font-size: 22px;
       line-height: 26px;
       font-weight: normal;
       color: #050A26;
-      /* 600px a 1199px */ }
+      /* 600px a 1199px */
+      /* 320px a 599px */ }
       @media all and (min-width: 600px) and (max-width: 1199px) {
         .main-cotacao .wrap-header .subtitle {
           font-size: 20px;
           line-height: 24px; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-cotacao .wrap-header .subtitle {
+          font-size: 16px;
+          line-height: 20px;
+          padding: 0 15px;
+          text-align: left; } }
   .main-cotacao .wrap-form {
     display: flex;
     justify-content: space-around;
@@ -1923,13 +1954,19 @@ img {
     padding: 0 0 20px;
     background-color: rgba(201, 128, 29, 0.5);
     /* 700px a 899px */
-    /* 600px a 699px */ }
+    /* 600px a 699px */
+    /* 320px a 599px */ }
     @media all and (min-width: 700px) and (max-width: 899px) {
       .main-cotacao .wrap-form {
         justify-content: center; } }
     @media all and (min-width: 600px) and (max-width: 699px) {
       .main-cotacao .wrap-form {
         justify-content: flex-start; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-cotacao .wrap-form {
+        padding: 20px 0;
+        margin-bottom: 20px;
+        background-color: transparent; } }
     .main-cotacao .wrap-form > .field {
       display: flex;
       justify-content: flex-end;
@@ -1939,7 +1976,8 @@ img {
       margin: 15px;
       /* 900px a 1199px */
       /* 700px a 899px */
-      /* 600px a 699px */ }
+      /* 600px a 699px */
+      /* 320px a 599px */ }
       @media all and (min-width: 900px) and (max-width: 1199px) {
         .main-cotacao .wrap-form > .field {
           margin: 12px 15px 15px; } }
@@ -1951,6 +1989,10 @@ img {
         .main-cotacao .wrap-form > .field {
           width: 290px;
           margin: 15px 0; } }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-cotacao .wrap-form > .field {
+          justify-content: center;
+          width: 100%; } }
       .main-cotacao .wrap-form > .field > .label {
         width: 110px;
         max-height: 50px;
@@ -1960,12 +2002,19 @@ img {
         line-height: 22px;
         margin-right: 10px;
         text-align: right;
-        /* 600px a 699px */ }
+        /* 600px a 699px */
+        /* 320px a 599px */ }
         @media all and (min-width: 600px) and (max-width: 699px) {
           .main-cotacao .wrap-form > .field > .label {
             width: 100px;
             font-size: 18px;
             line-height: 20px; } }
+        @media all and (min-width: 320px) and (max-width: 599px) {
+          .main-cotacao .wrap-form > .field > .label {
+            margin-right: 5px;
+            width: 90px;
+            font-size: 18px;
+            line-height: 18px; } }
       .main-cotacao .wrap-form > .field > .input {
         width: 250px;
         height: 44px;
@@ -1976,16 +2025,20 @@ img {
         padding: 0 10px;
         color: #050A26;
         overflow: hidden;
-        /* 600px a 899px */ }
+        /* 600px a 899px */
+        /* 400px a 599px */
+        /* 320px a 399px */ }
         @media all and (min-width: 600px) and (max-width: 899px) {
           .main-cotacao .wrap-form > .field > .input {
             width: 190px; } }
+        @media all and (min-width: 400px) and (max-width: 599px) {
+          .main-cotacao .wrap-form > .field > .input {
+            border: 2px solid #C9801D; } }
+        @media all and (min-width: 320px) and (max-width: 399px) {
+          .main-cotacao .wrap-form > .field > .input {
+            width: 190px;
+            border: 2px solid #C9801D; } }
         .main-cotacao .wrap-form > .field > .input[type="select"] {
-          font-size: 22px;
-          font-weight: bold;
-          padding-left: 60px;
-          line-height: 30px;
-          color: #050A26;
           -webkit-appearance: none;
           /* Remove estilo padrão do Chrome */
           -moz-appearance: none;
@@ -1994,10 +2047,19 @@ img {
           -ms-appearance: none;
           appearance: none;
           /* Remove estilo padrão do FireFox*/
+          font-size: 22px;
+          font-weight: bold;
+          padding-left: 60px;
+          line-height: 30px;
+          color: #050A26;
+          border: 1px solid #050A26;
           background-image: url(../img/icon-arrow-list.svg);
           background-repeat: no-repeat;
-          border: none;
-          outline: none; }
+          outline: none;
+          /* 320px a 599px */ }
+          @media all and (min-width: 320px) and (max-width: 599px) {
+            .main-cotacao .wrap-form > .field > .input[type="select"] {
+              border: 2px solid #C9801D; } }
           .main-cotacao .wrap-form > .field > .input[type="select"] > .item-list {
             font-size: 22px;
             font-weight: bold;
@@ -2017,14 +2079,14 @@ img {
       padding: 10px;
       margin-top: 10px;
       cursor: pointer;
-      transition: all 300ms linear;
+      opacity: 1;
+      transition: opacity 300ms linear;
       /* 600px a 699px */ }
       @media all and (min-width: 600px) and (max-width: 699px) {
         .main-cotacao .wrap-form > .btn-submit {
           margin: 10px auto; } }
       .main-cotacao .wrap-form > .btn-submit:hover {
-        color: #050A26;
-        background-color: white;
+        opacity: 0.7;
         transition: all 300ms linear; }
   .main-cotacao .wrap-footer {
     display: block;
@@ -2033,16 +2095,24 @@ img {
     max-height: 157px;
     padding: 15px;
     color: white;
-    background-color: rgba(5, 10, 38, 0.5); }
+    background-color: rgba(5, 10, 38, 0.5);
+    /* 320px a 599px */ }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .main-cotacao .wrap-footer {
+        padding: 30px;
+        max-height: 400px;
+        color: #050A26;
+        background-color: transparent; } }
     .main-cotacao .wrap-footer > .title {
       font-family: inherit;
       font-size: 22px;
       font-weight: normal;
       margin-bottom: 30px;
-      /* 600px a 799px */ }
-      @media all and (min-width: 600px) and (max-width: 799px) {
+      /* 320px a 799px */ }
+      @media all and (min-width: 320px) and (max-width: 799px) {
         .main-cotacao .wrap-footer > .title {
-          font-size: 20px;
+          font-size: 18px;
+          line-height: 20px;
           margin-bottom: 25px; } }
     .main-cotacao .wrap-footer > .btn-cadastro {
       width: 250px;
@@ -2057,11 +2127,16 @@ img {
       text-decoration: none;
       text-align: left;
       padding: 9px 20px;
-      transition: all 300ms linear; }
+      opacity: 1;
+      transition: opacity 300ms linear;
+      /* 320px a 599px */ }
+      @media all and (min-width: 320px) and (max-width: 599px) {
+        .main-cotacao .wrap-footer > .btn-cadastro {
+          color: white;
+          background-color: #050A26; } }
       .main-cotacao .wrap-footer > .btn-cadastro:hover {
-        color: white;
-        background-color: #050A26;
-        transition: all 300ms linear; }
+        opacity: 0.7;
+        transition: opacity 300ms linear; }
       .main-cotacao .wrap-footer > .btn-cadastro:before {
         content: "";
         background-image: url(../img/icon-seta-right-dark.svg);
@@ -2070,9 +2145,9 @@ img {
         background-position: center;
         padding: 8px;
         margin-right: 20px; }
-      .main-cotacao .wrap-footer > .btn-cadastro:hover:before {
-        content: "";
-        background-image: url(../img/icon-seta-right-light.svg); }
+        @media all and (min-width: 320px) and (max-width: 599px) {
+          .main-cotacao .wrap-footer > .btn-cadastro:before {
+            background-image: url(../img/icon-seta-right-light.svg); } }
     .main-cotacao .wrap-footer > .obs {
       font-family: inherit;
       font-size: 16px;

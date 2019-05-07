@@ -1,4 +1,5 @@
 .main-cotacao {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -7,7 +8,13 @@
   width: 940px;
   height: calc(100vw * 0.55);
   max-height: 517px;
-  z-index: 5;
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    width: 100%;
+    height: 100%;
+    max-height: 1000px;
+    align-content: flex-start;
+  }
   .wrap-header {
     position: relative;
     box-sizing: border-box;
@@ -18,13 +25,16 @@
     background-color: rgba($color-primary-medium, 0.5);
     /* 900px a 1199px */
     @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
-      //@at-roottext-align: center;
       padding: 40px 100px 0;
     }
     /* 600px a 899px */
     @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
-      //@at-roottext-align: center;
       padding: 40px 50px 0;
+    }
+    /* 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      padding: 0;
+      background-color: transparent;
     }
 
     .title {
@@ -37,12 +47,15 @@
       @media all and (min-width: $break-phone) and (max-width: $break-desktop - 1) {
         font-size: 35px;
       }
+      /* 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        font-size: 35px;
+        padding: 15px;
+        text-align: center;
+        background-color: $color-primary-medium;
+      }
       .-invert {
         color: $color-secondary-light;
-        /* 600px a 1199px */
-        @media all and (min-width: $break-phone) and (max-width: $break-desktop - 1) {
-          font-size: 35px;
-        }
       }
     }
 
@@ -56,6 +69,13 @@
       @media all and (min-width: $break-phone) and (max-width: $break-desktop - 1) {
         font-size: 20px;
         line-height: 24px;
+      }
+      /* 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 15px;
+        text-align: left;
       }
     }
   }
@@ -75,6 +95,12 @@
     /* 600px a 699px */
     @media all and (min-width: $break-phone) and (max-width: $break-phone + 99) {
       justify-content: flex-start;
+    }
+    /* 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      padding: 20px 0;
+      margin-bottom: 20px;
+      background-color: transparent;
     }
 
     > .field {
@@ -98,6 +124,11 @@
         width: 290px;
         margin: 15px 0;
       }
+      /* 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+        justify-content: center;
+        width: 100%;
+      }
 
       > .label {
         width: 110px;
@@ -114,6 +145,13 @@
           font-size: 18px;
           line-height: 20px;
         }
+        /* 320px a 599px */
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+          margin-right: 5px;
+          width: 90px;
+          font-size: 18px;
+          line-height: 18px;
+        }
       }
       > .input {
         width: 250px;
@@ -129,22 +167,35 @@
         @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
           width: 190px;
         }
+        /* 400px a 599px */
+        @media all and (min-width: $break-phone - 200) and (max-width: $break-phone - 1) {
+          border: 2px solid $color-primary-medium;
+        }
+        /* 320px a 399px */
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 201) {
+          width: 190px;
+          border: 2px solid $color-primary-medium;
+        }
 
         &[type="select"] {
-          font-size: 22px;
-          font-weight: bold;
-          padding-left: 60px;
-          line-height: 30px;
-          color: $color-primary-dark;
           -webkit-appearance: none; /* Remove estilo padrão do Chrome */
           -moz-appearance: none; /* Remove estilo padrão do FireFox */
           -o-appearance: none;
           -ms-appearance: none;
           appearance: none; /* Remove estilo padrão do FireFox*/
+          font-size: 22px;
+          font-weight: bold;
+          padding-left: 60px;
+          line-height: 30px;
+          color: $color-primary-dark;
+          border: 1px solid $color-primary-dark;
           background-image: url(../img/icon-arrow-list.svg);
           background-repeat: no-repeat;
-          border: none;
           outline: none;
+          /* 320px a 599px */
+          @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+            border: 2px solid $color-primary-medium;
+          }
           > .item-list {
             font-size: 22px;
             font-weight: bold;
@@ -168,15 +219,14 @@
       padding: 10px;
       margin-top: 10px;
       cursor: pointer;
-      transition: all 300ms linear;
+      opacity: 1;
+      transition: opacity 300ms linear;
       /* 600px a 699px */
       @media all and (min-width: $break-phone) and (max-width: $break-phone + 99) {
         margin: 10px auto;
       }
-
       &:hover {
-        color: $color-primary-dark;
-        background-color: $color-secondary-light;
+        opacity: 0.7;
         transition: all 300ms linear;
       }
     }
@@ -190,14 +240,23 @@
     padding: 15px;
     color: $color-secondary-light;
     background-color: rgba($color-primary-dark, 0.5);
+    /* 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      padding: 30px;
+      max-height: 400px;
+      color: $color-primary-dark;
+      background-color: transparent;
+    }
+
     > .title {
       font-family: inherit;
       font-size: 22px;
       font-weight: normal;
       margin-bottom: 30px;
-      /* 600px a 799px */
-      @media all and (min-width: $break-phone) and (max-width: $break-tablet - 101) {
-        font-size: 20px;
+      /* 320px a 799px */
+      @media all and (min-width: $break-min) and (max-width: $break-tablet - 101) {
+        font-size: 18px;
+        line-height: 20px;
         margin-bottom: 25px;
       }
     }
@@ -214,11 +273,16 @@
       text-decoration: none;
       text-align: left;
       padding: 9px 20px;
-      transition: all 300ms linear;
-      &:hover {
+      opacity: 1;
+      transition: opacity 300ms linear;
+      /* 320px a 599px */
+      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
         color: $color-secondary-light;
         background-color: $color-primary-dark;
-        transition: all 300ms linear;
+      }
+      &:hover {
+        opacity: 0.7;
+        transition: opacity 300ms linear;
       }
       &:before {
         content: "";
@@ -228,10 +292,9 @@
         background-position: center;
         padding: 8px;
         margin-right: 20px;
-      }
-      &:hover:before {
-        content: "";
-        background-image: url(../img/icon-seta-right-light.svg);
+        @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+          background-image: url(../img/icon-seta-right-light.svg);
+        }
       }
     }
     > .obs {
