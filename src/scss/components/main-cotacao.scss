@@ -23,6 +23,7 @@
     padding: 25px 25px 10px;
     height: auto;
     background-color: rgba($color-primary-medium, 0.5);
+    z-index: 0;
     /* 900px a 1199px */
     @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
       padding: 40px 100px 0;

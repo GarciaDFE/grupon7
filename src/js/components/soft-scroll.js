@@ -3,13 +3,10 @@ const $wrapHeader = document.querySelector(".wrap-header");
 const $btnToTop = document.querySelector(".btn-totop");
 const landmark = 300;
 // NEVEGAÇÃO NA DENTRO DA HOMEPAGE COM EFEITO DE SCROLL SUAVE
-const $itemServicos = document.querySelector("#itemServicos");
 const $itemParceiros = document.querySelector("#itemParceiros");
 const $itemContato = document.querySelector("#itemContato");
-const $Services = document.querySelector(".wrap-services");
 const $Partners = document.querySelector(".wrap-partners");
 const $Contacts = document.querySelector(".main-footer");
-let $positionServices = 0;
 let $positionPartners = 0;
 let $positionContacts = 0;
 // NEVEGAÇÃO NA DENTRO DA PÁGINA SEGUROS COM EFEITO DE SCROLL SUAVE
@@ -38,10 +35,6 @@ $btnToTop.addEventListener("click", function() {
 });
 
 // NEVEGAÇÃO DENTRO DA HOMEPAGE COM EFEITO DE SCROLL SUAVE
-if ($Services != null) {
-  $positionServices = $Services.getBoundingClientRect().top;
-}
-
 if ($Partners != null) {
   $positionPartners = $Partners.getBoundingClientRect().top;
 }
@@ -49,13 +42,6 @@ if ($Partners != null) {
 if ($Contacts != null) {
   $positionContacts = $Contacts.getBoundingClientRect().top;
 }
-
-$itemServicos.addEventListener("click", function() {
-  $view = window.innerWidth;
-  if ($view > breakPhone && $Services != null) {
-    smoothScroll($Services, 2000, $positionServices - descontoAlturaHeader);
-  }
-});
 
 $itemParceiros.addEventListener("click", function() {
   smoothScroll($Partners, 2000, $positionPartners - descontoAlturaHeader);

@@ -16,12 +16,12 @@
       height: auto;
       top: 60px;
       right: 0;
-      //z-index: 10;
       font-weight: bold;
       line-height: 50px;
       padding: 10px 20px;
       transform: translateX(200%);
       transition: transform 300ms linear;
+      z-index: 10;
     }
     > .item.cotacao-mobile {
       display: none;
@@ -41,10 +41,7 @@
         letter-spacing: 0.5px;
         color: $color-secondary-light;
         cursor: pointer;
-        transition: all 300ms linear;
-        &:hover {
-          background-color: $color-primary-dark;
-        }
+        transition: opacity 300ms linear;
       }
     }
     &.menu-open {
@@ -112,10 +109,8 @@
           }
         }
         &:hover {
-          color: $color-primary-medium;
-          /* até 599px */
-          @media all and (max-width: $break-phone - 1) {
-            border: none;
+          /* a partir de 600px */
+          @media all and (min-width: $break-phone) {
             color: $color-primary-medium;
           }
         }
@@ -189,11 +184,13 @@
     font-size: inherit;
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
     letter-spacing: 0.5px;
-    color: $color-secondary-light;
     padding: 0 50px;
+
     cursor: pointer;
     transition: all 300ms linear;
+
     &:hover {
       background-color: $color-primary-dark;
     }
@@ -222,6 +219,18 @@
     /* até 599px */
     @media all and (max-width: $break-phone - 1) {
       display: none;
+    }
+    > .action {
+      text-decoration: none;
+      color: $color-secondary-light;
+      &:link,
+      &:visited,
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+        color: $color-secondary-light;
+      }
     }
   }
 }

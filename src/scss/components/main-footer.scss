@@ -166,10 +166,11 @@
       font-family: inherit;
       font-size: 24px;
       font-weight: bold;
+      padding: 0 50px;
       background-color: $color-primary-medium;
-      color: $color-secondary-light;
       cursor: pointer;
-      transition: all 300ms linear;
+      opacity: 1;
+      transition: opacity 300ms linear;
       /* de 600px a 899px */
       @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
         width: 240px;
@@ -181,14 +182,25 @@
         width: 150px;
         height: 50px;
         font-size: 18px;
+        padding: 0 20px;
       }
       /* de 320px a 599px */
       @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
         display: none;
       }
+      .action {
+        text-decoration: none;
+        color: $color-secondary-light;
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: none;
+        }
+      }
       &:hover {
-        background-color: $color-secondary-light;
-        color: $color-primary-medium;
+        opacity: 0.7;
       }
     }
   }
