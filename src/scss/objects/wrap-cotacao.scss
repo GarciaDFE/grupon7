@@ -1,0 +1,24 @@
+.wrap-cotacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vw * 0.54);
+  max-height: 648px;
+  margin: 0 auto;
+  background-image: url(../img/imgPanel-cotacao.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 600px a 899px */
+  @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+    min-height: 495px;
+    background-position: center;
+  }
+  /* 320px a 599px */
+  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+    height: 100%;
+    max-height: 1000px;
+    background-image: none;
+  }
+}
