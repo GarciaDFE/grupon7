@@ -1825,7 +1825,7 @@ img {
     .team-card .resume .name {
       font-size: 30px;
       font-weight: bold;
-      margin-bottom: 5px;
+      margin-bottom: 7px;
       color: #050A26;
       /* 320px a 599px */ }
       @media all and (min-width: 320px) and (max-width: 599px) {
@@ -1833,14 +1833,15 @@ img {
           font-size: 25px; } }
     .team-card .resume .subtitle {
       font-size: 22px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #050A26;
-      padding-bottom: 10px;
+      margin-bottom: 5px;
       color: #C9801D;
       /* 320px a 599px */ }
       @media all and (min-width: 320px) and (max-width: 599px) {
         .team-card .resume .subtitle {
           font-size: 20px; } }
+    .team-card .resume .separator {
+      border-top: 1px solid #050A26;
+      margin: 5px 0; }
     .team-card .resume .skill {
       font-size: 20px;
       font-weight: normal;
@@ -1866,20 +1867,22 @@ img {
         background-image: url(../img/imgSelo-anbima-cpa20.png);
         background-repeat: no-repeat;
         background-size: contain;
-        bottom: 65px;
-        right: 15px; }
+        bottom: 10px;
+        right: 10px; }
+        .team-card .resume .credential.-anbima20.-composto {
+          bottom: 50px; }
       .team-card .resume .credential.-anbima10 {
         background-image: url(../img/imgSelo-anbima-cpa10.png);
         background-repeat: no-repeat;
         background-size: contain;
-        bottom: 15px;
-        right: 15px; }
+        bottom: 10px;
+        right: 10px; }
       .team-card .resume .credential.-susep {
         background-image: url(../img/imgSelo-susep.png);
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;
-        bottom: 15px;
+        bottom: 10px;
         right: 5px; }
 
 .main-cotacao {
