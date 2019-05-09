@@ -14,11 +14,14 @@ const $btnPF = document.querySelector("#btnPF");
 const $btnPJ = document.querySelector("#btnPJ");
 const $seguroPF = document.querySelector("#seguroPF");
 const $seguroPJ = document.querySelector("#seguroPJ");
+let $positionSeguroPF = 0;
+let $positionSeguroPJ = 0;
 // VARIÁVEIS
 const breakPhone = 599;
 const descontoAlturaHeader = 80;
+const $view = window.innerWidth;
 
-// BOTÃO FLUTUTANTE TO TOP & EFEITO REDUÇÃO HEADER
+//BOTÃO FLUTUTANTE TO TOP & EFEITO REDUÇÃO HEADER
 window.onscroll = function() {
   var top = window.pageYOffset;
   if (top > landmark) {
@@ -52,16 +55,11 @@ $itemContato.addEventListener("click", function() {
 });
 
 //NEVEGAÇÃO DENTRO DA PÁGINA SEGUROS COM EFEITO DE SCROLL SUAVE
-if ($seguroPF != null) {
-  $positionSeguroPF = $seguroPF.getBoundingClientRect().top;
-}
-
-if ($seguroPJ != null) {
-  $positionSeguroPJ = $seguroPJ.getBoundingClientRect().top;
-}
-
 if ($btnPF != null && $btnPJ != null) {
-  $view = window.innerWidth;
+  $positionSeguroPF = $seguroPF.getBoundingClientRect().top;
+  $positionSeguroPJ = $seguroPJ.getBoundingClientRect().top;
+  console.log($positionSeguroPJ);
+
   $btnPF.addEventListener("click", function() {
     if ($view > breakPhone) {
       smoothScroll($seguroPF, 2000, $positionSeguroPF - descontoAlturaHeader);
@@ -72,9 +70,10 @@ if ($btnPF != null && $btnPJ != null) {
   $btnPJ.addEventListener("click", function() {
     if ($view > breakPhone) {
       smoothScroll($seguroPJ, 2000, $positionSeguroPJ - descontoAlturaHeader);
-    } else {
-      smoothScroll($seguroPJ, 2000, $positionSeguroPJ);
     }
+    // } else {
+    //   smoothScroll($seguroPJ, 2000, $positionSeguroPJ);
+    // }
   });
 }
 

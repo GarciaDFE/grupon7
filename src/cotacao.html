@@ -83,7 +83,7 @@
             </div>
             <div class="field">
                <label for="phone" class="label">Telefone:</label>
-                <input id="phone" class="input" type="text" name="phone" placeholder="(__) ____-____" pattern="\(\d{2}\)\d{4}-\d{4}" />
+                <input id="phone" class="input" type="tel" name="phone" placeholder="(__) ____-____" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" />
             </div>
             <div class="field">
                <label for="email" class="label">Email:</label>
@@ -126,7 +126,9 @@
         <p>Praia da Costa, Vila Velha-ES - CEP 29101-350</p>
         <ul class="icons">
           <li class="icon">
-            <a class="action" href="#"><img src="img/icon-mapa.svg" alt=""/></a>
+            <a class="action" target="_blank" href="https://www.google.com/maps/place/Shopping+Praia+da+Costa/@-20.3417153,-40.2896128,18.33z/data=!3m1!5s0xb8164077c8faa9:0xde396394068fb4e9!4m5!3m4!1s0xb8164f15555555:0x4bd5a90f62e52909!8m2!3d-20.3425044!4d-40.2897573"
+                ><img src="img/icon-mapa.svg" alt=""
+            /></a>
           </li>
           <!--
           -->
@@ -138,15 +140,15 @@
           <!--
           -->
           <li class="icon">
-            <a class="action" href="#">
+            <a class="action" target="_blank" href="#">
               <img src="img/icon-whatsapp.svg" alt="" />
             </a>
           </li>
           <!--
           -->
           <li class="icon">
-            <a class="action" href="#">
-              <img src="img/icon-email.svg" alt="" />
+            <a class="action" target="_blank" href="https://www.instagram.com/grupon7/">
+              <img src="img/icon-instagram.svg" alt="" />
             </a>
           </li>
         </ul>
@@ -166,10 +168,6 @@
     <script type="text/javascript" src="js/components/nav-bar.js"></script>
     <script type="text/javascript" src="js/components/soft-scroll.js"></script>
     <script type="text/javascript" src="js/components/hovereffect.js"></script>
-    <!-- endbuild -->
-    <!-- build:carousel -->
-    <script type="text/javascript" src="js/carousel/glide.min.js"></script>
-    <script type="text/javascript" src="js/carousel/main-carousel.js"></script>
     <!-- endbuild -->
   </body>
 </html>
