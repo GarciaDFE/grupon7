@@ -517,26 +517,96 @@ img {
       background-image: none; } }
 
 .btn-cotacao {
-  display: none;
-  /* 320px a 599px */ }
-  .btn-cotacao:link, .btn-cotacao:visited, .btn-cotacao:hover, .btn-cotacao:active, .btn-cotacao:focus {
-    text-decoration: none; }
-  @media all and (min-width: 320px) and (max-width: 599px) {
-    .btn-cotacao {
-      display: block;
-      border: none;
-      width: 252px;
-      height: 78px;
-      margin: 0 auto;
-      font-family: inherit;
-      font-size: 24px;
-      font-weight: bold;
-      background-color: #C9801D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  padding: 0 50px;
+  cursor: pointer; }
+  .btn-cotacao.-navbar {
+    width: 252px;
+    height: 100%;
+    background-color: #C9801D;
+    color: white;
+    transition: all 300ms linear;
+    /* 1100 a 1199 */
+    /* 1000 a 1099px */
+    /* 700 a 999px */
+    /* 600 a 699px */
+    /* até 599px */ }
+    @media all and (min-width: 1100px) and (max-width: 1199px) {
+      .btn-cotacao.-navbar {
+        width: 220px;
+        padding: 0 20px; } }
+    @media all and (min-width: 1000px) and (max-width: 1099px) {
+      .btn-cotacao.-navbar {
+        width: 200px;
+        padding: 0 15px; } }
+    @media all and (min-width: 700px) and (max-width: 999px) {
+      .btn-cotacao.-navbar {
+        width: 160px;
+        padding: 0 12px;
+        font-size: 20px; } }
+    @media all and (min-width: 600px) and (max-width: 699px) {
+      .btn-cotacao.-navbar {
+        width: 120px;
+        padding: 0 10px;
+        font-size: 17px; } }
+    @media all and (max-width: 599px) {
+      .btn-cotacao.-navbar {
+        display: none; } }
+    .btn-cotacao.-navbar:hover {
+      text-decoration: none;
       color: white;
-      cursor: pointer;
-      transition: all 300ms linear; }
-      .btn-cotacao:hover {
-        background-color: #050A26; } }
+      background-color: #050A26; }
+  .btn-cotacao.-footer {
+    width: 252px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    background-color: #C9801D;
+    opacity: 1;
+    transition: opacity 300ms linear;
+    /* de 900px a 1199px */
+    /* de 600px a 899px */
+    /* de 320px a 599px */ }
+    @media all and (min-width: 900px) and (max-width: 1199px) {
+      .btn-cotacao.-footer {
+        width: 240px;
+        height: 60px;
+        font-size: 20px; } }
+    @media all and (min-width: 600px) and (max-width: 899px) {
+      .btn-cotacao.-footer {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 0 20px; } }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .btn-cotacao.-footer {
+        display: none; } }
+    .btn-cotacao.-footer:hover {
+      opacity: 0.7; }
+  .btn-cotacao.-mobile {
+    display: none; }
+    @media all and (min-width: 320px) and (max-width: 599px) {
+      .btn-cotacao.-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 20px 0 10px;
+        width: 100%;
+        height: 44px;
+        color: white;
+        background-color: #C9801D;
+        transition: opacity 300ms linear; } }
 
 .main-btnMenu {
   position: relative;
@@ -607,26 +677,6 @@ img {
         transform: translateX(200%);
         transition: transform 300ms linear;
         z-index: 10; } }
-    .nav-bar > .menu > .item.cotacao-mobile {
-      display: none; }
-      @media all and (min-width: 320px) and (max-width: 599px) {
-        .nav-bar > .menu > .item.cotacao-mobile {
-          display: inline-block;
-          border: none;
-          background-color: #C9801D;
-          margin: 20px 0 10px;
-          padding: 10px;
-          width: 100%;
-          height: auto;
-          font-family: inherit;
-          font-size: 20px;
-          line-height: 25px;
-          font-weight: bold;
-          text-align: center;
-          letter-spacing: 0.5px;
-          color: white;
-          cursor: pointer;
-          transition: opacity 300ms linear; } }
     .nav-bar > .menu.menu-open {
       transform: translateX(0);
       visibility: visible; }
@@ -657,7 +707,14 @@ img {
       @media all and (max-width: 599px) {
         .nav-bar > .menu > .item {
           width: 100%;
-          text-align: left; } }
+          text-align: left;
+          padding-right: 0; } }
+      .nav-bar > .menu > .item:last-child {
+        display: none;
+        /* até 599px */ }
+        @media all and (max-width: 599px) {
+          .nav-bar > .menu > .item:last-child {
+            display: inline-block; } }
       .nav-bar > .menu > .item:not(:last-child) {
         /* até 599px */ }
         @media all and (max-width: 599px) {
@@ -742,55 +799,6 @@ img {
               @media all and (min-width: 600px) {
                 .nav-bar > .menu > .item .submenu > .item .action:hover {
                   color: #C9801D; } }
-  .nav-bar > .cotacao {
-    display: inline-block;
-    border: none;
-    background-color: #C9801D;
-    width: 252px;
-    height: 100%;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    padding: 0 50px;
-    cursor: pointer;
-    transition: all 300ms linear;
-    /* 1100 a 1199 */
-    /* 1000 a 1099px */
-    /* 700 a 999px */
-    /* 600 a 699px */
-    /* até 599px */ }
-    .nav-bar > .cotacao:hover {
-      background-color: #050A26; }
-    @media all and (min-width: 1100px) and (max-width: 1199px) {
-      .nav-bar > .cotacao {
-        width: 220px;
-        padding: 0 20px; } }
-    @media all and (min-width: 1000px) and (max-width: 1099px) {
-      .nav-bar > .cotacao {
-        width: 200px;
-        padding: 0 15px; } }
-    @media all and (min-width: 700px) and (max-width: 999px) {
-      .nav-bar > .cotacao {
-        width: 160px;
-        padding: 0 12px;
-        font-size: 20px; } }
-    @media all and (min-width: 600px) and (max-width: 699px) {
-      .nav-bar > .cotacao {
-        width: 120px;
-        padding: 0 10px;
-        font-size: 17px; } }
-    @media all and (max-width: 599px) {
-      .nav-bar > .cotacao {
-        display: none; } }
-    .nav-bar > .cotacao > .action {
-      text-decoration: none;
-      color: white; }
-      .nav-bar > .cotacao > .action:link, .nav-bar > .cotacao > .action:visited, .nav-bar > .cotacao > .action:hover, .nav-bar > .cotacao > .action:active, .nav-bar > .cotacao > .action:focus {
-        text-decoration: none;
-        color: white; }
 
 .glide {
   position: relative;
@@ -1682,43 +1690,6 @@ img {
         @media all and (min-width: 320px) and (max-width: 599px) {
           .main-footer .contacts .contact .-destaque {
             font-size: 25px; } }
-    .main-footer .contacts .btn {
-      display: block;
-      border: none;
-      width: 252px;
-      height: 70px;
-      font-family: inherit;
-      font-size: 24px;
-      font-weight: bold;
-      padding: 0 50px;
-      background-color: #C9801D;
-      cursor: pointer;
-      opacity: 1;
-      transition: opacity 300ms linear;
-      /* de 600px a 899px */
-      /* de 600px a 899px */
-      /* de 320px a 599px */ }
-      @media all and (min-width: 900px) and (max-width: 1199px) {
-        .main-footer .contacts .btn {
-          width: 240px;
-          height: 60px;
-          font-size: 20px; } }
-      @media all and (min-width: 600px) and (max-width: 899px) {
-        .main-footer .contacts .btn {
-          width: 150px;
-          height: 50px;
-          font-size: 18px;
-          padding: 0 20px; } }
-      @media all and (min-width: 320px) and (max-width: 599px) {
-        .main-footer .contacts .btn {
-          display: none; } }
-      .main-footer .contacts .btn .action {
-        text-decoration: none;
-        color: white; }
-        .main-footer .contacts .btn .action:link, .main-footer .contacts .btn .action:visited, .main-footer .contacts .btn .action:hover, .main-footer .contacts .btn .action:active, .main-footer .contacts .btn .action:focus {
-          text-decoration: none; }
-      .main-footer .contacts .btn:hover {
-        opacity: 0.7; }
 
 .main-panel {
   margin: 0 120px;
