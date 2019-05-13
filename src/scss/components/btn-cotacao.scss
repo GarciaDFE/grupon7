@@ -1,29 +1,97 @@
 .btn-cotacao {
-  display: none;
-  &:link,
-  &:visited,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-  }
-
-  /* 320px a 599px */
-  @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
-    display: block;
-    border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  padding: 0 50px;
+  cursor: pointer;
+  &.-navbar {
     width: 252px;
-    height: 78px;
-    margin: 0 auto;
-    font-family: inherit;
-    font-size: 24px;
-    font-weight: bold;
+    height: 100%;
     background-color: $color-primary-medium;
     color: $color-secondary-light;
-    cursor: pointer;
     transition: all 300ms linear;
+    /* 1100 a 1199 */
+    @media all and (min-width: $break-desktop - 100) and (max-width: $break-desktop - 1) {
+      width: 220px;
+      padding: 0 20px;
+    }
+    /* 1000 a 1099px */
+    @media all and (min-width: $break-desktop - 200) and (max-width: $break-desktop - 101) {
+      width: 200px;
+      padding: 0 15px;
+    }
+    /* 700 a 999px */
+    @media all and (min-width: $break-tablet - 200) and (max-width: $break-desktop - 201) {
+      width: 160px;
+      padding: 0 12px;
+      font-size: 20px;
+    }
+    /* 600 a 699px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 201) {
+      width: 120px;
+      padding: 0 10px;
+      font-size: 17px;
+    }
+    /* até 599px */
+    @media all and (max-width: $break-phone - 1) {
+      display: none;
+    }
     &:hover {
+      text-decoration: none;
+      color: $color-secondary-light;
       background-color: $color-primary-dark;
+    }
+  }
+  &.-footer {
+    width: 252px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 26px;
+    color: $color-secondary-light;
+    background-color: $color-primary-medium;
+    opacity: 1;
+    transition: opacity 300ms linear;
+    /* de 900px a 1199px */
+    @media all and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      width: 240px;
+      height: 60px;
+      font-size: 20px;
+    }
+    /* de 600px a 899px */
+    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
+      width: 150px;
+      height: 50px;
+      font-size: 18px;
+      line-height: 20px;
+      padding: 0 20px;
+    }
+    /* de 320px a 599px */
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      display: none;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &.-mobile {
+    display: none;
+    @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 20px 0 10px;
+      width: 100%;
+      height: 44px;
+      color: $color-secondary-light;
+      background-color: $color-primary-medium;
+      transition: opacity 300ms linear;
     }
   }
 }

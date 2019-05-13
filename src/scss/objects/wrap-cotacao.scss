@@ -21,4 +21,47 @@
     max-height: 1000px;
     background-image: none;
   }
+  .wrap-alert {
+    position: absolute;
+    padding: 10px;
+    margin: 0 auto;
+    top: 15%;
+    z-index: 10;
+    #form-messages {
+      display: none;
+    }
+    .alert-message {
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      font-weight: normal;
+      max-width: 300px;
+      padding: 10px;
+      list-style-type: disc;
+      list-style-position: inside;
+
+      &.-error {
+        color: red;
+        border: 1px solid red;
+        li {
+          width: 100%;
+          background: url(../img/iconForm-exclamation.svg) no-repeat;
+          background-position: center right;
+          padding-right: 50px;
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &.-check {
+        color: #008000;
+        border: 1px solid #008000;
+        li {
+          width: 100%;
+          background: url(../img/iconForm-check.svg) no-repeat;
+          background-position: center right;
+          padding-right: 100px;
+        }
+      }
+    }
+  }
 }

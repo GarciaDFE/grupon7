@@ -23,32 +23,10 @@
       transition: transform 300ms linear;
       z-index: 10;
     }
-    > .item.cotacao-mobile {
-      display: none;
-      @media all and (min-width: $break-min) and (max-width: $break-phone - 1) {
-        display: inline-block;
-        border: none;
-        background-color: $color-primary-medium;
-        margin: 20px 0 10px;
-        padding: 10px;
-        width: 100%;
-        height: auto;
-        font-family: inherit;
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: bold;
-        text-align: center;
-        letter-spacing: 0.5px;
-        color: $color-secondary-light;
-        cursor: pointer;
-        transition: opacity 300ms linear;
-      }
-    }
     &.menu-open {
       transform: translateX(0);
       visibility: visible;
     }
-
     > .item {
       position: relative;
       display: inline-block;
@@ -76,6 +54,14 @@
       @media all and (max-width: $break-phone - 1) {
         width: 100%;
         text-align: left;
+        padding-right: 0;
+      }
+      &:last-child {
+        display: none;
+        /* até 599px */
+        @media all and (max-width: $break-phone - 1) {
+          display: inline-block;
+        }
       }
       &:not(:last-child) {
         /* até 599px */
@@ -171,65 +157,6 @@
             }
           }
         }
-      }
-    }
-  }
-  > .cotacao {
-    display: inline-block;
-    border: none;
-    background-color: $color-primary-medium;
-    width: 252px;
-    height: 100%;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    padding: 0 50px;
-
-    cursor: pointer;
-    transition: all 300ms linear;
-
-    &:hover {
-      background-color: $color-primary-dark;
-    }
-    /* 1100 a 1199 */
-    @media all and (min-width: $break-desktop - 100) and (max-width: $break-desktop - 1) {
-      width: 220px;
-      padding: 0 20px;
-    }
-    /* 1000 a 1099px */
-    @media all and (min-width: $break-desktop - 200) and (max-width: $break-desktop - 101) {
-      width: 200px;
-      padding: 0 15px;
-    }
-    /* 700 a 999px */
-    @media all and (min-width: $break-tablet - 200) and (max-width: $break-desktop - 201) {
-      width: 160px;
-      padding: 0 12px;
-      font-size: 20px;
-    }
-    /* 600 a 699px */
-    @media all and (min-width: $break-phone) and (max-width: $break-tablet - 201) {
-      width: 120px;
-      padding: 0 10px;
-      font-size: 17px;
-    }
-    /* até 599px */
-    @media all and (max-width: $break-phone - 1) {
-      display: none;
-    }
-    > .action {
-      text-decoration: none;
-      color: $color-secondary-light;
-      &:link,
-      &:visited,
-      &:hover,
-      &:active,
-      &:focus {
-        text-decoration: none;
-        color: $color-secondary-light;
       }
     }
   }
