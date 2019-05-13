@@ -515,6 +515,40 @@ img {
       height: 100%;
       max-height: 1000px;
       background-image: none; } }
+  .wrap-cotacao .wrap-alert {
+    position: absolute;
+    padding: 10px;
+    margin: 0 auto;
+    top: 15%;
+    z-index: 10; }
+    .wrap-cotacao .wrap-alert #form-messages {
+      display: none; }
+    .wrap-cotacao .wrap-alert .alert-message {
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      font-weight: normal;
+      max-width: 300px;
+      padding: 10px;
+      list-style-type: disc;
+      list-style-position: inside; }
+      .wrap-cotacao .wrap-alert .alert-message.-error {
+        color: red;
+        border: 1px solid red; }
+        .wrap-cotacao .wrap-alert .alert-message.-error li {
+          width: 100%;
+          background: url(../img/iconForm-exclamation.svg) no-repeat;
+          background-position: center right;
+          padding-right: 50px; }
+          .wrap-cotacao .wrap-alert .alert-message.-error li:not(:last-child) {
+            margin-bottom: 10px; }
+      .wrap-cotacao .wrap-alert .alert-message.-check {
+        color: #008000;
+        border: 1px solid #008000; }
+        .wrap-cotacao .wrap-alert .alert-message.-check li {
+          width: 100%;
+          background: url(../img/iconForm-check.svg) no-repeat;
+          background-position: center right;
+          padding-right: 100px; }
 
 .btn-cotacao {
   display: flex;

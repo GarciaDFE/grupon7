@@ -67,36 +67,49 @@
 
     <!-- FORMULÁRIO DE PEDIDO DE COTAÇÃO -->
     <section class="wrap-cotacao">
+      <div class="wrap-alert">
+        <ul class="alert-message" id="form-messages"></ul>
+      </div>
+
       <div class="main-cotacao">
          <header class="wrap-header">
             <h1 class="title">Solicite uma cotação <span class="-invert">agora:</span></h1>
             <h2 class="subtitle">Mande uma mensagem rápida com suas informações para que a nossa equipe e elabore uma cotação do jeito que você deseja:</h2>
          </header>
-         <form class="wrap-form" action="" method="post">
+
+          <div class="wrap-form">
+            
             <div class="field">
                <label for="name" class="label">Nome:</label>
-               <input id="name" class="input" type="text" name="name" placeholder="seu nome completo" required>
+               <input id="name" class="input" type="text" placeholder="Seu nome completo">
             </div>
+
             <div class="field">
                <label for="phone" class="label">Telefone:</label>
-                <input id="phone" class="input" type="tel" name="phone" placeholder="(__) ____-____" maxlength="15" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" />
+               <input id="phone" class="input" type="text" placeholder="Ex.: 99 99999 9999"/>
             </div>
+
             <div class="field">
-               <label for="email" class="label">Email:</label>
-               <input id="email" class="input" type="email" name="email" placeholder="seu e-mail" required>
+              <label for="teste" class="label">Email:</label>
+              <input type="email" id="email" class="input" placeholder="Seu e-mail válido">
             </div>
+
             <div class="field">
-               <label for="product" class="label">Produto que deseja cotar:</label>
-               <select type="select" id="product" name="product" class="input">
-                  <option class="item-list" value="seguros" selected>Seguros</option>
-                  <option class="item-list" value="consorcios">Consórcios</option>
-                  <option class="item-list" value="beneficios">Benefícios</option>
-                  <option class="item-list" value="saudeodonto">Saúde e Odonto</option>
-                  <option class="item-list" value="consultoria">Consultoria</option>
-               </select>
+              <label for="product" class="label">Produto que deseja cotar:</label>
+              <select type="select" id="product" name="product" class="input">
+                <option selected disable>Selecione uma opção</option>
+                <option class="item-list" value="Seguros">Seguros</option>
+                <option class="item-list" value="Consórcios">Consórcios</option>
+                <option class="item-list" value="Benefícios">Benefícios</option>
+                <option class="item-list" value="Saúde e Odonto">Saúde e Odonto</option>
+                <option class="item-list" value="Consultoria">Consultoria</option>
+              </select>
             </div>
-            <button class="btn-submit" type="submit">Enviar</button>
-         </form>
+
+            <button type="submit" id="btn-submit" class="btn-submit">Enviar</button>
+
+          </div>
+
          <footer class="wrap-footer">
             <h3 class="title">Ou receba as melhores propostas especialmente para o seu perfil preenchedo nosso cadastro:</h3>
             <a class="btn-cadastro" target="_blank" href="http://redirect.segoo.com.br/Br">Faça o seu cadastro</a>
@@ -157,6 +170,11 @@
       </div>
     </footer>
 
+    <!-- build:form -->
+    <script type="text/javascript" src="js/form/cleave.min.js"></script>
+    <script type="text/javascript" src="js/form/cleave-phone.br.js"></script>
+    <script type="text/javascript" src="js/form/cotacao.js"></script>
+    <!-- endbuild -->
     <!-- build:alljs -->
     <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
     <script type="text/javascript" src="js/components/nav-bar.js"></script>
