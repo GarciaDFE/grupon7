@@ -33,15 +33,21 @@ new Cleave(phone, {
 //Função para checar Formulário
 //******************************
 const checkForm = () => {
-  if (!form.name.value) {
-    createMessage("Nome em branco", "error");
-  }
+  const phonenumber = form.phone.value;
+  const fourthNumber = phonenumber.substr(4, 1);
+  let canSend = true;
 
-  if (!form.phone.value) {
-    createMessage("Telefone em branco", "error");
-  } else {
-    const phonenumber = form.phone.value;
-    if (phonenumber.length < 12) createMessage("Telefone inválido", "error");
+  if (!form.name.value) createMessage("Nome em branco", "error");
+
+  if (!form.phone.value) createMessage("Telefone em branco", "error");
+
+  if (
+    form.phone.value &&
+    (phonenumber.length < 12 ||
+      (fourthNumber === "9" && phonenumber.length === 12))
+  ) {
+    createMessage("Telefone inválido", "error");
+    canSend = false;
   }
 
   if (!form.email.value) {
@@ -56,8 +62,8 @@ const checkForm = () => {
     form.name.value &&
     form.phone.value &&
     form.email.value &&
-    isValidEmail &&
-    form.productSelected
+    form.productSelected &&
+    canSend
   )
     return true;
 };
