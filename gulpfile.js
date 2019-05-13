@@ -91,6 +91,14 @@ function optimizeHTML() {
     .pipe(gulp.dest("dist/"));
 }
 
+// Copiar arquivos
+function copyFiles() {
+  return (
+    gulp.src(["src/*.php"]).pipe(gulp.dest("dist/")),
+    gulp.src(["src/phpmailer/**/*"]).pipe(gulp.dest("dist/phpmailer/"))
+  );
+}
+
 // Agrupar tarefas a serem monitoradas
 function watch() {
   gulp.watch("src/scss/**/*.scss", compilaSASS);
@@ -107,7 +115,8 @@ const build = gulp.parallel(
   //optimizeIMG,
   replaceHTML,
   optimizeHTML,
-  watch
+  copyFiles
+  //watch
 );
 gulp.task(build);
 gulp.task("default", build);
