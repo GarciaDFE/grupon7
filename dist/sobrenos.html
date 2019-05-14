@@ -11,9 +11,7 @@
       rel="stylesheet"
     />
 
-    <!-- build:allcss -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- endbuild -->
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body>
     <!-- HEADER/NAV -->
@@ -65,58 +63,82 @@
       </div>
     </header>
 
-    <!-- FORMULÁRIO DE PEDIDO DE COTAÇÃO -->
-    <section class="wrap-cotacao">
-      <div class="wrap-alert">
-        <ul class="alert-message" id="form-messages"></ul>
+   <!-- PAINEL -->
+   <section class="wrap-panel -sobrenos">
+      <div class="main-panel -sobrenos">
+         <h1 class="title -sobrenome">O Grupo N7</h1>
+         <div class="description">
+            <p class="paragraph">Desde 2013 um grupo de profissionais com reconhecimento no mercado financeiro se reuniu para oferecer soluções que auxiliam as empresas a alcançar os seus objetivos.</p>
+            <p class="paragraph">Logo em seguida os serviços foram expandidos para a área de Seguros, Saúde, Benefícios, Consórcios e Consultoria empresarial.</p>
+            <p class="paragraph">Os consultores do <strong class="-destaque">Grupo N7</strong> formam uma equipe multidisciplinar, integrada e capaz de entregar as melhores soluções para você e para a sua empresa.</p>
+         </div>
       </div>
+   </section>
 
-      <div class="main-cotacao">
-         <header class="wrap-header">
-            <h1 class="title">Solicite uma cotação <span class="-invert">agora:</span></h1>
-            <h2 class="subtitle">Mande uma mensagem rápida com suas informações para que a nossa equipe e elabore uma cotação do jeito que você deseja:</h2>
-         </header>
-
-          <div class="wrap-form">
-            
-            <div class="field">
-               <label for="name" class="label">Nome:</label>
-               <input id="name" class="input" type="text" placeholder="Seu nome completo">
-            </div>
-
-            <div class="field">
-               <label for="phone" class="label">Telefone:</label>
-               <input id="phone" class="input" type="text" placeholder="Ex.: 99 99999 9999"/>
-            </div>
-
-            <div class="field">
-              <label for="teste" class="label">Email:</label>
-              <input type="email" id="email" class="input" placeholder="Seu e-mail válido">
-            </div>
-
-            <div class="field">
-              <label for="product" class="label">Produto que deseja cotar:</label>
-              <select type="select" id="product" name="product" class="input">
-                <option selected disable>Selecione uma opção</option>
-                <option class="item-list" value="Seguros">Seguros</option>
-                <option class="item-list" value="Consórcios">Consórcios</option>
-                <option class="item-list" value="Benefícios">Benefícios</option>
-                <option class="item-list" value="Saúde e Odonto">Saúde e Odonto</option>
-                <option class="item-list" value="Consultoria">Consultoria</option>
-              </select>
-            </div>
-
-            <button type="submit" id="btn-submit" class="btn-submit">Enviar</button>
-
-          </div>
-
-         <footer class="wrap-footer">
-            <h3 class="title">Ou receba as melhores propostas especialmente para o seu perfil preenchedo nosso cadastro:</h3>
-            <a class="btn-cadastro" target="_blank" href="http://redirect.segoo.com.br/Br">Faça o seu cadastro</a>
-            <p class="obs">* Os dados enviados não serão divulgados para nenhum outro fim que não seja o contato comercial do GRUPO N7.</p>
-         </footer>
-      </div>
-    </section>
+   <!-- SOBRE NÓS - NOSSA EQUIPE --> 
+   <section class="wrap-team">
+      <h1 class="title">Nossa Equipe</h1>
+      <div class="wrap-team-cards">
+         <dl class="team-card">
+            <figure class="avatar"><img src="img/imgAvatar-alirio-andrade.jpg" alt="imagem o membro da equipe"></figure>
+            <dl class="resume">
+               <dt class="name">Alírio Andrade</dt>
+               <dt class="subtitle">Consultoria</dt>
+               <dt class="subtitle">Seguros Empresarias</dt>
+               <p class="separator"><p>
+               <dd class="skill">MBA em Gestão Empresarial</dd>
+               <dd class="skill">FGV</dd>
+               <dd class="social">
+                <a class="action" href="https://www.linkedin.com/in/alírio-andrade-9318b922/" target="_blank"><img src="img/icon-linkedin-dark.svg" alt="imagem do Linkedin"></a>
+               <dd>
+            </dl>
+         </dl>
+         <dl class="team-card">
+            <figure class="avatar"><img src="img/imgAvatar-leonardo-volpi.jpg" alt="imagem o membro da equipe"></figure>
+            <dl class="resume">
+               <dt class="name">Leonardo Volpi</dt>
+               <dt class="subtitle">Vida/Saúde</dt>
+               <dt class="subtitle">Previdência Privada</dt>
+               <p class="separator"><p>
+               <dd class="skill">MBA em Marketing</dd>
+               <dd class="skill">FGV</dd>
+               <dd class="social">
+                <a class="action" href="https://www.linkedin.com/in/leonardo-volpi-245476130/" target="_blank"><img src="img/icon-linkedin-dark.svg" alt="imagem do Linkedin"></a>
+               <dd>
+               <dd class="credential -anbima20 -composto">Anbima CPA-20<dd>
+               <dd class="credential -susep">SUSEP<dd>
+            </dl>
+         </dl>
+         <dl class="team-card">
+            <figure class="avatar"><img src="img/imgAvatar-arthur-andrade.jpg" alt="imagem o membro da equipe"></figure>
+            <dl class="resume">
+               <dt class="name">Arthur Andrade</dt>
+               <dt class="subtitle">Auto/Frota</dt>
+               <dt class="subtitle">Residência/Viagem</dt>
+               <p class="separator"><p>
+               <dd class="skill">MBA em Finanças</dd>
+               <dd class="skill">FDC</dd>
+               <dd class="social">
+                <a class="action" href="https://www.linkedin.com/in/arthur-cézar-damasceno-andrade-91237622/" target="_blank"><img src="img/icon-linkedin-dark.svg" alt="imagem do Linkedin"></a>
+               <dd>
+               <dd class="credential -anbima10">Anbima CPA-10<dd>
+            </dl>
+         </dl>
+         <dl class="team-card">
+            <figure class="avatar"><img src="img/imgAvatar-roberto-carlos.jpg" alt="imagem o membro da equipe"></figure>
+            <dl class="resume">
+               <dt class="name">Roberto Carlos Paulo da Silva</dt>
+               <dt class="subtitle">Consórcios | Benefícios</dt>
+               <p class="separator"><p>
+               <dd class="skill">Bacharelado em Administração</dd>
+               <dd class="social">
+                <a class="action" href="https://www.linkedin.com/in/roberto-carlos-paulo-da-silva-b6b534101/" target="_blank"><img src="img/icon-linkedin-dark.svg" alt="imagem do Linkedin"></a>
+               <dd>
+               <dd class="credential -anbima20">Anbima CPA-20<dd>
+            </dl>
+         </dl>
+      </div>   
+   </section>
 
     <!-- BOTÃO FLUTUTANTE PARA LEVAR AO TOPO -->
     <a class="btn-totop" href="#"><img src="img/btn-totop.svg" /></a>
@@ -170,16 +192,6 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="js/form/cleave.min.js"></script>
-    <script type="text/javascript" src="js/form/cleave-phone.br.js"></script>
-    <script type="text/javascript" src="js/form/cotacao.js"></script>
-    <!-- build:form -->
-    <!-- endbuild -->
-    <!-- build:alljs -->
-    <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
-    <script type="text/javascript" src="js/components/nav-bar.js"></script>
-    <script type="text/javascript" src="js/components/soft-scroll.js"></script>
-    <script type="text/javascript" src="js/components/hovereffect.js"></script>
-    <!-- endbuild -->
-  </body>
+    <script src="js/scripts.min.js"></script>
+</body>
 </html>

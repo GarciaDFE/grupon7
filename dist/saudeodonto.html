@@ -11,9 +11,7 @@
       rel="stylesheet"
     />
 
-    <!-- build:allcss -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- endbuild -->
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body>
     <!-- HEADER/NAV -->
@@ -65,56 +63,53 @@
       </div>
     </header>
 
-    <!-- FORMULÁRIO DE PEDIDO DE COTAÇÃO -->
-    <section class="wrap-cotacao">
-      <div class="wrap-alert">
-        <ul class="alert-message" id="form-messages"></ul>
+   <!-- PAINEL -->
+   <section class="wrap-panel -saudeodonto">
+      <div class="main-panel">
+         <h1 class="title">Saúde e Odonto</h1>
+         <div class="description -variation">
+            <p class="paragraph">Planos de saúde sob medida para </p>
+            <p class="paragraph">sua família e para sua empresa.</p>
+         </div>
       </div>
+   </section>
 
-      <div class="main-cotacao">
-         <header class="wrap-header">
-            <h1 class="title">Solicite uma cotação <span class="-invert">agora:</span></h1>
-            <h2 class="subtitle">Mande uma mensagem rápida com suas informações para que a nossa equipe e elabore uma cotação do jeito que você deseja:</h2>
-         </header>
+    <!-- SÁUDE E ODONTOLOGIA PARA PESSOA FÍSICA E JURÍDICA -->
+    <section class="wrap-services">
+      <header class="wrap-title -duotitle">
+        <h1 class="title -invert">Para você</h1>
+        <h2 class="title">Para empresa</h2>
+      </header>
 
-          <div class="wrap-form">
-            
-            <div class="field">
-               <label for="name" class="label">Nome:</label>
-               <input id="name" class="input" type="text" placeholder="Seu nome completo">
-            </div>
-
-            <div class="field">
-               <label for="phone" class="label">Telefone:</label>
-               <input id="phone" class="input" type="text" placeholder="Ex.: 99 99999 9999"/>
-            </div>
-
-            <div class="field">
-              <label for="teste" class="label">Email:</label>
-              <input type="email" id="email" class="input" placeholder="Seu e-mail válido">
-            </div>
-
-            <div class="field">
-              <label for="product" class="label">Produto que deseja cotar:</label>
-              <select type="select" id="product" name="product" class="input">
-                <option selected disable>Selecione uma opção</option>
-                <option class="item-list" value="Seguros">Seguros</option>
-                <option class="item-list" value="Consórcios">Consórcios</option>
-                <option class="item-list" value="Benefícios">Benefícios</option>
-                <option class="item-list" value="Saúde e Odonto">Saúde e Odonto</option>
-                <option class="item-list" value="Consultoria">Consultoria</option>
-              </select>
-            </div>
-
-            <button type="submit" id="btn-submit" class="btn-submit">Enviar</button>
-
+      <div class="wrap-cards">
+        <dl class="main-card">
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-saude.jpg" 
+              alt="imagem de médicos em pé analisando chapa de raio x" 
+            /></a>
+          <div class="header">
+            <dt id="saude" class="title icone">Saúde</dt>
           </div>
-
-         <footer class="wrap-footer">
-            <h3 class="title">Ou receba as melhores propostas especialmente para o seu perfil preenchedo nosso cadastro:</h3>
-            <a class="btn-cadastro" target="_blank" href="http://redirect.segoo.com.br/Br">Faça o seu cadastro</a>
-            <p class="obs">* Os dados enviados não serão divulgados para nenhum outro fim que não seja o contato comercial do GRUPO N7.</p>
-         </footer>
+          <div class="square">
+            <dd class="description">Faça um plano de saúde que se adeque ao seu perfil ou para os colaboradores da sua empresa. Escolha cobertura, rede de atendimento e modalidade de pagamento e garanta acesso a serviços médicos.</dd>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
+          </div>
+        </dl>
+        <dl class="main-card -sembtntotop">
+          <a class="image" href="#"
+            ><img 
+              src="img/imgCard-odonto.jpg" 
+              alt="imagem de mulher sentada recebendo tratamento dentário" 
+            /></a>
+          <div class="header">
+            <dt id="odonto" class="title icone">Odonto</dt>
+          </div>
+          <div class="square -dark">
+            <dd class="description">Os planos odontológicos oferecem acesso a serviços odontológicos em uma ampla rede de dentistas credenciados, permitindo o investimento na saúde bucal.</dd>
+            <a class="btn-cards cotacao" href="cotacao.html">Solicite uma cotação</a>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -170,16 +165,6 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="js/form/cleave.min.js"></script>
-    <script type="text/javascript" src="js/form/cleave-phone.br.js"></script>
-    <script type="text/javascript" src="js/form/cotacao.js"></script>
-    <!-- build:form -->
-    <!-- endbuild -->
-    <!-- build:alljs -->
-    <script type="text/javascript" src="js/components/main-btnMenu.js"></script>
-    <script type="text/javascript" src="js/components/nav-bar.js"></script>
-    <script type="text/javascript" src="js/components/soft-scroll.js"></script>
-    <script type="text/javascript" src="js/components/hovereffect.js"></script>
-    <!-- endbuild -->
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

@@ -186,9 +186,9 @@
           appearance: none; /* Remove estilo padrão do FireFox*/
           font-size: 20px;
           font-weight: bold;
-          padding-left: 60px;
+          padding-left: 55px;
           line-height: 30px;
-          color: red; //$color-primary-dark;
+          color: $color-primary-dark;
           border: 1px solid $color-primary-dark;
           background-image: url(../img/icon-arrow-list.svg);
           background-repeat: no-repeat;
