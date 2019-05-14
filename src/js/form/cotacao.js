@@ -89,7 +89,7 @@ const sendForm = () => {
 
     if (responseObject) {
       cleanMessages();
-      createMessage("Mensagem enviada com sucesso", "check");
+      createMessage("Cotação enviada com sucesso!", "check");
       redirect();
     } else {
       cleanMessages();
