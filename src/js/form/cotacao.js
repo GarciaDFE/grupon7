@@ -62,6 +62,7 @@ const checkForm = () => {
     form.name.value &&
     form.phone.value &&
     form.email.value &&
+    isValidEmail &&
     form.productSelected &&
     canSend
   )

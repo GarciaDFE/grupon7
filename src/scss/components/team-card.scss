@@ -24,8 +24,11 @@
     width: 250px;
     height: 250px;
     padding: 15px;
-    background-image: linear-gradient(to top, #efefef 60%, #c8c9cb);
-
+    background-image: linear-gradient(
+      to top,
+      $color-gradient-start 60%,
+      $color-gradient-end
+    );
     .name {
       font-size: 30px;
       font-weight: bold;

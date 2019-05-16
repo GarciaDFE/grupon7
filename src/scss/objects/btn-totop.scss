@@ -1,4 +1,3 @@
-// CÓDIGO REFATORADO
 .btn-totop {
   display: none;
   position: fixed;
@@ -18,25 +17,3 @@
     display: block;
   }
 }
-
-// CÓDIGO ANTERIOR
-// .btn-totop {
-//    max-width: 1060px;
-//    display: flex;
-//    justify-content: flex-end;
-//    opacity: 0.5;
-//    transition: opacity 0.2s linear;
-//    &.-v1 {
-//       margin: 18px auto 48px;
-//    }
-//    &.-v2 {
-//       margin: 135px auto 21px;
-//    }
-//    &:hover {
-//       opacity: 1;
-//       transition: opacity 0.2s linear;
-//    }
-//    img {
-//       margin-right: 10px;
-//    }
-// }

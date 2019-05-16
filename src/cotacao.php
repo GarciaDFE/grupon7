@@ -6,19 +6,17 @@ $status = true;
 // chamada da classe phpmailer
 require('phpmailer/class.phpmailer.php');
 
-// faço a chamada da classe
+// chamada da classe
 $Email = new PHPMailer();
 
-
-
 //define os dados do servidor e tipo de conexão
-$Email->IsSMTP();            // set mailer to use SMTP
+$Email->IsSMTP();               // set mailer to use SMTP
 $Email->SMTPDebug = 0;
-$Email->Port = 587; //Utilize obrigatoriamente a porta 587.
-$Email->Host = "smtp.grupon7.com.br"; //servidor SMTP
-$Email->SMTPAuth = true;     // turn on SMTP authentication
-$Email->Username = "sac@grupon7.com.br";
-$Email->Password = "A7Pw@t1#Pvqsl";
+$Email->Port = 587;             //Utilize obrigatoriamente a porta 587.
+$Email->Host = "smtp.servidor"; //servidor SMTP
+$Email->SMTPAuth = true;        // turn on SMTP authentication
+$Email->Username = "username";  // username servidor SMTP
+$Email->Password = "password";  // senha servidor SMTP
 
 // resgatando os dados passados pelo form
 $nomeusuario = $_POST['name'];
@@ -27,14 +25,11 @@ $phoneusuario = $_POST['phone'];
 $productselect = $_POST['product'];
 
 //define remetente
-$Email->From = "sac@grupon7.com.br"; // email do remetente da mensagem
+$Email->From = "remetente@grupon7.com.br"; // email do remetente da mensagem
 $Email->FromName = "Formulário Cotação Grupo N7"; // nome do remetente do email
 
 //define destinatário
-$Email->AddAddress("sac@grupon7.com.br", "Grupo N7");// Endereço de destino do email
-// $Email->AddAddress('e-mail@destino2.com.br');
-// $Email->AddCC('copia@dominio.com.br', 'Copia');
-// $Email->AddBCC('CopiaOculta@dominio.com.br', 'Copia Oculta');
+$Email->AddAddress("destinatario@grupon7.com.br", "Grupo N7");// Endereço de destino do email
 $Email->IsHTML(true); // Define que o e-mail será enviado como HTML
 $Email->CharSet = 'UTF-8'; // Charset da mensagem (opcional)
 
@@ -47,11 +42,6 @@ $Email->Body .= "Nome: <i>$nomeusuario</i><BR>";
 $Email->Body .= "E-mail: <i>$emailusuario</i><BR>";
 $Email->Body .= "Telefone: <i>$phoneusuario</i><BR>";
 $Email->Body .= "Produto: <i>$productselect</i><BR>";
-//$Email->AddAttachment("e:\home\login\web\documento.pdf", "novo_nome.pdf"); //envio de anexo (opcional)
-
-//limpa os destinatários e os anexos
-//$Email->ClearAllRecipients(); 
-//$Email->ClearAttachments(); 
 
 //exibe mensagem de resultado
 if(!$Email->Send())   {

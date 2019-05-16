@@ -51,14 +51,14 @@ function optimizeJSCarousel() {
 }
 
 // Minificar/concatenar/renomear arquivos JS Form Dev
-function optimizeJSForm() {
-  return gulp
-    .src(["src/js/form/**/*.js"])
-    .pipe(uglify())
-    .pipe(concat("form.js"))
-    .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("dist/js"));
-}
+// function optimizeJSForm() {
+//   return gulp
+//     .src(["src/js/form/**/*.js"])
+//     .pipe(uglify())
+//     .pipe(concat("form.js"))
+//     .pipe(rename({ suffix: ".min" }))
+//     .pipe(gulp.dest("dist/js"));
+// }
 
 // Otimizar arquivos de imagens Dev
 function optimizeIMG() {
@@ -95,7 +95,8 @@ function optimizeHTML() {
 function copyFiles() {
   return (
     gulp.src(["src/*.php"]).pipe(gulp.dest("dist/")),
-    gulp.src(["src/phpmailer/**/*"]).pipe(gulp.dest("dist/phpmailer/"))
+    gulp.src(["src/phpmailer/**/*"]).pipe(gulp.dest("dist/phpmailer/")),
+    gulp.src(["src/js/form/**/*"]).pipe(gulp.dest("dist/js/"))
   );
 }
 
@@ -111,8 +112,8 @@ const build = gulp.parallel(
   optimizeCSS,
   optimizeJSGeneral,
   optimizeJSCarousel,
-  optimizeJSForm,
-  //optimizeIMG,
+  //optimizeJSForm,
+  optimizeIMG,
   replaceHTML,
   optimizeHTML,
   copyFiles

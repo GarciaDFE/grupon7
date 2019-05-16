@@ -3,7 +3,6 @@
   justify-content: flex-start;
   align-items: center;
   width: 300px;
-
   /* 600px a 899px */
   @media all and (min-width: $break-phone) and (max-width: $break-tablet - 1) {
     justify-content: center;

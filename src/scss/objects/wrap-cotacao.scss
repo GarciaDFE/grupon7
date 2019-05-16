@@ -22,16 +22,16 @@
     background-image: none;
   }
   .wrap-alert {
-    position: absolute;
+    position: fixed;
     padding: 10px;
     margin: 0 auto;
-    top: 15%;
+    top: 100px;
     z-index: 10;
     #form-messages {
       display: none;
     }
     .alert-message {
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba($color-secondary-light, 0.8);
       font-size: 16px;
       font-weight: normal;
       max-width: 300px;
@@ -40,8 +40,8 @@
       list-style-position: inside;
 
       &.-error {
-        color: red;
-        border: 1px solid red;
+        color: $color-msg-invalid; //red;
+        border: 1px solid $color-msg-invalid;
         li {
           width: 100%;
           background: url(../img/iconForm-exclamation.svg) no-repeat;
@@ -53,8 +53,8 @@
         }
       }
       &.-check {
-        color: #008000;
-        border: 1px solid #008000;
+        color: $color-msg-valid;
+        border: 1px solid $color-msg-valid;
         list-style-type: none;
         li {
           width: 100%;

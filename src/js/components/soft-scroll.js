@@ -17,9 +17,10 @@ const $seguroPJ = document.querySelector("#seguroPJ");
 let $positionSeguroPF = 0;
 let $positionSeguroPJ = 0;
 // VARIÁVEIS
-const breakPhone = 599;
-const descontoAlturaHeader = 80;
-const $view = window.innerWidth;
+const breakPhone = 599; // quebra para mobile
+const descontoAlturaHeader = 80; // altura header
+const $view = window.innerWidth; // largura viewport
+const $alturaDoc = document.documentElement.scrollHeight; // altura do documento
 
 //BOTÃO FLUTUTANTE TO TOP & EFEITO REDUÇÃO HEADER
 window.onscroll = function() {
@@ -43,22 +44,25 @@ if ($Partners != null) {
 }
 
 if ($Contacts != null) {
-  $positionContacts = $Contacts.getBoundingClientRect().top;
+  $positionContacts = $alturaDoc;
 }
 
 $itemParceiros.addEventListener("click", function() {
-  smoothScroll($Partners, 2000, $positionPartners - descontoAlturaHeader);
+  // if para recalculo da posição com click após retorno de outra página, pois é zarada a posição
+  if ($positionPartners < 1) {
+    $positionPartners = $Partners.getBoundingClientRect().top;
+  }
+  smoothScroll($Partners, 2000, $positionPartners);
 });
 
 $itemContato.addEventListener("click", function() {
-  smoothScroll($Contacts, 2000, $positionContacts - descontoAlturaHeader);
+  smoothScroll($Contacts, 2000, $positionContacts);
 });
 
 //NEVEGAÇÃO DENTRO DA PÁGINA SEGUROS COM EFEITO DE SCROLL SUAVE
 if ($btnPF != null && $btnPJ != null) {
   $positionSeguroPF = $seguroPF.getBoundingClientRect().top;
   $positionSeguroPJ = $seguroPJ.getBoundingClientRect().top;
-  console.log($positionSeguroPJ);
 
   $btnPF.addEventListener("click", function() {
     if ($view > breakPhone) {
@@ -71,9 +75,6 @@ if ($btnPF != null && $btnPJ != null) {
     if ($view > breakPhone) {
       smoothScroll($seguroPJ, 2000, $positionSeguroPJ - descontoAlturaHeader);
     }
-    // } else {
-    //   smoothScroll($seguroPJ, 2000, $positionSeguroPJ);
-    // }
   });
 }
 
