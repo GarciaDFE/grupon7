@@ -113,7 +113,7 @@ const build = gulp.parallel(
   optimizeJSGeneral,
   optimizeJSCarousel,
   //optimizeJSForm,
-  optimizeIMG,
+  //optimizeIMG,
   replaceHTML,
   optimizeHTML,
   copyFiles
