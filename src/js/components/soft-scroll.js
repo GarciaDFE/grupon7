@@ -18,7 +18,7 @@ let $positionSeguroPF = 0;
 let $positionSeguroPJ = 0;
 // VARIÁVEIS
 const breakPhone = 599; // quebra para mobile
-const descontoAlturaHeader = 80; // altura header
+const alturaHeader = 80; // altura header
 const $view = window.innerWidth; // largura viewport
 
 //BOTÃO FLUTUTANTE TO TOP & EFEITO REDUÇÃO HEADER
@@ -38,14 +38,17 @@ $btnToTop.addEventListener("click", function() {
 });
 
 // NEVEGAÇÃO DENTRO DA HOMEPAGE COM EFEITO DE SCROLL SUAVE
-if ($Partners != null) {
-  // checa antes se existe o componente para evitar erros
+if ($Partners != null && $view <= breakPhone) {
+  const $alturaDoc = document.documentElement.scrollHeight;
+  const $alturaContato = $Contacts.getBoundingClientRect().height;
+  $positionPartners = $alturaDoc - $alturaContato + alturaHeader;
+} else if ($Partners != null && $view > breakPhone) {
   $positionPartners = $Partners.getBoundingClientRect().top;
 }
 
 $itemParceiros.addEventListener("click", function() {
   // if para recalculo da posição com click após retorno de outra página, pois é zarada a posição
-  if ($positionPartners < 100) {
+  if ($positionPartners < 10) {
     $positionPartners = $Partners.getBoundingClientRect().top;
   }
   smoothScroll($Partners, 2000, $positionPartners);
@@ -63,14 +66,14 @@ if ($btnPF != null && $btnPJ != null) {
 
   $btnPF.addEventListener("click", function() {
     if ($view > breakPhone) {
-      smoothScroll($seguroPF, 2000, $positionSeguroPF - descontoAlturaHeader);
+      smoothScroll($seguroPF, 2000, $positionSeguroPF - alturaHeader);
     } else {
       smoothScroll($seguroPF, 2000, $positionSeguroPF);
     }
   });
   $btnPJ.addEventListener("click", function() {
     if ($view > breakPhone) {
-      smoothScroll($seguroPJ, 2000, $positionSeguroPJ - descontoAlturaHeader);
+      smoothScroll($seguroPJ, 2000, $positionSeguroPJ - alturaHeader);
     }
   });
 }
