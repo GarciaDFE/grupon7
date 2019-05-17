@@ -1351,19 +1351,27 @@ img {
   max-width: 1060px;
   width: 100%;
   height: 240px;
-  margin: 0 auto;
+  margin: 0 auto 120px;
+  /* 600px a 899px */
+  /* 320px a 599px */
   /* 900px a 1199px */
   /* 600px a 899px */
   /* 320px a 599px */ }
-  .main-card:not(:last-child) {
-    margin-bottom: 120px;
+  @media all and (min-width: 600px) and (max-width: 899px) {
+    .main-card {
+      margin-bottom: 60px; } }
+  @media all and (min-width: 320px) and (max-width: 599px) {
+    .main-card {
+      margin-bottom: 40px; } }
+  .main-card.-variant {
+    margin: 0 auto;
     /* 600px a 899px */
     /* 320px a 599px */ }
     @media all and (min-width: 600px) and (max-width: 899px) {
-      .main-card:not(:last-child) {
+      .main-card.-variant {
         margin-bottom: 60px; } }
     @media all and (min-width: 320px) and (max-width: 599px) {
-      .main-card:not(:last-child) {
+      .main-card.-variant {
         margin-bottom: 40px; } }
   @media all and (min-width: 900px) and (max-width: 1199px) {
     .main-card {
