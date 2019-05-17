@@ -76,8 +76,7 @@ function replaceHTML() {
       htmlreplace({
         allcss: "css/styles.min.css",
         alljs: "js/scripts.min.js",
-        carousel: "js/carousel.min.js",
-        form: "js/form.min.js"
+        carousel: "js/carousel.min.js"
       })
     )
     .pipe(gulp.dest("dist/"));
@@ -111,7 +110,7 @@ const build = gulp.parallel(
   optimizeCSS,
   optimizeJSGeneral,
   optimizeJSCarousel,
-  optimizeJSForm,
+  //optimizeJSForm,
   //optimizeIMG,
   replaceHTML,
   optimizeHTML,

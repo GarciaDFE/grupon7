@@ -20,7 +20,6 @@ let $positionSeguroPJ = 0;
 const breakPhone = 599; // quebra para mobile
 const descontoAlturaHeader = 80; // altura header
 const $view = window.innerWidth; // largura viewport
-const $alturaDoc = document.documentElement.scrollHeight; // altura do documento
 
 //BOTÃO FLUTUTANTE TO TOP & EFEITO REDUÇÃO HEADER
 window.onscroll = function() {
@@ -40,23 +39,21 @@ $btnToTop.addEventListener("click", function() {
 
 // NEVEGAÇÃO DENTRO DA HOMEPAGE COM EFEITO DE SCROLL SUAVE
 if ($Partners != null) {
+  // checa antes se existe o componente para evitar erros
   $positionPartners = $Partners.getBoundingClientRect().top;
-}
-
-if ($Contacts != null) {
-  $positionContacts = $alturaDoc;
 }
 
 $itemParceiros.addEventListener("click", function() {
   // if para recalculo da posição com click após retorno de outra página, pois é zarada a posição
-  if ($positionPartners < 1) {
+  if ($positionPartners < 100) {
     $positionPartners = $Partners.getBoundingClientRect().top;
   }
   smoothScroll($Partners, 2000, $positionPartners);
 });
 
 $itemContato.addEventListener("click", function() {
-  smoothScroll($Contacts, 2000, $positionContacts);
+  const $alturaDoc = document.documentElement.scrollHeight; // pega altura do documento no click
+  smoothScroll($Contacts, 2000, $alturaDoc);
 });
 
 //NEVEGAÇÃO DENTRO DA PÁGINA SEGUROS COM EFEITO DE SCROLL SUAVE
