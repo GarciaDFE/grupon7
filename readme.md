@@ -2,7 +2,6 @@
     <img alt="Project website Grupo N7" src="https://user-images.githubusercontent.com/43100363/78835635-e6bf3e80-79c6-11ea-9a18-21ac7f5d0e7e.jpg" />
     <br> Projeto website<br />Grupo N7 - Corretora de Seguros
 </h1>
-<h2 align="center">HTML5 | CSS3 | Javascript</h2>
 
 ## :rocket: Technologies
 
