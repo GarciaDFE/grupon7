@@ -25,5 +25,5 @@ Grupo N7 - Corretora de Seguros. Copyright 2019. Todos os direitos reservados.
 
 ---
 
-- Desenvolvimento Front End feito por [Marcial Garcia](https://www.linkedin.com/in/marcial-garcia/) e [Raphael Ohlsen](https://www.linkedin.com/in/raphael-bernardo-ohlsen-79115689/)
-- Design UI/UX feito por [Cristiano Almeida](https://www.linkedin.com/in/cristianodealmeida/)
+- Front End desenvolvido por [Marcial Garcia](https://www.linkedin.com/in/marcial-garcia/) e [Raphael Ohlsen](https://www.linkedin.com/in/raphael-bernardo-ohlsen-79115689/)
+- Design UI/UX desenvolvido por [Cristiano Almeida](https://www.linkedin.com/in/cristianodealmeida/)
